@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="opening_files_externally">Manage Plugins</h2>
+
+  <p class="h2subheading">— Extend The Functionality Of Sigil —</p>
+
+  <p>You can extend the functionality of Sigil by installing Python 3 plugins. (Since Sigil comes with an embedded Python 3 interpreter and several Python libraries optimized for Sigil, you won’t have to install Python 3 on your system.)</p>
+
+  <div class="image">
+    <img alt="manage plugins" src="../Images/manage-plugins.png"/>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Install Plugins:</h4>
+
+  <p>To install a plugin:</p>
+
+  <ol>
+    <li>Download the desired plugin .zip file.<br/>(You can find an <a href="http://www.mobileread.com/forums/showthread.php?t=247431">up-to-date list of all supported Sigil plugins</a> on MR.)</li>
+
+    <li>Select Plugins &gt; Manage Plugins and click Add Plugin.</li>
+
+    <li>Select the plugin .zip file and click OK.</li>
+
+    <li>Enable Use Bundled Python, if it isn’t already enabled. <br/>(If Use Bundled Python can’t be selected, click <span class="buttonbox">Auto</span> or <span class="buttonbox">Set</span> to select an external Python interpreter.)</li>
+  </ol>
+
+  <div class="tip">
+    <p class="tiptext">Don’t unpack or rename plugin .zip files!</p>
+  </div>
+
+  <p>To run a plugin simply select it from the Plugins menu. For example, to run the FlightCrew plugin select Plugins &gt; Validation &gt; FlightCrew.</p>
+
+  <h4 class="sigil_not_in_toc">Assign Plugins To Toolbar Buttons:</h4>
+
+  <p>You can assign the five most frequently used plugins to Plugin toolbar buttons. (To assign a plugin to a Plugin toolbar button select it from one of the five Assign as Plugin list boxes.)</p>
+
+  <div class="image">
+    <img alt="preferences-spellcheck-add-words" src="../Images/assign-as-plugin.png"/>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Troubleshooting:</h4>
+
+  <pre class="example">Error: Interpreter python3.4 has no path set</pre>
+
+  <p>This error message is usually displayed if Use Bundled Python is disabled and the ≥Python 3.4 text box is empty or contains an invalid path. Click <span class="buttonbox">Auto</span> or <span class="buttonbox">Set</span> to select an external Python interpreter or enable Use Bundled Python.</p>
+
+  <pre class="example">Error: Plugin is not a valid Sigil plugin</pre>
+
+  <p>This error message is usually displayed if the plugin .zip file is invalid <i>or</i> the plugin .zip file was renamed. If you renamed the plugin .zip file, re-download it and retry the installation.</p>
+
+  <p>If you’re still experiencing problems, install and run the <a href="https://github.com/Sigil-Ebook/Sigil/raw/master/docs/testplugin_v013.zip">Sigil test plugin</a> and post the results in the MR Sigil Plugins forum.</p>
+
+  <h4 class="sigil_not_in_toc">Write Your Own Plugins:</h4>
+
+  <p>Thanks to a comprehensive Python framework it is relatively easy to write plugins for Sigil. If you’re interested in writing your own Python 3 Sigil plugins, have a look at the <a href="https://github.com/Sigil-Ebook/Sigil/raw/master/docs/Sigil_Plugin_Framework_rev8.epub">Sigil Plugin Framework</a> guide.</p>
+</body>
+</html>

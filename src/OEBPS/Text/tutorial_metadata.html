@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Create an EPUB</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2>Add the Author and Title</h2>
+
+  <p>In addition to the actual content of your book, EPUB files also contain book details like Author and Title. These can be added with Sigil.</p>
+
+  <p>To add details (called metadata) about your book to your EPUB, click the Metadata Editor button <img alt="metadata-editor_22px" src="../Images/metadata-editor_22px.png"/> or the menu item <span class="menuitem">Tools→Metadata Editor:</span></p>
+
+  <div class="image">
+    <img alt="tutorial-tools-metadata" src="../Images/tutorial-tools-metadata.png"/>
+  </div>
+
+  <p>The Metadata Editor window will be displayed:</p>
+
+  <div class="image">
+    <img alt="tutorial-tools-metadata" src="../Images/tutorial-tools-metadata-new.png"/>
+  </div>
+
+  <p>The entries required by an EPUB are Title, Author, and Language.</p>
+
+  <p>To add the Title and Author to your book:</p>
+
+  <ul>
+    <li><span class="listheading">Title:</span> Click <span class="buttonbox">dc:title</span> &gt; <span class="buttonbox">[no data]</span> and type the full title of your book, for example enter <span class="example">Alice in Wonderland</span>.</li>
+
+    <li><span class="listheading">Author:</span> Click <span class="buttonbox">Add Metadata</span> &gt; <span class="buttonbox">Author</span> and type the author’s name, for example enter <span class="example">Lewis Carroll</span>.</li>
+
+    <li><span class="listheading">File-As:</span> This is actually optional. But it is usually included as it controls how the author’s name is sorted. Click <span class="buttonbox">dc:creator</span> &gt; <span class="buttonbox">Add Property</span> &gt; <span class="buttonbox">File as</span> and type the author’s name as it should be sorted, for example enter <span class="example">Carroll, Lewis</span>.</li>
+  </ul>
+
+  <p>This is how your data might look when filled in:</p>
+
+  <div class="image">
+    <img alt="tutorial-metadata-required" src="../Images/tutorial-metadata-required-new.png"/>
+  </div>
+
+  <p>Once you have updated the information, you can click <span class="buttonbox">OK</span> and then save <img alt="button-save" src="../Images/button-save.png"/> your EPUB again.</p>
+
+  <div class="tip">
+    <p class="tiptext">You may have noticed that there is a lot of room for other values in the Metadata Editor. Only the Title, Author, and Language are required for EPUBs, but if you want to add more values using the <span class="buttonbox">Add Metadata</span> or <span class="buttonbox">Add Property</span> buttons you can.</p>
+
+    <p class="tiptext">See the <a href="../Text/metadata.html">Metadata Editor</a> chapter for more details.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Opening and Saving Files</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="opening_and_saving_files">Opening and Saving Files</h2>
+
+  <p class="h2subheading">— Load and Save Your Books —</p>
+
+  <p>Sigil supports opening EPUB files and reading HTML and text files. When Sigil saves your book it saves in the EPUB format: the EPUB file will contain all of your HTML files, images, stylesheets, fonts, etc. zipped up into one file.</p>
+
+  <div class="tip">
+    <p class="tiptext">Save early, save often, and make backup copies!</p>
+
+    <p class="tiptext">Always close Sigil before you open your EPUB in another program – or the other program will lock the file and prevent you from saving in Sigil.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Opening and Adding Documents</h3>
+
+  <h4 class="sigil_not_in_toc">Open Files</h4>
+
+  <p>To open a file, click the Open button <img alt="" src="../Images/document-open_22px.png"/>, or select the menu item <span class="menuitem">File→Open</span> or its keyboard shortcut then choose the file you want to open:</p>
+
+  <div class="indent">
+    <p>EPUB Files</p>
+
+    <ul>
+      <li>Everything in the EPUB file is loaded automatically: HTML files, images, stylesheets, metadata, etc..</li>
+
+      <li>Sigil will organise your files into standard folders as shown in the Book Browser.</li>
+
+      <li>If the EPUB contains common errors Sigil will try to correct them.</li>
+
+      <li>Depending on your preferences, Sigil will format or clean the HTML files.</li>
+
+      <li>If the EPUB still contains invalid HTML files after cleaning, Sigil will still load the file and report the errors that need to be fixed.</li>
+    </ul>
+
+    <p>HTML Files</p>
+
+    <ul>
+      <li>The HTML file and any linked files and stylesheets are imported if possible and placed into the appropriate folders.</li>
+
+      <li>The metadata in the HTML file will be loaded into the metadata for the book.</li>
+
+      <li>Depending on your preferences, Sigil will format or clean the files.</li>
+
+      <li>If the HTML file is still invalid after cleaning, Sigil will report the error but may not load the file. You may have to fix the errors outside of Sigil.</li>
+    </ul>
+  </div>
+
+  <p>Text Files</p>
+
+  <ul>
+    <li>The text file will be converted to HTML. Paragraphs must be separated by blank lines to have them split into separate paragraphs.</li>
+  </ul>
+
+  <h4 class="sigil_not_in_toc">Add Files</h4>
+
+  <p>Add files to your EPUB by clicking the Add Existing Files button <img alt="" src="../Images/document-add_22px.png"/>, selecting the menu item <span class="menuitem">File→Add→Existing Files</span>, or right-clicking on a file in the Book Browser and choose <span class="menuitem">Add Existing Files</span>:</p>
+
+  <div class="indent">
+    <p>HTML Files</p>
+
+    <ul>
+      <li>Metadata is not loaded from the file (unlike when you use Open).</li>
+
+      <li>Sigil will attempt to load files that are referenced.</li>
+
+      <li>Files will be placed into their appropriate folder.</li>
+    </ul>
+
+    <p>Image Files</p>
+
+    <ul>
+      <li>Files will be placed into the Images folder.</li>
+    </ul>
+
+    <p>Video Files</p>
+
+    <ul>
+      <li>Files will be placed into the Video folder.</li>
+    </ul>
+
+    <p>Audio Files</p>
+
+    <ul>
+      <li>Files will be placed into the Audio folder.</li>
+    </ul>
+
+    <p>Stylesheet Files</p>
+
+    <ul>
+      <li>Files will be placed into the Styles folder.</li>
+    </ul>
+
+    <p>Font Files</p>
+
+    <ul>
+      <li>Files will be placed into the Fonts folder.</li>
+    </ul>
+
+    <p>Other Files</p>
+
+    <ul>
+      <li>All other files will be placed in the Misc folder as they are not usually used in an EPUB, although certain text files in the Misc folder can be edited in Sigil.</li>
+    </ul>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Add Blank Files</h4>
+
+  <div>
+    You can also create new empty files in Sigil. Select the menu item <span class="menuitem">File→Add</span> and choose from blank HTML page, blank CSS stylesheet, or blank SVG image (a special image format). You can also do this using this Book Browser, or even add a keyboard shortcut in Preferences.
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="saving_your_book">Saving Your EPUB</h3>
+
+  <p>Save your book by clicking the Save button <img alt="" src="../Images/document-save_22px.png"/>, or selecting the menu item <span class="menuitem">File→Save</span> or its shortcut. You should always save your document before doing major edits in case you want to undo them.</p>
+
+  <p>Your saved EPUB file contains all the files that make up your book – your text, images, stylesheets, embedded fonts, table of contents, metadata, etc.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you edit any text in your document, an asterisk ( <b>*</b> ) is added to the file’s name in the titlebar.</p>
+  </div>
+
+  <p>When you save your book Sigil will check it for certain errors and warn you if you need to fix anything. But you should always run <span class="menuitem">Validate EPUB with FlightCrew</span> to check for typical EPUB issues.</p>
+
+  <div class="tip">
+    <p class="tiptext">Sigil will not always be able to save an EPUB that contains errors, so frequent saves will make it easier to identify if there are errors that you need to correct.</p>
+
+    <p>Sigil will also clean your source code according to your preferences when saving the file.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc" id="save_a_copy">Save a Copy</h4>
+
+  <p>You can select <span class="menuitem">File→Save A Copy</span> to save a copy of your EPUB to a different filename. The difference between Save or Save As is that the current book you are working on is not renamed. So you can use this feature to save your EPUB without changing the name of your book or the directory you save files to.</p>
+
+  <div class="tip">
+    <p class="tiptext">Use <span class="menuitem">File→Save A Copy</span> for quick backups.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="saving_files">Saving Individual Files</h3>
+
+  <p>You can also right-click on a file name in the Book Browser and select <span class="menuitem">Save As</span> from the context menu. You can then name and save the specific file to a directory on your computer. If you select more than one file, all files will be saved to your chosen directory. This is a quick way to share a specific file with someone without sharing the EPUB, or to create a template file you can use for other books.</p>
+</body>
+</html>

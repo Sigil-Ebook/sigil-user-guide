@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Metadata Editor</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="metadata-editor">Metadata</h2>
+
+  <p class="h2subheading">— Edit details about your book —</p>
+
+  <p>The Metadata Editor allows you to add or edit details about your book – like Author, Title and Language, as well as hundreds of other entries defined by the EPUB standard.</p>
+
+  <p>Edit your book details by clicking the Metadata Editor button <img alt="" src="../Images/metadata-editor_22px.png"/>, or selecting the menu item <span class="menuitem">Tools→Metadata Editor</span> or its keyboard shortcut:</p>
+
+  <div class="image">
+    <img alt="metadata-editor-main" src="../Images/metadata-editor_new.png"/>
+  </div>
+
+  <p>All of the details about the book (called metadata) are stored in the <span class="example">content.opf</span> file in the EPUB. You can edit this information manually, but the Metadata Editor allows you to edit it more easily.</p>
+
+  <h3 class="sigil_not_in_toc" id="metadata_required">Required Details</h3>
+
+  <p>The Metadata Editor shows the 3 fields required for an EPUB at the top – you must fill these in order to create a valid EPUB:</p>
+
+  <ul>
+    <li><span class="listheading">Title:</span> The title of the book.</li>
+
+    <li><span class="listheading">Author:</span> The author of the book, usually in the form of "Firstname Lastname". You can add more authors using the fields below.</li>
+
+    <li><span class="listheading">Language:</span> The language the book is written in.</li>
+  </ul>
+
+  <div>
+    You can use the optional <span class="menuitem">File-As</span> field to list the author’s name for sorting purposes, usually of the form "Lastname, Firstname".
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="metadata_optional">Optional Details</h3>
+
+  <p>You can add optional details using the <span class="buttonbox">Add Metadata</span> or <span class="buttonbox">Add Property</span> buttons. These will be added below the required fields. The Metadata Editor allows you, for example, to provide the following values for each entry:</p>
+
+  <ul>
+    <li><span class="listheading">Name:</span> The name of the field.</li>
+
+    <li><span class="listheading">Value:</span> The contents of the field.</li>
+
+    <li><span class="listheading">File As:</span> Some fields like author can or date have alternative values that are used for sorting, etc..</li>
+
+    <li><span class="listheading">Role Type:</span> All roles, like author, can be either a creator or contributor.</li>
+  </ul>
+
+  <div class="image">
+    <img alt="metadata-add-basic" src="../Images/metadata-add-basic.png"/>
+  </div>
+
+  <p>If you click <span class="buttonbox">Add Metadata</span> or <span class="buttonbox">Add Property</span>, Sigil will display EPUB-type specific metadata/property dialog items.</p>
+
+  <p>For example, the Role metadata property list contains hundreds of possible activities that people may have performed in the creation of this book such as Authors, Editor, Proofreader, etc.:</p>
+
+  <div class="image">
+    <img alt="metadata-add-role" src="../Images/metadata-add-role.png"/>
+  </div>
+
+  <p>You can add the same type of field multiple times.</p>
+
+  <div class="tip delete">
+    <p class="tiptext">You can re-arrange the order of the entries (which may affect how ereaders display the information) by selecting the entries and clicking on the <span class="buttonbox">Up</span> or <span class="buttonbox">Down</span> buttons.</p>
+  </div>
+</body>
+</html>

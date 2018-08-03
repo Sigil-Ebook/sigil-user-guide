@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Saved Searches</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="search_editor">Saved Searches</h2>
+
+  <p class="h2subheading">— Saved Searches for Find &amp; Replace —</p>
+
+  <p>The Saved Searches dialog allows you to save and edit all your common Find &amp; Replace searches. You can also use it to run your searches.</p>
+
+  <p>To open Saved Searches, select the menu item <span class="menuitem">Tools→Saved Searches</span> or its keyboard shortcut:</p>
+
+  <div class="image">
+    <img alt="saved-searches-main" src="../Images/saved-searches-main.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">All Saved Searches are run using the options and modes set in Find &amp; Replace.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Context Menu Commands</h3>
+
+  <p>Most actions concerning editing searches are accessed using the right-click context menu:</p>
+
+  <div class="image">
+    <img alt="saved-searches-context-menu" src="../Images/saved-searches-context-menu.png"/>
+  </div>
+
+  <p>Select one or more entries then right-click on the selection for the following options:</p>
+
+  <ul>
+    <li><span class="listheading">Add Entry:</span> Add a blank search under the entry you clicked.</li>
+
+    <li><span class="listheading">Add Group:</span> Add a new group under the entry you clicked.</li>
+
+    <li class="first"><span class="listheading">Edit:</span> Edit or rename the entry (same as double-click).</li>
+
+    <li class="first"><span class="listheading">Cut:</span> Delete one or more entries that can be pasted later.</li>
+
+    <li><span class="listheading">Copy:</span> Copy one or more entries that can be pasted later.</li>
+
+    <li><span class="listheading">Paste:</span> Paste any cut/copied entries.</li>
+
+    <li class="first"><span class="listheading">Delete:</span> Delete entries or groups.</li>
+
+    <li class="first"><span class="listheading">Import:</span> Read a list of exported entries from a file into the list.</li>
+
+    <li><span class="listheading">Reload:</span> Restore the list from the last saved state.</li>
+
+    <li class="first"><span class="listheading">Export:</span> Save selected entries to a file for sharing.</li>
+
+    <li><span class="listheading">Export All:</span> Save all entries to a file.</li>
+
+    <li class="first"><span class="listheading">Collapse All:</span> Collapse the display of all groups.</li>
+
+    <li><span class="listheading">Expand All:</span> Expand the display of all groups.</li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc">Running Searches</h3>
+
+  <p>Saved Searches can be used to run your searches as well as manage them.</p>
+
+  <p>All of the Find &amp; Replace actions are available from the Saved Searches window, and you do not need Find &amp; Replace open to use them (although the options set in Find &amp; Replace will be used when you run the search).</p>
+
+  <p>To run a search, just select an entry and click one of the actions. All result messages will be displayed in the window and in Find &amp; Replace.</p>
+
+  <div class="tip">
+    <p class="tiptext">Although all searches are done using the modes set in Find &amp; Replace you can hold the <span class="shortcut">Ctrl</span> key down when selecting a search to force it to run temporarily in the Current File.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Group Searches</h3>
+
+  <p>You can actually run a group of searches. Each search will be run sequentially.</p>
+
+  <p>Simply select a group name and then, for example, run <span class="buttonbox">Count All</span>. Or select several non-group entries and run, for example, <span class="buttonbox">Replace All</span>.</p>
+
+  <h3 class="sigil_not_in_toc">Save</h3>
+
+  <p>To save your entries to disk, click <span class="buttonbox">Save</span>.</p>
+
+  <p>To exit without saving your entries you can just close the window (with the <span class="buttonbox">Close</span> button or the <span class="shortcut">Esc</span> key) and confirm you do not want to save if prompted. You can also use the context menu <span class="menuitem">Reload</span> to reload your entries from disk – which will delete your current entries.</p>
+
+  <p>You can use the <span class="menuitem">Export</span> and <span class="menuitem">Import</span> context menu items to save your searches so that they can be shared with others.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you save and are running more than one copy of Sigil, then the other instances of Sigil will automatically reload the newly saved searches to keep all copies in sync.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Filter</h3>
+
+  <p>You can use the filter text box to restrict the list of searches shown to make it easier to find a search.</p>
+
+  <h3 class="sigil_not_in_toc">Load Search</h3>
+
+  <p>Clicking the button <span class="buttonbox">Load Search</span> will load the search you have selected into the Find &amp; Replace box.</p>
+
+  <p>Loading does not run the search – it is only a way to populate the fields in Find &amp; Replace. You can also just right-click in the Find &amp; Replace text boxes and select a saved search from the context menu to do the same thing.</p>
+
+  <p>You do not need to load a search if you are going to run the search from the Saved Searches dialog.</p>
+
+  <div class="tip">
+    <p class="tiptext">You can load a search using just the keyboard by using the shortcut to open Saved Search, typing your search name in the filter box and hitting return (followed by Esc if you want to close the window).</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Moving Entries</h3>
+
+  <p>You can move searches or groups around by using the arrow keys or by drag and drop.</p>
+
+  <p>In order to group entries you must first create a group to put them in.</p>
+
+  <h3 class="sigil_not_in_toc">Using Saved Searches in Find &amp; Replace</h3>
+
+  <h4 class="sigil_not_in_toc">Save Searches</h4>
+
+  <p>While in Find &amp; Replace you can save your search by right-clicking in the Find or Replace text boxes and selecting the menu item <span class="menuitem">Save Search</span>.</p>
+
+  <h4 class="sigil_not_in_toc">Load Searches</h4>
+
+  <p>You can also load saved searches into Find &amp; Replace by right-clicking in the Find or Replace text boxes and selecting the menu item corresponding to your saved search.</p>
+
+  <p>Once you have loaded a search you can change the mode or options before running it.</p>
+</body>
+</html>

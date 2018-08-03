@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tips</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="tips">Tips</h2>
+
+  <p>Here are some useful suggestions for checking that your EPUB is complete:</p>
+
+  <ul>
+    <li>Use the Metadata Editor button <img alt="metadata-editor_22px" src="../Images/metadata-editor_22px.png"/> to set your Title, Author, and Language. And if you want, also set the Copyright, Publication Date, Subject, Description, and ISBN if there is one.</li>
+
+    <li>Create an HTML file for your cover, and set the file and your cover image as type Cover.</li>
+
+    <li>Right-click on your first text file and select <span class="menuitem">Add Semantics→Text</span> to tell ereaders that this is where the book should open to.</li>
+
+    <li>Use the Generate TOC button <img alt="generate-toc_22px" src="../Images/generate-toc_22px.png"/> if you generated your TOC, and re-create your HTML TOC if there is one, to make sure you have the latest updates.</li>
+
+    <li>Test your TOC links work as expected.</li>
+
+    <li>Test your links, footnotes or endnotes work as expected.</li>
+
+    <li>Check your spelling with the Spellcheck button <img alt="document-spellcheck_22px" src="../Images/document-spellcheck_22px.png"/>, and consider creating a separate dictionary for your book if it has lots of unique words.</li>
+
+    <li>Click on the Validate button <img alt="document-validate_22px" src="../Images/document-validate_22px.png"/>to find EPUB errors then fix them – see <a href="../Text/validation.html">Validation</a> for typical error messages and what to do about them.</li>
+
+    <li>Check your stylesheets are valid using <span class="menuitem">Tools→Validate Stylesheets with W3C</span>.</li>
+
+    <li>Link your stylesheets to all files that need them.</li>
+
+    <li>Remove unused images, audio, or video files or unused style classes using <span class="menuitem">Tools→Delete Unused</span>…</li>
+
+    <li>Run <span class="menuitem">Tools→Reports</span> and look at the reports for anything unexpected (extra files, broken links, classes used but not defined, etc.).</li>
+
+    <li>If you are using CSS files for your styles, search for, <span class="example">&lt;style&gt;</span> tags used in inline CSS, or <span class="example">style=</span> attributes used by inline styling and convert them to CSS stylesheet files.</li>
+
+    <li>If you are really keen, search for and replace code like <span class="example">&amp;nbsp;</span>, <span class="example">&lt;br /&gt;</span>, empty paragraphs <span class="example">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</span>, empty <span class="example">&lt;div&gt;&lt;/div&gt;</span> tags, empty attributes like <span class="example">src=""</span>,<span class="example"> href=""</span>, or <span class="example">=""</span>, change - to <span class="example">&amp;ndash;</span>, change ' to ’, etc. – unless of course you want to keep them. Check again if you use Book View for just one more update.</li>
+
+    <li>And if that isn’t too much for you, you can even scan your book in Code View line by line for unexpected formatting, especially if you’ve used Book View to make updates.</li>
+
+    <li>Proofread on actual ereaders. Sigil can only give an approximation of what your book will look like. Despite EPUB being a standard, there are a lot of ereader devices and software and they all have their own quirks and bugs.</li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">And in case you missed it – test your book on actual devices and ereader software!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Edit an EPUB</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2>Advanced Find &amp; Replace – Regex</h2>
+
+  <p>The real power of Find &amp; Replace in Sigil is provided by its support of Regular Expressions (also called regex). Regex is basically using patterns instead of plain text for searches to make matching text more flexible.</p>
+
+  <p>You can use regex in Find &amp; Replace by changing the mode of the search from Normal to Regex.</p>
+
+  <div class="image">
+    <img alt="tutorial-find-adv-regex" src="../Images/tutorial-find-adv-regex.png"/>
+  </div>
+
+  <p>Regex is a very important tool in Sigil, but only a very brief introduction can be given in this tutorial. See the next chapter for a reference list of regular expressions.</p>
+
+  <p>For example, instead of searching for very specific text to replace or delete, such as "Page 123", it would be much more useful to search for text that contains "Page" followed by a number – that’s exactly what regular expressions can provide.</p>
+
+  <p>Instead of putting your actual text into the Find or Replace boxes, you can substitute it with special regex codes. So in the example above you could search for "Page \d+" instead of "Page 123" because "\d+" is a regex code that means any digit (the "\d") repeated at least once (the "+").</p>
+
+  <div class="image">
+    <img alt="tutorial-find-adv-page" src="../Images/tutorial-find-adv-page.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Using Regex to Replace Text</h3>
+
+  <p>But even more useful is that you can use regex to help with replacing text as well. In the example above, you might want to keep the page numbers but replace the word "Page". You could use then use something like:</p>
+
+  <ul>
+    <li><span class="listheading">Find:</span> 
+
+    <pre class="example">Page (\d+)</pre></li>
+
+    <li><span class="listheading">Replace:</span> 
+
+    <pre class="example">This is page number \1</pre></li>
+  </ul>
+
+  <div class="image">
+    <img alt="tutorial-find-adv-replace" src="../Images/tutorial-find-adv-replace.png"/>
+  </div>
+
+  <p>This will replace any occurrence of "Page" followed by a number with "This is page" followed by the same number:</p>
+
+  <ul>
+    <li><span class="listheading">Before:</span> 
+
+    <pre class="example">Page 418</pre></li>
+
+    <li><span class="listheading">After:</span> 
+
+    <pre class="example">This is page 418</pre></li>
+  </ul>
+
+  <p>The first point to note about this replacement is the use of the regex code <span class="example">(\d+)</span> in the Find box. The <span class="example">\d+</span> code tells the search to look for numbers as above. But the use of parenthesis around the code tells the search to remember what those numbers were – to remember anything matched in the parenthesis. The other point to note is the use of the regex code <span class="example">\1</span> in the Replace box, which tells Replace to substitute the characters remembered in the Find statement for the string <span class="example">\1</span> wherever it finds it.</p>
+
+  <h3 class="sigil_not_in_toc" id="tutorial_regex_formatting">Using Regex to Change Formatting</h3>
+
+  <p>As a further example of regex, this is how you might change the formatting of certain text into chapter headings.</p>
+
+  <p>Let’s say that you have an imported HTML file that contains lots of chapter headings, but none of them are marked using the <span class="example">h1</span> heading tag. Instead they are all marked as paragraphs like this:</p>
+
+  <pre class="example">&lt;p&gt;CHAPTER 7&lt;/p&gt;
+</pre>
+
+  <p>Assuming every paragraph like this is a chapter heading, you could use this regex:</p>
+
+  <ul>
+    <li><span class="listheading">Find:</span> 
+
+    <pre class="example">&lt;p&gt;\sCHAPTER\s(\d+)\s&lt;/p&gt;</pre></li>
+
+    <li><span class="listheading">Replace:</span> 
+
+    <pre class="example">&lt;h1&gt;Chapter \1&lt;/h1&gt;</pre></li>
+  </ul>
+
+  <div class="image">
+    <img alt="" src="../Images/tutorial_find_regex_chapter.png"/>
+  </div>
+
+  <p>That’s quite a lot to digest, but if you look carefully you can see that it’s very similar to the Page number example above in that it’s remembering the digits in the chapter name and using them in the replace.</p>
+
+  <p>It’s the Find that is the most interesting. It breaks down like this:</p>
+
+  <ul>
+    <li><span class="example">&lt;p&gt;</span> – Look for a starting paragraph tag.</li>
+
+    <li><span class="example">\s</span> – Regex code to match any white space (blanks, tabs, etc.).</li>
+
+    <li><span class="example">CHAPTER</span> – Match the word CHAPTER (Regex is case-sensitive by default).</li>
+
+    <li><span class="example">\s</span> – Regex code to match any white space.</li>
+
+    <li><span class="example">(\d+)</span> – Regex code to match any number of digits in a row and remember them.</li>
+
+    <li><span class="example">\s</span> – Regex code to match any white space.</li>
+
+    <li><span class="example">&lt;/p&gt;</span> – Look for an end paragraph tag.</li>
+  </ul>
+
+  <p>You could just use a space instead of <span class="example">\s</span> but <span class="example">\s</span> is more flexible since it will match any number of blank spaces and tabs.</p>
+
+  <p>So the results of that search could be:</p>
+
+  <ul>
+    <li><span class="listheading">Before:</span> 
+
+    <pre class="example">&lt;p&gt;  CHAPTER    14&lt;/p&gt;</pre></li>
+
+    <li><span class="listheading">After:</span> 
+
+    <pre class="example">&lt;h1&gt;Chapter 14&lt;h1&gt;</pre></li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">It becomes more difficult to use regex if the formatting used in a file is not consistent – in these cases you may have to do several Find &amp; Replace passes and even resort to making the updates one by one manually.</p>
+  </div>
+
+  <p>This is only a very basic description of what regex is, but it gives you an idea of what is possible. The trick with regex is getting the right find and replace strings, and that only comes from reading, asking questions, and testing.</p>
+
+  <h3 class="sigil_not_in_toc">Helpful Options</h3>
+
+  <p>You may have noticed the extra Options in Find &amp; Replace: DotAll, Minimal Match, and Auto-Tokenise. All of these options are useful when using Regex. If you are starting out using regex, then the recommendation is to check each of the boxes:</p>
+
+  <div class="image">
+    <img alt="tutorial-find-adv-options" src="../Images/tutorial-find-adv-options.png"/>
+  </div>
+
+  <p>This is what each of the options is used for:</p>
+
+  <p class="sigil_not_in_toc"></p>
+
+  <ul>
+    <li><span class="listheading">DotAll:</span> This regex option prepends (?s) to all regex searches and is used when you want the ".*" pattern to match across separate lines.</li>
+
+    <li><span class="listheading">Minimal Match:</span> This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</li>
+
+    <li><span class="listheading">Auto-Tokenise:</span> When using Ctrl-F on selected text to add text to Find &amp; Replace, this will convert spaces to \s and escape certain characters so they are suitable for regex.</li>
+  </ul>
+
+  <p>See the <a href="../Text/tutorial_regex_reference.html">Regular Expression Reference</a> chapter for more details.</p>
+</body>
+</html>

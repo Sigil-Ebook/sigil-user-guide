@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Preview View</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="preview">Preview</h2>
+
+  <p class="h2subheading">— Show Code View Changes —</p>
+
+  <p>Preview is a movable window that gives you a dynamically updated read-only view of what appears in Code View. It is the same view as Book View but it can be displayed at the same time you edit in Code View. You can also inspect your code and styles in a small window at the bottom (or hide the window).</p>
+
+  <p>You can use Preview to show the results of changes in your code (including immediate feedback of errors), and you can also open a CSS stylesheet to make changes that are shown in Preview.</p>
+
+  <p>Activate the Preview window by selecting the menu item <span class="menuitem">View→Preview</span> or its keyboard shortcut:</p>
+
+  <div class="image">
+    <img alt="preview-window" src="../Images/preview-window.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">You can toggle the Preview window open or closed with its shortcut, and even move the window to a second monitor if you have one.</p>
+  </div>
+
+  <p>The Preview window will be updated immediately when you click somewhere in Code View or Book View. It will also be updated after you stop typing for a short time.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you click in Preview the Code View or Book View tab will sync to the same location.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Context Menu</h3>
+
+  <p>The Preview context menu includes one very useful feature:</p>
+
+  <p>Right-click on a heading, paragraph, or any area of the screen to see this option:</p>
+
+  <ul>
+    <li><span class="listheading">Inspect Element:</span> Show details for this text in the Inspector window.</li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc">Inspector Window</h3>
+
+  <p>The Inspector Window is the small window at the bottom of the Preview page. You can re-size this window by selecting the bar that divides the two windows and moving it to the size you want, including hiding it.</p>
+
+  <p>The Inspector window is an HTML developer’s tool that allows detailed examination of the code behind the book’s appearance. It is intended to allow you to see why specific sections of your book are displayed the way they are, and to make temporary changes to styles and text to see how they affect your text.</p>
+
+  <div class="tip">
+    <p class="tiptext">Any changes you make in the Inspector window are only temporary and are not saved!</p>
+  </div>
+
+  <p>The Inspector is basically the Chrome web developer toolset and you can find more information about it from their documentation. Not all the information applies to Sigil since the software is meant for general web page inspection. Scroll down to the Developer Window section to see what functions are available:</p>
+
+  <ul>
+    <li><a href="https://developers.google.com/chrome-developer-tools/docs/overview">Inspector for Chrome Developer Tools</a></li>
+  </ul>
+
+  <p>The easiest way to use the Inspector is to right-click on the text you are interested in the top window and select <span class="menuitem">Inspect Element</span>.</p>
+
+  <p>The other way to use the Inspector is to click on the magnifying glass at the bottom of the Inspector then scroll the preview area to the text of your book that you want to inspect and click on it. The inspector pane will scroll to the related section of code, allowing you to view various details about the text.</p>
+
+  <p>You can then make temporary modifications to the styles used by the text to test out changes. Changes to styles are reflected immediately in the Preview area, but if you edit any text you may need to click in the Preview area to refresh it. You can then update your CSS stylesheets to include any changes you decide to keep.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you click on an area in the inspector section, the preview area will not sync as you might expect.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">CSS Stylesheet Preview</h3>
+
+  <p>You can see how changes in your CSS stylesheets affect your text immediately in Preview.</p>
+
+  <p>To use this feature, open an HTML page and open Preview. Then open your CSS Stylesheet.</p>
+
+  <p>As you edit your styles in the stylesheet the changes will be reflected in your HTML file in Preview after you stop typing for a second.</p>
+</body>
+</html>

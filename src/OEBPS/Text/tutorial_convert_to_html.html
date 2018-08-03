@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Create an EPUB</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="tutorial">Prepare Your File For Sigil</h2>
+
+  <p>If you already have an EPUB or HTML file, or are writing from scratch in Sigil, you can skip this step.</p>
+
+  <p>If you are starting with a document created by a word processor, then the first thing you need to do is convert your document to HTML so that you can import it into Sigil. Some programs can generate EPUB files as output. And some programs have add-ons or features to clean up their HTML output. Whether it is best to use the HTML or EPUB (or even plain text) output of these programs depends on the program – you can always test different ways to see what works best.</p>
+
+  <div class="tip">
+    <p class="tiptext">The "cleaner" your HTML file is, the easier it will be to turn it into an EPUB and the more likely it will display correctly on multiple devices. This means using styles for formatting and not using too many fancy formats and layouts.</p>
+
+    <p class="tiptext">Do not expect an EPUB to look like a printed book – EPUB is designed so that the reader can control how the book is displayed.</p>
+  </div>
+
+  <p>Although conversion is not part of Sigil, here are some suggestions for converting files for importing into Sigil.</p>
+
+  <h3 class="sigil_not_in_toc">Word Documents</h3>
+
+  <p>Use the MS Word menu item <span class="menuitem">File→Save As Filtered HTML</span>. Or use the <a href="http://www.mobileread.com/forums/showthread.php?t=142530">MS Word Macro @ MobileRead</a>.</p>
+
+  <p>Both approaches try to reduce the amount of extra code exported by MS Word so that your HTML file is cleaner and simpler to edit in Sigil. You really want to have your code as clean as possible since Word adds lots of extra HTML tags that you will probably want to delete at some point.</p>
+
+  <p>When using Word or any word processor, you should always try to use styles to format your code instead of just making some text bold, some larger, etc. Styles are also an important concept when formatting EPUBs.</p>
+
+  <h3 class="sigil_not_in_toc">Text Files</h3>
+
+  <p>It is not strictly necessary to convert text files to HTML. Sigil can directly open .txt files.</p>
+
+  <div class="tip">
+    <p class="tiptext">Text files must have a blank line between paragraphs so that Sigil can split them into separate paragraphs.</p>
+  </div>
+
+  <p>Text files are not an ideal source, but they can still be better than some formats as they will have fewer unnecessary HTML tags. They may be worth using if you have lots of issues with other formats. Sometimes it is faster to add styles to a clean document than to try to clean up a converted file.</p>
+
+  <h3 class="sigil_not_in_toc">Other Formats</h3>
+
+  <p>Many other word processors, such as LibreOffice, also have a save-as or export to HTML or even save-as EPUB function that you can try. You can also convert other formats to HTML or EPUB using other software such as <a href="http://calibre-ebook.com/">Calibre</a>.</p>
+
+  <p>Note that any automatic conversion of your files will introduce lots of extra code. If you are just formatting a book for personal use you may not be concerned with this. But if you are formatting books for professional purposes or want as little extra code in your EPUB as possible, then it should be avoided.</p>
+
+  <div class="tip">
+    <p class="tiptext">Sigil only supports importing HTML files since converting from other formats is actually quite specialised and best left to other tools.</p>
+  </div>
+</body>
+</html>

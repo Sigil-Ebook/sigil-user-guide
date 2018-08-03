@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Edit an EPUB</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2>A Quick Introduction To Code View</h2>
+
+  <p>Until now you have probably been viewing your text exactly as ereaders would display your book – using the WYSIWYG Book View mode in Sigil.</p>
+
+  <p>However, your text is not actually stored in an EPUB looking like it does in Book View. In fact, it is stored in HTML format – which is a mix of your text and HTML tags that tell ereaders how to interpret and display your book.</p>
+
+  <p>You can see the HTML code in your files by using Code View.</p>
+
+  <p>So why do you need to know anything about this? Because in order to use Find &amp; Replace, or to control the formatting of your book easily, or even to understand Spellcheck you need to be familiar with Code View.</p>
+
+  <div class="tip">
+    <p class="tiptext">It’s worth learning a little about Code View to help understand why your formatting looks the way it does. And it is really necessary if you want to use some of Sigil’s advanced features.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Code View</h3>
+
+  <p>To switch to Code View, click the Code View button <img alt="view-code_22px" src="../Images/view-code_22px.png"/>. You can switch back to Book View at any time by clicking the Book View button <img alt="view-book_22px" src="../Images/view-book_22px.png"/>. Or you can double-click on the tab-header or use the shortcut for <span class="menuitem">View→Toggle View State</span>.</p>
+
+  <p>This is Book View and Code View side by side for comparison:</p>
+
+  <div class="image">
+    <img alt="tutorial-bv-cv" src="../Images/tutorial-bv-cv.png"/>
+  </div>
+
+  <p>That’s quite a lot of text, but it’s not as jumbled as it appears. First, ignore everything at the top of the file up to and including the <span class="example">&lt;body&gt;</span> tag on line 11 in this example. The "header" is just information required by HTML files and not something you normally need to change.</p>
+
+  <p>Your text starts after the <span class="example">&lt;body&gt;</span> tag:</p>
+
+  <div class="image">
+    <img alt="tutorial-cv" src="../Images/tutorial-cv.png"/>
+  </div>
+
+  <p>You can see all the same words that are shown in Book View – the chapter name "Introduction" and several paragraphs of text. But you can also see the HTML code tags that tell readers how to display that text.</p>
+
+  <h3 class="sigil_not_in_toc">HTML Basics</h3>
+
+  <p>A full description of HTML is beyond this tutorial, but understanding the basics will help you edit your text.</p>
+
+  <p>If you look at the HTML version of your file in Code View you will see lots of words like <span class="example">&lt;p&gt;</span> or <span class="example">&lt;h1&gt;</span>, etc. These are the HTML tags that tell ereaders what to do with your text.</p>
+
+  <p>For instance, the HTML code below tells the ereader that the text <span class="example">Chapter 8</span> is a level 1 Heading:</p>
+
+  <pre class="example">&lt;h1&gt;Chapter 8&lt;/h1&gt;</pre>
+
+  <p>The <span class="example">&lt;h1&gt;</span> tag is the start of the text to be treated like a heading, and the <span class="example">&lt;/h1&gt;</span> tag indicates the end of the text included in the heading. This is what Sigil enters into your document when you click the <img alt="heading-1_22px" src="../Images/heading-1_22px.png"/> button. Ereaders will typically make the text of a heading larger and center it on the screen.</p>
+
+  <p>The HTML code below tells the ereader that the text <span class="example">This is a paragraph</span> is an ordinary paragraph. Since it’s a paragraph the ereader will apply a certain formatting, perhaps indenting the first line.</p>
+
+  <pre class="example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+
+  <p>There are many more tags in HTML. The important point to remember is that the HTML tags tell ereaders how to format and display your content. They allow you to keep your content separate from your formatting which makes it easier to change how your book looks.</p>
+
+  <p>HTML tags can get more fancy since they can include attributes that modify how they are interpreted. For example, here is a paragraph with some tags that define an ID used for linking as shown in the last chapter:</p>
+
+  <pre class="example">&lt;p&gt;&lt;span id="note1"&gt;This is a note&lt;/span&gt; for linking.&lt;/p&gt;</pre>
+
+  <p>The span tag is used around small sections of text that need to be formatted differently or to contain information. In this case the information is that the words "This is a note" has an ID of "note1". The span tags with the ID attribute are the code that Sigil inserts when you use Insert ID.</p>
+
+  <p>These are just a few examples of HTML code, but they give you an idea of what the majority of HTML is all about.</p>
+
+  <p>What is important to remember is that in Code View you have access to both your text and the formatting codes that control the look of your book – so you can find and change them.</p>
+
+  <div class="tip">
+    <p class="tiptext">See the <a href="../Text/introduction.html">Introduction</a>, <a href="../Text/code_view.html">Code View</a> and <a href="../Text/tutorial_stylesheets.html">Stylesheets</a> chapters for more details.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Editing in Code View</h3>
+
+  <p>Once you are in Code View you can edit your text just like in Book View. Try changing some of your words (but not the HTML tags just yet), and then switch back to Book View. You will see the updates you made. In fact, any changes you make in Book View or Code View will be visible in the other view as they both change the exact same file. It’s just that Code View shows you the tags, and Book View uses them to format the text.</p>
+
+  <div class="tip">
+    <p class="tiptext">Unlike Book View, where you can make any changes you want without breaking your EPUB, when you are in Code View it is essential that you edit carefully. You will need to make sure all the tags you use are valid and are opened and closed properly – if they aren’t, you will get a warning when you try to save or switch to Book View and you will be unable to save your EPUB until they are fixed.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Preview</h3>
+
+  <p>To really see changing the code in action, you can open the Preview window using View→Preview (you can always close it using View→Preview or its shortcut again). You may need to make the window bigger or drag it to another part of your desktop.</p>
+
+  <p>Preview shows your text like Book View, but it stays open when you are in Code View. So once you open Preview, click on the Code View button <img alt="view-code_22px" src="../Images/view-code_22px.png"/> to bring up Code View. You can type in Code View and Preview will update to show your changes after a second.</p>
+
+  <div class="image">
+    <img alt="tutorial-preview" src="../Images/tutorial-preview.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">Save often to have your code checked for any errors to catch them early.</p>
+  </div>
+</body>
+</html>

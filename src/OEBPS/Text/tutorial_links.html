@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Create Links and Footnotes</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="links">Create Links and Notes</h2>
+
+  <p class="h2subheading">— Linking your Text —</p>
+
+  <p>Sigil allows you to easily link text to other parts of your book, such as chapter names and notes, so that readers can select the link and jump to the identified text.</p>
+
+  <h3 class="sigil_not_in_toc">IDs</h3>
+
+  <p>In order for Sigil to create a link from certain words in your book to other locations in your book, you first need to give a name or ID to the text you want your link to go to.</p>
+
+  <p>If the target for your link is just the top of a file, then you don’t need to do anything since you can use the filename as the target ID.</p>
+
+  <p>But if you want to point to specific words in your book, then you need to assign a name or ID to the text.</p>
+
+  <div class="tip">
+    <p class="tiptext">An ID is just a unique name, like <span class="example">note1</span> that you will assign to a some of your text so that you can refer to it. ID names must be unique within an HTML file (and start with a letter), but its best if they are unique throughout the whole EPUB in case you move text around.</p>
+
+    <p class="tiptext">IDs and links are usually created with the HTML anchor tag ("a") – so the ID is often considered the anchor ID for a link, hence the button used for inserting IDs.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Create an ID</h4>
+
+  <p>To create an ID, select some text in your book and click on the Insert ID button <img alt="insert-id_22px" src="../Images/insert-id_22px.png"/>:</p>
+
+  <div class="image">
+    <img alt="tutorial-link-insert-id" src="../Images/tutorial-link-insert-id.png"/>
+  </div>
+
+  <p>This will open the Insert ID dialog where you can type the name of your ID:</p>
+
+  <div class="image">
+    <img alt="tutorial-link-insert-id-dialog" src="../Images/tutorial-link-insert-id-dialog.png"/>
+  </div>
+
+  <p>You won’t see any change to your text in Book View, but if you click on your text and click on the Insert ID button again you will see the ID listed.</p>
+
+  <div class="tip">
+    <p class="tiptext">In order to remove an anchor tag and its ID in Book View you will need to select all the text and delete it and retype it. Or use Code View.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Links</h3>
+
+  <p>A link is a way to point to your ID, and when selected by the reader it "jumps" the reader to the location of the ID.</p>
+
+  <p>To create a link in Sigil, select some text to use for the link and click on the Insert Link button <img alt="insert-hyperlink_22px" src="../Images/insert-hyperlink_22px.png"/>:</p>
+
+  <div class="image">
+    <img alt="tutorial-links-insert-link" src="../Images/tutorial-links-insert-link.png"/>
+  </div>
+
+  <p>This will open the Select Target dialog which shows you the IDs in your book that you can link to:</p>
+
+  <div class="image">
+    <img alt="tutorial-links-insert-link-dialog" src="../Images/tutorial-links-insert-link-dialog.png"/>
+  </div>
+
+  <p>You will notice a number of different IDs in the list. At first it might not look like yours is there, so to find it, it helps to understand what a link looks like:</p>
+
+  <ul>
+    <li><span class="listheading">Filename.html:</span> This points to just a filename as the target of your link and tells the link to jump to the top of the file. This is what is used for the Generate Table Of Contents links.</li>
+
+    <li><span class="listheading">Filename.html#ID1:</span> This points to a specific ID in a file. When you use this as the target of your link the reader will go to the exact location of the text with the ID in the file listed.</li>
+
+    <li><span class="listheading">#ID1:</span> This is just the ID name, and implies that it is in the same file as your link so no filename is needed.</li>
+  </ul>
+
+  <p>When you select a link you will see that the Target text box shows the actual link that will be used. Click <span class="buttonbox">OK</span>, or double-click on an entry, and the link will be created for your text.</p>
+
+  <p>If you click on the newly created link in your text you will jump to where the ID is. You can then click the Back button <img alt="back-to-link-style_22px" src="../Images/back-to-link-style_22px.png"/> to return to where you clicked the link.</p>
+
+  <h4 class="sigil_not_in_toc">Reverse Linking</h4>
+
+  <p>Most ereaders have a Back button that you can select once you follow a link to take you back to the original linked text. But for those that don’t, you can create a link from your destination back to your original source text. This is often called reverse linking.</p>
+
+  <p>Reverse linking is just like any other kind of linking – it just means you have to create a link from the source text to your destination note, and also from your destination note back to your source text – so both source and destination will need IDs and links, and will be mirror versions of each other:</p>
+
+  <div class="image">
+    <img alt="note" src="../Images/note.png"/>
+  </div>
+
+  <p>For example, in the typical case of creating endnotes:</p>
+
+  <ul>
+    <li>Select your note at the end of your book (or chapter) and assign an ID to it, e.g. <span class="example">note1</span>.</li>
+
+    <li>Select your text in the book and assign an ID for it, e.g. <span class="example">text1</span>.</li>
+
+    <li>Select the same text again and create a link to the note’s ID.</li>
+
+    <li>Select your note again (click on the link to jump you to the note and to test the link), and create a link pointing back to your text’s ID.</li>
+
+    <li>Click on the note to jump you back to your text to test the link.</li>
+  </ul>
+</body>
+</html>

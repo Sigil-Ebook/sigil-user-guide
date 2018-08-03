@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Reports</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="find_and_replace">Reports</h2>
+
+  <p class="h2subheading">— View Details About Your Book —</p>
+
+  <p>Sigil provides several reports that list details about the files and styles in your book.</p>
+
+  <p>You can usually double-click on an entry in the report to jump to the filename listed.</p>
+
+  <div class="tip">
+    <p class="tiptext">Some entries have tooltip information. For instance in the Image Report the number of times used column shows which files use the image.</p>
+  </div>
+
+  <p>Use <span class="menuitem">Tools→Reports</span> to generate the reports and then select which report to view:</p>
+
+  <h3 class="sigil_not_in_toc">All Files</h3>
+
+  <p>This report lists all of the files in the EPUB, the size of the file, the location and type of the file, and whether there are any guide semantic types applied to the file.</p>
+
+  <div class="image">
+    <img alt="reports-all-files" src="../Images/reports-all-files.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">HTML Files</h3>
+
+  <p>This report lists all of your HTML files and details about the files.</p>
+
+  <div class="image">
+    <img alt="reports-html-files" src="../Images/reports-html-files.png"/>
+  </div>
+
+  <p>You can delete files from the EPUB while in the report by right-clicking on selected files and choosing <span class="menuitem">Delete From Book</span>.</p>
+
+  <h3 class="sigil_not_in_toc">Image Files</h3>
+
+  <p>This report lists all of your images and indicates whether or not they were used in the book and how many times. You can double-click on an entry to jump to the first occurrence of the image in your HTML files (not images in CSS files).</p>
+
+  <div class="image">
+    <img alt="reports-image-files" src="../Images/reports-image-files.png"/>
+  </div>
+
+  <p>You can delete files from the EPUB while in the report by right-clicking on selected files and choosing <span class="menuitem">Delete From Book</span>.</p>
+
+  <h3 class="sigil_not_in_toc">CSS Files</h3>
+
+  <p>This report lists all of your CSS Stylesheets and indicates whether or not they were linked to and how many times.</p>
+
+  <div class="image">
+    <img alt="reports-css-files" src="../Images/reports-css-files.png"/>
+  </div>
+
+  <p>You can delete files from the EPUB while in the report by right-clicking on selected files and choosing <span class="menuitem">Delete From Book</span>.</p>
+
+  <h3 class="sigil_not_in_toc">Style Classes in HTML Files</h3>
+
+  <p>This report scans the HTML files in your book and extracts a list of style class names that are used in the files. For each class name it lists whether or not it was found in a CSS Stylesheet or an Inline Style.</p>
+
+  <div class="image">
+    <img alt="reports-styles-in-html" src="../Images/reports-styles-in-html.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Style Classes in CSS Files</h3>
+
+  <p>This report scans the CSS stylesheets in your book and for each style that uses a class name it lists whether it was used in the book or not.</p>
+
+  <div class="image">
+    <img alt="reports-styles-in-css" src="../Images/reports-styles-in-css.png"/>
+  </div>
+
+  <p>You can delete specific style classes from the stylesheets while in the report by right-clicking on selected styles and choosing <span class="menuitem">Delete From Stylesheet</span>.</p>
+
+  <h3 class="sigil_not_in_toc">Links And Footnotes</h3>
+
+  <p>This report lists every link (href) found in your HTML files. These are the "&lt;a&gt;" tags in your code. It includes whether the link has an id, what the target of the link is, and whether that target exists.</p>
+
+  <p>In addition, to help with footnotes or endnotes, it checks for reverse links. A reverse link is a link from a target that points back to the original link. In other words, if you create links like this for footnotes the report can confirm if they both link to each other:</p>
+
+  <pre class="example">Link in text:      &lt;a id="t1" target="../Text/footfile1.xhtml#f1"&gt;text to footnote&lt;/a&gt;
+Link in footnote: &lt;a id="f1" target="../Text/file1.xhtml#t1"&gt;footnote back to text&lt;/a&gt;</pre>
+
+  <p>This only works if you use ids within the anchor ("a") tag.</p>
+
+  <div class="image">
+    <img alt="reports-links" src="../Images/reports-links.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Characters in HTML Files</h3>
+
+  <p>This report extracts a list of all the characters that are used in your HTML files. More specifically, it lists any character that is displayed in Book View. HTML entity codes are listed if they exist for the character, along with their decimal and hexadecimal codes. And all characters are listed at the bottom for easy cut and paste.</p>
+
+  <p>This report can be used to identify if extra characters are being used in the book unexpectedly, and it may be of assistance if you are subsetting fonts.</p>
+
+  <div class="image">
+    <img alt="reports-characters" src="../Images/reports-characters.png"/>
+  </div>
+</body>
+</html>

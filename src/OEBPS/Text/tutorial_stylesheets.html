@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Use Stylesheets</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2>Use Stylesheets</h2>
+
+  <p class="h2subheading">— Formatting with Style —</p>
+
+  <p>This tutorial describes stylesheets and how to use them in your EPUB.</p>
+
+  <p>A stylesheet (or CSS – Cascading Style Sheet) is a list of instructions that tells ereaders how to display the text in your book. More specifically it tells the ereader how to style text using HTML tags used in your book. For example, this is a style for a paragraph of type (or class) "author":</p>
+
+  <div class="image">
+    <img alt="tutorial-styles-example1" src="../Images/tutorial-styles-example1.png"/>
+  </div>
+
+  <p>Understanding and using CSS is the best and most flexible way to layout your book exactly as you want.</p>
+
+  <p>You can find other introductions to CSS online, including:</p>
+
+  <ul>
+    <li><a href="http://www.w3schools.com/css/">W3Schools CSS Guide</a></li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">Using CSS can get quite involved, but if you become familiar with the basics it will make it much easier to understand why your book looks the way it does and how to modify its layout.</p>
+
+    <p class="tiptext">This chapter assumes you are familiar with Code View since you need to use Code View to see the details of styles.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="style_definition">What is a Style?</h3>
+
+  <p>Styles are used in a book to do things like “make this text blue”, or “make that text centered”, or "leave a little more space above this text". A style definition is just text that looks like:</p>
+
+  <pre class="example">color: blue;</pre>
+
+  <p>which says make the color of the text blue.</p>
+
+  <p>But styles aren’t very useful unless they are applied to something. In the case of an EPUB styles are applied to the HTML elements in your document, tags like <span class="example">p</span> (paragraphs), <span class="example">h1</span> (level 1 headings), <span class="example">div</span> (divisions), <span class="example">span</span> (spans), etc.</p>
+
+  <p>There are 3 ways styles can be used in an EPUB:</p>
+
+  <ul>
+    <li><span class="listheading">Style Attribute:</span> A style applied directly to one specific HTML tag in the document.</li>
+
+    <li><span class="listheading">Style Element:</span> A group of styles in one document that can only be used by that document.</li>
+
+    <li><span class="listheading">Stylesheet:</span> A separate CSS or stylesheet file that can be used by many HTML files and is therefore the most flexible approach.</li>
+  </ul>
+
+  <p>A separate file is the recommended way to use styles. The descriptions below of each approach will help you understand why.</p>
+
+  <h3 class="sigil_not_in_toc" id="inline_styles">Style Attributes</h3>
+
+  <p>To apply a style directly to an HTML tag, you can use the <span class="example">style</span> attribute in the tag. For example, to apply the style <span class="example">color: blue</span> to a paragraph you would change</p>
+
+  <pre class="example">&lt;p&gt;Hello&lt;/p&gt;</pre>
+
+  <p>to:</p>
+
+  <pre class="example">&lt;p style="color: blue"&gt;Hello&lt;/p&gt;</pre>
+
+  <p>This works perfectly well if you just want to change a few things and rarely update the formatting. But if you later want to change from using bold to italic for certain words then you will have to edit every place in the book that set the specific style.</p>
+
+  <p>Styles attributes are rarely used unless they were created by WYSIWYG software or from an automatic conversion and should be avoided.</p>
+
+  <p>There is a much better way to manage styles: using style selectors.</p>
+
+  <h3 class="sigil_not_in_toc" id="style_classes">Style Selectors</h3>
+
+  <p>A style selector is a way to give a particular style a name, and then use the style in the document just by referring to its name. More specifically the style selector is used to select which elements in your document should use the style you define.</p>
+
+  <p>For example, if you wanted to style all paragraphs in your EPUB to be centered, you could define a rule for a style selector as follows:</p>
+
+  <pre class="example">p {
+    text-align: center;
+}</pre>
+
+  <p>This defines a style selector <span class="example">p</span> that will match (or select) all paragraph elements <span class="example">p</span>.</p>
+
+  <p>Just using the tag name as a selector is useful for changing every tag, but you can also select specific tags.</p>
+
+  <p>One of the most common ways to select specific tags is by using a <span class="example">class</span> name in the tag and the selector. A <span class="example">class</span> is just a name that you choose (like "firstparagraph" or "example").</p>
+
+  <p>For example if you wanted to style the first paragraph in a chapter slightly differently than other paragraphs, you could define a style selector as follows (an "em" is one character width):</p>
+
+  <pre class="example">p.first {
+    text-indent: 0em;
+}</pre>
+
+  <p>This defines a style selector that will match (or select) paragraph tags that use the <span class="example">class</span> name <span class="example">first</span>. You could then use that style in your document for a paragraph by assigning the class name <span class="example">first</span> to the paragraph as follows:</p>
+
+  <pre class="example">&lt;p class="first"&gt;First paragraph in a chapter&lt;/p&gt;
+</pre>
+
+  <p>The great advantage of this abstraction is that you can now update the values of the style (to change the indentation or other settings) without having to update your text.</p>
+
+  <div class="tip">
+    <p class="tiptext">It is common practice to use class names that refer to the purpose of the style and not what the style does in case you change the styling later. For instance, use <span class="example">span.placename</span> instead of <span class="example">span.bold</span> in case you want to change your place names to italic later.</p>
+  </div>
+
+  <p>Now that you know what a style selector is and how to use them in your text, you need to actually put your style selectors somewhere in order to allow them to work.</p>
+
+  <p>In an EPUB you can store your stylesheet in the same file as your text (using the <span class="example">style</span> element), or in separate files (external stylesheets or CSS files). You should avoid storing the styles in the HTML files, but it’s explained here in case you see it in your files.</p>
+
+  <h3 class="sigil_not_in_toc" id="internal_stylesheets">Style Elements</h3>
+
+  <p>If you store style selectors and rules in the same file as your text they can only be applied to the HTML file they are in and cannot be shared by other HTML files.</p>
+
+  <p>When using these internal styles, the style definitions are stored inside a <span class="example">style</span> tag at the top of your HTML files. If you open a file in your book and switch to Code View, you will see that the top of the file contains text between two <span class="example">head</span> tags. This section of your document contains information about the file, and one of the things you can put here is the <span class="example">style</span> tag that defines your internal style rules.</p>
+
+  <p>Here is a typical use of internal styles (they are surround by the <span class="example">style</span> tag):</p>
+
+  <pre class="example">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt; 
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt; 
+&lt;html &gt; 
+&lt;head&gt; 
+&lt;title&gt;&lt;/title&gt; 
+
+&lt;style&gt;
+        h1 { text-align: center; }
+        p.boldtext { font-weight: bold; }
+&lt;/style&gt; 
+
+&lt;/head&gt;
+</pre>
+
+  <p>Internal styles are a way of grouping styles together and using style selectors, but when you have many files in an EPUB it becomes a bit confusing as you have to have separate style rules in each file.</p>
+
+  <p>The best way to manage styles is to use a separate stylesheet file to hold your style rules.</p>
+
+  <div class="tip">
+    <p class="tiptext">You can convert or copy your inline styles and your style elements into a separate CSS file. Just remember to link your stylesheet to your HTML file and to delete the old style attributes and elements.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="external_stylesheets">External Stylesheets – CSS Files</h3>
+
+  <p>If you create a separate file to hold all your style rules, they can apply to the entire book. They are also much easier to find and edit, and updates are much easier to manage as you add and remove files. It also helps to ensure your book is formatted consistently as you can see all your styles in one place.</p>
+
+  <p>In Sigil, external stylesheets are stored in the Book Browser in the <span class="example">Styles</span> folder.</p>
+
+  <p>To add a new blank stylesheet to your EPUB, use the menu item <span class="menuitem">File→Add→Blank Stylesheet:</span></p>
+
+  <div class="image">
+    <img alt="tutorial-style-blank" src="../Images/tutorial-style-blank.png"/>
+  </div>
+
+  <p>As you can see the stylesheet is empty.</p>
+
+  <p>You can copy or type the styles that you want into the file, and edit it at any time. For example, if you open the <span class="example">styles.css</span> file in an EPUB you might see something like this:</p>
+
+  <div class="image">
+    <img alt="" src="../Images/tutorial_stylesheets_file.png"/>
+  </div>
+
+  <p>Even though you have created the external stylesheet, it’s not actually used by anything yet.</p>
+
+  <p>To use it, you need to tell your HTML files to use the stylesheet – by linking to them as described below.</p>
+
+  <h3 class="sigil_not_in_toc">Link your HTML files to a Stylesheet File</h3>
+
+  <p>To tell your HTML files which CSS file to use you need to link the stylesheet to your HTML file:</p>
+
+  <ul>
+    <li>Select one or more HTML files in the Book Browser.</li>
+
+    <li>Right-click on the selection.</li>
+
+    <li>Choose Link Stylesheets from the context menu:</li>
+  </ul>
+
+  <div class="image">
+    <img alt="tutorial-style-link" src="../Images/tutorial-style-link.png"/>
+  </div>
+
+  <ul>
+    <li>Click on the stylesheet(s) you want to be used for the files and select <span class="buttonbox">OK</span>.</li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">If you link multiple stylesheets they will be applied in order, so the styles in the last stylesheet will override the styles in the preceding stylesheets.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">What Styles Should Be Used?</h3>
+
+  <p>The styles you use for your text are entirely up to you.</p>
+
+  <p>The best way to learn how to use styles is to find an EPUB that contains formatting you like and look at what its CSS files contain and how it uses those styles in the book.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you have any errors in your style definitions they will silently be ignored. You can use the menu item Tools→Validate Stylesheets With W3C to check for errors.</p>
+  </div>
+</body>
+</html>

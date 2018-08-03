@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Spell Check</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="spellcheck">Spellcheck</h2>
+
+  <p class="h2subheading">— Checking and Correcting Spelling —</p>
+
+  <p>Sigil provides several ways to check your spelling – highlighting misspelled words, finding words one at a time, or showing all misspelled words at once. You can choose a standard dictionary to use, and create personal user dictionaries with your own words.</p>
+
+  <div class="tip">
+    <p class="tiptext">Spellcheck uses Code View to show misspelled words.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="spellcheck_configuration">Configure Spellchecking</h3>
+
+  <p>You can set the spell checking preferences that you want – including which main dictionary to use, and which personal user dictionaries to use if any. You can setup user dictionaries for different types of books or individual books, or use only the default user dictionary. You can change user dictionaries at any time.</p>
+
+  <div class="tip">
+    <p class="tiptext">Set up your dictionaries in <a href="../Text/preferences.html#preferences_spellcheck_dictionaries">Preferences</a>.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Automatic Spellchecking</h3>
+
+  <p>Code View will highlight any misspelled words with a wavy red underline when automatic spell checking is enabled in Preferences or using <span class="menuitem">Tools→Spellcheck→Highlight Misspelled Words</span>:</p>
+
+  <div class="image">
+    <img alt="" src="../Images/spellcheck_misspelled.png"/>
+  </div>
+
+  <p>You can then right-click on the misspelled word to bring up a list of choices:</p>
+
+  <div class="image">
+    <img alt="spellcheck-context-suggestion" src="../Images/spellcheck-context-suggestion.png"/>
+  </div>
+
+  <ul>
+    <li><span class="listheading">Suggested Words:</span> A list of alternative words to choose from – selecting one will replace the misspelled word.</li>
+
+    <li><span class="listheading">Add To Default Dictionary:</span> Add this word to your current default user dictionary.</li>
+
+    <li><span class="listheading">Add To Dictionary:</span> Add this word to the dictionary you select from the list.</li>
+
+    <li><span class="listheading">Ignore:</span> Ignores the spelling of this word in the entire document until you restart Sigil.</li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc" id="spellcheck_find">Finding Misspelled Words</h3>
+
+  <p>Find the next misspelled word in Code View by selecting the menu item <span class="menuitem">Tools→Spellcheck→Find Next Misspelled Word</span> or using its shortcut. You will be switched to Code View automatically if you are not in it already, and the next misspelled word will be highlighted each time you search for the next word.</p>
+
+  <p>In order to be able to right-click on the misspelled word to select a suggested word or add it to the dictionary you must have <span class="menuitem">Tools→Spellcheck→Highlight Misspelled Words</span> enabled.</p>
+
+  <h3 class="sigil_not_in_toc" id="spellcheck_editor">Spellcheck</h3>
+
+  <p>To open the Spellcheck dialog, click the Spellcheck button <img alt="" src="../Images/document-spellcheck_22px.png"/>, or use the menu item <span class="menuitem">Tools→Spellcheck→Spellcheck</span>.</p>
+
+  <div class="image">
+    <img alt="spellcheck-main" src="../Images/spellcheck-main.png"/>
+  </div>
+
+  <p>Words are shown with the number of times they occur in the book and if they are misspelled. Select a word to perform an action.</p>
+
+  <div class="tip">
+    <p class="tiptext">Selecting a word will also show the first occurrence of the word in Code View so you can view its context and change just the one occurrence if needed.</p>
+
+    <p class="tiptext">Double-click a selected word to find the next occurrence of the word.</p>
+  </div>
+
+  <p>You can add words to a dictionary by clicking <span class="buttonbox">Add to Dictionary</span>. Select your user dictionary to add the word to from the dropdown list:</p>
+
+  <div class="image">
+    <img alt="spellcheck-editor-dictionaries" src="../Images/spellcheck-editor-dictionaries.png"/>
+  </div>
+
+  <p>To Ignore words, click <span class="buttonbox">Ignore</span>. The Misspelled Word column will update to "No" only if you have enabled the dictionary to be used in Preferences. To clear all ignored words use <span class="menuitem">Tools→Spellcheck→Clear Ignored Words</span>. Ignored words are also cleared when you open a new book.</p>
+
+  <p>To correct the spelling of words, select one of the suggested words from the dropdown below click <span class="buttonbox">Change Selected Word To:</span> or type your own word in the box. Then click <span class="buttonbox">Change Selected Word To:</span>. This will change every occurrence of the selected word to the new word. It will also automatically refresh the list of words from the HTML files.</p>
+
+  <div class="image">
+    <img alt="spellcheck-suggested-words" src="../Images/spellcheck-suggested-words.png"/>
+  </div>
+
+  <p>You can see all words in your EPUB by selecting <span class="example">Show All Words</span>. In addition, the tooltip for the column names shows the number of words in your EPUB:</p>
+
+  <div class="image">
+    <img alt="spellcheck-editor-tooltip" src="../Images/spellcheck-editor-tooltip.png"/>
+  </div>
+
+  <p>If you enable <span class="example">Case-Insensitive Sort</span> then the words will be sorted as AaBbCc instead of ABCabc.</p>
+
+  <p>Use the <span class="buttonbox">Refresh</span> button if you edit your book while Spellcheck is open. You do not need to use it if you are just ignoring, adding, or changing a word.</p>
+</body>
+</html>
