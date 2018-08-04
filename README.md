@@ -30,9 +30,9 @@
 - Create a new Pull Request from your Github account so that we can review and hopefully pull your changes into the project.
 
 <br/>
-<br/>
-----
-<br/>
 
+----
+
+<br/>
 
 If you run into trouble, feel free to ask for help at the [Sigil Support forums on Mobileread](https://www.mobileread.com/forums/forumdisplay.php?f=203).
