@@ -2,7 +2,7 @@
 
 <br/>
 
-## <center>Guidelines for contributing:/center>
+## <center>Guidelines for contributing</center>
 
 <br/>
 
@@ -15,7 +15,7 @@
 <br/>
 <br/>
 
-## <center>Preferred Workflow/center>
+## <center>Preferred Workflow</center>
 
 <br/>
 
@@ -25,9 +25,9 @@
 
 - Do your editing (saving changes to a local temporary epub somewhere if you must). Remember to use "Mend and Prettify" after you're done, and always make sure the epub validates with no errors. Then when ready, save the contents back to the "src" directory of your local, cloned repository using the [FolderOut Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649).
 
-- Use the normal git tools to check your differences and then commit and push your changes to your Github fork.
+- Use the normal git tools to check your differences and then when satisfied, commit and push your changes to your Github fork.
 
-- Create a new Pull Request so that we can review and hopefully pull you changes into the project.
+- Create a new Pull Request from your Github account so that we can review and hopefully pull your changes into the project.
 
 <br/>
 <br/>
