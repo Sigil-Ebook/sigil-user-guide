@@ -1,0 +1,24 @@
+# Backup files left behind by the Emacs editor.
+*~
+
+# Lock files used by the Emacs editor.
+.\#*
+
+# emacs auto recovery files from aborted edits
+\#*\#
+
+#use ful for stashing files
+*.orig
+*.keep
+
+# Temporary files used by the vim editor.
+.*.swp
+.swp
+
+# A hidden file created by the Mac OS X Finder.
+.DS_Store
+
+# Image thumbnail database created by windows
+Thumbs.db
+
+*.epub
