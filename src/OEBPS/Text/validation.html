@@ -42,47 +42,47 @@
   </div>
 
   <ul>
-    <li><span class="example">This resource is present in the OPF &lt;manifest&gt;, but it’s not reachable (it’s unused).</span></li>
+    <li><span class="example">This resource is present in the OPF &lt;manifest&gt;, but it’s not reachable (it’s unused).</span> 
 
     <ul>
       <li>This warning means you have included the listed file in your EPUB, but you have not used it anywhere in your book. If you intended to use it, you should link to it, otherwise you can delete the file. Try to search all your files or <span class="example">toc.ncx</span> for the filename – you should leave off the pathname when searching, e.g. if the error is in <span class="example">Text/Chapter1.html</span> then just search for <span class="example">Chapter1.html</span></li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">This OPS document is reachable but not present in the OPF &lt;manifest or spine&gt;. "Reachable" means that a reference of some kind that points to this resource exists in the EPUB.</span></li>
+    <li><span class="example">This OPS document is reachable but not present in the OPF &lt;manifest or spine&gt;. "Reachable" means that a reference of some kind that points to this resource exists in the EPUB.</span> 
 
     <ul>
       <li>This error means you have a reference or a link to a file or image in your EPUB, but that file is not included in the EPUB. You need to add the file to the EPUB or correct the name of the file used in your text. You can usually find these by searching for the filename listed in all the HTML files. You may also have to re-generate or update your TOC.</li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">ID value 'SOMEIDNAME' is not unique</span></li>
+    <li><span class="example">ID value 'SOMEIDNAME' is not unique</span> 
 
     <ul>
       <li>This error means you have an ID named SOMEIDNAME in your EPUB that is defined more than once. Typically these are in headers or footnotes and can be caused by copying and pasting or merging. You can find these by searching all HTML files for the ID name that is listed and changing them so all IDs are different from all other IDs. If the issue is in a heading and you have auto-generated your headings, you can delete the ID and they will be re-generated the next time you create your TOC.</li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">attribute 'INVALIDATTRIBUTE' is not declared for element 'SOMEELEMENT'</span></li>
+    <li><span class="example">attribute 'INVALIDATTRIBUTE' is not declared for element 'SOMEELEMENT'</span> 
 
     <ul>
       <li>This error means you have an HTML tag named SOMEELEMENT that contains an attribute INVALIDATTRIBUTE, but INVALIDATTRIBUTE is not valid for that tag. For instance <span class="example">&lt;h2 invalidattribute="test"&gt;</span>. This can be caused by typos or by old versions of HTML. You need to search for INVALIDATTRIBUTE in all HTML files and remove, correct, or replace each occurrence.</li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">no declaration found for element 'INVALIDELEMENT'</span></li>
+    <li><span class="example">no declaration found for element 'INVALIDELEMENT'</span> 
 
     <ul>
       <li>This error means you have an HTML tag named INVALIDELEMENT that has not been defined. Typically this is simply because it is invalid and is old HTML syntax that need updating. You need to search for INVALIDELEMENT in all HTML files and remove, correct, or replace these with valid HTML.</li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">element 'INVALIDELEMENT' is not allowed for content model '(p|d|h2|h3|h4|h5|h6|div|ul|ol|...'</span></li>
+    <li><span class="example">element 'INVALIDELEMENT' is not allowed for content model '(p|d|h2|h3|h4|h5|h6|div|ul|ol|...'</span> 
 
     <ul>
       <li>This error means you have an HTML tag named INVALIDELEMENT that is not valid HTML for an EPUB. Typically this is old HTML syntax that needs updating (such as the <span class="example">&lt;center&gt;</span> tag which should be implemented using a style). You need to search for INVALIDELEMENT in all HTML files and remove, correct, or replace each occurrence with valid HTML.</li>
-    </ul>
+    </ul></li>
 
-    <li><span class="example">value 'SOMENAME' is invalid NCName</span></li>
+    <li><span class="example">value 'SOMENAME' is invalid NCName</span> 
 
     <ul>
       <li>This error means you have an ID name that is invalid. It probably contains a space or other invalid character. You need to search for SOMENAME and change it.</li>
-    </ul>
+    </ul></li>
   </ul>
 
   <h3 class="sigil_not_in_toc" id="tidy">CSS Validation With W3C</h3>

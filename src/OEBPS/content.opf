@@ -8,7 +8,7 @@
     <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
     <dc:date opf:event="modification">2018-07-15</dc:date>
-    <meta content="0.9.9" name="Sigil version" />
+    <meta name="Sigil version" content="0.9.9" />
     <dc:identifier id="unknown" opf:scheme="unknown">unknown</dc:identifier>
     <meta name="cover" content="cover.png" />
   </metadata>
