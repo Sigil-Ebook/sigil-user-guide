@@ -34,4 +34,4 @@
 ----
 <br/>
 <br/>
-<center>If you run into trouble, feel free to ask for help at the [Sigil Support forums on Mobileread](https://www.mobileread.com/forums/forumdisplay.php?f=203).</center>
+If you run into trouble, feel free to ask for help at the [Sigil Support forums on Mobileread](https://www.mobileread.com/forums/forumdisplay.php?f=203).
