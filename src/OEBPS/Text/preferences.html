@@ -328,10 +328,12 @@
       <li><span class="listheading">sgc-nav.css:</span> Optional custom TOC styles for EPUB3 books.</li>
 
       <li><span class="listheading">qt_styles.qss:</span> Optional custom Qt styles for Sigil GUI elements.</li>
+
+      <li><span class="listheading">custom_preview_style.css:</span> Optional user CSS for Sigil's Book View/Preview.</li>
     </ul>
   </div>
 
-  <h4 class="sigil_not_in_toc">Change The Font Size Of GUI Controls</h4>
+  <h4 class="sigil_not_in_toc">Change the Font Size Of GUI Controls</h4>
 
   <p>Since Sigil is a Qt app, you can customize the font size of some GUI controls with a <b>qt_styles.qss</b> style sheet file in the Sigil preferences folder. (<b>qt_styles.qss</b> needs to contain valid <a href="http://doc.qt.io/qt-5/stylesheet-syntax.html">Qt style sheet</a> declarations.)</p>
 
@@ -341,5 +343,23 @@
 QLineEdit { font-size: 16pt }
 QComboBox { font-size: 16pt }
 </pre>
+
+  <h4 class="sigil_not_in_toc">Customizing the Background of Book View/Preview</h4>
+
+  <p>Since Book View and Preview are technically browsers showing rendered (x)html/CSS, the only way to alter font and/or background colors is by specifying that info via styles: either inline or via CSS from within the EPUB.</p>
+
+  <p>The only exception to the above is that a custom user-specified css file will be applied to Book View/Preview (no matter what epub is open) if a file named <b>custom_preview_style.css</b> exists in the Sigil preferences folder that contains valid css.</p>
+
+  <p>For example, the following styles will give Book View/Preview a light gray background with blue text:</p>
+
+  <pre class="example">body {
+  background-color: #D3D3D3;
+  color: blue;
+}
+</pre>
+
+  <div class="tip">
+    <p class="tiptext">NOTE: applying such CSS can possibly adversely affect the visibility of some styled elements within an EPUB (depending on what CSS has already been applied via the EPUB and how).</p>
+  </div>
 </body>
 </html>
