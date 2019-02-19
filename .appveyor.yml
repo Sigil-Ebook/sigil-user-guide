@@ -1,0 +1,57 @@
+
+branches:
+  only:
+  - master
+  
+clone_folder: c:\project\user_guide
+
+image:
+- Visual Studio 2017
+
+configuration: Release
+
+platform: x64
+
+
+environment:
+  global:
+    PYTHON: C:\Python37-x64
+    EPUBCHECK: https://github.com/w3c/epubcheck/releases/download/v4.1.1/epubcheck-4.1.1.zip
+    FC: https://github.com/sigil-ebook/flightcrew/releases/download/0.9.2/FlightCrew_v0.9.2win.zip
+
+
+before_build:
+- cmd: |-
+    set PATH=%PYTHON%;%PATH%
+    curl.exe -L -o echeck.zip %EPUBCHECK%
+    7z x echeck.zip -y
+    curl.exe -L -o fc.zip %FC%
+    7z x fc.zip -y
+    
+build_script:
+- cmd: |-
+    python .\appveyor_scripts\build_guide.py
+
+test_script:
+- cmd: |-
+    java -jar .\epubcheck-4.1.1\epubcheck.jar src/ -mode exp --failonwarnings
+    .\FlightCrew\win32\flightcrew-plugin.exe src
+ 
+
+artifacts:
+  - path: '*.epub'
+    name: epub
+
+deploy:
+  - provider: GitHub
+    auth_token:
+      secure: QM747yzK0qkUTP1k/zQXGbxvvWK97YQpC5+6oAX6FTCPI+jYlB2zf4mzdcFj/uPL
+    release: Sigil User Guide ($(APPVEYOR_REPO_TAG_NAME))
+    tag: $(APPVEYOR_REPO_TAG_NAME)
+    description: '[Replace this text]'
+    artifact: epub
+    draft: true
+    on:
+      branch: master
+      APPVEYOR_REPO_TAG: true
+
