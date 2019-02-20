@@ -2,14 +2,14 @@
 <package version="2.0" unique-identifier="unknown" xmlns="http://www.idpf.org/2007/opf">
   <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:title>Sigil User Guide</dc:title>
-    <dc:creator opf:file-as="Heiland, Dave" opf:role="aut">Dave Heiland</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Heiland, Dave">Dave Heiland</dc:creator>
     <dc:language>en</dc:language>
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
     <dc:date opf:event="modification">2018-07-15</dc:date>
     <meta name="Sigil version" content="0.9.9" />
-    <dc:identifier id="unknown" opf:scheme="unknown">unknown</dc:identifier>
+    <dc:identifier opf:scheme="unknown" id="unknown">unknown</dc:identifier>
     <meta name="cover" content="cover.png" />
   </metadata>
   <manifest>
