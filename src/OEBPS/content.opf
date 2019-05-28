@@ -7,8 +7,8 @@
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <dc:date opf:event="modification">2018-07-15</dc:date>
-    <meta name="Sigil version" content="0.9.9" />
+    <dc:date opf:event="modification">2019-05-28</dc:date>
+    <meta content="0.9.13" name="Sigil version" />
     <dc:identifier opf:scheme="unknown" id="unknown">unknown</dc:identifier>
     <meta name="cover" content="cover.png" />
   </metadata>
