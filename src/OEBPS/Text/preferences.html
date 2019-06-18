@@ -52,7 +52,7 @@
   <p>The settings that can be changed include:</p>
 
   <ul>
-    <li><span class="listheading">Book View / Preview:</span> You can independently set the font family/size for serif fonts and san-serif fonts.</li>
+    <li><span class="listheading">Preview:</span> You can independently set the font family/size for serif fonts and san-serif fonts.</li>
 
     <li><span class="listheading">CSS / Code View:</span> These settings control the font family/size for both HTML files in Code View and CSS files. You can also set the color used for highlighting text.</li>
 
@@ -60,7 +60,7 @@
   </ul>
 
   <div class="tip">
-    <p class="tiptext">The default fonts for Book View and Code View are Arial and Times New Roman. If these are not available on your system the preferences will default to the first available font.</p>
+    <p class="tiptext">The default fonts for Code View are Arial and Times New Roman. If these are not available on your system the preferences will default to the first available font.</p>
   </div>
 
   <ul>
@@ -89,7 +89,7 @@
     </div>
 
     <ul>
-      <li><span class="listheading">Open:</span> When enabled, mending will be performed automatically when you open an EPUB or HTML file or switch from Book View to Code View. 
+      <li><span class="listheading">Open:</span> When enabled, mending will be performed automatically when you open an EPUB or HTML file. 
 
       <div class="tip">
         <p class="tiptext">If you open an invalid EPUB and automatic mending is disabled a list of the invalid files will be displayed.</p>
@@ -111,6 +111,8 @@
     <li><span class="listheading">Number of Clipboard History Items:</span> Limits or disables the amount of Clipboard History saved between sessions.</li>
 
     <li><span class="listheading">Set Folder where temporary files should be created:</span> Choose the temp folder that Sigil will use for your temporary EPUB files. (If you’re using the macOS version of Sigil, you should select a folder other than <b>/temp</b> to avoid potential data loss issues that might occur in some macOS versions.)</li>
+
+    <li><span class="listheading">Set your preferred external HTML Editor:</span> choose an editor like PageEdit to open selected html files for editing.</li>
   </ul>
 
   <h4 class="sigil_not_in_toc"><span style="font-size: 1.4em;">Keyboard Shortcuts</span><br/></h4>
@@ -281,6 +283,16 @@
     <li><span class="listheading">Assign as Plugin 4:</span> Choose the plugin that you want to assign to the fourth Plugin toolbar button.</li>
 
     <li><span class="listheading">Assign as Plugin 5:</span> Choose the plugin that you want to assign to the fifth Plugin toolbar button.</li>
+
+    <li><span class="listheading">Assign as Plugin 6:</span> Choose the plugin that you want to assign to the sixth Plugin toolbar button.</li>
+
+    <li><span class="listheading">Assign as Plugin 7:</span> Choose the plugin that you want to assign to the seventh Plugin toolbar button.</li>
+
+    <li><span class="listheading">Assign as Plugin 8:</span> Choose the plugin that you want to assign to the eighth Plugin toolbar button.</li>
+
+    <li><span class="listheading">Assign as Plugin 9:</span> Choose the plugin that you want to assign to the ninth Plugin toolbar button.</li>
+
+    <li><span class="listheading">Assign as Plugin 10:</span> Choose the plugin that you want to assign to the tenth Plugin toolbar button.</li>
   </ul>
 
   <div>
@@ -329,7 +341,7 @@
 
       <li><span class="listheading">qt_styles.qss:</span> Optional custom Qt styles for Sigil GUI elements.</li>
 
-      <li><span class="listheading">custom_preview_style.css:</span> Optional user CSS for Sigil's Book View/Preview.</li>
+      <li><span class="listheading">custom_preview_style.css:</span> Optional user CSS for Sigil's Preview.</li>
     </ul>
   </div>
 
@@ -344,13 +356,13 @@ QLineEdit { font-size: 16pt }
 QComboBox { font-size: 16pt }
 </pre>
 
-  <h4 class="sigil_not_in_toc">Customizing the Background of Book View/Preview</h4>
+  <h4 class="sigil_not_in_toc">Customizing the Background of Preview</h4>
 
-  <p>Since Book View and Preview are technically browsers showing rendered (x)html/CSS, the only way to alter font and/or background colors is by specifying that info via styles: either inline or via CSS from within the EPUB.</p>
+  <p>Since Preview is technically a browser showing rendered (x)html/CSS, the only way to alter font and/or background colors is by specifying that info via styles: either inline or via CSS from within the EPUB.</p>
 
-  <p>The only exception to the above is that a custom user-specified css file will be applied to Book View/Preview (no matter what epub is open) if a file named <b>custom_preview_style.css</b> exists in the Sigil preferences folder that contains valid css.</p>
+  <p>The only exception to the above is that a custom user-specified css file will be applied to Preview (no matter what epub is open) if a file named <b>custom_preview_style.css</b> exists in the Sigil preferences folder that contains valid css.</p>
 
-  <p>For example, the following styles will give Book View/Preview a light gray background with blue text:</p>
+  <p>For example, the following styles will give Preview a light gray background with blue text:</p>
 
   <pre class="example">body {
   background-color: #D3D3D3;

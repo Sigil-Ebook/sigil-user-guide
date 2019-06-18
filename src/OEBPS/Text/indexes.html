@@ -21,7 +21,7 @@
 
   <p>The first way to identify entries to include in the index is to mark specific words or phrases in your text. Only the occurrence of the word or phrase you mark will be included in the Index – if you need all occurrences use the Index Editor.</p>
 
-  <p>Highlight a word or phrase in either Book View or Code View and then select the menu item <span class="menuitem">Tools→Index→Mark For Index</span> or its keyboard shortcut (which you can change). This will then open a prompt for you to enter how you want these words to appear in the index:</p>
+  <p>Highlight a word or phrase in Code View and then select the menu item <span class="menuitem">Tools→Index→Mark For Index</span> or its keyboard shortcut (which you can change). This will then open a prompt for you to enter how you want these words to appear in the index:</p>
 
   <div class="image">
     <img alt="index-mark" src="../Images/index-mark.png"/>
@@ -47,7 +47,7 @@
   <p>If you no longer want a word or phrase to be indexed by Sigil, you will need to delete the special HTML tags around the word.</p>
 
   <div class="tip">
-    <p class="tiptext">To find indexed words you can search in Code View. Or you can highlight them in Book View in color by adding the following CSS temporarily to your stylesheet:</p>
+    <p class="tiptext">To find indexed words you can search in Code View. Or you can highlight them in Preview in color by adding the following CSS temporarily to your stylesheet:</p>
 
     <pre>[class="sigil_index_marker"] { color:#335500; }</pre>
   </div>
@@ -56,7 +56,7 @@
 
   <p>The second way identify words to index is to add the words to a list. Then when you create the index every occurrence of that word will be included in the index automatically. You can use words marked for indexing and a list of words to index at the same time.</p>
 
-  <p>To add specific words to the index list while in Book View or Code View, highlight the word or phrase, and then select the menu item <span class="menuitem">Tools→Index→Add To Index Editor</span>. If your selected text includes any HTML tags, you should remove them.</p>
+  <p>To add specific words to the index list, highlight the word or phrase, and then select the menu item <span class="menuitem">Tools→Index→Add To Index Editor</span>. If your selected text includes any HTML tags, you should remove them.</p>
 
   <p>This will bring up the Index Editor with the word added to the list of entries to index. You can also enter words directly in the Index Editor as described below.</p>
 
@@ -93,7 +93,7 @@
   <p>The "Text To Include" column is a list of patterns you want Sigil to search for in your text and then to create an Index entry for using the format in the "Index Entries" column. Entries in the "Text To Include" column can use the following formats:</p>
 
   <ul>
-    <li><span class="listheading">words:</span> The words in the book must exactly match the listed words (case-sensitive). Do not include any HTML tags, just the words as they appear in Book View.</li>
+    <li><span class="listheading">words:</span> The words in the book must exactly match the listed words (case-sensitive). Do not include any HTML tags, just the words as they appear in Preview.</li>
 
     <li><span class="listheading">Regex:</span> You can enter most regex patterns - they will be match on a paragraph by paragraph basis. For example, to match words while ignoring case sensitivity you can use "<span class="example">[Gg]utenberg</span>" or "<span class="example">(?i)Gutenberg</span>".</li>
   </ul>

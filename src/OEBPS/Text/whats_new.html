@@ -16,7 +16,7 @@
   <ul>
     <li><span class="listheading">Stability:</span> All known crashes and related bugs from previous versions have been identified and fixed – making Sigil completely stable for updating your EPUBs.</li>
 
-    <li><span class="listheading">Robustness:</span> Sigil can correct even more common problems when reading files, and will no longer exit when opening invalid EPUBs. Saving has been enhanced to perform more integrity checks. Splits and merges can now be done exactly where you want without potential data loss. The cursor position is correctly updated when you switch views, and Find &amp; Replaces work consistently and accurately over one or all files.</li>
+    <li><span class="listheading">Robustness:</span> Sigil can correct even more common problems when reading files, and will no longer exit when opening invalid EPUBs. Saving has been enhanced to perform more integrity checks. Splits and merges can now be done exactly where you want without potential data loss. The cursor position is correctly updated between Code View and Preview, and Find &amp; Replaces work consistently and accurately over one or all files.</li>
 
     <li><span class="listheading">Performance:</span> Sigil is now significantly faster in many areas: opening and changing tabs, generating a TOC, merging files, bulk renaming, replacing text, etc.</li>
 
@@ -30,11 +30,13 @@
   <p>Recent Major Changes in Sigil include:</p>
 
   <ul>
+    <li><span class="listheading">Switch from QtWebKit to QtWebEngine</span> QtWebEngine reduces memory growth and plugs many major memory leaks and has ongoing security and support patches from Qt/Google/Chromium</li>
+
     <li><span class="listheading">Support for Python Plugins</span> to allow users to customize and integrate how they use Sigil into their own workflow and to add the tools they need or want independently from Sigil.</li>
 
     <li><span class="listheading">Support for Preserving User Specified entities</span></li>
 
-    <li><span class="listheading">Sigil now embeds its own Python interpreter (v3.7.0 at the time of this writing).</span></li>
+    <li><span class="listheading">Sigil now embeds its own Python interpreter (v3.7.2 at the time of this writing).</span></li>
 
     <li>Sigil now uses a Modified version of Google’s Gumbo Parser to handle parsing errors according to the html5 spec</li>
 
@@ -42,7 +44,7 @@
 
     <li>Sigil’s internals now support simple EPUB3 editing with the plan to add more EPUB3 tools and support as we approach Sigil 1.0</li>
 
-    <li>Qt has been upgraded to Qt 5.11.2</li>
+    <li>Qt has been upgraded to Qt 5.12.3</li>
   </ul>
 
   <p>All of the new features, along with all features and functionality, are of course described in this completely updated Sigil User Guide.</p>

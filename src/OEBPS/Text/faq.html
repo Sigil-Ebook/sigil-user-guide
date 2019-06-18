@@ -23,10 +23,6 @@
 
   <p>Every device or program that displays your book uses slightly different software. Despite EPUB being a standard, this means there may be differences in how your book appears on each device. Sigil also supports some features not in the EPUB 2 standard (such as audio, video, and various HTML 5 tags). In some cases, although it looks okay in Sigil, it may not look okay on a specific device. And in other cases, it might not look ok in Sigil but it might display fine on your ereader. You must test your book on as many devices as you can.</p>
 
-  <h3 class="sigil_not_in_toc">What are all these "&amp;nbsp;" words in my code?</h3>
-
-  <p class="sigil_not_in_toc"><span class="example">&amp;nbsp;</span> is a non-breaking space. If you edit in Book View you may end up with these HTML entities in your code because Book View will create them anytime it thinks you wanted one (e.g. if you type two spaces in a row it will convert one to <span class="example">&amp;nbsp;</span> so that it is not lost – multiple spaces are reduced to one space by ereaders). You can replace them with a normal space if you don’t actually need them for your text.</p>
-
   <h2 id="faq_questions">Where to Get Help</h2>
 
   <h3 class="sigil_not_in_toc">Where can I get help with Sigil?</h3>
@@ -121,8 +117,6 @@
 
   <h3 class="sigil_not_in_toc">Why does my code have <span class="example">&amp;nbsp;</span> and <span class="example">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</span> entries in it?</h3>
 
-  <p>If you edit in Book View it may insert blank spaces or other formatting text you weren’t expecting. Book View is generally for basic editing. To avoid unexpected characters you can edit in Code View, or use Find &amp; Replace to remove/change any unexpected text.</p>
-
   <h3 class="sigil_not_in_toc">How do I add blank lines?</h3>
 
   <p>Don’t. It’s much better to use stylesheets to define the amount of space above or below your special sections using a style definition. For instance to leave 1.5 lines of space above a paragraph you can use this style class:</p>
@@ -209,11 +203,11 @@
 
   <pre class="example">&lt;p&gt;&lt;span class="dropcap"&gt;H&lt;/span&gt;ello&lt;/p&gt;</pre>
 
-  <p>Switch back to Book View and you should see the drop-cap.</p>
+  <p>Look at Preview and you should see the drop-cap.</p>
 
   <p>Add <span class="example">&lt;span class="dropcap"&gt;&lt;/span&gt;</span> around all the letters at the start of paragraphs where you want a drop cap.</p>
 
-  <p>You might need to adjust the values for font-size, line-height and margin-bottom to get the effect you want. Sigil’s Book View may not show exactly how it’ll appear on all ereaders, but it’s pretty close.</p>
+  <p>You might need to adjust the values for font-size, line-height and margin-bottom to get the effect you want. Sigil’s Preview may not show exactly how it’ll appear on all ereaders, but it’s pretty close.</p>
 
   <h3 class="sigil_not_in_toc">Why doesn’t my font show up in iBooks?</h3>
 
