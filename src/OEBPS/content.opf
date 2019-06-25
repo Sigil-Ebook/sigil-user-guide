@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package version="2.0" unique-identifier="unknown" xmlns="http://www.idpf.org/2007/opf">
-  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:title>Sigil User Guide</dc:title>
     <dc:creator opf:file-as="Heiland, Dave" opf:role="aut">Dave Heiland</dc:creator>
     <dc:language>en</dc:language>
@@ -43,7 +43,6 @@
     <item id="contributing_to_sigil.html" href="Text/contributing_to_sigil.html" media-type="application/xhtml+xml"/>
     <item id="tutorial_validate_results.png" href="Images/tutorial_validate_results.png" media-type="image/png"/>
     <item id="tutorials.html" href="Text/tutorials.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_split_marker.png" href="Images/tutorial_split_marker.png" media-type="image/png"/>
     <item id="tutorial_validate_no_problems.png" href="Images/tutorial_validate_no_problems.png" media-type="image/png"/>
     <item id="cover.png" href="Images/cover.png" media-type="image/png"/>
     <item id="tutorial_validate.html" href="Text/tutorial_validate.html" media-type="application/xhtml+xml"/>
@@ -78,13 +77,10 @@
     <item id="opening_and_saving_files.html" href="Text/opening_and_saving_files.html" media-type="application/xhtml+xml"/>
     <item id="button-save.png" href="Images/button-save.png" media-type="image/png"/>
     <item id="code-view-mac.png" href="Images/code-view-mac.png" media-type="image/png"/>
-    <item id="book-view.png" href="Images/book-view.png" media-type="image/png"/>
     <item id="headings.png" href="Images/headings.png" media-type="image/png"/>
     <item id="styles.html" href="Text/styles.html" media-type="application/xhtml+xml"/>
     <item id="special-character-tooltip.png" href="Images/special-character-tooltip.png" media-type="image/png"/>
-    <item id="view-book_22px.png" href="Images/view-book_22px.png" media-type="image/png"/>
     <item id="document-save_22px.png" href="Images/document-save_22px.png" media-type="image/png"/>
-    <item id="view-code_22px.png" href="Images/view-code_22px.png" media-type="image/png"/>
     <item id="document-add_22px.png" href="Images/document-add_22px.png" media-type="image/png"/>
     <item id="metadata-editor_22px.png" href="Images/metadata-editor_22px.png" media-type="image/png"/>
     <item id="document-validate_22px.png" href="Images/document-validate_22px.png" media-type="image/png"/>
@@ -122,7 +118,6 @@
     <item id="tutorial_convert_to_html.html" href="Text/tutorial_convert_to_html.html" media-type="application/xhtml+xml"/>
     <item id="tutorial_mark_chapters.html" href="Text/tutorial_mark_chapters.html" media-type="application/xhtml+xml"/>
     <item id="tutorial_load_file.html" href="Text/tutorial_load_file.html" media-type="application/xhtml+xml"/>
-    <item id="main_toolbar_view.png" href="Images/main_toolbar_view.png" media-type="image/png"/>
     <item id="user_interface1.png" href="Images/user_interface1.png" media-type="image/png"/>
     <item id="preferences-appearance.png" href="Images/preferences-appearance.png" media-type="image/png"/>
     <item id="preferences-shortcuts.png" href="Images/preferences-shortcuts.png" media-type="image/png"/>
@@ -207,7 +202,6 @@
     <item id="tutorial-link-insert-id-dialog.png" href="Images/tutorial-link-insert-id-dialog.png" media-type="image/png"/>
     <item id="tutorial-links-insert-link.png" href="Images/tutorial-links-insert-link.png" media-type="image/png"/>
     <item id="tutorial-links-insert-link-dialog.png" href="Images/tutorial-links-insert-link-dialog.png" media-type="image/png"/>
-    <item id="tutorial-bv-cv.png" href="Images/tutorial-bv-cv.png" media-type="image/png"/>
     <item id="tutorial-cv.png" href="Images/tutorial-cv.png" media-type="image/png"/>
     <item id="clip-editor-main.png" href="Images/clip-editor-main.png" media-type="image/png"/>
     <item id="tutorial-styles-example1.png" href="Images/tutorial-styles-example1.png" media-type="image/png"/>
@@ -229,7 +223,6 @@
     <item id="preview-window.png" href="Images/preview-window.png" media-type="image/png"/>
     <item id="reports-all-files.png" href="Images/reports-all-files.png" media-type="image/png"/>
     <item id="index-editor.png" href="Images/index-editor.png" media-type="image/png"/>
-    <item id="preferences-clean-source.png" href="Images/preferences-clean-source.png" media-type="image/png"/>
     <item id="spellcheck-main.png" href="Images/spellcheck-main.png" media-type="image/png"/>
     <item id="add_cover.html" href="Text/add_cover.html" media-type="application/xhtml+xml"/>
     <item id="add-cover.png" href="Images/add-cover.png" media-type="image/png"/>
