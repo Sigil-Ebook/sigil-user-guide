@@ -16,8 +16,7 @@ platform: x64
 environment:
   global:
     PYTHON: C:\Python37-x64
-    EPUBCHECK: https://github.com/w3c/epubcheck/releases/download/v4.1.1/epubcheck-4.1.1.zip
-    FC: https://github.com/sigil-ebook/flightcrew/releases/download/0.9.2/FlightCrew_v0.9.2win.zip
+    EPUBCHECK: https://github.com/w3c/epubcheck/releases/download/v4.2.2/epubcheck-4.2.2.zip
 
 
 before_build:
@@ -25,8 +24,6 @@ before_build:
     set PATH=%PYTHON%;%PATH%
     curl.exe -L -o echeck.zip %EPUBCHECK%
     7z x echeck.zip -y
-    curl.exe -L -o fc.zip %FC%
-    7z x fc.zip -y
     
 build_script:
 - cmd: |-
@@ -34,8 +31,7 @@ build_script:
 
 test_script:
 - cmd: |-
-    java -jar .\epubcheck-4.1.1\epubcheck.jar src/ -mode exp --failonwarnings
-    .\FlightCrew\win32\flightcrew-plugin.exe src
+    java -jar .\epubcheck-4.2.2\epubcheck.jar src/ -mode exp --failonwarnings
  
 
 artifacts:
