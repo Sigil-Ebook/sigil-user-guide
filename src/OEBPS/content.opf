@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package version="2.0" unique-identifier="unknown" xmlns="http://www.idpf.org/2007/opf">
+<package version="2.0" unique-identifier="bookid" xmlns="http://www.idpf.org/2007/opf">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:title>Sigil User Guide</dc:title>
     <dc:creator opf:file-as="Heiland, Dave" opf:role="aut">Dave Heiland</dc:creator>
@@ -9,8 +9,8 @@
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
     <dc:date opf:event="modification">2021-02-19</dc:date>
     <meta content="1.5.0" name="Sigil version"/>
-    <dc:identifier id="unknown" opf:scheme="unknown">unknown</dc:identifier>
     <meta name="cover" content="cover.png"/>
+    <dc:identifier id="bookid" opf:scheme="UUID">621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
   </metadata>
   <manifest>
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
@@ -24,7 +24,6 @@
     <item id="faq.html" href="Text/faq.html" media-type="application/xhtml+xml"/>
     <item id="styles.css" href="Styles/styles.css" media-type="text/css"/>
     <item id="validation.html" href="Text/validation.html" media-type="application/xhtml+xml"/>
-    <item id="book_view.html" href="Text/book_view.html" media-type="application/xhtml+xml"/>
     <item id="features.html" href="Text/features.html" media-type="application/xhtml+xml"/>
     <item id="tutorial_tips.html" href="Text/tutorial_tips.html" media-type="application/xhtml+xml"/>
     <item id="table_of_contents.html" href="Text/table_of_contents.html" media-type="application/xhtml+xml"/>
@@ -271,6 +270,17 @@
     <item id="toolbar-split-insert.png" href="Images/toolbar-split-insert.png" media-type="image/png"/>
     <item id="toolbar-tools.png" href="Images/toolbar-tools.png" media-type="image/png"/>
     <item id="tutorial-default-sigil.png" href="Images/tutorial-default-sigil.png" media-type="image/png"/>
+    <item id="pageedit.png" href="Images/pageedit.png" media-type="image/png"/>
+    <item id="external_xhtml_editor_setting.png" href="Images/external_xhtml_editor_setting.png" media-type="image/png"/>
+    <item id="tutorial_checkpoints.html" href="Text/tutorial_checkpoints.html" media-type="application/xhtml+xml"/>
+    <item id="cp-compare2.png" href="Images/cp-compare2.png" media-type="image/png"/>
+    <item id="cp-differences.png" href="Images/cp-differences.png" media-type="image/png"/>
+    <item id="cp-log.png" href="Images/cp-log.png" media-type="image/png"/>
+    <item id="cp-manage.png" href="Images/cp-manage.png" media-type="image/png"/>
+    <item id="cp-menu.png" href="Images/cp-menu.png" media-type="image/png"/>
+    <item id="cp-select.png" href="Images/cp-select.png" media-type="image/png"/>
+    <item id="cp-toolbar.png" href="Images/cp-toolbar.png" media-type="image/png"/>
+    <item id="cp-viewer.png" href="Images/cp-viewer.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.html"/>
@@ -286,7 +296,6 @@
     <itemref idref="user_interface.html"/>
     <itemref idref="preferences.html"/>
     <itemref idref="opening_and_saving_files.html"/>
-    <itemref idref="book_view.html"/>
     <itemref idref="code_view.html"/>
     <itemref idref="preview.html"/>
     <itemref idref="book_browser.html"/>
@@ -329,6 +338,7 @@
     <itemref idref="tutorial_embed_fonts.html"/>
     <itemref idref="tutorial_advanced_find.html"/>
     <itemref idref="tutorial_regex_reference.html"/>
+    <itemref idref="tutorial_checkpoints.html"/>
     <itemref idref="tutorial_tips.html"/>
     <itemref idref="faq.html"/>
     <itemref idref="contributing_to_sigil.html"/>

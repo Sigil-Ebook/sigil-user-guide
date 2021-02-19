@@ -9,12 +9,30 @@
 </head>
 
 <body>
-  <h2 id="opening_xhtml_externally">Special External Xhtml Editor</h2>
+  <h2 id="opening_xhtml_externally">Preferred External Xhtml Editor</h2>
 
-  <p class="h2subheading">— Using Something like PageEdit Edit Xhtml Files —</p>
+  <p class="h2subheading">— Integrating PageEdit WYSIWYG Editor into Sigil —</p>
 
-  <p>Users can use something like the PageEdit program to edit an epub's xhtml files.</p>
+  <p>WYSIWYG editing mode - referred to as BookView in older Sigil User Guides - was removed from Sigil in version 0.9.15 because that editing mode used live html editing based on the QtWebEngine/Chrome browser engine that often resulted in incorrect or broken xhtml.  Since this browser engine was embedded in Qt, we had no way of changing or fixing that behaviour.  This broken xhtml was often rejected by epubcheck and therefore most publishers would not accept it.  Sigil 0.9.14 is the last version of Sigil to include the BookView mode of editing.</p>
 
-  <p>By setting the path to the external editor's executable in Sigil's preferences (<span class="menuitem">Edit-&gt;Preferences-&gt;General Settings-&gt;Set your preferred alternative external xhtml editor</span>), they can then launch the Book-View-selected file using the <span class="menuitem">Launch External Xhtml Editor</span> button on the Sigil toolbar (the icon looks like a paper and pencil). They can also use/assign the keyboard shortcut for the button to launch the editor (defaults to F2).</p>
+   <p>If you need still need the ability to do minor editing and proofing in a WYSIWYG environment, the maintainers of Sigil have created a standalone app called PageEdit that can be launched via Sigil's Preferred External XHtml Editor tool by setting the path to the external editor's executable in Sigil's preferences (<span class="menuitem">Edit-&gt;Preferences-&gt;General Settings-&gt;Set your preferred external xhtml editor</span>).</p>
+
+    <img alt="external_xhtml_editor_setting" src="../Images/external_xhtml_editor_setting.png"/>
+
+    <p>Users can use the <img alt="external-editor-icon" src="../Images/external-editor-icon.png"/> icon on the Sigil toolbar to launch the file/chapter in Sigil's current CodeView tab inside of PageEdit. Users can also use/assign the keyboard shortcut for the button to launch the editor (defaults to F2).</p>
+
+    <p>When editing is complete in PageEdit these edits are then saved back into Sigil so they appear in CodeView and can be validated and corrected if needed.</p>
+
+    <img alt="pageedit" src="../Images/pageedit.png"/>
+
+    <p> The editing interface to PageEdit is very similar to the old BookView interface with toolbars and menus to format text, set paragraph alignment, cut and paste, insert existing images, insert links to existing xhtml files, move forward or backwards by chapter, and etc.  Page edit can be used in either of two modes: Preview Mode to enable navigation by clicking links, and Edit mode to enable editing of content.  PageEdit always opens in Edit mode.  Toggling this mode is done by hitting the pencil icon in PageEdit.</p>
+
+    <p>If the user would like to edit multiple xhtml files from within Sigil at the same time, the OPF (ie. the content.opf) can be selected and opened via BookBrowser before hitting the External Editor Icon.  This will enable all Chapters/Files listed in the OPF spine element to be edited.  PageEdit will provide a simple pulldown menu to allow the user to select which file to work on.  All edits can be saved back into Sigil.  Using this approach, PageEdit makes it easier to proofread an entire epub in chapter order, making minor edits or fixes as needed.</p>
+
+ <div class="tip">
+    <p class="tiptext">Just like when using Sigil's Open With features, if you make changes to the file in Sigil while the file is being edited in PageEdit then you may lose data. You should always open the file for editing externally, make the changes, then save and close the file in PageEdit before making any changes to that file in Sigil.</p>
+  </div>
+
+<p>PageEdit is available for all 3 main platforms including Linux, Windows, and macOS.  It is free and can be downloaded from <a href="https://github.com/Sigil-Ebook/PageEdit/releases">Sigil-Ebook's GitHub repository for PageEdit.</a> Linux users should check their local repositories for PageEdit in the same places they find Sigil itself.</p>
 </body>
 </html>
