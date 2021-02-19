@@ -27,26 +27,27 @@
     <p class="tiptext">For a detailed list of all the change made to Sigil, see the <a href="https://github.com/Sigil-Ebook/Sigil/blob/master/ChangeLog.txt">Changelog</a>.</p>
   </div>
 
-  <p>Recent Major Changes in Sigil include:</p>
+  <p><b>Recent Major Changes in Sigil include:</b></p>
 
   <ul>
-    <li><span class="listheading">Switch from QtWebKit to QtWebEngine</span> QtWebEngine reduces memory growth and plugs many major memory leaks and has ongoing security and support patches from Qt/Google/Chromium</li>
+    <li><p><span class="listheading">Switch from QtWebKit to QtWebEngine</span> QtWebEngine reduces memory growth and plugs many major memory leaks and has ongoing security and support patches from Qt/Google/Chromium</p></li>
 
-    <li><span class="listheading">Support for Python Plugins</span> to allow users to customize and integrate how they use Sigil into their own workflow and to add the tools they need or want independently from Sigil.</li>
+    <li><p><span class="listheading">Removal of BookView</span> because it allowed users to mistakenly create very broken xhtml that was not acceptable in an epub.  To replace part of its functionality, we created a new external program called <a href="https://github.com/Sigil-Ebook/PageEdit/releases">PageEdit</a> that is better suited for basic WYSIWYG proofing and simple Edits. Users who know no xthml or css will probably want to stay with Sigil 0.9.14 as it was the last version to support BookView.  More on PageEdit and integrating its use into Sigil will be described in a later chapter</p></li>
 
-    <li><span class="listheading">Support for Preserving User Specified entities</span></li>
+    <li><p><span class="listheading">Support for Python Plugins</span> to allow users to customize and integrate how they use Sigil into their own workflow and to add the tools they need or want independently from Sigil.  These plugins can be donwloaded and installed to add extended support to Sigil.  These plugins include epubcheck, Access-Aide, KindleImport, Kindlegen, FlightCrew, ePub3-itizer, DOCX Import plugins, and etc. More about plugins, and where to download and how to install them will be described in a later chapter.</p></li>
 
-    <li><span class="listheading">Sigil now embeds its own Python interpreter (v3.7.2 at the time of this writing).</span></li>
+    <li><p><span class="listheading">Support for Preserving User Specified entities</span></p></li>
 
-    <li>Sigil now uses a Modified version of Google’s Gumbo Parser to handle parsing errors according to the html5 spec</li>
+    <li><p><span class="listheading">Sigil embeds its own Python interpreter</span> (v3.8.3 at the time of this writing to support Python 3 based plugins.</p></li>
 
-    <li>Sigil has been simplified to remove the need for Boost, Xerces, Xerces Extensions, Tidy, etc.</li>
+    <li><p><span class="listheading">Sigil uses a specially modified version of Google’s Gumbo Parser</span> to auto correct xhtml parsing errors according to the html5 and xhtml specs.</p></li>
 
-    <li>Sigil’s internals now support simple EPUB3 editing with the plan to add more EPUB3 tools and support as we approach Sigil 1.0</li>
+    <li><p><span class="listheading">Sigil now fully supports editing asnd creating both relowable EPUB2 and EPUB3 epubs.</span></p></li>
 
-    <li>Qt has been upgraded to Qt 5.12.3</li>
+    <li><p><span class="listheading">Sigil has removed its longtime restrictions on epub layouts.</span>  Custom epub layouts are fully supported.</p></li>
+
   </ul>
 
-  <p>All of the new features, along with all features and functionality, are of course described in this completely updated Sigil User Guide.</p>
+  <p>All of these features and functionality are hopefully described in this completely updated Sigil User Guide.</p>
 </body>
 </html>
