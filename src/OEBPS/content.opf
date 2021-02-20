@@ -7,7 +7,7 @@
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <dc:date opf:event="modification">2021-02-19</dc:date>
+    <dc:date opf:event="modification">2021-02-20</dc:date>
     <meta content="1.5.0" name="Sigil version"/>
     <meta name="cover" content="cover.png"/>
     <dc:identifier id="bookid" opf:scheme="UUID">621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
@@ -56,7 +56,6 @@
     <item id="whats_new.html" href="Text/whats_new.html" media-type="application/xhtml+xml"/>
     <item id="splitting_and_merging.html" href="Text/splitting_and_merging.html" media-type="application/xhtml+xml"/>
     <item id="cover.html" href="Text/cover.html" media-type="application/xhtml+xml"/>
-    <item id="toolbar_-plit-insert.png" href="Images/toolbar_-plit-insert.png" media-type="image/png"/>
     <item id="opening_and_saving_files.html" href="Text/opening_and_saving_files.html" media-type="application/xhtml+xml"/>
     <item id="styles.html" href="Text/styles.html" media-type="application/xhtml+xml"/>
     <item id="document-validate.png" href="Images/document-validate.png" media-type="image/png"/>
@@ -80,7 +79,7 @@
     <item id="reports-styles-in-css.png" href="Images/reports-styles-in-css.png" media-type="image/png"/>
     <item id="reports-styles-in-html.png" href="Images/reports-styles-in-html.png" media-type="image/png"/>
     <item id="sgc-toc.css" href="Styles/sgc-toc.css" media-type="text/css"/>
-    <item id="TOC.xhtml" href="Text/TOC.xhtml" media-type="application/xhtml+xml"/>
+    <item id="toc.html" href="Text/toc.html" media-type="application/xhtml+xml"/>
     <item id="tutorial-links-insert-link.png" href="Images/tutorial-links-insert-link.png" media-type="image/png"/>
     <item id="tutorial-styles-example1.png" href="Images/tutorial-styles-example1.png" media-type="image/png"/>
     <item id="note.png" href="Images/note.png" media-type="image/png"/>
@@ -286,7 +285,7 @@
     <itemref idref="cover.html"/>
     <itemref idref="titlepage.html"/>
     <itemref idref="rights.html"/>
-    <itemref idref="TOC.xhtml"/>
+    <itemref idref="toc.html"/>
     <itemref idref="introduction.html"/>
     <itemref idref="whats_new.html"/>
     <itemref idref="about_sigil.html"/>
@@ -345,7 +344,7 @@
   </spine>
   <guide>
     <reference type="cover" title="Cover" href="Text/cover.html"/>
-    <reference type="toc" title="Table Of Contents" href="Text/TOC.xhtml"/>
     <reference type="text" title="Text" href="Text/introduction.html"/>
+    <reference type="toc" title="Table of Contents" href="Text/toc.html"/>
   </guide>
 </package>

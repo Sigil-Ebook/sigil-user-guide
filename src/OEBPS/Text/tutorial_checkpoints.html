@@ -13,33 +13,33 @@
 
   <p>Sigil has many powerful tools to automote repairing, splitting, merging, renaming, and moving xhtml, images, stylesheets, and other resources.  These tools can make numerous changes that a simple Undo/Redo can not handle.  To help prevent inadvertant data loss and to provide a way to "undo" even larger scale changes, we have added a Checkpoint capability to Sigil.</p>
 
-  <img alt="cp-menu" src="../Images/cp-menu.png"/>
+  <div><img alt="cp-menu" src="../Images/cp-menu.png"/></div>
 
   <p>A checkpoint is a quick snapshot of the entire state of the epub that is stored in its own git style repository that is kept inside your Sigil Preferences folder. Creating a checkpoint can be as simple as one click on the Checkpoint icon or by using the Checkpoint Menus.  Each Checkpoint made of an epub is named/numbered sequentially.</p>
 
-  <img alt="cp-select" width="30%" src="../Images/cp-select.png"/>
+  <div><img alt="cp-select" width="30%" src="../Images/cp-select.png"/></div>
 
  <p>Once a Checkpoint is made, users can feel safe to make larger changes to their copy knowing that they can easily restore to their last checkpoint.</p>
 
   <p>An added advantage of using checkpoints is that a user can always comapre the current state of their epub against any of their earlier checkpoints to see exactly what was changed and how. Here is image showing the output of a comparison done against an eaelier checkpoint during an editing session.  After selecting the checkpoint to compare against the following dialog is shown showing which files have changed: </p>
 
-  <img alt="cp-differences" src="../Images/cp-differences.png"/>
+  <div><img alt="cp-differences" src="../Images/cp-differences.png"/></div>
 
   <p>Users can select and view any of the files that only exist in the current epub or only exist in the checkpoint.</p>
 
-  <img alt="cp-viewer" src="../Images/cp-viewer.png"/>
+  <div><img alt="cp-viewer" src="../Images/cp-viewer.png"/></div>
 
   <p>For text files that have been modified, the user is provided with a side by side highlioghted view of both the lines changes and the areas within the lines that have been changed.</p>
 
-  <img alt="cp-compare2" src="../Images/cp-compare2.png"/>
+  <div><img alt="cp-compare2" src="../Images/cp-compare2.png"/></div>
 
   <p>When the final version of the epub has been produced and saved, the user can manage their checkpoint repositories to remove them and free up diskspace.</p>
 
-  <img alt="cp-manage" src="../Images/cp-manage.png"/>
+  <div><img alt="cp-manage" src="../Images/cp-manage.png"/></div>
 
   <p>Or they can generate a summary of the changes made in each checkpoint to help them select earlier versions to restore from if needed.</p>
 
-  <img alt="cp-log" src="../Images/cp-log.png"/>
+  <div><img alt="cp-log" src="../Images/cp-log.png"/></div>
 
  <div class="tip">
     <p class="tiptext">Some Sigil tools like "Mend" or "Mend and Prettify" can make a large number of changes to whitespace which can help hide more significant changes later.  Therefore it is a good idea that after using a tool that makes large whitespace changes, you checkpoint both right before and immediately after using the tool so you can make finding later changes much easier.</p>
