@@ -14,53 +14,55 @@
   <p class="h2subheading">— Windows, Menus and Toolbars —</p>
 
   <div class="image">
-    <img alt="user_interface1" src="../Images/user-interface1.png"/>
+    <img alt="" src="../Images/ui_user-interface-default.png"/>
   </div>
 
   <p>Sigil’s user interface consists of:</p>
 
   <ul>
-    <li><span class="listheading">Windows:</span> Displays for information like Code View, Book Browser, and TOC.</li>
+    <li><span class="listheading">Windows:</span> Displays for information like Code View, Book Browser, Preview and Table of Contents.</li>
 
-    <li><span class="listheading">Main Menu:</span> Most of the available commands, like <span class="menuitem">File→Open</span>, are listed here.</li>
-
-    <li><span class="listheading">Toolbar Buttons:</span> Movable buttons that provide quick access to many menu items.</li>
+    <li><span class="listheading">Main Menu:</span> Most available commands, like <span class="menuitem">File→Open</span>, can be accessed from the main menu bar at the top of the user interface.</li>
 
     <li><span class="listheading">Keyboard Shortcuts:</span> User-definable shortcuts for all menu items, like <span class="shortcut">Ctrl+S</span> to save your file.</li>
+
+    <li><span class="listheading">Toolbar Buttons:</span> Movable buttons that provide quick access to many menu items.</li>
 
     <li><span class="listheading">Context Menus:</span> Commands shown when you right-click on something, like a filename or window.</li>
   </ul>
 
   <div class="tip">
-    <p class="tiptext">The screenshots in the User Guide may be slightly different to what you see on your computer.</p>
+    <p class="tiptext">The screenshots in the User Guide may be slightly different from what you see on your computer, depending on your operating system.</p>
   </div>
 
   <h3 class="sigil_not_in_toc">Windows</h3>
 
-  <p>Sigil uses various windows in the main interface to present information: a window to show your files, to edit your book, to view your table of contents, etc.</p>
+  <p>Sigil uses various windows in the main interface to present information: a window to show the files in the book (Book Browser), to edit your book (Code View), to see a live preview of your book (Preview), to view your table of contents, to view validation results, etc.</p>
 
-  <p>Windows can be hidden – use the <span class="menuitem">View</span> menu entry to show or hide specific windows.</p>
+  <p>You can select which windows appear on your screen by using the <span class="menuitem">View</span> menu on the menubar: </p>
 
-  <p>Certain windows can be also moved. To move a window, click on its header label and drag it to its new location. For instance you can place the Table of Contents under the Book Browser:</p>
-
-  <div class="image">
-    <img alt="user-interface-toc-under-window" src="../Images/user-interface-toc-under-window.png"/>
+   <div class="image">
+    <img alt="" src="../Images/ui_View.png"/>
   </div>
 
-  <p>You can also create tabs for the Table of Contents and the Book Browser, and other windows, if you drag and drop it directly on the Book Browser window instead of just above or below it:</p>
+  <p>Certain windows can also be moved. To move a window, click on its header bar and drag it to its new location. For instance you can stack the windows. Here’s the Table of Contents placed below the Book Browser:</p>
 
   <div class="image">
-    <img alt="user-interface-toc-tabbed" src="../Images/user-interface-toc-tabbed.png"/>
+    <img alt="" src="../Images/ui_toc-stacked.png"/>
   </div>
 
-  <p>You can even undock windows (separate them from the main Sigil window). To undock a window, double-click on the heading of the window. In some OS’s you can also undock and re-dock the windows by clicking on the little button in the top right corner of the window.</p>
+  <p>You can also create tabs for the Table of Contents and the Book Browser (and other windows) if you drag and drop it directly on the Book Browser window instead of just above or below it:</p>
 
-  <h3 class="sigil_not_in_toc" id="keyboard_shortcuts">Keyboard Shortcuts</h3>
+  <div class="image">
+    <img alt="" src="../Images/ui_toc-tabbed.png"/>
+  </div>
 
-  <p>Keyboard shortcuts (e.g. <span class="shortcut">Ctrl+S</span> for Save) are shown next to menu entries and in <span class="menuitem">Edit→Preferences: Keyboard Shortcuts</span>.</p>
+  <p>You can even undock windows (separate them from the main Sigil window so that they float on their own). To undock a window, double-click on the window’s header bar. In some OS’s you can also undock and re-dock the windows by clicking on the little button in the top left or right corner of the window.</p>
+  
+  <p>Here’s an example of the Preview window at the top, Code View at the bottom, and the Book Browser and Table of Contents undocked and floating on the left:</p>
 
-  <div class="tip">
-    <p class="tiptext">You can create or change keyboard shortcuts in <a href="preferences.html">Preferences</a>.</p>
+  <div class="image">
+    <img alt="" src="../Images/ui_rearranged-and-undocked.png"/>
   </div>
 
   <h3 class="sigil_not_in_toc" id="main_menu">Main Menu</h3>
@@ -68,15 +70,15 @@
   <p>This is the list of menu items that is always at the top of Sigil’s window or your screen:</p>
 
   <div class="image">
-    <img alt="user-interface-main-menu" src="../Images/user-interface-main-menu.png"/>
+    <img alt="" src="../Images/ui_main-menu.png"/>
   </div>
 
   <p class="heading">File</p>
 
   <ul>
-    <li class="first"><span class="listheading">New:</span> Create a new, empty EPUB.</li>
+    <li class="first"><span class="listheading">New:</span> Create a new, empty ePub2 or ePub3.</li>
 
-    <li><span class="listheading">Open:</span> Open an EPUB or HTML file from your computer.</li>
+    <li><span class="listheading">Open:</span> Open an epub, HTML file, or text file from your computer.</li>
 
     <li class="first"><span class="listheading">Add:</span> 
 
@@ -94,7 +96,7 @@
 
     <li><span class="listheading">Save As:</span> Save your file under a different name.</li>
 
-    <li><span class="listheading">Save A Copy:</span> save a copy of your file under a different name without renaming your current file (useful for backups).</li>
+    <li><span class="listheading">Save A Copy:</span> Save a copy of your file under a different name without renaming your current file (useful for backups).</li>
 
     <li class="first"><span class="listheading">Print Preview:</span> Preview the printing of the current tab.</li>
 
@@ -102,23 +104,23 @@
 
     <li class="first">List of recently opened files.</li>
 
-    <li class="first"><span class="listheading">Quit:</span> Exit Sigil, asking if you want to save your file first if it hasn’t been saved.</li>
+    <li class="first"><span class="listheading">Quit</span>: Exit Sigil, asking if you want to save your file first if it hasn’t been saved. (On Mac, Quit is under the <span class="menuitem">Sigil</span> menu.) </li>
   </ul>
 
   <p class="heading">Edit</p>
 
   <ul>
-    <li><span class="listheading">Undo:</span> Restore text just deleted, inserted or replaced.</li>
+    <li><span class="listheading">Undo:</span> Undoes the last action, restoring text that has just been deleted, inserted or replaced.</li>
 
     <li><span class="listheading">Redo:</span> Reverse the last Undo.</li>
 
-    <li class="first"><span class="listheading">Cut:</span> Remove the selected text and store it for paste.</li>
+    <li class="first"><span class="listheading">Cut:</span> Remove the selected text and store it to the Clipboard for paste.</li>
 
-    <li><span class="listheading">Copy:</span> Copy the selected text and store it for paste.</li>
+    <li><span class="listheading">Copy:</span> Copy the selected text and store it to the Clipboard for paste.</li>
 
-    <li><span class="listheading">Paste:</span> Insert previously cut or copied text into your document.</li>
+    <li><span class="listheading">Paste:</span> Insert text previously cut or copied to the Clipboard into your document.</li>
 
-    <li><span class="listheading">Paste from Clipboard History:</span> Insert text automatically saved in a list when you used cut or copy.</li>
+    <li><span class="listheading">Edit/Paste from Clipboard History:</span> View and edit a list of text snippets cut or copied to the Clipboard, and select and paste (insert) a snippet into your document. (To set the number of snippets to save, go to Preferences.) </li>
 
     <li><span class="listheading">Delete Line:</span> Delete the current line in Code View.</li>
 
@@ -131,32 +133,32 @@
 
       <li><span class="listheading">Titlecase:</span> Change the first letter of each selected word to uppercase.</li>
 
-      <li><span class="listheading">Capitalise:</span> Change the first letter of the selection to uppercase.</li>
+      <li><span class="listheading">Capitalize:</span> Change the first letter of the selection to uppercase.</li>
     </ul></li>
 
     <li class="first"><span class="listheading">Split at Cursor</span>: Split the current file into two files immediately.</li>
 
-    <li><span class="listheading">Split at Markers:</span> Split all files at previously inserted chapter markers.</li>
+    <li><span class="listheading">Split at Markers:</span> Split all files at previously inserted split markers.</li>
 
-    <li class="first"><span class="listheading">Preferences:</span> Open the Preferences window to change options.</li>
+    <li class="first"><span class="listheading">Preferences:</span> Open the Preferences window to change options. (On Mac, Preferences is under the <span class="menuitem">Sigil</span> menu).</li>
   </ul>
 
   <p class="heading">Insert</p>
 
   <ul>
-    <li><span class="listheading">Split Marker:</span> Insert a marker to use for Split at Markers.</li>
+    <li><span class="listheading">Split Marker:</span> Insert a marker to use for Split at Markers (see <span class="menuitem">Edit</span> menu).</li>
 
     <li class="first"><span class="listheading">File:</span> Insert an image, audio, or video file from your book or your computer.</li>
 
-    <li><span class="listheading">Special Character:</span> Insert special characters from a list.</li>
+    <li><span class="listheading">Special Character:</span> Insert special characters from a chart.</li>
 
     <li class="first"><span class="listheading">ID:</span> Insert an anchor name that can be used with links.</li>
 
     <li><span class="listheading">Link:</span> Insert a link to something in your document or anywhere else.</li>
 
-    <li class="first"><span class="listheading">Closing Tag:</span> In Code View insert a tag to close the last unclosed tag.</li>
+    <li class="first"><span class="listheading">Closing Tag:</span> Insert a tag to close the last unclosed tag.</li>
 
-    <li class="first"><span class="listheading">Clip:</span> Select a Clip to insert and view shortcuts for clips.</li>
+    <li class="first"><span class="listheading">Clip:</span> Select a clip to insert.</li>
   </ul>
 
   <p class="heading">Format</p>
@@ -179,22 +181,22 @@
 
       <li><span class="listheading">Normal:</span> Format the paragraph as normal text.</li>
 
-      <li class="first"><span class="listheading">Preserve existing attributes:</span> Keep attributes like class when formatting.</li>
+      <li class="listheading"><span class="listheading">Preserve existing attributes:</span> Keep attributes like class when formatting.</li>
     </ul></li>
 
-    <li><span class="listheading">Bold:</span> Make text bold.</li>
+    <li class="first"><span class="listheading">Bold:</span> Make text bold.</li>
 
     <li><span class="listheading">Italic:</span> Make text italic.</li>
 
     <li><span class="listheading">Underline:</span> Make text underlined.</li>
 
-    <li><span class="listheading">Strikethrough:</span> Make text striked through.</li>
+    <li><span class="listheading">Strikethrough:</span> Make text striked-through.</li>
 
     <li><span class="listheading">Subscript:</span> Make text subscript.</li>
 
     <li><span class="listheading">Superscript:</span> Make text superscript.</li>
 
-    <li class="first"><span class="listheading">Align Left:</span> Align text to the left margin (use remove formatting to reset to default).</li>
+    <li class="first"><span class="listheading">Align Left:</span> Align text to the left margin (use Remove Formatting to reset to default).</li>
 
     <li><span class="listheading">Center:</span> Align text centered on the screen.</li>
 
@@ -202,13 +204,13 @@
 
     <li><span class="listheading">Justify:</span> Align text to left and right margins.</li>
 
-    <li class="first"><span class="listheading">Bulleted List:</span> Change text into a list of items preceded by dots.</li>
+    <li class="first"><span class="listheading">Bulleted List:</span> Change text into a list of items preceded by bullets.</li>
 
     <li><span class="listheading">Numbered List:</span> Change text into a list of items preceded by numbers.</li>
 
     <li class="first"><span class="listheading">Decrease Indent:</span> Decrease the indentation of the text.</li>
 
-    <li><span class="listheading">Increase Indent:</span> Indent the text.</li>
+    <li><span class="listheading">Increase Indent:</span> Increase the indentation the text.</li>
 
     <li class="first"><span class="listheading">Text Direction LTR:</span> Set the direction of text from left to right.</li>
 
@@ -216,7 +218,9 @@
 
     <li><span class="listheading">Text Direction Default:</span> Set the direction of the text to the default.</li>
 
-    <li><span class="listheading">Remove Formatting:</span> delete tags in Code View.</li>
+    <li class="first"><span class="listheading">Remove Formatting:</span> Delete tags within selected text.</li>
+    
+    <li><span class="listheading">Remove Tag Pair:</span> Remove open and close tag (place the cursor inside the tag to select it).</li>
   </ul>
 
   <p class="heading">Search</p>
@@ -224,39 +228,39 @@
   <ul>
     <li><span class="listheading">Find &amp; Replace:</span> Open the Find &amp; Replace window.</li>
 
-    <li class="first"><span class="listheading">Find Next:</span> Search forwards for the next matching text.</li>
+    <li class="first"><span class="listheading">Find Next:</span> Search forward for the next matching text.</li>
 
-    <li><span class="listheading">Find Previous:</span> Search backwards for the next matching text.</li>
+    <li><span class="listheading">Find Previous:</span> Search backward for the previous matching text.</li>
 
-    <li class="first"><span class="listheading">Replace:</span> Replace any matched text.</li>
+    <li class="first"><span class="listheading">Replace:</span> Replace matched text.</li>
 
-    <li><span class="listheading">Replace/Find Next:</span> Replace any matched text and search forwards for the next matching text.</li>
+    <li><span class="listheading">Replace/Find Next:</span> Replace matched text and search forward for the next matching text.</li>
 
-    <li><span class="listheading">Replace/Find Previous:</span> Replace any matched text and search backwards for the next matching text.</li>
+    <li><span class="listheading">Replace/Find Previous:</span> Replace matched text and search backward for the previous matching text.</li>
 
-    <li><span class="listheading">Replace All:</span> Replace every matching text according to the Find &amp; Replace settings.</li>
+    <li><span class="listheading">Replace All:</span> Replace every instance of matching text according to the Find &amp; Replace settings.</li>
 
-    <li class="first"><span class="listheading">Count All:</span> Count every matching text according to the Find &amp; Replace settings.</li>
+    <li class="first"><span class="listheading">Count All:</span> Count every instance of matching text according to the Find &amp; Replace settings.</li>
 
     <li class="first"><span class="listheading">Current File:</span> 
 
-    <ul>
-      <li class="first"><span class="listheading">Find Next In File:</span> Find only in the current file regardless of F&amp;R mode.</li>
+		<ul>
+		  <li><span class="listheading">Find Next In File:</span> Search only in the current file regardless of Find &amp; Replace mode.</li>
 
-      <li class="first"><span class="listheading">Replace Next In File:</span> Replace/Find Next only in the current file regardless of F&amp;R mode.</li>
+		  <li class="first"><span class="listheading">Replace Next In File:</span> Replace then Find Next only in the current file regardless of Find &amp; Replace mode.</li>
 
-      <li><span class="listheading">Replace All In File:</span> Replace All only in the current file regardless of F&amp;R mode.</li>
+		  <li><span class="listheading">Replace All In File:</span> Replace All only in the current file regardless of Find &amp; Replace mode.</li>
 
-      <li class="first"><span class="listheading">Count All In File:</span> Count All only in the current file regardless of F&amp;R mode.</li>
-    </ul></li>
+		  <li class="first"><span class="listheading">Count All In File:</span> Count All only in the current file regardless of Find &amp; Replace mode.</li>
+		</ul></li>
 
     <li class="first"><span class="listheading">Bookmark Location:</span> Bookmark your current location in Code View.</li>
 
-    <li><span class="listheading">Go To Link Or Style:</span> Go to the selected link or go to the CSS style for this tag.</li>
+    <li><span class="listheading">Go To Link Or Style:</span> Go to the selected link, or go to the CSS style for this tag.</li>
 
     <li><span class="listheading">Back:</span> Go back to where you set a bookmark, clicked a link or used Go to Link or Style.</li>
 
-    <li class="first"><span class="listheading">Mark Selected Text:</span> Mark the selected text in Code View for use with Find &amp; Replace.</li>
+    <li class="first"><span class="listheading">Mark Selected Text:</span> Mark the selected text for use with Find &amp; Replace, which will limit the search to the selected text only.</li>
 
     <li><span class="listheading">Go To Line:</span> Jump to a specific line number in Code View.</li>
   </ul>
@@ -268,71 +272,79 @@
 
     <li><span class="listheading">Metadata Editor:</span> Open the Metadata Editor to edit book details.</li>
 
-    <li><span class="listheading">Table Of Contents:</span> 
+    <li class="first"><span class="listheading">Table Of Contents:</span> 
 
-    <ul>
-      <li><span class="listheading">Generate Table Of Contents:</span> Use predefined headings to generate a TOC.</li>
+		<ul>
+		  <li><span class="listheading">Generate Table Of Contents:</span> Use predefined headings to generate a TOC.</li>
 
-      <li><span class="listheading">Edit Table Of Contents:</span> Edit the TOC manually.</li>
+		  <li><span class="listheading">Edit Table Of Contents:</span> Edit the TOC manually.</li>
 
-      <li><span class="listheading">Create HTML Table Of Contents:</span> Create an HTML file version of the TOC.</li>
-    </ul></li>
+		  <li><span class="listheading">Create HTML Table Of Contents:</span> Create an HTML file version of the TOC.</li>
+		</ul></li>
 
-    <li><span class="listheading">Index:</span> 
+	<li class="first"><span class="listheading">Restructure Epub to Sigil Norm:</span> Starting with Sigil 1.0.0, epubs loaded into Sigil are kept “as-is”; no files or folders are moved or renamed. This is a departure from Sigil 0.9.18 and earlier, which automatically restructured each epub into a standard Sigil form (one OEBPS folder, specific names for the OPF and NCX, only one folder for text, images, etc.). Users who prefer the standard Sigil form may use Restructure Epub to Sigil Norm to manually restructure their epub to the old Sigil standard. </li>
+	
+	 <li><span class="listheading">Create a Custom Empty Epub:</span> Design a custom epub layout to use when creating new epubs.</li>
 
-    <ul>
-      <li><span class="listheading">Index Editor:</span> Manage your index entries.</li>
+    <li class="first"><span class="listheading">Index:</span> 
 
-      <li class="first"><span class="listheading">Add To Index Editor:</span> Add the selected text to the Index Editor list.</li>
+		<ul>
+		  <li><span class="listheading">Index Editor:</span> Manage your index entries.</li>
 
-      <li><span class="listheading">Mark For Index:</span> Add the selected text to the index when it is created.</li>
+		  <li class="first"><span class="listheading">Add To Index Editor:</span> Add the selected text to the Index Editor list.</li>
 
-      <li class="first"><span class="listheading">Create Index:</span> Create an HTML file containing the index list.</li>
-    </ul></li>
+		  <li><span class="listheading">Mark For Index:</span> Add the selected text to the index when it is created.</li>
 
-    <li><span class="listheading">Spellcheck:</span> 
+		  <li class="first"><span class="listheading">Create Index:</span> Create an HTML file containing the index list.</li>
+		</ul></li>
 
-    <ul>
-      <li><span class="listheading">Spellcheck:</span> Open dialog to spellcheck all words at once.</li>
+    <li class="first"><span class="listheading">Spellcheck:</span> 
 
-      <li class="first"><span class="listheading">Highlight Misspelled Words:</span> Toggle highlighting misspelled words in Code View.</li>
+		<ul>
+		  <li><span class="listheading">Spellcheck:</span> Open dialog to spellcheck all words at once.</li>
 
-      <li><span class="listheading">Next Misspelled Word:</span> Find the next misspelled word in Code View.</li>
+		  <li class="first"><span class="listheading">Highlight Misspelled Words:</span> Toggle highlighting of misspelled words in Code View.</li>
 
-      <li class="first"><span class="listheading">Add Misspelled Word:</span> Add the misspelled word to the default dictionary.</li>
+		  <li><span class="listheading">Next Misspelled Word:</span> Find the next misspelled word in Code View.</li>
 
-      <li><span class="listheading">Ignore Misspelled Word:</span> Ignore the misspelled word temporarily while Sigil is running. Ignored words are also cleared when you open a new book.</li>
+		  <li class="first"><span class="listheading">Add Misspelled Word:</span> Add the misspelled word to the default dictionary.</li>
 
-      <li class="first"><span class="listheading">Clear Ignored Words:</span> Clear the list of temporarily ignored words.</li>
-    </ul></li>
+		  <li><span class="listheading">Ignore Misspelled Word:</span> Ignore the misspelled word temporarily while Sigil is running. Ignored words are also cleared when you open a new book.</li>
 
-    <li><span class="listheading">Reformat HTML:</span> 
+		  <li class="first"><span class="listheading">Clear Ignored Words:</span> Clear the list of temporarily ignored words.</li>
+		</ul></li>
 
-    <ul>
-      <li><span class="listheading">Mend and Prettify all HTML Files:</span> Fix HTML syntax errors in all HTML files and pretty-print them.</li>
+    <li class="first"><span class="listheading">Reformat HTML:</span> 
 
-      <li><span class="listheading">Mend all HTML Files:</span> Fix HTML syntax errors in all HTML files.</li>
-    </ul></li>
+		<ul>
+		  <li><span class="listheading">Mend and Prettify all HTML Files:</span> Fix HTML syntax errors in all HTML files and pretty-print them.</li>
 
-    <li><span class="listheading">EPUB3 Tools:</span> 
+		  <li><span class="listheading">Mend all HTML Files:</span> Fix HTML syntax errors in all HTML files.</li>
+		</ul></li>
 
-    <ul>
-      <li><span class="listheading">Update Manifest Properties:</span> Add or update mandatory manifest properties.</li>
+    <li class="first"><span class="listheading">Epub3 Tools:</span> 
 
-      <li><span class="listheading">Generate NCX from Nav:</span> Populate the NCX file with TOC entries from the NAV file (the NCX isn't kept up to date automatically in EPUB3s since the ncx isn’t required).</li>
-    </ul></li>
+		<ul>
+		  <li><span class="listheading">Update Manifest Properties:</span> Add or update mandatory manifest properties.</li>
+
+		  <li><span class="listheading">Generate NCX/Guide for epub2 e-readers:</span> Populate the NCX file with TOC entries from the NAV file (in epub3s, the NCX isn’t updated automatically since the NCX isn’t required; use this tool to manually update the NCX). Also populate the Guide with Landmarks entries from the NAV file.</li>
+		  
+		  <li><span class="listheading">Remove the NCX and Guide:</span> Remove the NCX and Guide, both of which are not required in epub3, but are sometimes included for backward compatability with epub2 reading systems.</li>
+		</ul></li>
+		
+	<li class="first"><span class="listheading">Well-Formed Check EPUB:</span> A simple validation tool to check if your epub is well-formed.</li>
 
     <li><span class="listheading">Validate Stylesheets With W3C:</span> Check if your CSS files are valid using the W3C web service.</li>
 
-    <li class="first"><span class="listheading">Reports:</span> Display various details about HTML files, images, CSS styles, etc.</li>
+    <li><span class="listheading">Reports:</span> Display various details about HTML files, images, CSS styles, etc.</li>
 
-    <li class="first"><span class="listheading">Clip Editor:</span> Edit and paste snippets of text and styles into your document.</li>
+    <li class="first"><span class="listheading">Clip Editor:</span> Create and edit snippets of text and styles, and paste them into your document.</li>
 
-    <li><span class="listheading">Saved Searches:</span> Edit and run saved Find &amp; Replace searches.</li>
+    <li><span class="listheading">Saved Searches:</span> Create, edit, and run saved Find &amp; Replace searches.</li>
 
     <li class="first"><span class="listheading">Delete Unused Media Files:</span> Remove unlinked image, video, and audio files from your book.</li>
 
-    <li><span class="listheading">Delete Unused Stylesheet Classes:</span> Remove unreferenced classes from CSS files.</li>
+    <li><span class="listheading">Delete Unused Stylesheet Selectors:</span> Remove unreferenced selectors from CSS files.</li>
   </ul>
 
   <p class="heading">View</p>
@@ -340,63 +352,83 @@
   <ul>
     <li><span class="listheading">Toolbars</span> 
 
-    <ul>
-      <li><span class="listheading">File:</span> Show or hide the open and save buttons.</li>
+		<ul>
+		  <li><span class="listheading">New:</span> Show or hide the buttons to create New ePub2 and New ePub3.</li>
 
-      <li><span class="listheading">Edit:</span> Show or hide the undo and cut buttons.</li>
+		  <li><span class="listheading">File:</span> Show or hide the Open and Save buttons.</li>
+		  
+		  <li><span class="listheading">Add Existing:</span> Show or hide the Add Existing Files button.</li>
+		  
+		  <li><span class="listheading">Checkpoints:</span> Show or hide the checkpoint buttons: Create Checkpoint for Epub, Create Epub from previous Checkpoint, Compare Epub against Checkpoint, Manage Checkpoint Repositories.</li>
 
-      <li><span class="listheading">Insert:</span> Show or hide the insert chapter and image buttons.</li>
+		  <li><span class="listheading">Undo/Redo:</span> Show or hide the Undo and Redo buttons.</li>
+		  
+		  <li><span class="listheading">Edit:</span> Show or hide the editing buttons: Cut, Copy, Paste, Remove Open and Close Tag Pair.</li>
+		  
+		  <li><span class="listheading">External Editor:</span> Show or hide the Launch External Xhtml Editor button. (To set your preferred External Xhtml Editor, go to <span class="menuitem">Preferences→General Settings</span>.)</li>
+		  
+		  <li><span class="listheading">Find:</span> Show or hide the Find &amp; Replace and Saved Searches buttons.</li>
 
-      <li><span class="listheading">Back:</span> Show or hide the Back button.</li>
+		  <li><span class="listheading">Insert:</span> Show or hide buttons to: Split at Cursor, Insert File, Insert Special Character, Insert ID, Insert Link.</li>
 
-      <li><span class="listheading">Donate:</span> Show or hide the Donate button.</li>
+		  <li><span class="listheading">Back:</span> Show or hide the Back button.</li>
 
-      <li><span class="listheading">Tools:</span> Show or hide the Tools buttons.</li>
+		  <li><span class="listheading">Donate:</span> Show or hide the Donate button.</li>
 
-      <li><span class="listheading">Heading:</span> Show or hide the heading buttons.</li>
+		  <li><span class="listheading">Tools:</span> Show or hide the tool buttons: Metadata Editor, Generate Table of Contents, Edit Table of Contents, Spellcheck.</li>
+		  
+		  <li><span class="listheading">Plugins Set 1:</span> Show or hide 5 Plugin buttons. (To choose which plugins appear here, go to <span class="menuitem">Preferences→Plugins→Shortcuts</span>).</li>
 
-      <li><span class="listheading">Format:</span> Show or hide the bold and formatting buttons.</li>
+		  <li><span class="listheading">Plugins Set 2:</span> Show or hide 5 additional Plugin buttons. (To choose which plugins appear here, go to <span class="menuitem">Preferences→Plugins→Shortcuts</span>).</li>
+		  
+		  <li><span class="listheading">Heading:</span> Show or hide the heading buttons: h1, h2, etc.</li>
 
-      <li><span class="listheading">Align:</span> Show or hide the text alignment buttons.</li>
+		  <li><span class="listheading">Format:</span> Show or hide the formatting buttons: Bold, Italic, Underline, Strikethrough, Subscript, Superscript.</li>
 
-      <li><span class="listheading">List:</span> Show or hide the numbered list buttons.</li>
+		  <li><span class="listheading">Align:</span> Show or hide the text alignment buttons: Align Left, Center, Align Right, Justify.</li>
 
-      <li><span class="listheading">Indent:</span> Show or hide the indent buttons.</li>
+		  <li><span class="listheading">List:</span> Show or hide the list buttons: Bullets and Numbering.</li>
 
-      <li><span class="listheading">Change Case:</span> Show or hide the change case buttons.</li>
+		  <li><span class="listheading">Indent:</span> Show or hide the Decrease Indent and Increase Indent buttons.</li>
 
-      <li><span class="listheading">Text Direction:</span> Show or hide the text direction buttons (off by default).</li>
+		  <li><span class="listheading">Change Case:</span> Show or hide the change case buttons: Lowercase, Uppercase, Titlecase, Capitalize.</li>
 
-      <li><span class="listheading">Clip Bar:</span> Show or hide buttons used for Clips (off by default).</li>
-    </ul></li>
+		  <li><span class="listheading">Text Direction:</span> Show or hide the text direction buttons: Left-to-Right, Right-to-Left, Default.</li>
 
-    <li class="first"><span class="listheading">Zoom In:</span> Increase the size of text and images in the view.</li>
+		  <li><span class="listheading">Clip Bar:</span> Show or hide the clip bar. (To create and manage clips, go to <span class="menuitem">Tools→Clip Editor</span>.)</li>
+		  
+		<li><span class="listheading">Clip Bar2:</span> Show or hide a second clip bar. (To create and manage clips, go to <span class="menuitem">Tools→Clip Editor</span>.)</li>
+		
+		<li><span class="listheading">Index:</span> Show or hide the indexing buttons: Index Editor, Add the selected text to the Index Editor, Mark the selected text for inclusion in the Index, Generate a new Index HTML file.</li>
+		</ul></li>
 
-    <li><span class="listheading">Zoom Out:</span> Decrease the size of text and images in the view.</li>
+    <li class="first"><span class="listheading">Zoom In:</span> Increase the size of text and images in Code View or Preview (whichever window is selected).</li>
+
+    <li><span class="listheading">Zoom Out:</span> Decrease the size of text and images in Code View or Preview (whichever window is selected).</li>
 
     <li><span class="listheading">Zoom Reset:</span> Reset the window zoom to 100%.</li>
 
-    <li class="first"><span class="listheading">Book Browser:</span> Open or close the list of files in the EPUB.</li>
+    <li class="first"><span class="listheading">Book Browser:</span> Show or hide the list of files in the epub.</li>
 
-    <li><span class="listheading">Clips:</span> Open or close a selectable list of all Clips.</li>
+    <li><span class="listheading">Clips:</span> Show or hide a selectable list of all text clippings.</li>
 
-    <li><span class="listheading">Preview:</span> Open or close a live preview window.</li>
+    <li><span class="listheading">Preview:</span> Show or hide a live preview window.</li>
 
-    <li><span class="listheading">Table of Contents:</span> Open or close a clickable TOC window.</li>
+    <li><span class="listheading">Table of Contents:</span> Show or hide a clickable TOC window.</li>
 
-    <li><span class="listheading">Validation Results:</span> Open or close the validation window.</li>
+    <li><span class="listheading">Validation Results:</span> Show or hide the validation results window.</li>
   </ul>
 
   <p class="heading">Window</p>
 
   <ul>
-    <li><span class="listheading">Next Tab:</span> Change view to the following tab.</li>
+    <li><span class="listheading">Next Tab:</span> Change view to the next tab in Code View.</li>
 
-    <li><span class="listheading">Previous Tab:</span> Change view to the preceding tab.</li>
+    <li><span class="listheading">Previous Tab:</span> Change view to the preceding tab in Code View.</li>
 
-    <li><span class="listheading">Close Tab:</span> Close the current tab.</li>
+    <li><span class="listheading">Close Tab:</span> Close the current tab in Code View.</li>
 
-    <li><span class="listheading">Close Other Tabs:</span> Close all tabs other than the current tab.</li>
+    <li><span class="listheading">Close Other Tabs:</span> Close all tabs other than the current tab in Code View.</li>
 
     <li class="first"><span class="listheading">Previous File:</span> Open the file above the selected file in the Book Browser.</li>
 
@@ -406,75 +438,111 @@
   <p class="heading">Plugins</p>
 
   <ul>
-    <li><span class="listheading">Manage Plugins:</span> Install or uninstall plugins.</li>
+    <li><span class="listheading">Manage Plugins:</span> Add or remove plugins, and select which plugins appear in the toolbar.</li>
+  </ul>
 
-    <li><span class="listheading">Edit:</span> Run Edit plugins.</li>
+  <p class="heading">Checkpoints</p>
 
-    <li><span class="listheading">Validation:</span> Run Validation plugins.</li>
+  <ul>
+    <li><span class="listheading">Create Checkpoint for Epub:</span> Save the current version of the epub as a checkpoint (stored via a local git repository).</li>
+    
+    <li><span class="listheading">Create Epub from previous Checkpoint:</span> Create a new epub from an earlier checkpoint version.</li>
 
-    <li><span class="listheading">Input:</span> Run Input plugins.</li>
+    <li><span class="listheading">Compare Epub against Checkpoint:</span> Compare the current version of the epub with an earlier checkpoint version.</li>
 
-    <li><span class="listheading">Output:</span> Run Output plugins.</li>
+    <li><span class="listheading">Manage Checkpoint Repositories:</span> View a list of all checkpoints, view logs, and remove selected checkpoint repositories.</li>
   </ul>
 
   <p class="heading">Help</p>
 
   <ul>
-    <li><span class="listheading">User Guide:</span> The official Sigil User Guide.</li>
+    <li><span class="listheading">User Guide</span>: Official documentation for Sigil.</li>
 
-    <li><span class="listheading">Tutorials:</span> Step by step guides to using Sigil.</li>
+    <li class="first"><span class="listheading">Donate</span>: How to donate to ongoing development. </li>
 
-    <li><span class="listheading">Frequently Asked Questions:</span> Common questions about Sigil.</li>
-
-    <li class="first"><span class="listheading">Donate:</span> How to donate to ongoing development.</li>
-
-    <li><span class="listheading">Report an Issue:</span> How to submit a bug report.</li>
-
-    <li><span class="listheading">Sigil Website:</span> Occasional updates about development.</li>
-
-    <li><span class="listheading">About:</span> Sigil version and author information.</li>
+    <li><span class="listheading">Sigil Website</span>: Announcements and updates about development.</li>
   </ul>
+
+  <h3 class="sigil_not_in_toc" id="keyboard_shortcuts">Keyboard Shortcuts</h3>
+
+  <p>Keyboard shortcuts (e.g. <span class="shortcut">Ctrl+S</span> for Save) are shown next to menu entries and in <span class="menuitem">Edit→Preferences: Keyboard Shortcuts</span> (for Mac: <span class="menuitem">Sigil→Preferences: Keyboard Shortcuts</span>).</p>
+
+  <div class="tip">
+    <p class="tiptext">You can create or change keyboard shortcuts in <a href="../Text/preferences.html">Preferences</a>.</p>
+  </div>
 
   <h3 class="sigil_not_in_toc" id="toolbars">Toolbars</h3>
 
-  <p>Toolbars are the rows of buttons at the top of the window. But the buttons don’t have to remain at the top of the screen – you can click and drag groups of buttons anywhere you want (shown here with an undocked Book Browser and Table of Contents at top):</p>
+  <p>Toolbars are rows of buttons that provide shortcuts to commonly used commands. Toolbars are positioned at the top of the window by default, but you can click and drag groups of buttons to run along the left, right or bottom of the window, if you like, or undock them as floating palettes.</p>
+  
+  <p>Here’s an example of toolbar buttons running along all four sides of the window, plus more buttons floating undocked, and the Clips window floating undocked:</p>
 
   <div class="image">
-    <img alt="user-interface-buttons-moved" src="../Images/user-interface-buttons-moved.png"/>
+    <img alt="" src="../Images/ui_buttons-moved.png"/>
+  </div>
+  
+  <div class="tip">
+    <p class="tiptext">To move toolbars, click and hold on the small bar to the left of each button group then drag it to where you want it.</p>
+
+    <p class="tiptext">Right-click on the toolbar to easily select which buttons or windows to show, or use the <span class="menuitem">View→Toolbars</span> menu.</p>
+    
+    <p class="tiptext">Hover over a button to see tooltips explaining what the button does.</p>
   </div>
 
   <h4 class="sigil_not_in_toc" id="main_toolbar">Main Toolbar</h4>
 
-  <p>The main toolbar contains buttons used for shortcuts to Sigil’s main features:</p>
-
-  <div class="image">
-    <img alt="main_toolbar" src="../Images/main-toolbar.png"/>
+ <div class="image">
+    <img alt="" src="../Images/ui_main-toolbar.png"/>
   </div>
 
-  <div class="tip">
-    <p class="tiptext">To move buttons, click and hold on the small bar to the left of each button group then drag it to where you want it.</p>
-
-    <p class="tiptext">Right-click on the toolbar to easily select which buttons or windows to show.</p>
-  </div>
-
-  <p>The buttons are listed below, with their equivalent menu entry:</p>
+  <p>The main toolbar contains buttons used for shortcuts to Sigil’s main features. They are shown below with their equivalent menu entry.</p>
 
   <div class="toolbar">
-    <img alt="" src="../Images/toolbar-file.png"/> 
+    <img alt="" src="../Images/ui_toolbar-file.png"/> 
 
     <ul>
-      <li><span class="listheading">New:</span> <span class="menuitem">File→New</span></li>
+      <li><span class="listheading">New ePub2:</span> <span class="menuitem">File→New→ePub2</span></li>
 
-      <li><span class="listheading">Open:</span> <span class="menuitem">File→Open</span></li>
+      <li><span class="listheading">New ePub3:</span> <span class="menuitem">File→New→ePub3</span></li>
 
-      <li><span class="listheading">Add Existing Files:</span> <span class="menuitem">File→Add→Existing Files</span></li>
+      <li class="first"><span class="listheading">Open:</span> <span class="menuitem">File→Open</span></li>
 
       <li><span class="listheading">Save:</span> <span class="menuitem">File→Save</span></li>
+
+      <li class="first"><span class="listheading">Add Existing Files:</span> <span class="menuitem">File→Add→Existing File</span></li>
     </ul>
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-main-undo.png"/></p>
+    <img alt="" src="../Images/ui_toolbar-checkpoints.png"/> 
+
+    <ul>
+      <li><span class="listheading">Create Checkpoint for Epub:</span> <span class="menuitem">Checkpoints→Create Checkpoint for Epub</span></li>
+
+      <li><span class="listheading">Create Epub from previous Checkpoint:</span> <span class="menuitem">Checkpoints→Create Epub from previous Checkpoint</span></li>
+
+      <li><span class="listheading">Compare Epub against Checkpoint:</span> <span class="menuitem">Checkpoints→Compare Epub against Checkpoint</span></li>
+
+      <li><span class="listheading">Manage Checkpoint Repositories:</span> <span class="menuitem">Checkpoints→Manage Checkpoint Repositories</span></li>
+   </ul>
+  </div>
+
+  <div class="toolbar">
+    <img alt="" src="../Images/ui_toolbar-index.png"/> 
+
+    <ul>
+      <li><span class="listheading">Index Editor</span> <span class="menuitem">Tools→Index→Index Editor</span></li>
+      
+      <li><span class="listheading">Add the selected text to the Index Editor:</span> <span class="menuitem">Tools→Index→Add To Index Editor</span></li>
+      
+       <li><span class="listheading">Mark the selected text for inclusion in the Index:</span> <span class="menuitem">Tools→Index→Mark For Index</span></li>
+ 
+ 		<li><span class="listheading">Generate a new Index HTML file:</span> <span class="menuitem">Tools→Index→Create Index</span></li>
+  </ul>
+  </div>
+
+  <div class="toolbar">
+    <p><img alt="" src="../Images/ui_toolbar-edit.png"/></p>
 
     <ul>
       <li><span class="listheading">Undo:</span> <span class="menuitem">Edit→Undo</span></li>
@@ -485,19 +553,37 @@
 
       <li><span class="listheading">Copy:</span> <span class="menuitem">Edit→Copy</span></li>
 
-      <li><span class="listheading">Paste:</span> <span class="menuitem">Edit→Paste</span></li>
+	  <li><span class="listheading">Paste:</span> <span class="menuitem">Edit→Paste</span></li>
 
-      <li class="first"><span class="listheading">Find &amp; Replace:</span> <span class="menuitem">Search→Find &amp; Replace</span></li>
+      <li class="first"><span class="listheading">Remove Open and Close Tag Pair</span> <span class="menuitem">(no equivalent menu entry)</span></li>
     </ul>
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-split-insert.png"/></p>
+    <img alt="" src="../Images/ui_toolbar-external-editor.png"/> 
+
+    <ul>
+      <li><span class="listheading">Launch External Xhtml Editor:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+  </ul>
+  </div>
+
+  <div class="toolbar">
+    <img alt="" src="../Images/ui_toolbar-find.png"/> 
+
+    <ul>
+    	<li><span class="listheading">Find &amp; Replace:</span> <span class="menuitem">Search→Find &amp; Replace</span></li>
+      
+    	<li><span class="listheading">Saved Searches</span> <span class="menuitem">Tools→Saved Searches</span></li>
+  </ul>
+  </div>
+
+  <div class="toolbar">
+    <p><img alt="" src="../Images/ui_toolbar-insert.png"/></p>
 
     <ul>
       <li><span class="listheading">Split At Cursor:</span> <span class="menuitem">Edit→Split At Cursor</span></li>
 
-      <li><span class="listheading">Insert File:</span> <span class="menuitem">Insert→File</span></li>
+      <li class="first"><span class="listheading">Insert File:</span> <span class="menuitem">Insert→File</span></li>
 
       <li><span class="listheading">Insert Special Character:</span> <span class="menuitem">Insert→Special Character</span></li>
 
@@ -507,16 +593,16 @@
     </ul>
 
     <div class="toolbar">
-      <p><img alt="" src="../Images/toolbar-back.png"/></p>
+      <p><img alt="" src="../Images/ui_toolbar-back.png"/></p>
 
       <ul>
-        <li><span class="listheading">Back:</span> <span class="menuitem">Search→Go Back To Link Or Style</span></li>
+        <li><span class="listheading">Back:</span> <span class="menuitem">Search→Back</span></li>
       </ul>
     </div>
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/main-toolbar-donate.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-donate.png"/></p>
 
     <ul>
       <li><span class="listheading">Donate:</span> <span class="menuitem">Help→Donate</span></li>
@@ -524,31 +610,55 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-tools.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-tools.png"/></p>
 
     <ul>
       <li><span class="listheading">Metadata Editor:</span> <span class="menuitem">Tools→Metadata Editor</span></li>
 
       <li><span class="listheading">Generate Table of Contents:</span> <span class="menuitem">Tools→Table Of Contents→Generate Table Of Contents</span></li>
 
-      <li><span class="listheading">Next Misspelled Word:</span> <span class="menuitem">Tools→Spellcheck→Spellcheck</span></li>
+      <li><span class="listheading">Edit Table of Contents:</span> <span class="menuitem">Tools→Table Of Contents→Edit Table Of Contents</span></li>
 
-      <li><span class="listheading">Well-Formed Check EPUB:</span> <span class="menuitem">Tools→Well-Formed Check EPUB</span></li>
+      <li><span class="listheading">Spellcheck:</span> <span class="menuitem">Tools→Spellcheck→Spellcheck</span></li>
+    </ul>
+  </div>
+
+  <div class="toolbar">
+    <p><img alt="" src="../Images/ui_toolbar-plugins.png"/></p>
+
+    <ul>
+      <li><span class="listheading">Run Plugin 1:</span> <span class="menuitem">(no equivalent menu entry) </span></li>
+
+      <li><span class="listheading">Run Plugin 2:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 3:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 4:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 5:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li class="first"><span class="listheading">Run Plugin 6:</span> <span class="menuitem">(no equivalent menu entry) </span></li>
+
+      <li><span class="listheading">Run Plugin 7:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 8:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 9:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
+
+      <li><span class="listheading">Run Plugin 10:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
     </ul>
   </div>
 
   <h4 class="sigil_not_in_toc" id="formatting_toolbar">Formatting Toolbar</h4>
-
-  <p>The formatting toolbar contains buttons used mostly for formatting text. This is the default toolbar:</p>
-
+  
   <div class="image">
-    <img alt="" src="../Images/toolbar-format.png"/>
+    <img alt="" src="../Images/ui_toolbar-format.png"/>
   </div>
 
-  <div class="toolbar">
-    <p>The icons are listed below with their equivalent menu entry:</p>
+  <p>The formatting toolbar contains buttons used for formatting text. They are shown below with their equivalent menu entry.</p>
 
-    <p><img alt="" src="../Images/toolbar-format-headings.png" width="40%"/></p>
+  <div class="toolbar">
+     <p><img alt="" src="../Images/ui_toolbar-headings.png"/></p>
 
     <ul>
       <li><span class="listheading">Heading 1:</span> <span class="menuitem">Format→Heading→Heading 1</span></li>
@@ -568,7 +678,7 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-bold.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-bold.png"/></p>
 
     <ul>
       <li><span class="listheading">Bold:</span> <span class="menuitem">Format→Bold</span></li>
@@ -586,7 +696,7 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-align.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-align.png"/></p>
 
     <ul>
       <li><span class="listheading">Align Left:</span> <span class="menuitem">Format→Align Left</span></li>
@@ -600,7 +710,7 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-list.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-list.png"/></p>
 
     <ul>
       <li><span class="listheading">Bulleted List:</span> <span class="menuitem">Format→Bulleted List</span></li>
@@ -610,7 +720,7 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-indent.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-indent.png"/></p>
 
     <ul>
       <li><span class="listheading">Decrease Indent:</span> <span class="menuitem">Format→Decrease Indent</span></li>
@@ -620,73 +730,49 @@
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-case.png" width="40%"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-case.png"/></p>
 
     <ul>
-      <li><span class="listheading">Lowercase:</span> <span class="menuitem">Format→Lowercase</span></li>
+      <li><span class="listheading">Lowercase:</span> <span class="menuitem">Edit→Change Case→Lowercase</span></li>
 
-      <li><span class="listheading">Uppercase:</span> <span class="menuitem">Format→Uppercase</span></li>
+      <li><span class="listheading">Uppercase:</span> <span class="menuitem">Edit→Change Case→Uppercase</span></li>
 
-      <li><span class="listheading">Propercase:</span> <span class="menuitem">Format→Propercase</span></li>
+      <li><span class="listheading">Titlecase:</span> <span class="menuitem">Edit→Change Case→Titlecase</span></li>
 
-      <li><span class="listheading">Capitalise:</span> <span class="menuitem">Format→Capitalise</span></li>
+      <li><span class="listheading">Capitalize:</span> <span class="menuitem">Edit→Change Case→Capitalize</span></li>
     </ul>
   </div>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-format-direction.png"/></p>
+    <p><img alt="" src="../Images/ui_toolbar-direction.png"/></p>
 
     <ul>
-      <li><span class="listheading">Left to Right:</span> <span class="menuitem">Format→Text Direction LTR</span></li>
+      <li><span class="listheading">Left-to-Right:</span> <span class="menuitem">Format→Text Direction LTR</span></li>
 
-      <li><span class="listheading">Right to Left:</span> <span class="menuitem">Format→Text Direction RTL</span></li>
+      <li><span class="listheading">Right-to-Left:</span> <span class="menuitem">Format→Text Direction RTL</span></li>
 
       <li><span class="listheading">Default:</span> <span class="menuitem">Format→Text Direction Default</span></li>
     </ul>
   </div>
+  
+<h4 class="sigil_not_in_toc" id="clipbar">Clip Bars</h4>
 
   <div class="toolbar">
-    <p><img alt="" src="../Images/toolbar-plugins.png"/></p>
-
-    <ul>
-      <li><span class="listheading">Run Plugin 1:</span> <span class="menuitem">(no equivalent menu entry) </span></li>
-
-      <li><span class="listheading">Run Plugin 2:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 3:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 4:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 5:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 6:</span> <span class="menuitem">(no equivalent menu entry) </span></li>
-
-      <li><span class="listheading">Run Plugin 7:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 8:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 9:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-
-      <li><span class="listheading">Run Plugin 10:</span> <span class="menuitem">(no equivalent menu entry)</span></li>
-    </ul>
-  </div>
-
-  <p>Clip Bar</p>
-
-  <ul>
-    <li>Buttons are created for the first 20 Clips not in a group.</li>
-  </ul>
+     <p><img alt="" src="../Images/ui_toolbar-clips.png"/></p>
+     
+   <p>There are two clip bars: <b>Clip Bar</b> and <b>Clip Bar2</b>. Buttons are created for the first 40 clips not in a group. The first clip bar will contain the first 20 clips, the second clip bar will contain the next 20 clips. To create, edit, and manage clips, go to: <span class="menuitem">Tools→Clip Editor</span></p>
+ </div>
 
   <div class="tip">
-    <p class="tiptext">Text direction and the Clip Bar are not visible by default. Use <span class="menuitem">View→Toolbars</span> to hide/unhide button groups.</p>
+    <p class="tiptext">Text direction, Clip Bar, and Clip Bar2 are not visible by default. Use <span class="menuitem">View→Toolbars</span> to hide/unhide these button groups.</p>
   </div>
 
   <h3 class="sigil_not_in_toc" id="context_menus">Context Menus</h3>
 
-  <p>Context Menus are menus that appear when you <b>right-click</b> on text, a label, a window, a tab, a header, a text box, etc. – like a file name in the Book Browser, or selected text in Code View. Context menu items are discussed in related chapters:</p>
+  <p>Context Menus are menus that appear when you <b>right-click</b> on text, a label, a window, a tab, a header, a text box, etc., giving you quick access to a variety of actions. Context menu items are discussed in related chapters.</p>
 
   <div class="image">
-    <img alt="book-browser-context-menu" src="../Images/book-browser-context-menu.png"/>
+    <img alt="book-browser-context-menu" src="../Images/ui_book-browser-context-menu.png"/>
   </div>
 
   <div class="tip">
@@ -695,40 +781,38 @@
 
   <h3 class="sigil_not_in_toc" id="zoom">Zoom</h3>
 
-  <p>On the lower right of the main window is a zoom control that lets you shrink or enlarge the text and images independently in Code View, and the Preview window:</p>
+  <p>On the lower right of the main window is a zoom control that lets you shrink or enlarge the text and images in the Code View and Preview windows independently. Click on the window you want to zoom, then click on the + or - icons to increase or decrease the zoom level. The percentage indicates the current zoom level. (Note: Changing the zoom level on Preview will only work when the Preview window is docked.)</p>
 
   <div class="image">
-    <img alt="" src="../Images/zoom.png"/>
-  </div>
-
-  <p>The 100% indicates the zoom level of the view and this percentage will increase or decrease when you click on the + or – icons.</p>
-
-  <div class="tip">
-    <p class="tiptext">Changing the zoom level on Preview will only work when the Preview widget is docked.</p>
+    <img alt="" src="../Images/ui_zoom.png"/>
   </div>
 
   <h3 class="sigil_not_in_toc" id="status_bar">Status Bar</h3>
 
-  <p>The bottom area on the main window (to the left of the zoom control) will occasionally list status information when an action is completed.</p>
+  <p>The bottom left corner of the main window will occasionally show status information when an action is completed, such as “EPUB saved” or “Table of Contents edited”.</p>
 
-  <p>The status bar can also show information about the currently opened file, such as Line and Column in Code View:</p>
+  <p>Toward the right corner of the main window (before the zoom slider), you will find information about the currently opened file, such as the Line and Column in Code View.</p>
 
   <div class="image">
-    <img alt="" src="../Images/status-bar.png"/>
+    <img alt="" src="../Images/ui_status-bar.png"/>
   </div>
 
   <h3 class="sigil_not_in_toc" id="tooltips">Tooltips</h3>
 
-  <p>Many of the buttons, dropdown boxes, labels and fields have tooltips that provide information on how they are used.</p>
-
-  <p>To see a tooltip just hover your mouse over the button or other item and the help text should be displayed:</p>
+  <p>Many of the buttons, dropdown boxes, labels and fields have tooltips that provide information on how they are used. To see a tooltip just hover your mouse over the button or other item and the help text should be displayed:</p>
 
   <div class="image">
-    <img alt="" src="../Images/tooltip.png"/>
+    <img alt="" src="../Images/ui_tooltip.png"/>
+  </div>
+
+  <p>Hovering over a filename in the Book Browser will reveal the full filepath:</p>
+
+  <div class="image">
+    <img alt="" src="../Images/ui_tooltip2.png"/>
   </div>
 
   <div class="tip">
-    <p class="tiptext">There are many tooltips available in Sigil – most dialogs and buttons will provide some help text.</p>
+    <p class="tiptext">There are many tooltips available in Sigil. Most dialogs and buttons will provide some help text.</p>
   </div>
 </body>
 </html>

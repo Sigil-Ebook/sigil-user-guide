@@ -356,42 +356,48 @@
       </navPoint>
       <navPoint id="navPoint-58" playOrder="58">
         <navLabel>
+          <text>Using the Page Inspector</text>
+        </navLabel>
+        <content src="Text/tutorial_inspector.html"/>
+      </navPoint>
+      <navPoint id="navPoint-59" playOrder="59">
+        <navLabel>
           <text>Tips</text>
         </navLabel>
         <content src="Text/tutorial_tips.html"/>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint-59" playOrder="59">
+    <navPoint id="navPoint-60" playOrder="60">
       <navLabel>
         <text>FAQ</text>
       </navLabel>
       <content src="Text/faq.html"/>
-      <navPoint id="navPoint-60" playOrder="60">
+      <navPoint id="navPoint-61" playOrder="61">
         <navLabel>
           <text>Common Questions</text>
         </navLabel>
         <content src="Text/faq.html#faq_common_questions"/>
       </navPoint>
-      <navPoint id="navPoint-61" playOrder="61">
+      <navPoint id="navPoint-62" playOrder="62">
         <navLabel>
           <text>Where to Get Help</text>
         </navLabel>
         <content src="Text/faq.html#faq_questions"/>
       </navPoint>
-      <navPoint id="navPoint-62" playOrder="62">
+      <navPoint id="navPoint-63" playOrder="63">
         <navLabel>
           <text>Using Sigil</text>
         </navLabel>
         <content src="Text/faq.html#faq_using_sigil"/>
       </navPoint>
-      <navPoint id="navPoint-63" playOrder="63">
+      <navPoint id="navPoint-64" playOrder="64">
         <navLabel>
           <text>Formatting and Styles</text>
         </navLabel>
         <content src="Text/faq.html#faq_formatting"/>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint-64" playOrder="64">
+    <navPoint id="navPoint-65" playOrder="65">
       <navLabel>
         <text>Contributing to Sigil</text>
       </navLabel>

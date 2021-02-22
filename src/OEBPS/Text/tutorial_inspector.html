@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Inspect Page</title>
+  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h2 id="customize">Using the Page Inspector</h2>
+
+  <p class="h1subheading">— Inspect the DOM of Your Page —</p>
+
+<p>At the bottom of the Preview window is a button that displays
+the Inspector tool. The icon looks like this:</p>
+<div class="image">
+<img alt="tutorial-inspector" src="../Images/tutorial-inspector.png"/>
+</div>
+
+<p>When you click on the button, the Page Inspector tool is displayed.
+</p>
+<div class="image">
+<img alt="tutorial-inspector_window" src="../Images/tutorial-inspector-window.png"/>
+</div>
+
+<p>The Page Inspector allows you to inspect and modify the Document Object Model
+(DOM) of the page being viewed in the Preview window.</p>
+
+<p>The DOM is a memory-resident version of the page that you have
+composed using HTML. Sigil parses the HTML file and creates a tree
+structure in memory that represents the information you have entered
+into the HTML. The Preview Page is
+actually displaying what is in the DOM.</p>
+
+<p>If you are interested in learning more about the DOM, you
+can find those details at:</p>
+
+<p><a href="https://www.w3schools.com/js/js_htmldom.asp
+">https://www.w3schools.com/js/js_htmldom.asp</a>
+</p>
+
+<p>Since the DOM is a memory-resident version of your page, you can
+change it on the fly and see the results immediately in the preview.</p>
+<p>
+The Inspector allows you to inspect and modify the DOM as you like.
+That makes it possible for you to change the contents of the page,
+and/or the style sheets and see the results of those changes immediately
+in the preview.</p>
+
+<div class="tip">
+<p class="tiptext">Since you are changing only the DOM in memory, none of the
+changes that you make in the Inspector will change your HTML file.</p>
+</div>
+
+<p>When you first open the Inspector, the DOM tree shows two
+nodes with arrows,
+<img alt="tutorial-inspector-window-arrow" src="../Images/tutorial-inspector-window-arrow.png"/>
+, pointing to the right, as you can see in the previous figure.
+There is one for the &lt;head&gt; tag and one for the &lt;body&gt; tag.
+If you click on one of the arrows, the tree
+expands so show the contents of that node, as shown below.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-level1" src="../Images/tutorial-inspector-window-level1.png"/>
+</div>
+
+<p>In the figure above, you can see that the &lt;body&gt; tag has been expanded to show
+the contents of the body. Clicking successively on the arrows allows
+you to dig down through the tree of nodes.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-level2" src="../Images/tutorial-inspector-window-level2.png"/>
+</div>
+
+<p>When you select one of the tags in the tree, the window on the
+right hand side displays the style information about that node.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-styles" src="../Images/tutorial-inspector-window-styles.png"/>
+</div>
+
+<p>You can see that the styles applied to that node are
+shown in the Styles panel. Of particular interest is the figure in the lower right hand
+corner of the Styles panel. That is called a Box Model.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-boxmodel" src="../Images/tutorial-inspector-window-boxmodel.png"/>
+</div>
+
+<p>The box model shows the values of position, margin, border, padding and contents of the node. The units of the 
+numbers shown are pixels. So you can tell from the image above that the selected
+paragraph has a top and bottom margin of 16 pixels, no border, no padding, and is
+288 pixels wide and 72 pixels tall.</p>
+
+
+
+<p>Another way that you can select a node for inspection is
+to use the Element Tool, which allows you to select the desired
+node in the Preview panel. Activate the Element Tool by clicking the
+button in the upper left corner of the Inspector window,
+indicated by the mouse cursor in the figure below.</p>
+<div class="image">
+<img alt="tutorial-inspector-element-tool" src="../Images/tutorial-inspector-element-tool.png"/>
+</div>
+
+<p>Once you have
+activated the Element Tool, you can select the desired element
+in the Preview panel. The elements in the Preview panel are
+highlighted as you track the mouse cursor over them.
+</p>
+<div class="image">
+<img alt="tutorial-inspector-element-selection" src="../Images/tutorial-inspector-element-selection.png"/>
+</div>
+
+<p>Simply click on the highlighted element.
+Once you have selected a node in the Elements tree, you
+can make changes to its contents and styles and see the effect
+of those changes immediately in the Preview window. In the
+figure below, I have changed the style for the paragraph
+tag to add the color: red.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-styles-red" src="../Images/tutorial-inspector-window-styles-red.png"/>
+</div>
+
+<p>You can see immediately in the Preview window
+that all the paragraph tags show the text in red.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-styles-red-results" src="../Images/tutorial-inspector-window-styles-red-results.png"/>
+</div>
+
+<p>You can change the contents of the node as well.
+Double-click on the contents of the paragraph to select it.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-edit" src="../Images/tutorial-inspector-window-edit.png"/>
+</div>
+
+<p>Enter the new text to see it change immediately in
+the Preview window.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-edit-result" src="../Images/tutorial-inspector-window-edit-result.png"/>
+</div>
+
+
+<div class="tip">
+<p class="tiptext">Remember, since you are changing only the DOM in memory, none of the
+changes that you make in the Inspector will change your HTML file.</p>
+</div>
+
+<p>Another feature of the Inspector is the Console, which
+interprets JavaScript commands.</p>
+
+<p>Once you have selected a node in the inspector tree, you can
+access it using normal JavaScript commands in the Console. The Console
+can be activated by switching to it with the Console
+tab.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-tab" src="../Images/tutorial-inspector-console-tab.png"/>
+</div>
+
+<p>That results in the Console taking over the entire Inspector
+window.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-total" src="../Images/tutorial-inspector-console-total.png"/>
+</div>
+
+
+<p>You can also place a Console panel beneath the Elements panel
+by typing the Esc key.</p>
+<div class="image">
+<img alt="tutorial-inspector-console" src="../Images/tutorial-inspector-console.png"/>
+</div>
+
+<p>The currently selected node in the Elements panel
+is accessed using '$0'. The node that is accessed
+using $0 is indicated in the
+Elements panel where the tool has appended '== $0'
+to the line of text that is selected.</p>
+<div class="image">
+<img alt="tutorial-inspector-node-id-0" src="../Images/tutorial-inspector-node-id-0.png"/>
+</div>
+
+
+<p>In the previous figure of the Console, you can see that I have
+typed '$0' into the Console, and
+it is displaying the the contents of the selected node.
+Clicking on the arrows in the Console allows you to dig
+down into the node that is displayed.</p>
+
+<p>You can use $0 to access and traverse the DOM tree
+as you normally would with JavaScript commands. For example
+you can access the parent of the selected node by typing
+$0.parentElement. As you enter the command, autocompletion
+popups are displayed to help you.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-autocomplete" src="../Images/tutorial-inspector-console-autocomplete.png"/>
+</div>
+
+<p>You can use the mouse to select the desired method from the menu,
+or you can type the Tab key to finish the selection by accepting
+the highlighted element.</p>
+
+<p>You can see in the following figure that the parent
+of the selected paragraph node is the &lt;body&gt; node.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-parent" src="../Images/tutorial-inspector-console-parent.png"/>
+</div>
+
+<p>Once again, you can use the arrows in the Console output
+to dig down into the node that you are inspecting.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-parent-expanded" src="../Images/tutorial-inspector-console-parent-expanded.png"/>
+</div>
+
+<p>One last tip for using the JavaScript console is that
+the Inspector tool keeps a history of selected nodes. The most
+recently selected node is accessed using $0, and the node
+selected before the current selection is accessed as
+$1. In the figure below, I first selected the paragraph node,
+and then I selected the image node. So $0 refers to the image
+node, the most recent selection, and $1 refers to the paragraph node,
+the previous selection.</p>
+<div class="image">
+<img alt="tutorial-inspector-console-node-history" src="../Images/tutorial-inspector-console-node-history.png"/>
+</div>
+
+<p>Cascading style sheets are also
+supported in the Inspector. 
+The Styles panel provides information about cascading
+styles.</p>
+<div class="image">
+<img alt="tutorial-inspector-window-cascading-styles" src="../Images/tutorial-inspector-window-cascading-styles.png"/>
+</div>
+
+<p>In the figure above, the cascading styles are shown
+with information about the source of each style. The styles
+that are crossed out with a line through them, have been
+superseded by the other styles in the display.</p>
+
+
+<p>This tutorial is only a brief overview of the features of
+the Page Inspector. More details can be found at
+<a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome Developer Tools Documentation</a></p>
+</body>
+</html>
