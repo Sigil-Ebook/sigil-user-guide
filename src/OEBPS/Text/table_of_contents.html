@@ -17,6 +17,8 @@
 
   <p>Sigil provides several ways to work with a TOC. The Table of Contents window in Sigil gives you a dynamic view of your TOC – you can view exactly what your TOC looks like, and select entries to jump to. The Generate TOC function can create a new TOC based on the headings in your document. The Edit TOC function allows you to update an existing TOC when you can’t or don’t want to use Generate TOC. And Create HTML TOC can create a new HTML page in your document showing what is in the EPUB TOC.</p>
 
+  <p>The EPUB TOC is stored in a special XML file called the NCX (typically named toc.ncx) under EPUB2 and in an XHTML document called the NAV (typically named nav.xhtml) under EPUB3.  These files are designed to be machine readable so that both e-readers and accessibility software can use them to allow the user to quickly and efficiently navigate throughout the EPUB.</p>
+
   <h3 class="sigil_not_in_toc">View the TOC</h3>
 
   <p>To open the TOC window if it isn’t already open select the menu item <span class="menuitem">View→Table of Contents</span>:</p>
@@ -31,8 +33,6 @@
     <p class="tiptext">Use the right-click context menu to select <span class="menuitem">Collapse All</span> or <span class="menuitem">Expand All</span> to quickly show or hide sub-chapters.</p>
   </div>
 
-  <p>An EPUB Table of Contents is stored in the <span class="example">toc.ncx</span> file listed in the Book Browser.</p>
-
   <h3 class="sigil_not_in_toc">Generate Table of Contents</h3>
 
   <p>In order to create a Table of Contents automatically you first need to define the headings or chapters in your book.</p>
@@ -44,7 +44,7 @@
   </div>
 
   <div class="tip">
-    <p class="tiptext">If your chapter names do not use heading tags (<span class="example">h1</span>, <span class="example">h2</span>, etc.) as described above, then you will not be able to generate a TOC automatically.</p>
+    <p class="tiptext">If your chapter names do not use heading tags (<span class="example">h1</span>, <span class="example">h2</span>, etc.) as described above, then you will not be able to generate a TOC automatically.  As heading tags are very important for Accessibility reasons you should stringly consider adding them.</p>
   </div>
 
   <p>Start your TOC generation by clicking the Generate Table of Contents button <img alt="generate-toc_22px" src="../Images/generate-toc.png"/>, or selecting the menu item <span class="menuitem">Tools→Table Of Contents→Generate Table Of Contents</span> then select the headings you want included in the book’s Table of Contents:</p>
@@ -75,10 +75,10 @@
     <img alt="toc-tooltip" src="../Images/toc-tooltip.png"/>
   </div>
 
-  <p>When you select <span class="buttonbox">OK</span>, Sigil will add or update automatically generated IDs to any headings you have selected if they don’t have regular IDs already. It will then create a new <span class="example">toc.ncx</span> file containing links to your chapters. If your heading is "near" the beginning of your HTML file, Sigil will link directly to the file and not to the heading ID. This is because on some ereaders linking directly to an element slows down the display of the TOC.</p>
+  <p>When you select <span class="buttonbox">OK</span>, Sigil will add or update automatically generated IDs to any headings you have selected if they don’t have regular IDs already. It will then create a new NCX file on eEPUB2 and Update the NAV file on EPUB3 that contain links to your chapters. If your heading is "near" the beginning of your HTML file, Sigil will link directly to the file and not to the heading ID. This is because on some ereaders linking directly to an element slows down the display of the TOC.</p>
 
   <div class="tip">
-    <p class="tiptext">Generating the TOC automatically will overwrite any existing TOC in the <span class="example">toc.ncx</span> file.</p>
+    <p class="tiptext">Generating the TOC automatically will overwrite any existing TOC in the <span class="example">toc.ncx file of an EPUB2</span> or the <span class="example">nav.xhtml file of an EPUB3</span>.</p>
   </div>
 
   <h3 class="sigil_not_in_toc" id="edit_toc">Edit Table of Contents</h3>
@@ -105,7 +105,7 @@
 
   <h3 class="sigil_not_in_toc" id="generate_html_toc">Generate HTML Table of Contents</h3>
 
-  <p>You can use the menu <span class="menuitem">Tools→Table Of Contents→Generate HTML Table of Contents</span> to create an Inline HTML TOC for your EPUB.</p>
+  <p>You can use the menu <span class="menuitem">Tools→Table Of Contents→Generate HTML Table of Contents</span> to create an Inline HTML TOC for your EPUB.  This type of table of contents is meant to be seen and used by human readers and need not be machine readable unlike the NCX or NAV.</p>
 
   <div class="image">
     <img alt="toc-html" src="../Images/toc-html.png"/>
@@ -113,7 +113,7 @@
 
   <p>An inline TOC is just another HTML page in the EPUB that contains the Table of Contents in text format with links that can be used to jump to specific chapters.</p>
 
-  <p>For most EPUB ereaders, the TOC that is automatically generated from Generate Table Of Contents or stored in <span class="example">toc.ncx</span> is used to display the TOC. However, there are times when an inline TOC is desired in an EPUB or when it is temporarily needed because the EPUB will be converted to another ebook format that does not use the EPUB TOC file.</p>
+  <p>Another reason for creating an HTML Table of Contents is that these can be converted to other ebook formats that do not support the NCX of EPUB2 or NAV of EPUB3.</p>
 
   <p>The Generate HTML Table of Contents menu item will overwrite any existing HTML TOC file (if it has a semantic type of TOC). If no such file exists it will create an HTML file called <span class="example">toc.html</span> and mark its semantic type as TOC. If <span class="example">toc.html</span> already exists it will be replaced.</p>
 
@@ -129,8 +129,6 @@
 
   <h4 class="sigil_not_in_toc">Update The NCX TOC In Eub3 Books</h4>
 
-  <p>If you create an EPUB3 book with Sigil or open an EPUB3 book without an NCX file, Sigil will generate an empty NCX TOC for backwards compatibility. However, like the HTML TOC in EPUB2 books, Sigil won’t automatically update the NCX TOC in EPUB3 books when you regenerate the TOC.</p>
-
-  <p>Make sure to select Tools &gt; Epub3 Tools &gt; Generate NCX from Nav once you’ve finalized the TOC.</p>
+  <p>If you create an EPUB3 book with Sigil or open an EPUB3 book without an NCX file, no NCX will exist.  If you would like to add an NCX to make your EPUB3 more backwards compatible after editing is finished, use <span class="menuitem">Tools→Epub3 Tools→Generate NCX/Guide for epub2 e-readers</span> menu item to generate and add a NCX that older EPUB2-only devices should be able to use.</p>
 </body>
 </html>

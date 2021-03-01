@@ -32,7 +32,7 @@
   <div class="tip">
     <p class="tiptext">Many fonts are not free. Before you include fonts in your EPUB please make sure that you have a license or permission to use them. There are many free fonts available online if you search for them.</p>
 
-    <p class="tiptext">Fonts files must be either OpenType (<span class="example">.otf</span>) or TrueType (<span class="example">.ttf</span>) format. All ereaders should support <span class="example">otf</span> but most will likely support both formats.</p>
+    <p class="tiptext">A number of different font types are supported by the EPUB specification including OpenType (<span class="example">.otf</span>), TrueType (<span class="example">.ttf</span>),and Web Open Font Format(<span class="example">.woff or .woff2</span>) formats. Almost all e-readers support at least TrueType and OpenType formats.</p>
   </div>
 
   <p>The fonts will be added to the Fonts folder in the Book Browser. However, they are not yet actually used anywhere in your book – they are just available to use.</p>
@@ -116,6 +116,10 @@
     <img alt="tutorial-font-obfuscate" src="../Images/tutorial-font-obfuscate.png"/>
   </div>
 
+ <h3 class="sigil_not_in_toc">Font Subsetting</h3>
+
+  <p>A better alternative to Font Obfuscation might be to use Font Subsetting tools to restrict the font descriptions to only the exact characters used in your text.  The act of subsetting a font, renders the font file useless for any other more general use. There are <a href="https://www.mobileread.com/forums/showthread.php?t=247431">plugins available for Sigil</a> such as the <b>"ePUB Optimizer"</b> and <b>"Subset Fonts"</b> plugins that can subset a font.  You can use the <a href="reports.html">Characters Report</a> of Sigil to provide the list of characters actually used in your epub.</p> 
+  
   <h3 class="sigil_not_in_toc">Testing Your Font</h3>
 
   <p>Not all devices will show embedded fonts. Even Sigil may not show all your embedded fonts. Its best to test on your target device to check if your fonts are displayed as you expect.</p>

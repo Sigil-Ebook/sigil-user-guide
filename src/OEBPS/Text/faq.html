@@ -17,11 +17,11 @@
 
   <h3 class="sigil_not_in_toc">Does Sigil Support EPUB 3?</h3>
 
-  <p class="sigil_not_in_toc">Sigil is an EPUB 2 editor and does not currently support all the features of EPUB 3. However it does support audio and video files which are the most often requested parts of EPUB 3, and does allow you to preserve EPUB 3 tags. A future version may support EPUB 3, but EPUB 3 ereaders are not common yet, even though some ereaders support certain parts of EPUB 3.</p>
+  <p class="sigil_not_in_toc">Yes, Sigil fully supports reflowable EPUB2 and EPUB3 epubs.</p>
 
   <h3 class="sigil_not_in_toc">Why does my book look okay in Sigil but not on my device?</h3>
 
-  <p>Every device or program that displays your book uses slightly different software. Despite EPUB being a standard, this means there may be differences in how your book appears on each device. Sigil also supports some features not in the EPUB 2 standard (such as audio, video, and various HTML 5 tags). In some cases, although it looks okay in Sigil, it may not look okay on a specific device. And in other cases, it might not look ok in Sigil but it might display fine on your ereader. You must test your book on as many devices as you can.</p>
+  <p>Every device or program that displays your book uses slightly different software. Despite EPUB being a standard, this means there may be differences in how your book appears on each device.  In some cases, although it looks okay in Sigil, it may not look okay on a specific device. And in other cases, it might not look ok in Sigil but it might display fine on your ereader. You must test your book on as many devices as you can.</p>
 
   <h2 id="faq_questions">Where to Get Help</h2>
 
@@ -31,21 +31,21 @@
 
   <h3 class="sigil_not_in_toc">Where can I ask questions about EPUB?</h3>
 
-  <p>You can post on the <a href="http://www.mobileread.com/forums/forumdisplay.php?f=179">EPUB Forum at MobileRead</a> if your questions are more about how to format and style something in an EPUB than how to do something in Sigil.</p>
+  <p>You can post on the <a href="http://www.mobileread.com/forums/forumdisplay.php?f=179">EPUB Forum at MobileRead</a> if your questions are more about how to format and style something in an EPUB rather than how to do something in Sigil.</p>
 
   <h3 class="sigil_not_in_toc">Where can I report bugs or request features?</h3>
 
-  <p>Read the <a href="http://code.google.com/p/sigil/wiki/ReportingIssues">Reporting Issues</a> information to submit a bug report or feature request.</p>
+  <p>Actual bug reports should be submitted via our Github Repository at <a href="https://github.com/Sigil-Ebook/Sigil">https://github.com/Sigil-Ebook/Sigil</a>.  If you so desire, bug reports can also be posted to <a href="http://www.mobileread.com/forums/showthread.php?f=203">the Mobileread Sigil forum</a>. Please include Sigil Version number, operating system (Windows 10, macOS, Linux Mint) and specific directions on how to recreate the bug or a sample epub that shows the bug.</p>
 
   <h2 id="faq_using_sigil">Using Sigil</h2>
 
-  <h3 class="sigil_not_in_toc">Sigil does not start on MAC OS 10.6?</h3>
+  <h3 class="sigil_not_in_toc">Sigil does not start on MAC OS 10.11?</h3>
 
-  <p>Sigil on the MAC requires MAC OS 10.7 or later.</p>
+  <p>Sigil on the MAC requires MAC OS 10.12 or later.</p>
 
   <h3 class="sigil_not_in_toc">Is there a tutorial or manual for Sigil?</h3>
 
-  <p>Yes – in Sigil use <span class="menuitem">Help→User Guide</span> to see an HTML version of the Sigil User Guide which also includes tutorials. Or visit the <a href="http://code.google.com/p/sigil/">Sigil home page</a> for a link to the HTML and EPUB versions.</p>
+  <p>Yes – in Sigil use <span class="menuitem">Help→User Guide</span> to see an HTML version of the Sigil User Guide which also includes tutorials. Or visit the <a href="http://sigil-ebook.com">Sigil home page</a> for a link to the HTML and EPUB versions.</p>
 
   <h3 class="sigil_not_in_toc">Can I write my book using Sigil?</h3>
 
@@ -69,9 +69,9 @@
 
   <p>Sigil can only import or open valid HTML and EPUB files. It will try to recover from some common problems in files, but if there is a significant issue (missing standard code or files) then it may be unable to open the file.</p>
 
-  <p>If your Preferences have Clean Source turned off, try setting it to Pretty Print Tidy as it will correct certain errors. Sometimes Sigil will give you an error message that might identify the problem with the file. In this case you may be able to open your file with a Zip or archive program and edit the files to correct them. But often the cause of the problem is not clear.</p>
+  <p>If your Preferences have Mend Code3 turned off, try setting it to Mend On Open, as it will correct certain errors. Sometimes Sigil will give you an error message that might identify the problem with the file. In this case you may be able to open your file with a Zip or archive program and edit the files to correct them. But often the cause of the problem is not clear.</p>
 
-  <p>If you want to report a problem with a file that cannot load and crashes Sigil, then you must attach the EPUB file to your bug report. You can set bug reports to private so that non-developers cannot see your file. But in most cases you will need to correct the file.</p>
+  <p>If you want to report a problem with a file that cannot load and crashes Sigil, then you should attach the EPUB file to your bug report. But in most cases you will need to correct the file.</p>
 
   <h3 class="sigil_not_in_toc">Spellcheck does not handle quotes or dashes correctly?</h3>
 
@@ -113,9 +113,7 @@
 
   <h3 class="sigil_not_in_toc">What does <span class="example">sgc-1</span> mean in my document?</h3>
 
-  <p><span class="example">sgc</span> indicates a Sigil class that is used to set the formatting style for certain parts of your text. <span class="example">sgc</span> classes are automatically created for certain span tags and "style=" attributes if you have HTML Tidy turned on (<span class="menuitem">Edit→Clean Source</span>).</p>
-
-  <h3 class="sigil_not_in_toc">Why does my code have <span class="example">&amp;nbsp;</span> and <span class="example">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</span> entries in it?</h3>
+  <p><span class="example">sgc</span> indicates a Sigil class that is used to set the formatting style for certain parts of your text. <span class="example">sgc</span> classes are automatically created for certain span tags and "style=" attributes.</p>
 
   <h3 class="sigil_not_in_toc">How do I add blank lines?</h3>
 
@@ -225,7 +223,19 @@
   <p>Then use an archive manager to unzip or access the EPUB file. Add the <span class="example">xml</span> file you created to your EPUB in the <span class="example">META-INF</span> directory, then re-zip your EPUB.</p>
 
   <h3 class="sigil_not_in_toc">Why doesn’t my file pass EPUBCHECK due to plist?</h3>
-
+ 
   <p>If you open your EPUB in iTunes it will automatically add an extra .plist file to the top of the EPUB. This will cause it to fail EPUBCHECK. Do not open your EPUB in iTunes if you intend to use it elsewhere. You can unzip the EPUB and remove the file, then re-zip the file.</p>
+
+ <h3 class="sigil_not_in_toc">Why doesn’t my international keyboard AltGr key work the way I expect?</h3>
+
+  <p>If you use an international keyboard with the AltGr In order to enable keyboard shortcuts when entering national characters or other symbols, it may help to launch Sigil with an additional parameter:</p>
+
+<p><code>"C:\Program Files\Sigil\Sigil.exe" -platform windows:altgr</code></p>
+
+<p>To make this change persistent, you can add it to the Windows properties window in the shortcut that starts the Sigil application.</p>
+<div><img alt="A Windows 10 Properties Window" src="../Images/faq-windows-properties-altgr.png"/></div>
+
+<p> If you want the AltGr key to work also when opening an EPUB file directly, you will have to add the additional parameter to your Windows System Registry in a manner similar to the following:</p>
+<p><code>"C:\Program Files\Sigil\Sigil.exe" -platform windows:altgr "%1"</code></p>
 </body>
 </html>

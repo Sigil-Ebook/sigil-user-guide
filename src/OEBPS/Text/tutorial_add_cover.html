@@ -11,9 +11,22 @@
 <body>
   <h2>Add a Cover Image</h2>
 
-  <p>Every book should have a cover image, and Sigil can make adding one to your EPUB easy. You will need to have an existing cover image available to use (and have permission to use it). The exact size of the cover is up to you and the guidelines for your device.</p>
+  <p>Every book should have a cover image, and Sigil can make adding one to your EPUB easy. You will need to have an existing cover image available to use (and have permission to use it). The exact size of the cover is up to you and the guidelines for your device, however here
+are some general ideas about what is expected.</p>
+<ul>
+    <li><span class="listheading">Kindle Direct Publishing</span> — 2,560 x 1,600 (1.6:1 aspect ratio)</li>
+    <li><span class="listheading">Novels and Non-Fiction</span> — 2,560px x 1,600px (1.5:1 aspect ratio)</li>
+    <li><span class="listheading">Illustrated Books</span> — 2,800px x 3,920px (1.4:1 aspect ratio) or 3,000px x 3,600px (1.2:1 aspect ratio)</li>
+    <li><span class="listheading">Audiobooks</span> — 3,200px x 3,200px (1:1 aspect ratio)</li>
+</ul>
 
-  <p>To add a cover, just select the menu item <span class="menuitem">Add Cover</span>:</p>
+<p>You should check with your book vendor and with the
+specifications for your targeted devices for the details
+on proper cover sizes.</p>
+
+  <p>To add a cover, just select the menu item <span class="menuitem"><span class="menuitem">Tools→Add Cover</span></span></p>
+
+<p>That menu item will display the Add Cover Window.</p>
 
   <div class="image">
     <img alt="tutorial-add-cover" src="../Images/tutorial-add-cover.png"/>
@@ -26,6 +39,10 @@
   <p>Select your cover image from your filesystem and click OK.</p>
 
   <p>And that’s it. Sigil has added your image to the EPUB and marked it as the cover image. It has also created an HTML file at the start of your book and inserted your cover image into the file so that it will be displayed at the start of the book:</p>
+
+<p>The contents of your Book Browser show that the cover.xhtml
+file has been added to the Text folder, and the cover.jpg
+image has been added to the Images folder.</p>
 
   <div class="image">
     <img alt="tutorial-add-cover-browser" src="../Images/tutorial-add-cover-browser.png"/>

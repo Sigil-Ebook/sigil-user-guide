@@ -33,7 +33,7 @@
     <ul>
       <li>Everything in the EPUB file is loaded automatically: HTML files, images, stylesheets, metadata, etc..</li>
 
-      <li>Sigil will organise your files into standard folders as shown in the Book Browser.</li>
+      <li>Sigil will unpack your files into the specified folders into exact paths shown in the Book Browser via tooltips. The BookBrowser itself groups files according to their type or function in the epub.</li>
 
       <li>If the EPUB contains common errors Sigil will try to correct them.</li>
 
@@ -42,23 +42,23 @@
       <li>If the EPUB still contains invalid HTML files after cleaning, Sigil will still load the file and report the errors that need to be fixed.</li>
     </ul>
 
-    <p>HTML Files</p>
+    <p>XHTML Files</p>
 
     <ul>
-      <li>The HTML file and any linked files and stylesheets are imported if possible and placed into the appropriate folders.</li>
+      <li>The XHTML file and any linked files and stylesheets are imported if possible and placed into their folders.</li>
 
-      <li>The metadata in the HTML file will be loaded into the metadata for the book.</li>
+      <li>The metadata in the XHTML file will be loaded into the metadata for the book.</li>
 
       <li>Depending on your preferences, Sigil will format or clean the files.</li>
 
-      <li>If the HTML file is still invalid after cleaning, Sigil will report the error but may not load the file. You may have to fix the errors outside of Sigil.</li>
+      <li>If the XHTML file is still invalid after cleaning, Sigil will report the error but may not load the file. You may have to fix the errors outside of Sigil.</li>
     </ul>
   </div>
 
   <p>Text Files</p>
 
   <ul>
-    <li>The text file will be converted to HTML. Paragraphs must be separated by blank lines to have them split into separate paragraphs.</li>
+    <li>The text file will be converted to XHTML. Paragraphs must be separated by blank lines to have them split into separate paragraphs.</li>
   </ul>
 
   <h4 class="sigil_not_in_toc">Add Files</h4>
@@ -66,7 +66,7 @@
   <p>Add files to your EPUB by clicking the Add Existing Files button <img alt="" src="../Images/document-add.png"/>, selecting the menu item <span class="menuitem">File→Add→Existing Files</span>, or right-clicking on a file in the Book Browser and choose <span class="menuitem">Add Existing Files</span>:</p>
 
   <div class="indent">
-    <p>HTML Files</p>
+    <p>XHTML Files</p>
 
     <ul>
       <li>Metadata is not loaded from the file (unlike when you use Open).</li>
@@ -79,37 +79,37 @@
     <p>Image Files</p>
 
     <ul>
-      <li>Files will be placed into the Images folder.</li>
+      <li>Files will be placed into the the current images folder.</li>
     </ul>
 
     <p>Video Files</p>
 
     <ul>
-      <li>Files will be placed into the Video folder.</li>
+      <li>Files will be placed into the current video folder.</li>
     </ul>
 
     <p>Audio Files</p>
 
     <ul>
-      <li>Files will be placed into the Audio folder.</li>
+      <li>Files will be placed into the current audio folder.</li>
     </ul>
 
     <p>Stylesheet Files</p>
 
     <ul>
-      <li>Files will be placed into the Styles folder.</li>
+      <li>Files will be placed into the current styles folder.</li>
     </ul>
 
     <p>Font Files</p>
 
     <ul>
-      <li>Files will be placed into the Fonts folder.</li>
+      <li>Files will be placed into the current fonts folder.</li>
     </ul>
 
     <p>Other Files</p>
 
     <ul>
-      <li>All other files will be placed in the Misc folder as they are not usually used in an EPUB, although certain text files in the Misc folder can be edited in Sigil.</li>
+      <li>All other files will be shown under the BookBrowsers Misc group as they are not usually used in an EPUB, although certain text files in the Misc group can be edited in Sigil.</li>
     </ul>
   </div>
 
@@ -129,7 +129,7 @@
     <p class="tiptext">If you edit any text in your document, an asterisk ( <b>*</b> ) is added to the file’s name in the titlebar.</p>
   </div>
 
-  <p>When you save your book Sigil will check it for certain errors and warn you if you need to fix anything. But you should always run <span class="menuitem">Validate EPUB with FlightCrew</span> to check for typical EPUB issues.</p>
+  <p>When you save your book Sigil will check it for certain errors and warn you if you need to fix anything. But you should always run one of the Validators available as plugins for Sigil, such as FlightCrew for EPUB2 and EpubCheck for EPUB2 and 3, to check for typical epub issues.</p>
 
   <div class="tip">
     <p class="tiptext">Sigil will not always be able to save an EPUB that contains errors, so frequent saves will make it easier to identify if there are errors that you need to correct.</p>

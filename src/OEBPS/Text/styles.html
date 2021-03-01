@@ -6,32 +6,35 @@
 <head>
   <title>Styles</title>
   <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
-</head>
+  </head>
 
 <body>
   <h2 id="styles">Styles</h2>
 
   <p class="h2subheading">— Working with Stylesheets —</p>
 
-  <p>EPUB editing is all about styles. Sigil provides very easy to use but powerful tools for helping you work with stylesheets.</p>
+  <p>EPUB editing is all about styles. Sigil provides very easy-to-use yet powerful tools for helping you work with stylesheets.</p>
 
-  <p>Styles can be inserted in your individual HTML files, but the usual approach is to define a stylesheet containing your styles and then link that file to your HTML files.</p>
+  <p>While styles can be inserted directly into individual HTML files, the usual approach is to define an external stylesheet containing your styles, then link that file to your HTML files.</p>
 
-  <div class="image">
-    <img alt="styles-tab" src="../Images/styles-tab.png"/>
-  </div>
 
   <h3 class="sigil_not_in_toc">Creating Stylesheets</h3>
 
-  <p>To create a stylesheet, just use <span class="menuitem">File→Add→Blank Stylesheet</span>. Then just add the style definitions you want to use. Or add an existing stylesheet file (such as a template you use often) to the EPUB.</p>
+		  <p>To create a stylesheet, go to the main menu bar and select <span class="menuitem">File→Add→Blank Stylesheet</span> or right-click on the Styles folder in the Book Browser and select <span class="menuitem">Add Blank Stylesheet</span>. Once created, type in the style definitions you want to use. </p>
+		  
+		   <div class="image">
+    			<img alt="" src="../Images/context-menu-add-stylesheet.png"/>
+    	  </div>
 
-  <div class="tip">
-    <p class="tiptext">Do not include spaces in your stylesheet filename.</p>
-  </div>
+		<p> You can also add an existing stylesheet file, such as a template you’ve created, using <span class="menuitem">File→Add→Existing Files</span> or right-click on the Styles folder and select <span class="menuitem">Add Existing Files</span>.</p>
+		
+		  <div class="tip">
+			<p class="tiptext">Do not include spaces in your stylesheet filename.</p>
+		  </div>
 
   <h3 class="sigil_not_in_toc">Linking Stylesheets</h3>
 
-  <p>You can easily link your stylesheets to your HTML files by right-clicking on them in the Book Browser and selecting <span class="menuitem">Link Stylesheets</span> then choosing which stylesheet to link or unlink.</p>
+  <p>Link your stylesheets to your HTML files by right-clicking on the files in the Book Browser and selecting <span class="menuitem">Link Stylesheets</span>. Then choose which stylesheet(s) to link or unlink.</p>
 
   <div class="image">
     <img alt="book-browser-link-stylesheets" src="../Images/book-browser-link-stylesheets.png"/>
@@ -39,56 +42,54 @@
 
   <h3 class="sigil_not_in_toc">Navigating Styles</h3>
 
-  <p>You can quickly jump to the definition of a style being used by your HTML code.</p>
+  <p>When working in Code View, there are times when you want to view the style definition of a tag. To quickly and easily jump from your HTML file to the specific style definition in question: </p>
+  
+  	<ul>
+  		<li>Hold the <span class="shortcut">Ctrl</span> key down while clicking on the HTML tag. (On Mac hold the <span class="shortcut">Cmd</span> key.)</li>
+ 		<li>Place your cursor inside a tag and select menu item <span class="menuitem">Search→Go To Link Or Style</span> or use its keyboard shortcut.</li>
+    	<li>Right-click on the tag and select <span class="menuitem">Go To Link Or Style</span> from the context menu. </li>
+  	</ul>
 
-  <p>While in Code View hold the <span class="shortcut">Ctrl</span> key down and click on an HTML tag, or select the menu item <span class="menuitem">Search→Go To Link Or Style</span> or its keyboard shortcut. You will immediately be taken to the exact location of the style used for the HTML tag you are in – if one exists.</p>
+  <p>You will immediately be taken to the exact location of the style used for the HTML tag you are in (if one exists).</p>
 
-  <p>To return to where you were, just click the Back button <img alt="" src="../Images/back-to-link-style.png"/> or select the menu item <span class="menuitem">Go Back to Link or Style</span> or its keyboard shortcut.</p>
+  <p>To return to where you were in the HTML file, click the Back button <img alt="" src="../Images/back-to-link-style.png"/>, or select the menu item <span class="menuitem">Search→Back</span> or use its keyboard shortcut.</p>
 
-  <h3 class="sigil_not_in_toc">Deleting Styles</h3>
 
-  <p>You can select the menu item <span class="menuitem">Tools→Delete Unused Stylesheet Classes</span> to automatically delete any unused classes in stylesheets. Sigil will present you a list of class names in your stylesheets that do not have any references to them from your HTML files and then allow you to confirm or cancel deleting them.</p>
+  <h3 class="sigil_not_in_toc">Format Your Stylesheet</h3>
+
+  <p>To neaten up and format a stylesheet, open the stylesheet in the Code View window, then right-click inside the window and choose: </p>
+
+    <ul>
+      <li><span class="menuitem">Reformat CSS→Multiple Lines Per Style</span><br/>OR</li>
+      <li><span class="menuitem">Reformat CSS→Single Line Per Style</span></li>
+  </ul>
+
+  <p>Most stylesheets are formatted with individual styles arranged over <b>multiple lines</b>, making them easy to read:</p>
+  
+  <div class="image">
+    <img alt="" src="../Images/styles-multiple-line.png"/>
+  </div>
+
+  <p>However, some stylesheets are formatted with each style listed on a <b>single line</b> with no spaces, resulting in a smaller file size: </p>
+
+  <div class="image">
+    <img alt="styles-single-line" src="../Images/styles-single-line.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Deleting Unused Styles</h3>
+
+  <p>To automatically delete any unused selectors in stylesheets, select the menu item <span class="menuitem">Tools→Delete Unused Stylesheet Selectors</span>. Sigil will present you with a list of styles in your stylesheets that do not have any references in your HTML files. Confirm that you want to delete the marked styles, or cancel.</p>
 
   <div class="image">
     <img alt="styles-delete-styles" src="../Images/styles-delete-styles.png"/>
   </div>
 
   <div class="tip">
-    <p class="tiptext">While Sigil makes several checks to ensure the style is not used, if a particular complicated CSS declaration is used it may list the tag incorrectly so you should check the styles carefully.</p>
+    <p class="tiptext">While Sigil makes several checks to ensure a style is not being used, a complicated CSS declaration may list a selector incorrectly, so you should check the styles carefully.</p>
 
-    <p class="tiptext">You can double-click on a style to show that style in the CSS stylesheet.</p>
+    <p class="tiptext">To see a style in the CSS stylesheet, double-click on the style.</p>
+    
+    <p class="tiptext">You can also use Sigil’s Reports tool to review the “Classes Used” and “CSS Selectors” reports, which provides useful information on the styles in use. To view these reports, go to menu item <span class="menuitem">Tools→Reports</span>. For more information, see the <a href="reports.html">Reports</a> chapter.</p>
   </div>
-
-  <h3 class="sigil_not_in_toc">Context Menu and Formatting Styles</h3>
-
-  <p>The context menu for a stylesheet allows you to re-format your stylesheet:</p>
-
-  <ul>
-    <li><span class="listheading">Clips:</span> Select a clip to enter into your stylesheet.</li>
-
-    <li><span class="listheading">Add To Clips:</span> Add the selected text to Clips.</li>
-
-    <li><span class="listheading">Go To Link Or Style:</span> Not used.</li>
-
-    <li><span class="listheading">Reformat CSS</span></li>
-
-    <li><ul>
-      <li><span class="listheading">Multiple Lines Per Style:</span> Arrange the styles with over multiple lines with spacing.</li>
-
-      <li><span class="listheading">Single Lines Per Style:</span> Arrange each style on one line.</li>
-    </ul></li>
-  </ul>
-
-  <p>Although most stylesheets are formatted with multiple lines per style, the single lines per style would look like this:</p>
-
-  <div class="image">
-    <img alt="styles-single-line" src="../Images/styles-single-line.png"/>
-  </div>
-
-  <h3 class="sigil_not_in_toc">Viewing Styles</h3>
-
-  <p>You can use the menu item <span class="menuitem">Tools→Reports</span> to show a list of reports about your styles – see the <a href="reports.html">Reports</a> chapter.</p>
-
-  <p>For more control over deleting individual classes, you can use a report to view the number of times a class is used and then delete the ones you want.</p>
 </body>
 </html>
