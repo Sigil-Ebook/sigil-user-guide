@@ -196,7 +196,8 @@ span.listheading {
 
 span.menuitem {
     font-family: monotype, courier, sans-serif;
-    font-size: .9em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 span.shortcut {
