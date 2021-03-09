@@ -31,6 +31,69 @@
 
   <p>When using Word or any word processor, you should always try to use styles to format your code instead of just making some text bold, some larger, etc. Styles are also an important concept when formatting EPUBs.</p>
 
+<p>There are numerous sites on the Internet that deal with converting MS Word files for use in EPUBs. Here are just a couple:</p>
+
+<ul>
+ <li><a href="https://www.epubble.com/word-to-epub-tutorial/">https://www.epubble.com/word-to-epub-tutorial</a></li>
+
+<li><a href="https://justpublishingadvice.com/how-to-convert-word-to-epub/">https://justpublishingadvice.com/how-to-convert-word-to-epub/</a></li>
+
+</ul>
+
+<p>There are also free apps available from both Microsoft and Apple that automate the process for you.</p>
+ <p>Windows: <a href="https://www.microsoft.com/en-us/p/word-to-epub-converter/9nr7rm5fv3sx?activetab=pivot:overviewtab">Word-to-epub-converter</a></p>
+
+<p>Apple iOS: <a href="https://apps.apple.com/us/app/the-document-converter/id1081041948?mt=12">The Document Converter</a></p>
+
+<h3 class="sigil_not_in_toc">LibreOffice ODF/ODT</h3>
+
+<p>The LibreOffice writing application has the same capabilities as MS Word when it comes to saving an ODT file to html - <b>File→Save A Copy</b> (setting the filter to "HTML Document (Writer) (.html)) OR <b>File→Export</b> (setting the filter to XHTML (.html;.xhtml))</p>
+
+<p>For EPUB use it is preferable to use Save a Copy as this creates a cleaner output than Export with less formatting data in the document. Save a Copy also links to any images, whereas Export embeds the image data in the file.</p>
+
+<p>Whilst not specifically EPUB related some information on this subject can be found in the LibreOffice on-line documentation - <a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/en/GS5.1/HTML/GS5112-CreatingWebPages.html">Saving Documents as HTML</a></p>
+
+<h3 class="sigil_not_in_toc">DOCXImport Plugin</h3>
+
+<p>To create a new EPUB book directly from a MS Word file you can use the DOCXImport plugin developed by DiapDealer. By adding this plugin you can directly import a docx into Sigil as html.</p>
+
+<p><a href="https://www.mobileread.com/forums/showthread.php?t=273966">DOCXImport plugin</a> (See the <b>Manage Plugins</b> chapter on how to install a plugin).</p>
+
+<div class="tip">
+    <p class="tiptext">Note: Using this plugin will create a new EPUB. If you already have an existing EPUB open in Sigil this will be replaced and any unsaved work will be discarded.</p>
+  </div>
+
+<p>Click on <b>Plugins→Input→DOCXImport</b> to run the plugin.</p>
+<div class="image">
+    <img alt="spellcheck-main" src="../Images/docx-import-plugin1.png"/>
+  </div>
+
+<p>Prior to selecting the file to import you have the option of choosing which version of EPUB your book will be, and also whether to use a custom Style Map or Stylesheet.</p>
+
+<div class="image">
+    <img alt="spellcheck-main" src="../Images/docx-import-plugin2.png"/>
+  </div>
+
+<p>Click on DOCX File to import and then select the file you wish to import.</p>
+
+<div class="image">
+    <img alt="spellcheck-main" src="../Images/docx-import-plugin3.png"/>
+  </div>
+
+<p>Heed the warning!</p>
+
+<div class="image">
+    <img alt="spellcheck-main" src="../Images/docx-import-plugin4.png"/>
+  </div>
+
+<p>The docx file after successful importation and conversion ready for editing.</p>
+
+<div class="image">
+    <img alt="spellcheck-main" src="../Images/docx-import-plugin5.png"/>
+  </div>
+
+
+
   <h3 class="sigil_not_in_toc">Text Files</h3>
 
   <p>It is not strictly necessary to convert text files to HTML. Sigil can directly open .txt files.</p>
@@ -43,12 +106,14 @@
 
   <h3 class="sigil_not_in_toc">Other Formats</h3>
 
-  <p>Many other word processors, such as LibreOffice, also have a save-as or export to HTML or even save-as EPUB function that you can try. You can also convert other formats to HTML or EPUB using other software such as <a href="http://calibre-ebook.com/">Calibre</a>.</p>
+  <p>Many other word processors, such as LibreOffice, also have a save-as or export to HTML or even save-as EPUB function that you can try. As with MS Word good advice on this process can be found on the Internet.</p>
+
+<p>You can also convert other formats to HTML or EPUB using additional software such as <a href="https://calibre-ebook.com/">Calibre</a> which handles most ebook formats, runs on all platforms, and has an ebook library built-in, as well as, <a href="https://pandoc.org">Pandoc</a>, a dedicated document conversion application that supports a huge number of document formats including EPUB2, EPUB3, docx, odt and most Markdown variants. Pandoc is free, opensource, cross-platform, and written in Haskell (GHC).</p>
 
   <p>Note that any automatic conversion of your files will introduce lots of extra code. If you are just formatting a book for personal use you may not be concerned with this. But if you are formatting books for professional purposes or want as little extra code in your EPUB as possible, then it should be avoided.</p>
 
   <div class="tip">
-    <p class="tiptext">Sigil only supports importing HTML files since converting from other formats is actually quite specialised and best left to other tools.</p>
+    <p class="tiptext">Aside from the EPUB format, Sigil primarily supports importing HTML (with any linked in images, css, and media files), and Text files.  Since converting from other formats can be quite specialised, it is often best left to plugins and external tools. Free Sigil import plugins do exist to directly read in MarkDown, Kindle, docx, and odt formats.</p>
   </div>
 </body>
 </html>

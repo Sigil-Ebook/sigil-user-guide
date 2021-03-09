@@ -16,7 +16,7 @@
   <p>This tutorial shows you how to use custom fonts in your EPUB.</p>
 
   <div class="tip">
-    <p class="tiptext">One of the benefits of ereaders is that you can choose your own font, so it’s usually best to only use embedded fonts to highlight specific types of text – such as chapter headings, quotes, etc. – and not to change the font of the entire book.</p>
+    <p class="tiptext">One of the benefits of e-readers is that you can choose your own font, so it’s usually best to only use embedded fonts to highlight specific types of text – such as chapter headings, quotes, etc. – and not to change the font of the entire book.</p>
   </div>
 
   <p>To use a font in an EPUB you need to load the font into the EPUB, define a style for the font, and then apply the style to your text.</p>
@@ -101,14 +101,14 @@
 }</pre>
 
   <div class="tip">
-    <p class="tiptext">The font-family rules above instruct the ereader to use your font if possible for the text, but if it’s not possible use a generic serif font.</p>
+    <p class="tiptext">The font-family rules above instruct the e-reader to use your font if possible for the text, but if it’s not possible use a generic serif font.</p>
   </div>
 
   <h3 class="sigil_not_in_toc">Font Obfuscation</h3>
 
   <p>When you use a font in an EPUB, the font file could be extracted by someone and used somewhere else. If your fonts are licensed you may want to prevent this.</p>
 
-  <p>You can use Sigil’s font obfuscation menu to scramble the font file using one of two standard methods, Adobe or IDPF – which one is up to you, but you should test on your target ereader to make sure the font is still readable. Obfuscation is not encryption – it just modifies the font file making it hard to use elsewhere while still being useable by readers to display fonts.</p>
+  <p>You can use Sigil’s font obfuscation menu to scramble the font file using one of two standard methods, Adobe or IDPF – which one is up to you, but you should test on your target e-reader to make sure the font is still readable. Obfuscation is not encryption – it just modifies the font file making it hard to use elsewhere while still being useable by readers to display fonts.</p>
 
   <p>To use font obfuscation, right-click on your fonts in the Book Browser window, right-click and select Font Obfuscation from the menu and choose a method to use for obfuscation.</p>
 
@@ -118,7 +118,7 @@
 
  <h3 class="sigil_not_in_toc">Font Subsetting</h3>
 
-  <p>A better alternative to Font Obfuscation might be to use Font Subsetting tools to restrict the font descriptions to only the exact characters used in your text.  The act of subsetting a font, renders the font file useless for any other more general use. There are <a href="https://www.mobileread.com/forums/showthread.php?t=247431">plugins available for Sigil</a> such as the <b>"ePUB Optimizer"</b> and <b>"Subset Fonts"</b> plugins that can subset a font.  You can use the <a href="reports.html">Characters Report</a> of Sigil to provide the list of characters actually used in your epub.</p> 
+  <p>A better alternative to Font Obfuscation might be to use Font Subsetting tools to restrict the font descriptions to only the exact characters used in your text.  The act of subsetting a font, renders the font file useless for any other more general use. There are <a href="https://www.mobileread.com/forums/showthread.php?t=247431">plugins available for Sigil</a> such as the <b>"ePUB Optimizer"</b> and <b>"Subset Fonts"</b> plugins that can subset a font.  You can use the <a href="reports.html">Characters Report</a> of Sigil to provide the list of characters actually used in your EPUB.</p>
   
   <h3 class="sigil_not_in_toc">Testing Your Font</h3>
 

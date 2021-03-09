@@ -13,7 +13,7 @@
 
   <p class="h2subheading">— A Map Of Your Book —</p>
 
-  <p>EPUB supports a Table of Contents (abbreviated as TOC) to help readers navigate their way around your book. Typically EPUB ereaders provide a button or menu item to open the TOC.</p>
+  <p>EPUB supports a Table of Contents (abbreviated as TOC) to help readers navigate their way around your book. Typically EPUB e-readers provide a button or menu item to open the TOC.</p>
 
   <p>Sigil provides several ways to work with a TOC. The Table of Contents window in Sigil gives you a dynamic view of your TOC – you can view exactly what your TOC looks like, and select entries to jump to. The Generate TOC function can create a new TOC based on the headings in your document. The Edit TOC function allows you to update an existing TOC when you can’t or don’t want to use Generate TOC. And Create HTML TOC can create a new HTML page in your document showing what is in the EPUB TOC.</p>
 
@@ -44,7 +44,7 @@
   </div>
 
   <div class="tip">
-    <p class="tiptext">If your chapter names do not use heading tags (<span class="example">h1</span>, <span class="example">h2</span>, etc.) as described above, then you will not be able to generate a TOC automatically.  As heading tags are very important for Accessibility reasons you should stringly consider adding them.</p>
+    <p class="tiptext">If your chapter names do not use heading tags (<span class="example">h1</span>, <span class="example">h2</span>, etc.) as described above, then you will not be able to generate a TOC automatically.  As heading tags are very important for Accessibility reasons you should strongly consider adding them.</p>
   </div>
 
   <p>Start your TOC generation by clicking the Generate Table of Contents button <img alt="generate-toc_22px" src="../Images/generate-toc.png"/>, or selecting the menu item <span class="menuitem">Tools→Table Of Contents→Generate Table Of Contents</span> then select the headings you want included in the book’s Table of Contents:</p>
@@ -75,7 +75,7 @@
     <img alt="toc-tooltip" src="../Images/toc-tooltip.png"/>
   </div>
 
-  <p>When you select <span class="buttonbox">OK</span>, Sigil will add or update automatically generated IDs to any headings you have selected if they don’t have regular IDs already. It will then create a new NCX file on eEPUB2 and Update the NAV file on EPUB3 that contain links to your chapters. If your heading is "near" the beginning of your HTML file, Sigil will link directly to the file and not to the heading ID. This is because on some ereaders linking directly to an element slows down the display of the TOC.</p>
+  <p>When you select <span class="buttonbox">OK</span>, Sigil will add or update automatically generated IDs to any headings you have selected if they don’t have regular IDs already. It will then create a new NCX file on eEPUB2 and Update the NAV file on EPUB3 that contain links to your chapters. If your heading is "near" the beginning of your HTML file, Sigil will link directly to the file and not to the heading ID. This is because on some e-readers linking directly to an element slows down the display of the TOC.</p>
 
   <div class="tip">
     <p class="tiptext">Generating the TOC automatically will overwrite any existing TOC in the <span class="example">toc.ncx file of an EPUB2</span> or the <span class="example">nav.xhtml file of an EPUB3</span>.</p>
@@ -127,7 +127,7 @@
 
   <p>If you’re generating an EPUB3 TOC, Sigil will look for <span class="example">sgc-nav.css</span> in your preferences directory and use that as the default file.</p>
 
-  <h4 class="sigil_not_in_toc">Update The NCX TOC In Eub3 Books</h4>
+  <h4 class="sigil_not_in_toc">Update The NCX TOC In EPUB3 Books</h4>
 
   <p>If you create an EPUB3 book with Sigil or open an EPUB3 book without an NCX file, no NCX will exist.  If you would like to add an NCX to make your EPUB3 more backwards compatible after editing is finished, use <span class="menuitem">Tools→Epub3 Tools→Generate NCX/Guide for epub2 e-readers</span> menu item to generate and add a NCX that older EPUB2-only devices should be able to use.</p>
 </body>

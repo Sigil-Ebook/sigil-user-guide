@@ -69,169 +69,265 @@
           <text>Preferences</text>
         </navLabel>
         <content src="Text/preferences.html"/>
+        <navPoint id="navPoint-11" playOrder="11">
+          <navLabel>
+            <text>Code View</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_4"/>
+        </navPoint>
+        <navPoint id="navPoint-12" playOrder="12">
+          <navLabel>
+            <text>Preview</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_5"/>
+        </navPoint>
+        <navPoint id="navPoint-13" playOrder="13">
+          <navLabel>
+            <text>Icon Themes</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_6"/>
+        </navPoint>
+        <navPoint id="navPoint-14" playOrder="14">
+          <navLabel>
+            <text>Main UI</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_7"/>
+        </navPoint>
+        <navPoint id="navPoint-15" playOrder="15">
+          <navLabel>
+            <text>Basics</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_8"/>
+        </navPoint>
+        <navPoint id="navPoint-16" playOrder="16">
+          <navLabel>
+            <text>Security</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_9"/>
+        </navPoint>
+        <navPoint id="navPoint-17" playOrder="17">
+          <navLabel>
+            <text>Validation</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_10"/>
+        </navPoint>
+        <navPoint id="navPoint-18" playOrder="18">
+          <navLabel>
+            <text>Advanced</text>
+          </navLabel>
+          <content src="Text/preferences.html#sigil_toc_id_11"/>
+        </navPoint>
       </navPoint>
-      <navPoint id="navPoint-11" playOrder="11">
+      <navPoint id="navPoint-19" playOrder="19">
         <navLabel>
           <text>Opening and Saving Files</text>
         </navLabel>
         <content src="Text/opening_and_saving_files.html"/>
       </navPoint>
-      <navPoint id="navPoint-12" playOrder="12">
+      <navPoint id="navPoint-20" playOrder="20">
         <navLabel>
           <text>Code View</text>
         </navLabel>
         <content src="Text/code_view.html"/>
       </navPoint>
-      <navPoint id="navPoint-13" playOrder="13">
+      <navPoint id="navPoint-21" playOrder="21">
         <navLabel>
           <text>Preview</text>
         </navLabel>
         <content src="Text/preview.html"/>
       </navPoint>
-      <navPoint id="navPoint-14" playOrder="14">
+      <navPoint id="navPoint-22" playOrder="22">
         <navLabel>
           <text>Book Browser</text>
         </navLabel>
         <content src="Text/book_browser.html"/>
       </navPoint>
-      <navPoint id="navPoint-15" playOrder="15">
+      <navPoint id="navPoint-23" playOrder="23">
         <navLabel>
           <text>Metadata</text>
         </navLabel>
         <content src="Text/metadata.html"/>
       </navPoint>
-      <navPoint id="navPoint-16" playOrder="16">
+      <navPoint id="navPoint-24" playOrder="24">
         <navLabel>
           <text>Add Cover</text>
         </navLabel>
         <content src="Text/add_cover.html"/>
       </navPoint>
-      <navPoint id="navPoint-17" playOrder="17">
+      <navPoint id="navPoint-25" playOrder="25">
         <navLabel>
           <text>Table of Contents</text>
         </navLabel>
         <content src="Text/table_of_contents.html"/>
       </navPoint>
-      <navPoint id="navPoint-18" playOrder="18">
+      <navPoint id="navPoint-26" playOrder="26">
         <navLabel>
           <text>Validation</text>
         </navLabel>
         <content src="Text/validation.html"/>
       </navPoint>
-      <navPoint id="navPoint-19" playOrder="19">
+      <navPoint id="navPoint-27" playOrder="27">
         <navLabel>
           <text>Spellcheck</text>
         </navLabel>
         <content src="Text/spellcheck.html"/>
       </navPoint>
-      <navPoint id="navPoint-20" playOrder="20">
+      <navPoint id="navPoint-28" playOrder="28">
         <navLabel>
           <text>Images, Video, Audio</text>
         </navLabel>
         <content src="Text/media_files.html"/>
       </navPoint>
-      <navPoint id="navPoint-21" playOrder="21">
+      <navPoint id="navPoint-29" playOrder="29">
         <navLabel>
           <text>Special Characters</text>
         </navLabel>
         <content src="Text/special_characters.html"/>
       </navPoint>
-      <navPoint id="navPoint-22" playOrder="22">
+      <navPoint id="navPoint-30" playOrder="30">
         <navLabel>
           <text>Using Checkpoints to Quickly Save/Restore Epub State</text>
         </navLabel>
         <content src="Text/checkpoints.html"/>
       </navPoint>
-      <navPoint id="navPoint-23" playOrder="23">
+      <navPoint id="navPoint-31" playOrder="31">
         <navLabel>
           <text>Splitting and Merging</text>
         </navLabel>
         <content src="Text/splitting_and_merging.html"/>
       </navPoint>
-      <navPoint id="navPoint-24" playOrder="24">
+      <navPoint id="navPoint-32" playOrder="32">
         <navLabel>
           <text>Find &amp; Replace</text>
         </navLabel>
         <content src="Text/find_replace.html"/>
       </navPoint>
-      <navPoint id="navPoint-25" playOrder="25">
+      <navPoint id="navPoint-33" playOrder="33">
         <navLabel>
           <text>Saved Searches</text>
         </navLabel>
         <content src="Text/saved_searches.html"/>
       </navPoint>
-      <navPoint id="navPoint-26" playOrder="26">
+      <navPoint id="navPoint-34" playOrder="34">
         <navLabel>
           <text>Clips</text>
         </navLabel>
         <content src="Text/clips.html"/>
+        <navPoint id="navPoint-35" playOrder="35">
+          <navLabel>
+            <text>Context Menu</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_12"/>
+        </navPoint>
+        <navPoint id="navPoint-36" playOrder="36">
+          <navLabel>
+            <text>Clip Editor</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_13"/>
+        </navPoint>
+        <navPoint id="navPoint-37" playOrder="37">
+          <navLabel>
+            <text>Clip Bar</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_14"/>
+        </navPoint>
+        <navPoint id="navPoint-38" playOrder="38">
+          <navLabel>
+            <text>Clips Window</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_15"/>
+        </navPoint>
+        <navPoint id="navPoint-39" playOrder="39">
+          <navLabel>
+            <text>Context Menu</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_16"/>
+        </navPoint>
+        <navPoint id="navPoint-40" playOrder="40">
+          <navLabel>
+            <text>Keyboard Shortcuts</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_17"/>
+        </navPoint>
+        <navPoint id="navPoint-41" playOrder="41">
+          <navLabel>
+            <text>Main Menu</text>
+          </navLabel>
+          <content src="Text/clips.html#sigil_toc_id_18"/>
+        </navPoint>
       </navPoint>
-      <navPoint id="navPoint-27" playOrder="27">
+      <navPoint id="navPoint-42" playOrder="42">
         <navLabel>
           <text>Clipboard History</text>
         </navLabel>
         <content src="Text/clipboard_history.html"/>
       </navPoint>
-      <navPoint id="navPoint-28" playOrder="28">
+      <navPoint id="navPoint-43" playOrder="43">
         <navLabel>
           <text>Links and IDs</text>
         </navLabel>
         <content src="Text/links.html"/>
       </navPoint>
-      <navPoint id="navPoint-29" playOrder="29">
+      <navPoint id="navPoint-44" playOrder="44">
         <navLabel>
           <text>Styles</text>
         </navLabel>
         <content src="Text/styles.html"/>
       </navPoint>
-      <navPoint id="navPoint-30" playOrder="30">
+      <navPoint id="navPoint-45" playOrder="45">
         <navLabel>
           <text>Indexes</text>
         </navLabel>
         <content src="Text/indexes.html"/>
       </navPoint>
-      <navPoint id="navPoint-31" playOrder="31">
+      <navPoint id="navPoint-46" playOrder="46">
         <navLabel>
           <text>Reports</text>
         </navLabel>
         <content src="Text/reports.html"/>
       </navPoint>
-      <navPoint id="navPoint-32" playOrder="32">
+      <navPoint id="navPoint-47" playOrder="47">
         <navLabel>
           <text>External Editors</text>
         </navLabel>
         <content src="Text/external_editors.html"/>
       </navPoint>
-      <navPoint id="navPoint-33" playOrder="33">
+      <navPoint id="navPoint-48" playOrder="48">
         <navLabel>
           <text>Preferred External Xhtml Editor</text>
         </navLabel>
         <content src="Text/external_xhtml_editor.html"/>
       </navPoint>
-      <navPoint id="navPoint-34" playOrder="34">
+      <navPoint id="navPoint-49" playOrder="49">
+        <navLabel>
+          <text>Using the Page Inspector</text>
+        </navLabel>
+        <content src="Text/inspector.html"/>
+      </navPoint>
+      <navPoint id="navPoint-50" playOrder="50">
         <navLabel>
           <text>Manage Plugins</text>
         </navLabel>
         <content src="Text/manage_plugins.html"/>
       </navPoint>
-      <navPoint id="navPoint-35" playOrder="35">
+      <navPoint id="navPoint-51" playOrder="51">
         <navLabel>
           <text>Customize the User Interface</text>
         </navLabel>
         <content src="Text/ui_customize.html"/>
-        <navPoint id="navPoint-36" playOrder="36">
+        <navPoint id="navPoint-52" playOrder="52">
           <navLabel>
             <text>Customizing the Toolbars</text>
           </navLabel>
           <content src="Text/ui_customize.html#sigil_toc_id_1"/>
         </navPoint>
-        <navPoint id="navPoint-37" playOrder="37">
+        <navPoint id="navPoint-53" playOrder="53">
           <navLabel>
             <text>Customizing the Panels</text>
           </navLabel>
           <content src="Text/ui_customize.html#sigil_toc_id_2"/>
         </navPoint>
-        <navPoint id="navPoint-38" playOrder="38">
+        <navPoint id="navPoint-54" playOrder="54">
           <navLabel>
             <text>Customizing the Icons</text>
           </navLabel>
@@ -239,157 +335,151 @@
         </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint-39" playOrder="39">
+    <navPoint id="navPoint-55" playOrder="55">
       <navLabel>
         <text>Tutorials</text>
       </navLabel>
       <content src="Text/tutorials.html"/>
-      <navPoint id="navPoint-40" playOrder="40">
+      <navPoint id="navPoint-56" playOrder="56">
         <navLabel>
           <text>Getting Started With EPUB</text>
         </navLabel>
         <content src="Text/tutorial_getting_started_with_epub.html"/>
       </navPoint>
-      <navPoint id="navPoint-41" playOrder="41">
+      <navPoint id="navPoint-57" playOrder="57">
         <navLabel>
           <text>Prepare Your File For Sigil</text>
         </navLabel>
         <content src="Text/tutorial_convert_to_html.html"/>
       </navPoint>
-      <navPoint id="navPoint-42" playOrder="42">
+      <navPoint id="navPoint-58" playOrder="58">
         <navLabel>
           <text>Open Your File With Sigil</text>
         </navLabel>
         <content src="Text/tutorial_load_file.html"/>
       </navPoint>
-      <navPoint id="navPoint-43" playOrder="43">
+      <navPoint id="navPoint-59" playOrder="59">
         <navLabel>
           <text>Save Your EPUB File</text>
         </navLabel>
         <content src="Text/tutorial_save.html"/>
       </navPoint>
-      <navPoint id="navPoint-44" playOrder="44">
+      <navPoint id="navPoint-60" playOrder="60">
         <navLabel>
           <text>Add the Author and Title</text>
         </navLabel>
         <content src="Text/tutorial_metadata.html"/>
       </navPoint>
-      <navPoint id="navPoint-45" playOrder="45">
+      <navPoint id="navPoint-61" playOrder="61">
         <navLabel>
           <text>Add a Cover Image</text>
         </navLabel>
         <content src="Text/tutorial_add_cover.html"/>
       </navPoint>
-      <navPoint id="navPoint-46" playOrder="46">
+      <navPoint id="navPoint-62" playOrder="62">
         <navLabel>
           <text>Create Files For Each Chapter</text>
         </navLabel>
         <content src="Text/tutorial_split.html"/>
       </navPoint>
-      <navPoint id="navPoint-47" playOrder="47">
+      <navPoint id="navPoint-63" playOrder="63">
         <navLabel>
           <text>Identify Your Chapters</text>
         </navLabel>
         <content src="Text/tutorial_mark_chapters.html"/>
       </navPoint>
-      <navPoint id="navPoint-48" playOrder="48">
+      <navPoint id="navPoint-64" playOrder="64">
         <navLabel>
           <text>Generate A Table of Contents</text>
         </navLabel>
         <content src="Text/tutorial_generate_toc.html"/>
       </navPoint>
-      <navPoint id="navPoint-49" playOrder="49">
+      <navPoint id="navPoint-65" playOrder="65">
         <navLabel>
           <text>Create Links and Notes</text>
         </navLabel>
         <content src="Text/tutorial_links.html"/>
       </navPoint>
-      <navPoint id="navPoint-50" playOrder="50">
+      <navPoint id="navPoint-66" playOrder="66">
         <navLabel>
           <text>A Quick Introduction To Code View</text>
         </navLabel>
         <content src="Text/tutorial_code_view.html"/>
       </navPoint>
-      <navPoint id="navPoint-51" playOrder="51">
+      <navPoint id="navPoint-67" playOrder="67">
         <navLabel>
           <text>Check For Spelling Mistakes</text>
         </navLabel>
         <content src="Text/tutorial_spelling.html"/>
       </navPoint>
-      <navPoint id="navPoint-52" playOrder="52">
+      <navPoint id="navPoint-68" playOrder="68">
         <navLabel>
           <text>Edit With Find &amp; Replace</text>
         </navLabel>
         <content src="Text/tutorial_find_replace.html"/>
       </navPoint>
-      <navPoint id="navPoint-53" playOrder="53">
+      <navPoint id="navPoint-69" playOrder="69">
         <navLabel>
           <text>Use Stylesheets</text>
         </navLabel>
         <content src="Text/tutorial_stylesheets.html"/>
       </navPoint>
-      <navPoint id="navPoint-54" playOrder="54">
+      <navPoint id="navPoint-70" playOrder="70">
         <navLabel>
           <text>Include Custom Fonts</text>
         </navLabel>
         <content src="Text/tutorial_embed_fonts.html"/>
       </navPoint>
-      <navPoint id="navPoint-55" playOrder="55">
+      <navPoint id="navPoint-71" playOrder="71">
         <navLabel>
           <text>Advanced Find &amp; Replace – Regex</text>
         </navLabel>
         <content src="Text/tutorial_advanced_find.html"/>
       </navPoint>
-      <navPoint id="navPoint-56" playOrder="56">
+      <navPoint id="navPoint-72" playOrder="72">
         <navLabel>
           <text>Regular Expression Reference</text>
         </navLabel>
         <content src="Text/tutorial_regex_reference.html"/>
       </navPoint>
-      <navPoint id="navPoint-57" playOrder="57">
-        <navLabel>
-          <text>Using the Page Inspector</text>
-        </navLabel>
-        <content src="Text/tutorial_inspector.html"/>
-      </navPoint>
-      <navPoint id="navPoint-58" playOrder="58">
+      <navPoint id="navPoint-73" playOrder="73">
         <navLabel>
           <text>Tips</text>
         </navLabel>
         <content src="Text/tutorial_tips.html"/>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint-59" playOrder="59">
+    <navPoint id="navPoint-74" playOrder="74">
       <navLabel>
         <text>FAQ</text>
       </navLabel>
       <content src="Text/faq.html"/>
-      <navPoint id="navPoint-60" playOrder="60">
+      <navPoint id="navPoint-75" playOrder="75">
         <navLabel>
           <text>Common Questions</text>
         </navLabel>
         <content src="Text/faq.html#faq_common_questions"/>
       </navPoint>
-      <navPoint id="navPoint-61" playOrder="61">
+      <navPoint id="navPoint-76" playOrder="76">
         <navLabel>
           <text>Where to Get Help</text>
         </navLabel>
         <content src="Text/faq.html#faq_questions"/>
       </navPoint>
-      <navPoint id="navPoint-62" playOrder="62">
+      <navPoint id="navPoint-77" playOrder="77">
         <navLabel>
           <text>Using Sigil</text>
         </navLabel>
         <content src="Text/faq.html#faq_using_sigil"/>
       </navPoint>
-      <navPoint id="navPoint-63" playOrder="63">
+      <navPoint id="navPoint-78" playOrder="78">
         <navLabel>
           <text>Formatting and Styles</text>
         </navLabel>
         <content src="Text/faq.html#faq_formatting"/>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint-64" playOrder="64">
+    <navPoint id="navPoint-79" playOrder="79">
       <navLabel>
         <text>Contributing to Sigil</text>
       </navLabel>

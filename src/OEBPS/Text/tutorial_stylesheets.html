@@ -15,10 +15,10 @@
 
   <p>This tutorial describes stylesheets and how to use them in your EPUB.</p>
 
-  <p>A stylesheet (or CSS – Cascading Style Sheet) is a list of instructions that tells ereaders how to display the text in your book. More specifically it tells the ereader how to style text using HTML tags used in your book. For example, this is a style for a paragraph of type (or class) "author":</p>
+  <p>A stylesheet (or CSS – Cascading Style Sheet) is a list of instructions that tells e-readers how to display the text in your book. More specifically it tells the e-reader how to style text using HTML tags used in your book. For example, this is a style for a paragraph of type (or class) "author":</p>
 
   <div class="image">
-    <img alt="tutorial-styles-example1" src="../Images/tutorial-styles-example1.png"/>
+    <img alt="tutorial-styles-example" src="../Images/tutorial-styles-example.png"/>
   </div>
 
   <p>Understanding and using CSS is the best and most flexible way to layout your book exactly as you want.</p>
@@ -185,6 +185,12 @@
     <li>Click on the stylesheet(s) you want to be used for the files and select <span class="buttonbox">OK</span>.</li>
   </ul>
 
+<p>You can always check to see what what, if any, stylesheet is being used by a particular html by looking at the ‹head› section of the file.</p>
+
+<div class="image">
+    <img alt="stylesheet-check" src="../Images/stylesheet-check.png"/>
+  </div>
+
   <div class="tip">
     <p class="tiptext">If you link multiple stylesheets they will be applied in order, so the styles in the last stylesheet will override the styles in the preceding stylesheets.</p>
   </div>
@@ -196,7 +202,7 @@
   <p>The best way to learn how to use styles is to find an EPUB that contains formatting you like and look at what its CSS files contain and how it uses those styles in the book.</p>
 
   <div class="tip">
-    <p class="tiptext">If you have any errors in your style definitions they will silently be ignored. You can use the menu item Tools→Validate Stylesheets With W3C to check for errors.</p>
+    <p class="tiptext">The styles will be applied in the order in which they appear in the stylesheet.<br/>It is important to remember this as an error in one particular style definition results in all the following styles to be ignored.<br/>It is advisable to check your stylesheets carefully as any errors may not be apparent until the book is viewed in an external e-reader.<br/>You can use the menu item <b>Tools→Validate Stylesheets With W3C</b> to check for errors.</p>
   </div>
 </body>
 </html>
