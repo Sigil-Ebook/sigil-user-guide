@@ -13,7 +13,26 @@
 
   <p class="h1subheading">— Make it Work the Way You Want —</p>
 
-<p>The Sigil user interface is highly configurable. It consists of a main window
+<p>The Sigil user interface is highly configurable.</p>
+
+<p>Sigil supports both Dark and Light themes inherited directly from your System preferences settings.</p>
+
+<div class="image">
+  <p><img alt="image of Sigil using a Dark theme" src="../Images/sigil_dark.png"/></p>
+<p><img alt="image of Sigil using a Light theme" src="../Images/sigil_light.png"/></p>
+</div>
+
+<p>On macOS, your System Preferences can be used to change from Light to Dark themes at any time or even automatically based on time of day. On Windows and Linux, your System theme is detected and set at Sigil's launch. You can override this setting using an <a href="https://en.wikipedia.org/wiki/Environment_variable">environment variable</a> and then restart Sigil to see the changes.</p>
+
+<ul>
+
+   <li><p>set <b>SIGIL_USES_DARK_MODE</b> to <b>1</b> to force Sigil to use a Dark theme when your system uses a Light theme.</p></li>
+
+   <li><p>set <b>SIGIL_USES_DARK_MODE</b> to <b>0</b> to force Sigil to use a Light theme when your system uses a Dark theme.</p></li>
+
+</ul>
+
+<p>Sigil's primary interface consists of a main window
 in which are displayed several panels plus a set of toolbars. Which of these
 items you want to display are configurable using the View menu.</p>
 

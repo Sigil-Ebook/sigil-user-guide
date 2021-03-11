@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
 <head>
   <title>Saved Searches</title>
   <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
@@ -13,30 +13,27 @@
 
   <p class="h2subheading">— Saved Searches for Find &amp; Replace —</p>
 
-  <p>The Saved Searches dialog allows you to save and edit all your common Find &amp; Replace searches. You can also use it to run your searches.</p>
+  <p>If you have Find &amp; Replace searches that you routinely run — or complicated searches that you occasionally run but don’t want to have to recreate every time — you can save them in the Saved Searches dialog. Once saved, you can use the dialog to edit and run the searches. </p>
 
-  <p>To open Saved Searches, select the menu item <span class="menuitem">Tools→Saved Searches</span> or its keyboard shortcut:</p>
+  <p>To open the Saved Searches dialog, select menu item <span class="menuitem">Tools→Saved Searches</span>, its keyboard shortcut, or toolbar button <img alt="" src="../Images/saved-searches-button.png"/>.</p>
 
   <div class="image">
     <img alt="saved-searches-main" src="../Images/saved-searches-main.png"/>
   </div>
 
-  <div class="tip">
-    <p class="tiptext">All Saved Searches are run using the options and modes set in Find &amp; Replace.</p>
-  </div>
 
   <h3 class="sigil_not_in_toc">Context Menu Commands</h3>
 
-  <p>Most actions concerning editing searches are accessed using the right-click context menu:</p>
+  <p>Most actions concerning creating and editing saved searches are accessed using the right-click context menu:</p>
 
   <div class="image">
     <img alt="saved-searches-context-menu" src="../Images/saved-searches-context-menu.png"/>
   </div>
 
-  <p>Select one or more entries then right-click on the selection for the following options:</p>
+  <p>Select one or more saved search entries then right-click on the selection for the following options:</p>
 
   <ul>
-    <li><span class="listheading">Add Entry:</span> Add a blank search under the entry you clicked.</li>
+    <li><span class="listheading">Add Entry:</span> Add a new blank search under the entry you clicked.</li>
 
     <li><span class="listheading">Add Group:</span> Add a new group under the entry you clicked.</li>
 
@@ -48,13 +45,13 @@
 
     <li><span class="listheading">Paste:</span> Paste any cut/copied entries.</li>
 
-    <li class="first"><span class="listheading">Delete:</span> Delete entries or groups.</li>
+    <li class="first"><span class="listheading">Delete:</span> Delete selected entries or groups.</li>
 
     <li class="first"><span class="listheading">Import:</span> Read a list of exported entries from a file into the list.</li>
 
     <li><span class="listheading">Reload:</span> Restore the list from the last saved state.</li>
 
-    <li class="first"><span class="listheading">Export:</span> Save selected entries to a file for sharing.</li>
+    <li class="first"><span class="listheading">Export:</span> Save selected entries to a file for sharing or backup.</li>
 
     <li><span class="listheading">Export All:</span> Save all entries to a file.</li>
 
@@ -63,68 +60,83 @@
     <li><span class="listheading">Expand All:</span> Expand the display of all groups.</li>
   </ul>
 
-  <h3 class="sigil_not_in_toc">Running Searches</h3>
-
-  <p>Saved Searches can be used to run your searches as well as manage them.</p>
-
-  <p>All of the Find &amp; Replace actions are available from the Saved Searches window, and you do not need Find &amp; Replace open to use them (although the options set in Find &amp; Replace will be used when you run the search).</p>
-
-  <p>To run a search, just select an entry and click one of the actions. All result messages will be displayed in the window and in Find &amp; Replace.</p>
-
   <div class="tip">
-    <p class="tiptext">Although all searches are done using the modes set in Find &amp; Replace you can hold the <span class="shortcut">Ctrl</span> key down when selecting a search to force it to run temporarily in the Current File.</p>
+    <p class="tip">Selecting "Import..." will allow you to read in a new search group from a csv file, or from a previously saved Sigil ini file, or from a simple text file.</p>
+  </div>
+  
+  <div class="tip">
+    <p class="tip">To move search entries or groups, use the arrow keys or drag-and-drop.</p>
+
+  	<p class="tip">To make a group of searches, first create the group, then move the search entries into the group. </p>
   </div>
 
-  <h3 class="sigil_not_in_toc">Group Searches</h3>
 
-  <p>You can actually run a group of searches. Each search will be run sequentially.</p>
+  <h3 class="sigil_not_in_toc">Running Searches</h3>
 
-  <p>Simply select a group name and then, for example, run <span class="buttonbox">Count All</span>. Or select several non-group entries and run, for example, <span class="buttonbox">Replace All</span>.</p>
+  <p>The Saved Searches dialog can be used to run searches as well as manage them. All of the Find &amp; Replace action buttons are available in the Saved Searches dialog, so you do not need to open the Find &amp; Replace window to run a saved search.</p>
+  
+  <p>However, modes and options are only available in the Find &amp; Replace window. If in doubt, open the Find &amp; Replace window to check what modes and options you last set, as that is what will be used when you run any saved search. </p>
+
+  <p>To run a search, select an entry and click one of the action buttons: Find, Replace, Replace/Find, Replace All, Count All. Status messages will appear in the lower left corner of the Saved Searches dialog; they will also appear in the lower right corner of the Find &amp; Replace window if you have it open.</p>
+  
+    <div class="tip">
+    <p class="tiptext">All Saved Searches are run using the options and modes set in the Find &amp; Replace window.</p>
+
+    <p class="tiptext">To run a search only on the Current File, regardless of the mode setting, hold the <span class="shortcut">Ctrl</span> key down (on Mac: <span class="shortcut">Cmd</span> key) while clicking on an action button.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Running Multiple Searches at One Time</h3>
+
+  <p>You can run multiple searches with a single button click if you: </p>
+  
+  	<ol>
+  		<li>Select a group name instead of an individual entry,<br/>
+  		<i>or</i></li>
+  		<li>Select multiple non-group entries by holding down the <span class="shortcut">Ctrl</span> key (on Mac: <span class="shortcut">Cmd</span> key) while clicking on multiple individual entries.</li>
+  	</ol>
+  	
+  	<p>Once selected, click <span class="buttonbox">Replace All</span>, and each search in the group or selection will run sequentially, one after another.</p>
+  
 
   <h3 class="sigil_not_in_toc">Save</h3>
 
-  <p>To save your entries to disk, click <span class="buttonbox">Save</span>.</p>
+		  <p>Once you are done creating and editing your searches, be sure to save them by clicking <span class="buttonbox">Save</span>.</p>
 
-  <p>To exit without saving your entries you can just close the window (with the <span class="buttonbox">Close</span> button or the <span class="shortcut">Esc</span> key) and confirm you do not want to save if prompted. You can also use the context menu <span class="menuitem">Reload</span> to reload your entries from disk – which will delete your current entries.</p>
+		  <p>To exit without saving your entries, close the window with the <span class="buttonbox">Close</span> button or <span class="shortcut">Esc</span> key, then confirm that you don’t want to save, if prompted. You can also use context menu <span class="menuitem">Reload</span> to reload your entries from disk, which will delete current unsaved entries.</p>
 
-  <p>You can use the <span class="menuitem">Export</span> and <span class="menuitem">Import</span> context menu items to save your searches so that they can be shared with others.</p>
+		  <p>Use the <span class="menuitem">Export</span> context menu item to save a copy of your searches so that they can be shared with others (who can then use <span class="menuitem">Import</span> to add them to their Sigil).</p>
 
-  <div class="tip">
-    <p class="tiptext">If you save and are running more than one copy of Sigil, then the other instances of Sigil will automatically reload the newly saved searches to keep all copies in sync.</p>
-  </div>
+		  <div class="tip">
+			<p class="tiptext">If you save and are running more than one copy of Sigil, then the other instances of Sigil will automatically reload the newly saved searches to keep all copies in sync.</p>
+		  </div>
 
   <h3 class="sigil_not_in_toc">Filter</h3>
 
-  <p>You can use the filter text box to restrict the list of searches shown to make it easier to find a search.</p>
+  <p>Use the filter text box to restrict the list of entries shown, making it easier to find the search you want.</p>
 
   <h3 class="sigil_not_in_toc">Load Search</h3>
+  
+  <p>If you prefer to run your searches from the Find &amp; Replace window, select the search from the Saved Searches dialog, then click <span class="buttonbox">Load Search</span>. It will then be loaded into the Find &amp; Replace window. Alternatively, you can right-click directly in the Find &amp; Replace text boxes and select a saved search from the context menu (see more below).</p>
+  
+  <p>Loading does not run the search — it is only a way to populate the fields in the Find &amp; Replace window. </p>
 
-  <p>Clicking the button <span class="buttonbox">Load Search</span> will load the search you have selected into the Find &amp; Replace box.</p>
-
-  <p>Loading does not run the search – it is only a way to populate the fields in Find &amp; Replace. You can also just right-click in the Find &amp; Replace text boxes and select a saved search from the context menu to do the same thing.</p>
-
-  <p>You do not need to load a search if you are going to run the search from the Saved Searches dialog.</p>
+  <p>You do not need to use the <span class="buttonbox">Load Search</span> button if you are running a search from the Saved Searches dialog.</p>
 
   <div class="tip">
-    <p class="tiptext">You can load a search using just the keyboard by using the shortcut to open Saved Search, typing your search name in the filter box and hitting return (followed by Esc if you want to close the window).</p>
+    <p class="tiptext">You can load a search using just the keyboard by using the shortcut to open Saved Searches, typing your search name in the filter box and hitting return (followed by Esc if you want to close the window).</p>
   </div>
 
-  <h3 class="sigil_not_in_toc">Moving Entries</h3>
 
-  <p>You can move searches or groups around by using the arrow keys or by drag and drop.</p>
+  <h3 class="sigil_not_in_toc">Using Saved Searches from the Find &amp; Replace Box</h3>
+  
+  <p>You can access your saved searches directly from the Find &amp; Replace window (without ever opening the Saved Searches dialog) by right-clicking in the Find or Replace text field and bringing up the context menu.</p>
+ 
+ 	<p>Your saved searches will appear at the top of the context-menu. Select one to load it into the Find &amp; Replace window.</p>
 
-  <p>In order to group entries you must first create a group to put them in.</p>
-
-  <h3 class="sigil_not_in_toc">Using Saved Searches in Find &amp; Replace</h3>
-
-  <h4 class="sigil_not_in_toc">Save Searches</h4>
-
-  <p>While in Find &amp; Replace you can save your search by right-clicking in the Find or Replace text boxes and selecting the menu item <span class="menuitem">Save Search</span>.</p>
-
-  <h4 class="sigil_not_in_toc">Load Searches</h4>
-
-  <p>You can also load saved searches into Find &amp; Replace by right-clicking in the Find or Replace text boxes and selecting the menu item corresponding to your saved search.</p>
-
-  <p>Once you have loaded a search you can change the mode or options before running it.</p>
+   <div class="image">
+    <img alt="" src="../Images/saved-searches-find-replace-context-menu.png"/>
+   </div>
+  	
+	<p>If you’ve run a search in the Find &amp; Replace window that you want to save, call up the context menu by right-clicking in the Find or Replace text field, then select <span class="menuitem">Save Search</span>.</p>
 </body>
 </html>

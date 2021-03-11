@@ -7,7 +7,7 @@
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <dc:date opf:event="modification">2021-03-09</dc:date>
+    <dc:date opf:event="modification">2021-03-11</dc:date>
     <meta content="1.5.0" name="Sigil version"/>
     <dc:identifier id="bookid" opf:scheme="UUID">621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
     <meta name="cover" content="cover.png"/>
@@ -17,7 +17,6 @@
     <item id="tutorial_regex_reference.html" href="Text/tutorial_regex_reference.html" media-type="application/xhtml+xml"/>
     <item id="metadata.html" href="Text/metadata.html" media-type="application/xhtml+xml"/>
     <item id="tutorial_advanced_find.html" href="Text/tutorial_advanced_find.html" media-type="application/xhtml+xml"/>
-    <item id="find_replace.html" href="Text/find_replace.html" media-type="application/xhtml+xml"/>
     <item id="preview.html" href="Text/preview.html" media-type="application/xhtml+xml"/>
     <item id="faq.html" href="Text/faq.html" media-type="application/xhtml+xml"/>
     <item id="styles.css" href="Styles/styles.css" media-type="text/css"/>
@@ -36,7 +35,6 @@
     <item id="tutorial_links.html" href="Text/tutorial_links.html" media-type="application/xhtml+xml"/>
     <item id="contributing_to_sigil.html" href="Text/contributing_to_sigil.html" media-type="application/xhtml+xml"/>
     <item id="tutorials.html" href="Text/tutorials.html" media-type="application/xhtml+xml"/>
-    <item id="saved_searches.html" href="Text/saved_searches.html" media-type="application/xhtml+xml"/>
     <item id="code_view.html" href="Text/code_view.html" media-type="application/xhtml+xml"/>
     <item id="indexes.html" href="Text/indexes.html" media-type="application/xhtml+xml"/>
     <item id="reports.html" href="Text/reports.html" media-type="application/xhtml+xml"/>
@@ -85,7 +83,6 @@
     <item id="edit-toc.png" href="Images/edit-toc.png" media-type="image/png"/>
     <item id="edit-undo.png" href="Images/edit-undo.png" media-type="image/png"/>
     <item id="find-replace-basic.png" href="Images/find-replace-basic.png" media-type="image/png"/>
-    <item id="find-replace-options-example.png" href="Images/find-replace-options-example.png" media-type="image/png"/>
     <item id="find-replace-options.png" href="Images/find-replace-options.png" media-type="image/png"/>
     <item id="generate-toc.png" href="Images/generate-toc.png" media-type="image/png"/>
     <item id="heading-normal.png" href="Images/heading-normal.png" media-type="image/png"/>
@@ -339,6 +336,13 @@
     <item id="manage-plugins-toolbar-buttons.png" href="Images/manage-plugins-toolbar-buttons.png" media-type="image/png"/>
     <item id="manage-plugins-preferences-shortcuts.png" href="Images/manage-plugins-preferences-shortcuts.png" media-type="image/png"/>
     <item id="manage-plugins-epubcheck.png" href="Images/manage-plugins-epubcheck.png" media-type="image/png"/>
+    <item id="find_replace.html" href="Text/find_replace.html" media-type="application/xhtml+xml"/>
+    <item id="find-replace-button.png" href="Images/find-replace-button.png" media-type="image/png"/>
+    <item id="saved_searches.html" href="Text/saved_searches.html" media-type="application/xhtml+xml"/>
+    <item id="saved-searches-button.png" href="Images/saved-searches-button.png" media-type="image/png"/>
+    <item id="saved-searches-find-replace-context-menu.png" href="Images/saved-searches-find-replace-context-menu.png" media-type="image/png"/>
+    <item id="sigil_dark.png" href="Images/sigil_dark.png" media-type="image/png"/>
+    <item id="sigil_light.png" href="Images/sigil_light.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.html"/>
