@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Create an EPUB</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <p>If you are starting with a document created by a word processor, then the first thing you need to do is convert your document to HTML so that you can import it into Sigil. Some programs can generate EPUB files as output. And some programs have add-ons or features to clean up their HTML output. Whether it is best to use the HTML or EPUB (or even plain text) output of these programs depends on the program – you can always test different ways to see what works best.</p>
 
   <div class="tip">
-    <p class="tiptext">The "cleaner" your HTML file is, the easier it will be to turn it into an EPUB and the more likely it will display correctly on multiple devices. This means using styles for formatting and not using too many fancy formats and layouts.</p>
+    <p class="tiptext">The “cleaner” your HTML file is, the easier it will be to turn it into an EPUB and the more likely it will display correctly on multiple devices. This means using styles for formatting and not using too many fancy formats and layouts.</p>
 
     <p class="tiptext">Do not expect an EPUB to look like a printed book – EPUB is designed so that the reader can control how the book is displayed.</p>
   </div>
@@ -25,7 +25,7 @@
 
   <h3 class="sigil_not_in_toc">Word Documents</h3>
 
-  <p>Use the MS Word menu item <span class="menuitem">File→Save As Filtered HTML</span>. Or use the <a href="http://www.mobileread.com/forums/showthread.php?t=142530">MS Word Macro @ MobileRead</a>.</p>
+  <p>Use the MS Word menu item <span class="menuitem">File➞Save As Filtered HTML</span>. Or use the <a href="https://www.mobileread.com/forums/showthread.php?t=142530">MS Word Macro @ MobileRead</a>.</p>
 
   <p>Both approaches try to reduce the amount of extra code exported by MS Word so that your HTML file is cleaner and simpler to edit in Sigil. You really want to have your code as clean as possible since Word adds lots of extra HTML tags that you will probably want to delete at some point.</p>
 
@@ -47,11 +47,11 @@
 
 <h3 class="sigil_not_in_toc">LibreOffice ODF/ODT</h3>
 
-<p>The LibreOffice writing application has the same capabilities as MS Word when it comes to saving an ODT file to html - <b>File→Save A Copy</b> (setting the filter to "HTML Document (Writer) (.html)) OR <b>File→Export</b> (setting the filter to XHTML (.html;.xhtml))</p>
+<p>The LibreOffice writing application has the same capabilities as MS Word when it comes to saving an ODT file to html – <span class="menuitem">File➞Save A Copy</span> (setting the filter to HTML Document (Writer) (.html)) OR <span class="menuitem">File➞Export</span> (setting the filter to XHTML (.html;.xhtml))</p>
 
 <p>For EPUB use it is preferable to use Save a Copy as this creates a cleaner output than Export with less formatting data in the document. Save a Copy also links to any images, whereas Export embeds the image data in the file.</p>
 
-<p>Whilst not specifically EPUB related some information on this subject can be found in the LibreOffice on-line documentation - <a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/en/GS5.1/HTML/GS5112-CreatingWebPages.html">Saving Documents as HTML</a></p>
+<p>Whilst not specifically EPUB related some information on this subject can be found in the LibreOffice on-line documentation – <a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/en/GS5.1/HTML/GS5112-CreatingWebPages.html">Saving Documents as HTML</a></p>
 
 <h3 class="sigil_not_in_toc">DOCXImport Plugin</h3>
 
@@ -63,7 +63,7 @@
     <p class="tiptext">Note: Using this plugin will create a new EPUB. If you already have an existing EPUB open in Sigil this will be replaced and any unsaved work will be discarded.</p>
   </div>
 
-<p>Click on <b>Plugins→Input→DOCXImport</b> to run the plugin.</p>
+<p>Click on <span class="menuitem">Plugins➞Input➞DOCXImport</span> to run the plugin.</p>
 <div class="image">
     <img alt="spellcheck-main" src="../Images/docx-import-plugin1.png"/>
   </div>
@@ -113,7 +113,7 @@
   <p>Note that any automatic conversion of your files will introduce lots of extra code. If you are just formatting a book for personal use you may not be concerned with this. But if you are formatting books for professional purposes or want as little extra code in your EPUB as possible, then it should be avoided.</p>
 
   <div class="tip">
-    <p class="tiptext">Aside from the EPUB format, Sigil primarily supports importing HTML (with any linked in images, css, and media files), and Text files.  Since converting from other formats can be quite specialised, it is often best left to plugins and external tools. Free Sigil import plugins do exist to directly read in MarkDown, Kindle, docx, and odt formats.</p>
+    <p class="tiptext">Aside from the EPUB format, Sigil primarily supports importing HTML (with any linked in images, css, and media files), and Text files. Since converting from other formats can be quite specialised, it is often best left to plugins and external tools. Free Sigil import plugins do exist to directly read in MarkDown, Kindle, docx, and odt formats.</p>
   </div>
 </body>
 </html>

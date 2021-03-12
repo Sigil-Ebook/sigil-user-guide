@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Edit an EPUB</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
 
   <p>Regex is a very important tool in Sigil, but only a very brief introduction can be given in this tutorial. See the next chapter for a reference list of regular expressions.</p>
 
-  <p>For example, instead of searching for very specific text to replace or delete, such as "Page 123", it would be much more useful to search for text that contains "Page" followed by a number – that’s exactly what regular expressions can provide.</p>
+  <p>For example, instead of searching for very specific text to replace or delete, such as “Page 123”, it would be much more useful to search for text that contains “Page” followed by a number – that’s exactly what regular expressions can provide.</p>
 
-  <p>Instead of putting your actual text into the Find or Replace boxes, you can substitute it with special regex codes. So in the example above you could search for "Page \d+" instead of "Page 123" because "\d+" is a regex code that means any digit (the "\d") repeated at least once (the "+").</p>
+  <p>Instead of putting your actual text into the Find or Replace boxes, you can substitute it with special regex codes. So in the example above you could search for “Page \d+” instead of “Page 123” because “\d+” is a regex code that means any digit (the “\d”) repeated at least once (the “+”).</p>
 
   <div class="image">
     <img alt="tutorial-find-adv-page" src="../Images/tutorial-find-adv-page.png"/>
@@ -31,7 +31,7 @@
 
   <h3 class="sigil_not_in_toc">Using Regex to Replace Text</h3>
 
-  <p>But even more useful is that you can use regex to help with replacing text as well. In the example above, you might want to keep the page numbers but replace the word "Page". You could use then use something like:</p>
+  <p>But even more useful is that you can use regex to help with replacing text as well. In the example above, you might want to keep the page numbers but replace the word “Page”. You could use then use something like:</p>
 
   <ul>
     <li><span class="listheading">Find:</span> 
@@ -47,7 +47,7 @@
     <img alt="tutorial-find-adv-replace" src="../Images/tutorial-find-adv-replace.png"/>
   </div>
 
-  <p>This will replace any occurrence of "Page" followed by a number with "This is page" followed by the same number:</p>
+  <p>This will replace any occurrence of “Page” followed by a number with “This is page” followed by the same number:</p>
 
   <ul>
     <li><span class="listheading">Before:</span> 
@@ -139,7 +139,7 @@
   <p class="sigil_not_in_toc"></p>
 
   <ul>
-    <li><span class="listheading">DotAll:</span> This regex option prepends (?s) to all regex searches and is used when you want the ".*" pattern to match across separate lines.</li>
+    <li><span class="listheading">DotAll:</span> This regex option prepends (?s) to all regex searches and is used when you want the “.*” pattern to match across separate lines.</li>
 
     <li><span class="listheading">Minimal Match:</span> This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</li>
 

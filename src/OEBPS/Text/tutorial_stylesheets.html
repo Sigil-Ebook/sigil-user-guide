@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Use Stylesheets</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 
   <p>This tutorial describes stylesheets and how to use them in your EPUB.</p>
 
-  <p>A stylesheet (or CSS – Cascading Style Sheet) is a list of instructions that tells e-readers how to display the text in your book. More specifically it tells the e-reader how to style text using HTML tags used in your book. For example, this is a style for a paragraph of type (or class) "author":</p>
+  <p>A stylesheet (or CSS – Cascading Style Sheet) is a list of instructions that tells e-readers how to display the text in your book. More specifically it tells the e-reader how to style text using HTML tags used in your book. For example, this is a style for a paragraph of type (or class) “author”:</p>
 
   <div class="image">
     <img alt="tutorial-styles-example" src="../Images/tutorial-styles-example.png"/>
@@ -26,7 +26,7 @@
   <p>You can find other introductions to CSS online, including:</p>
 
   <ul>
-    <li><a href="http://www.w3schools.com/css/">W3Schools CSS Guide</a></li>
+    <li><a href="https://www.w3schools.com/css/">W3Schools CSS Guide</a></li>
   </ul>
 
   <div class="tip">
@@ -37,7 +37,7 @@
 
   <h3 class="sigil_not_in_toc" id="style_definition">What is a Style?</h3>
 
-  <p>Styles are used in a book to do things like “make this text blue”, or “make that text centered”, or "leave a little more space above this text". A style definition is just text that looks like:</p>
+  <p>Styles are used in a book to do things like “make this text blue”, or “make that text centered”, or “leave a little more space above this text”. A style definition is just text that looks like:</p>
 
   <pre class="example">color: blue;</pre>
 
@@ -87,9 +87,9 @@
 
   <p>Just using the tag name as a selector is useful for changing every tag, but you can also select specific tags.</p>
 
-  <p>One of the most common ways to select specific tags is by using a <span class="example">class</span> name in the tag and the selector. A <span class="example">class</span> is just a name that you choose (like "firstparagraph" or "example").</p>
+  <p>One of the most common ways to select specific tags is by using a <span class="example">class</span> name in the tag and the selector. A <span class="example">class</span> is just a name that you choose (like “firstparagraph” or “example”).</p>
 
-  <p>For example if you wanted to style the first paragraph in a chapter slightly differently than other paragraphs, you could define a style selector as follows (an "em" is one character width):</p>
+  <p>For example if you wanted to style the first paragraph in a chapter slightly differently than other paragraphs, you could define a style selector as follows (an “em” is one character width):</p>
 
   <pre class="example">p.first {
     text-indent: 0em;
@@ -147,7 +147,7 @@
 
   <p>In Sigil, external stylesheets are stored in the Book Browser in the <span class="example">Styles</span> folder.</p>
 
-  <p>To add a new blank stylesheet to your EPUB, use the menu item <span class="menuitem">File→Add→Blank Stylesheet:</span></p>
+  <p>To add a new blank stylesheet to your EPUB, use the menu item <span class="menuitem">File➞Add➞Blank Stylesheet:</span></p>
 
   <div class="image">
     <img alt="tutorial-style-blank" src="../Images/tutorial-style-blank.png"/>
@@ -202,7 +202,7 @@
   <p>The best way to learn how to use styles is to find an EPUB that contains formatting you like and look at what its CSS files contain and how it uses those styles in the book.</p>
 
   <div class="tip">
-    <p class="tiptext">The styles will be applied in the order in which they appear in the stylesheet.<br/>It is important to remember this as an error in one particular style definition results in all the following styles to be ignored.<br/>It is advisable to check your stylesheets carefully as any errors may not be apparent until the book is viewed in an external e-reader.<br/>You can use the menu item <b>Tools→Validate Stylesheets With W3C</b> to check for errors.</p>
+    <p class="tiptext">The styles will be applied in the order in which they appear in the stylesheet.<br/>It is important to remember this as an error in one particular style definition results in all the following styles to be ignored.<br/>It is advisable to check your stylesheets carefully as any errors may not be apparent until the book is viewed in an external e-reader.<br/>You can use the menu item <span class="menuitem">Tools➞Validate Stylesheets With W3C</span> to check for errors.</p>
   </div>
 </body>
 </html>

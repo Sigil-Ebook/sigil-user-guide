@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Book Browser</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 
   <p>All of the files that make up your EPUB can be viewed and accessed using the Book Browser.</p>
   
-  <p>You will find the Book Browser docked on the left side of the default user interface. You can control whether it is visible or hidden via menu item <span class="menuitem">View→Book Browser</span>. You can also drag it to a different location if you prefer.</p>
+  <p>You will find the Book Browser docked on the left side of the default user interface. You can control whether it is visible or hidden via menu item <span class="menuitem">View➞Book Browser</span>. You can also drag it to a different location if you prefer.</p>
 
   <div class="image">
     <img alt="book-browser-main" src="../Images/book-browser-main.png"/>
@@ -31,7 +31,7 @@
 
   <h3 class="sigil_not_in_toc" id="folders_and_files">Folders &amp; Files</h3>
 
-  <p>The Book Browser organizes your files into several virtual folders by file type (text, stylesheets, images, fonts, etc.). It is important to keep in mind that starting with Sigil 1.0, folders and their contents are displayed in this manner for ease of editing/multi-selection. <i>The Folder text/name does not reflect the actual folder name of the actual folders inside your EPUB.</i> For example, a nav.xhtml file will be displayed in the <i>virtual</i> Text folder with all the other XHTML files, even if it’s in a different <i>actual</i> folder inside the EPUB. </p>
+  <p>The Book Browser organizes your files into several virtual folders by file type (text, stylesheets, images, fonts, etc.). It is important to keep in mind that starting with Sigil 1.0, folders and their contents are displayed in this manner for ease of editing/multi-selection. <i>The Folder text/name does not reflect the actual folder name of the actual folders inside your EPUB.</i> For example, a nav.xhtml file will be displayed in the <i>virtual</i> Text folder with all the other XHTML files, even if it’s in a different <i>actual</i> folder inside the EPUB.</p>
   
  <p>To see the full filepath and actual folder names, hover your mouse over a file. If the file has a guide semantic type or manifest property, it will also be revealed.</p>
     
@@ -45,13 +45,13 @@
     		<img alt="" src="../Images/book-browser-folder-tooltip.png"/>
     	</div>
     	
-	<p>To always show full filepaths in the Book Browser, go to <span class="menuitem">Edit→Preferences→Appearance→Main UI</span> and select “Book Browser should show full paths”.</p>
+	<p>To always show full filepaths in the Book Browser, go to <span class="menuitem">Edit➞Preferences➞Appearance➞Main UI</span> and select “Book Browser should show full paths”.</p>
 		
 		<div class="image">
     		<img alt="" src="../Images/book-browser-full-filepaths.png"/>
     	</div>
 
-  <p>The virtual folders and the file types they contain are: </p>
+  <p>The virtual folders and the file types they contain are:</p>
 
   <ul>
     <li><p><span class="listheading">Text:</span> The XHTML, HTML, and, HTM files that make up the text of the book.</p></li>
@@ -66,13 +66,13 @@
 
     <li><p><span class="listheading">Video:</span> The MP4, OGG, WEBM, M4V and any other embedded video files that might be in the book.</p></li>
 
-    <li><p><span class="listheading">Misc:</span> Other files that are not typically used by EPUB readers but can be stored with the book.  This includes things like javascript (JS) files under EPUB3.</p></li>
+    <li><p><span class="listheading">Misc:</span> Other files that are not typically used by EPUB readers but can be stored with the book. This includes things like javascript (JS) files under EPUB3.</p></li>
 
     <li><p><span class="listheading">No virtual folder:</span> The NCX (.ncx) and OPF (.opf) files are not placed in a virtual folder. The NCX contains a an EPUB2 readable table of contents of the book (required for EPUB2, optional for EPUB3). The OPF contains a list of files in the book (manifest). It also holds the book metadata, and determines chapter display order (spine), and some semantic data. The OPF is basically the controlling document for the EPUB.</p></li>
   </ul>
 
 	<div class="tip">
-		<p class="tiptext">Prior to version 1.0, Sigil automatically restructured each EPUB into a standard Sigil form. As a result, the names of the folders in the Book Browser always matched the actual folders used.  Sigil 1.0 no longer does this. Sigil 1.0 loads EPUBs as they are without moving files or renaming folders, and allows you to structure your EPUBs and name your folders as you please. However, if you prefer the old standard Sigil form, you can restructure your EPUB using menu item <span class="menuitem">Tools→Restructure Epub to Sigil Norm</span>.</p>
+		<p class="tiptext">Prior to version 1.0, Sigil automatically restructured each EPUB into a standard Sigil form. As a result, the names of the folders in the Book Browser always matched the actual folders used. Sigil 1.0 no longer does this. Sigil 1.0 loads EPUBs as they are without moving files or renaming folders, and allows you to structure your EPUBs and name your folders as you please. However, if you prefer the old standard Sigil form, you can restructure your EPUB using menu item <span class="menuitem">Tools➞Restructure Epub to Sigil Norm</span>.</p>
 	</div>
 	
   <h3 class="sigil_not_in_toc" id="selecting_multiple_files">Selecting Multiple Files</h3>
@@ -86,7 +86,7 @@
 
   <p>The order of the files in the Text folder is important since it is the order in which the files will be listed in the OPF (.opf), which is the order they will be displayed to readers.</p>
 
-  <p>Files in the Text folder can be dragged up or down, allowing you to re-order files quickly and easily. When you change the order of these files in the Book Browser, the OPF is automatically updated. However, the NCX and/or EPUB3 NAV (nav.xhtml) are <i>not</i> updated automatically. For more on updating the table of contents files, see the <a href="table_of_contents.html">Table of Contents</a> chapter. </p>
+  <p>Files in the Text folder can be dragged up or down, allowing you to re-order files quickly and easily. When you change the order of these files in the Book Browser, the OPF is automatically updated. However, the NCX and/or EPUB3 NAV (nav.xhtml) are <i>not</i> updated automatically. For more on updating the table of contents files, see the <a href="table_of_contents.html">Table of Contents</a> chapter.</p>
 
   <div class="tip">
     <p class="tiptext">You can also use the context menu to rename the files.</p>
@@ -128,7 +128,7 @@
 
   <p>Enter a new name for the first file, including a starting number at the end of the name. Sigil will rename each of your files sequentially using the name you provided and starting at the number you provided. A file will not be renamed if it would result in the book having duplicate file names. You can also rename the extension.</p>
 
-  <p>For example, if you start with the original names: <span class="example">Section0001.html, Section002.html, Section0003.html</span> ... then:</p>
+  <p>For example, if you start with the original names: <span class="example">Section0001.html, Section002.html, Section0003.html</span> … then:</p>
 
   <div class="indent">
     <dl>
@@ -179,13 +179,13 @@
 
   	<p>Move the selected files to a different folder.</p>
   	
-  	<p>When you invoke <span class="menuitem">Move</span>, a dialog box opens and offers a dropdown menu of existing folders to choose from. </p>
+  	<p>When you invoke <span class="menuitem">Move</span>, a dialog box opens and offers a dropdown menu of existing folders to choose from.</p>
   	
   	<div class="image">
 		 <img alt="" src="../Images/book-browser-move.png"/>
 	  </div>
   	
-  	<p>You can also type a new name directly in the text box to create a new folder to move your files into. </p>
+  	<p>You can also type a new name directly in the text box to create a new folder to move your files into.</p>
 	
 	  	<div class="image">
 		 <img alt="" src="../Images/book-browser-new-folder.png"/>
@@ -243,9 +243,9 @@
 
   <p>Add a blank HTML document, CSS stylesheet, or SVG image file to the appropriate folder. For HTML it will add the file just below the one you right-clicked on, or at the bottom of the folder if you right-clicked on the folder name. For other folders it will add the file in alphabetical order.</p>
 
-  <p>The new file will be numbered with the lowest available number starting from <span class="example">0001</span> (e.g. <span class="example">Section0001.html</span>). You can then rename it. </p>
+  <p>The new file will be numbered with the lowest available number starting from <span class="example">0001</span> (e.g. <span class="example">Section0001.html</span>). You can then rename it.</p>
 
-  <p>This context menu command is the same as the main menu item <span class="menuitem">File→Add</span>.</p>
+  <p>This context menu command is the same as the main menu item <span class="menuitem">File➞Add</span>.</p>
 
   <h4 id="context_add_copy">Add Copy</h4>
 
@@ -257,7 +257,7 @@
   
   <p>A dialog window will open allowing you to choose one or more files from your computer to import into your EPUB. Files will be added to the appropriate virtual folder based on their file extension, regardless of what file or folder you right-clicked on.</p>
 
-  <p>This is the same as the main menu item <span class="menuitem">File→Add→Existing Files</span> and the <span class="buttonbox">Add Existing Files</span> toolbar button.</p>
+  <p>This is the same as the main menu item <span class="menuitem">File➞Add➞Existing Files</span> and the <span class="buttonbox">Add Existing Files</span> toolbar button.</p>
 
   <h4>Select All</h4>
 
@@ -295,8 +295,8 @@
 
   <p>Renumber the playOrder and navPoint id numbers of the Table of Content entries in the <span class="example">.ncx</span> file sequentially, starting from 1. This feature is intended to clean up the TOC numbering if you have to manually add or delete an entry in the TOC.</p>
 
-  <p>You can also use the menu item <span class="menuitem">Tools→Table of Contents→Edit Table of Contents</span> or <span class="buttonbox">Edit Table of Contents</span> button. Simply saving the TOC will automatically renumber the ids.</p>
+  <p>You can also use the menu item <span class="menuitem">Tools➞Table of Contents➞Edit Table of Contents</span> or <span class="buttonbox">Edit Table of Contents</span> button. Simply saving the TOC will automatically renumber the ids.</p>
 
-  <p>Any navList or pageList items in the file are not saved — only the Table of Contents entries are saved after renumbering.</p>
+  <p>Any navList or pageList items in the file are not saved – only the Table of Contents entries are saved after renumbering.</p>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Use Regular Expressions</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -20,20 +20,20 @@
   <p>You can find more details about regex at these links (or ask for help in the Sigil forum):</p>
 
   <ul>
-    <li><a href="http://www.mobileread.com/forums/showthread.php?t=118569">Regex overview at MobileRead</a></li>
+    <li><a href="https://www.mobileread.com/forums/showthread.php?t=118569">Regex overview at MobileRead</a></li>
 
     <li><a href="https://www.regular-expressions.info/tutorial.html">An Online Regex tutorial/reference</a></li>
 
-    <li><a href="http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/">A one page command summary</a></li>
+    <li><a href="https://cheatography.com/davechild/cheat-sheets/regular-expressions/">A one page command summary</a></li>
 
-    <li><a href="http://docs.python.org/library/re.html">Regex as used by Python</a></li>
+    <li><a href="https://docs.python.org/3/library/re.html">Regex as used by Python</a></li>
 
-    <li><a href="http://www.pcre.org/pcre.txt">Official PCRE details – start at the PCRESYNTAX(3) section</a></li>
+    <li><a href="https://www.pcre.org/pcre.txt">Official PCRE details – start at the PCRESYNTAX(3) section</a></li>
   </ul>
 
   <h3 class="sigil_not_in_toc" id="regex_overview">Overview</h3>
 
-  <p class="sigilNotInTOC">When using regex commands in Find &amp; Replace the purpose is to allow you to search for patterns instead of exact text. This means that you can tell Find &amp; Replace to search for "a number" instead of "8", or to match any words between certain tags and then replace it with new tags or new words.</p>
+  <p class="sigilNotInTOC">When using regex commands in Find &amp; Replace the purpose is to allow you to search for patterns instead of exact text. This means that you can tell Find &amp; Replace to search for “a number” instead of “8”, or to match any words between certain tags and then replace it with new tags or new words.</p>
 
   <p>In order to allow you to search for patterns, you need to use regex commands in place of the specific text you want in your search. For instance, instead of searching for <span class="example">8</span> you could search for <span class="example">\d</span> (which means one digit) or <span class="example">\d+</span> (which means one or more digits).</p>
 
@@ -45,7 +45,7 @@
     <li><span class="listheading">Replace:</span> <span class="example">&lt;h2\1&lt;/h2&gt;</span></li>
   </ul>
 
-  <p>where the Find command searches for any text between the h1 start and end tags, and using () to save the text. (The start tag is left open in order to catch any class definitions, and the ? tells .* to do minimal matching). The Replace command is used to replace the matched text with the saved text (indicated by \1) surrounded by the h2 start and end tags.</p>
+  <p>where the Find command searches for any text between the h1 start and end tags, and using <span class="example">()</span> to save the text. (The start tag is left open in order to catch any class definitions, and the <span class="example">?</span> tells <span class="example">.*</span> to do minimal matching). The Replace command is used to replace the matched text with the saved text (indicated by <span class="example">\1</span>) surrounded by the h2 start and end tags.</p>
 
   <p>The following sections give a sample of common regex commands that you may find useful.</p>
 
@@ -94,7 +94,7 @@
 
     <li><span class="example">+</span> – use after a character to mean 1 or more, e.g. <span class="example">\d+</span> means 1 or more digits</li>
 
-    <li><span class="example">?</span> – use after a character to mean 0 or 1 instance, e.g. \d? means none or 1 digit</li>
+    <li><span class="example">?</span> – use after a character to mean 0 or 1 instance, e.g. <span class="example">\d?</span> means none or 1 digit</li>
 
     <li><span class="example">\s</span> – matches whitespace, including space, tab, end of line carriage returns or newlines</li>
   </ul>
@@ -120,7 +120,7 @@
   <p>When replacing text, one of the most useful features is to be able to use text that was matched by storing it in a group. Once you have grouped text you can reference it in your replace command:</p>
 
   <ul>
-    <li><span class="example">\1</span> – use in Replace to retrieve the value of a saved group (use \2 for the second group, etc.)</li>
+    <li><span class="example">\1</span> – use in Replace to retrieve the value of a saved group (use <span class="example">\2</span> for the second group, etc.)</li>
   </ul>
 </body>
 </html>

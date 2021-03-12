@@ -100,6 +100,7 @@ hr.narrow {
 
 li {
     text-align: left;
+    line-height: 1.25;
 }
 
 li.first {
@@ -174,6 +175,7 @@ pre.example {
     margin-left: 2em;
     margin-bottom: 1.5em;
     background-color: rgb(244, 244, 244);
+    white-space: pre-wrap;
 }
 
 span.buttonbox {
@@ -183,6 +185,7 @@ span.buttonbox {
     font-family: monotype, sans-serif;
     font-weight: bold;
     font-size: 0.85em;
+    padding: 1px;
 }
 
 span.example {
@@ -198,6 +201,7 @@ span.menuitem {
     font-family: monotype, courier, sans-serif;
     font-size: 1.1em;
     font-weight: bold;
+    line-height: 1.25;
 }
 
 span.shortcut {

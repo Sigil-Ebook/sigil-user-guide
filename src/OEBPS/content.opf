@@ -79,7 +79,6 @@
     <item id="document-add.png" href="Images/document-add.png" media-type="image/png"/>
     <item id="document-open.png" href="Images/document-open.png" media-type="image/png"/>
     <item id="document-save.png" href="Images/document-save.png" media-type="image/png"/>
-    <item id="document-validate.png" href="Images/document-validate.png" media-type="image/png"/>
     <item id="edit-toc.png" href="Images/edit-toc.png" media-type="image/png"/>
     <item id="edit-undo.png" href="Images/edit-undo.png" media-type="image/png"/>
     <item id="find-replace-basic.png" href="Images/find-replace-basic.png" media-type="image/png"/>
@@ -127,7 +126,7 @@
     <item id="split-merge-warning.png" href="Images/split-merge-warning.png" media-type="image/png"/>
     <item id="split-section.png" href="Images/split-section.png" media-type="image/png"/>
     <item id="split-start.png" href="Images/split-start.png" media-type="image/png"/>
-    <item id="thumbnail-.png" href="Images/thumbnail%2B-.png" media-type="image/png"/>
+    <item id="thumbnailplusminus.png" href="Images/thumbnailplusminus.png" media-type="image/png"/>
     <item id="toc-generate-toc.png" href="Images/toc-generate-toc.png" media-type="image/png"/>
     <item id="toc-html.png" href="Images/toc-html.png" media-type="image/png"/>
     <item id="toc-main.png" href="Images/toc-main.png" media-type="image/png"/>

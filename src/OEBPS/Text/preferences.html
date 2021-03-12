@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Preferences</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 			<li>Plugins</li>
 		  </ul>
 
-		  <p>To open Preferences, go to the main menu bar at the top of the screen and select <span class="menuitem">Edit→Preferences</span> (on Mac: <span class="menuitem">Sigil→Preferences</span>):</p>
+		  <p>To open Preferences, go to the main menu bar at the top of the screen and select <span class="menuitem">Edit➞Preferences</span> (on Mac: <span class="menuitem">Sigil➞Preferences</span>):</p>
 
 		  <div class="image">
 			<img alt="preferences-menu" src="../Images/preferences-menu.png"/>
@@ -203,7 +203,7 @@
 
 			<li>Click in the Shortcut text box.</li>
 
-			<li>Press the key combination you want to use — do not spell it out using letters, just press the key combination.</li>
+			<li>Press the key combination you want to use – do not spell it out using letters, just press the key combination.</li>
 
 			<li>Click <span class="buttonbox">Assign</span> to set the shortcut. If the key combination is already being used for another command, an alert message showing the conflict will appear.</li>
 
@@ -251,7 +251,7 @@
 			<ul>
 			  <li>To add new standard dictionaries (which must be in the hunspell format), click <span class="buttonbox">Open Preferences Location</span> and go into the “hunspell_dictionaries” directory. Put your new dictionary files into the “hunspell_dictionaries” directory then restart Sigil.</li>
 
-			  <li>One source for additional dictionaries is the <a href="http://wiki.services.openoffice.org/wiki/Dictionaries">OpenOffice Dictionaries</a> site. To add these dictionaries, download, extract, and copy the files (e.g. en_GB.aff, en_GB.dic, hyph_en_GB.dic) to the “hunspell_dictionaries” directory location and restart Sigil.</li>
+			  <li>One source for additional dictionaries is the <a href="https://wiki.openoffice.org/wiki/Dictionaries">OpenOffice Dictionaries</a> site. To add these dictionaries, download, extract, and copy the files (e.g. en_GB.aff, en_GB.dic, hyph_en_GB.dic) to the “hunspell_dictionaries” directory location and restart Sigil.</li>
 			</ul></li>
 
 			<li class="first"><span class="listheading">Secondary Language Dictionary</span>: Choose your secondary language dictionary.</li>
@@ -289,7 +289,7 @@
 
   <h3 class="sigil_not_in_toc">Preserve Entities</h3>
 
-		  <p>When you run Mend (<span class="menuitem">Tools→Reformat HTML→Mend All HTML Files</span>), Sigil automatically converts all character entities to Unicode characters <i>unless</i> they are included in the Entities to Preserve list.</p>
+		  <p>When you run Mend (<span class="menuitem">Tools➞Reformat HTML➞Mend All HTML Files</span>), Sigil automatically converts all character entities to Unicode characters <i>unless</i> they are included in the Entities to Preserve list.</p>
 
 		  <div class="image">
 			<img alt="preferences-spellcheck-add-words" src="../Images/preferences-preserve-entities.png"/>
@@ -304,7 +304,7 @@
 		  <div class="tip">
 			<p class="tiptext">Please note that you can’t use named entities (e.g. <span class="example">&amp;nsbp;</span>) in EPUB3 books; you must use numerical entities (e.g., <span class="example">&amp;#160;</span>) instead.</p>
 
-			<p class="tiptext">If you have Mend Not Well Formed HTML Source Code turned on for Open or Save, and the source code is well formed, entities will <b><i>not</i></b> be automatically converted (because entities are perfectly valid code). To convert entities in html files with well formed code, you must manually invoke <span class="menuitem">Tools→Reformat HTML→Mend All HTML Files</span>.</p>
+			<p class="tiptext">If you have Mend Not Well Formed HTML Source Code turned on for Open or Save, and the source code is well formed, entities will <b><i>not</i></b> be automatically converted (because entities are perfectly valid code). To convert entities in html files with well formed code, you must manually invoke <span class="menuitem">Tools➞Reformat HTML➞Mend All HTML Files</span>.</p>
 		  </div>
 
   <h3 class="sigil_not_in_toc">Plugins</h3>
@@ -357,7 +357,7 @@
 
 		  <p>Mac:</p>
 
-		  <pre class="example">…/Users/[Username]/Library/Application\ Support/sigil-ebook/sigil/</pre>
+		  <pre class="example">/Users/[Username]/Library/Application\ Support/sigil-ebook/sigil/</pre>
 
 		  <p>Linux:</p>
 
@@ -401,7 +401,7 @@
 
   <h3 class="sigil_not_in_toc">Change the Font Size of GUI Controls</h3>
 
-		  <p>Since Sigil is a Qt app, you can customize the font size of some GUI controls by creating a <b>qt_styles.qss</b> stylesheet file and placing it in the Sigil preferences folder. (<b>qt_styles.qss</b> needs to contain valid <a href="http://doc.qt.io/qt-5/stylesheet-syntax.html">Qt style sheet</a> declarations.)</p>
+		  <p>Since Sigil is a Qt app, you can customize the font size of some GUI controls by creating a <b>qt_styles.qss</b> stylesheet file and placing it in the Sigil preferences folder. (<b>qt_styles.qss</b> needs to contain valid <a href="https://doc.qt.io/qt-5/stylesheet-syntax.html">Qt style sheet</a> declarations.)</p>
 
 		  <p>For example, the following styles will increase the font size of the fields in the Find &amp; Replace window:</p>
 
@@ -424,6 +424,6 @@ QComboBox { font-size: 16pt }
 }
 </pre>
 
-		  <p>NOTE: Applying such CSS can possibly adversely affect the visibility of some styled elements within an EPUB, depending on what CSS has already been applied via the EPUB and how.</p>
+		  <p>Note: Applying such CSS can possibly adversely affect the visibility of some styled elements within an EPUB, depending on what CSS has already been applied via the EPUB and how.</p>
 </body>
 </html>

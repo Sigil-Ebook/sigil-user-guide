@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Validation</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
   <h3 class="sigil_not_in_toc">EPUB Validation With FlightCrew (EPUB2 only)</h3>
 
-  <p>Please note that FlightCrew is no longer included in Sigil and has been converted to an plugin. (If you press F7 or click the green checkmark icon <img alt="" src="../Images/document-validate.png"/>, Sigil will run a very basic and limited well-formedness check only.)</p>
+  <p>Please note that FlightCrew is no longer included in Sigil and has been converted to an plugin. (If you press F7, Sigil will only run a very basic and limited well-formedness check.)</p>
 
   <p>Before you can use FlightCrew, you’ll have to download the <a href="https://github.com/Sigil-Ebook/flightcrew/releases/latest"> FlightCrew plugin .zip file</a> for your OS and <a href="manage_plugins.html">install it</a>.</p>
 
@@ -42,7 +42,7 @@
   </div>
 
   <ul>
-    <li><span class="example">This resource is present in the OPF &lt;manifest&gt;, but it’s not reachable (it’s unused).</span> 
+    <li><span class="example">This resource is present in the OPF &lt;manifest&gt;, but it's not reachable (it's unused).</span> 
 
     <ul>
       <li>This warning means you have included the listed file in your EPUB, but you have not used it anywhere in your book. If you intended to use it, you should link to it, otherwise you can delete the file. Try to search all your files or <span class="example">toc.ncx</span> for the filename – you should leave off the pathname when searching, e.g. if the error is in <span class="example">Text/Chapter1.html</span> then just search for <span class="example">Chapter1.html</span></li>
@@ -87,27 +87,27 @@
 
   <h3 class="sigil_not_in_toc" id="tidy">CSS Validation With W3C</h3>
 
-  <p>You can also easily validate your CSS Stylesheet files using the W3C website by selecting the menu item <span class="menuitem">Tools→Validate Stylesheets With W3C</span>.</p>
+  <p>You can also easily validate your CSS Stylesheet files using the W3C website by selecting the menu item <span class="menuitem">Tools➞Validate Stylesheets With W3C</span>.</p>
 
   <p>This will send the contents of all of your stylesheets to the W3C service which will produce reports of any issues.</p>
 
   <p>You can validate individual stylesheets by right-clicking on the stylesheet in the Book Browser and selecting the validate option.</p>
 
   <div class="tip">
-    <p class="tiptext">Validation is done using the W3C Stylesheet Validation Level that was selected in the Preferences menu (<span class="menuitem">Edit→Preferences→General Settings→EPUB2/3 W3C Stylesheet Validation Level</span>).</p>
+    <p class="tiptext">Validation is done using the W3C Stylesheet Validation Level that was selected in the Preferences menu (<span class="menuitem">Edit➞Preferences➞General Settings➞EPUB2/3 W3C Stylesheet Validation Level</span>).</p>
   </div>
 
   <h3 class="sigil_not_in_toc">EPUB Validation With EpubCheck (EPUB2 and EPUB3)</h3>
 
   <p>FlightCrew identifies most issues with EPUBs, but it may not catch everything and can’t be used to validate EPUB3 books.</p>
 
-  <p>For validating all EPUB3's and as an additional check for EPUB2s you should also run your EPUB through the <a href="https://daisy.org/activities/projects/epubcheck">EpubCheck</a> program. You can use it online or download a local version of the program:</p>
+  <p>For validating all EPUB3’s and as an additional check for EPUB2s you should also run your EPUB through the <a href="https://daisy.org/activities/projects/epubcheck">EpubCheck</a> program. You can use it online or download a local version of the program:</p>
 
   <ul>
     <li><a href="http://validator.idpf.org">IDPF EPUB Validator</a></li>
   </ul>
 
-  <p>But the best way to use EpubCheck with Sigil is to download the lastest version of the <a href="http://www.mobileread.com/forums/showpost.php?p=2950625">EpubCheck plugin</a> and <a href="manage_plugins.html">install it</a> just like was done with FlightCrew earlier in this chapter.</p>
+  <p>But the best way to use EpubCheck with Sigil is to download the lastest version of the <a href="https://www.mobileread.com/forums/showpost.php?p=2950625">EpubCheck plugin</a> and <a href="manage_plugins.html">install it</a> just like was done with FlightCrew earlier in this chapter.</p>
 
   <p>Development of Epubcheck is done at <a href="https://github.com/w3c/epubcheck">https://github.com/w3c/epubcheck</a>.
 </p>

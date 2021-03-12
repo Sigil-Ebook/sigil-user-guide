@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Indexes</title>
-  <link href="../Styles/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
   <p>The first way to identify entries to include in the index is to mark specific words or phrases in your text. Only the occurrence of the word or phrase you mark will be included in the Index – if you need all occurrences use the Index Editor.</p>
 
-  <p>Highlight a word or phrase in Code View and then select the menu item <span class="menuitem">Tools→Index→Mark For Index</span> or its keyboard shortcut (which you can change). This will then open a prompt for you to enter how you want these words to appear in the index:</p>
+  <p>Highlight a word or phrase in Code View and then select the menu item <span class="menuitem">Tools➞Index➞Mark For Index</span> or its keyboard shortcut (which you can change). This will then open a prompt for you to enter how you want these words to appear in the index:</p>
 
   <div class="image">
     <img alt="index-mark" src="../Images/index-mark.png"/>
@@ -34,9 +34,9 @@
 
     <li><span class="listheading">words:</span> If you enter a word or phrase, then that word or phrase will be used (e.g. Oak instead of oak).</li>
 
-    <li><span class="listheading">heading/words:</span> If you use a "/" in the name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
+    <li><span class="listheading">heading/words:</span> If you use a “/” in the name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
 
-    <li><span class="listheading">entrya;entryb:</span> If you use a ";" then multiple entries will be created for this word or phrase.</li>
+    <li><span class="listheading">entrya;entryb:</span> If you use a “;” then multiple entries will be created for this word or phrase.</li>
   </ul>
 
   <p>When you mark text for indexing, it just adds add some Sigil-specific HTML code that tells Sigil to include these words when you create the index. In code view it might appear as follows:</p>
@@ -56,15 +56,15 @@
 
   <p>The second way identify words to index is to add the words to a list. Then when you create the index every occurrence of that word will be included in the index automatically. You can use words marked for indexing and a list of words to index at the same time.</p>
 
-  <p>To add specific words to the index list, highlight the word or phrase, and then select the menu item <span class="menuitem">Tools→Index→Add To Index Editor</span>. If your selected text includes any HTML tags, you should remove them.</p>
+  <p>To add specific words to the index list, highlight the word or phrase, and then select the menu item <span class="menuitem">Tools➞Index➞Add To Index Editor</span>. If your selected text includes any HTML tags, you should remove them.</p>
 
   <p>This will bring up the Index Editor with the word added to the list of entries to index. You can also enter words directly in the Index Editor as described below.</p>
 
   <h3 class="sigil_not_in_toc">Create the Index</h3>
 
-  <p>To actually create your index once you have marked words and/or added them to the list just select the menu item <span class="menuitem">Tools→Index→Create Index</span>.</p>
+  <p>To actually create your index once you have marked words and/or added them to the list just select the menu item <span class="menuitem">Tools➞Index➞Create Index</span>.</p>
 
-  <p>This will create or update an HTML page called i<span class="shortcut">ndex.xhtml</span>. It will be marked with the semantic type "index". Entries are listed alphabetically, and, using the default styling, look like this:</p>
+  <p>This will create or update an HTML page called i<span class="shortcut">ndex.xhtml</span>. It will be marked with the semantic type “index”. Entries are listed alphabetically, and, using the default styling, look like this:</p>
 
   <div class="image">
     <img alt="index-html" src="../Images/index-html.png"/>
@@ -82,7 +82,7 @@
 
   <p>The Index Editor is used to manage the list of entries that will be included in the index. It does not include the words you marked for indexing – they are included automatically.</p>
 
-  <p>To open the Index Editor select the menu item <span class="menuitem">Tools→Index→Index Editor</span> or its keyboard shortcut:</p>
+  <p>To open the Index Editor select the menu item <span class="menuitem">Tools➞Index➞Index Editor</span> or its keyboard shortcut:</p>
 
   <div class="image">
     <img alt="index-editor" src="../Images/index-editor.png"/>
@@ -90,12 +90,12 @@
 
   <h4 class="sigil_not_in_toc">Text To Include</h4>
 
-  <p>The "Text To Include" column is a list of patterns you want Sigil to search for in your text and then to create an Index entry for using the format in the "Index Entries" column. Entries in the "Text To Include" column can use the following formats:</p>
+  <p>The “Text To Include” column is a list of patterns you want Sigil to search for in your text and then to create an Index entry for using the format in the “Index Entries” column. Entries in the “Text To Include” column can use the following formats:</p>
 
   <ul>
     <li><span class="listheading">words:</span> The words in the book must exactly match the listed words (case-sensitive). Do not include any HTML tags, just the words as they appear in Preview.</li>
 
-    <li><span class="listheading">Regex:</span> You can enter most regex patterns - they will be match on a paragraph by paragraph basis. For example, to match words while ignoring case sensitivity you can use "<span class="example">[Gg]utenberg</span>" or "<span class="example">(?i)Gutenberg</span>".</li>
+    <li><span class="listheading">Regex:</span> You can enter most regex patterns – they will be match on a paragraph by paragraph basis. For example, to match words while ignoring case sensitivity you can use “<span class="example">[Gg]utenberg</span>” or “<span class="example">(?i)Gutenberg</span>”.</li>
   </ul>
 
   <div class="tip">
@@ -106,18 +106,18 @@
 
   <h4 class="sigil_not_in_toc">Index Entries</h4>
 
-  <p>The "Index Entries" column is what will actually appear in the Index for words matching the "Text To Include" column.</p>
+  <p>The “Index Entries” column is what will actually appear in the Index for words matching the “Text To Include” column.</p>
 
-  <p>Entries in the "Index Entries" column can use the following formats:</p>
+  <p>Entries in the “Index Entries” column can use the following formats:</p>
 
   <ul>
     <li><span class="listheading">blank:</span> If you leave the entry blank, then the words entered in the Text to Include column will be used for the entry’s name.</li>
 
     <li><span class="listheading">words:</span> If you enter a word or phrase, then that word or phrase will be used (e.g. Oak instead of oak).</li>
 
-    <li><span class="listheading">heading/words:</span> If you use a "/" in your name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
+    <li><span class="listheading">heading/words:</span> If you use a “/” in your name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
 
-    <li><span class="listheading">heading/:</span> If you use a "/" at the end of the entry name, then a hierarchical group will be created and the words in the Text to Include column will be used as a sub-entry.</li>
+    <li><span class="listheading">heading/:</span> If you use a “/” at the end of the entry name, then a hierarchical group will be created and the words in the Text to Include column will be used as a sub-entry.</li>
   </ul>
 
   <h4 class="sigil_not_in_toc">Context Menu</h4>
@@ -171,7 +171,7 @@
   <p>You can list just the Text To Include words in the text file – one per line. Or you can include both the Text To Include and Index Entry values by separating them with a tab – one per line.</p>
 
 <h4 class="sigil_not_in_toc">The Index Toolbar</h4>
-<p>To make creation of an index a bit quicker, users can use the <span class="menuitem">View→Toolbars→Index</span> menu to show the Index Toolbar.</p>
+<p>To make creation of an index a bit quicker, users can use the <span class="menuitem">View➞Toolbars➞Index</span> menu to show the Index Toolbar.</p>
 <div><img width="30%" alt="image of the index toolbar icons" src="../Images/index_toolbar.png"/></div>
 <ul>
 <li>Open the Index Editor</li>
