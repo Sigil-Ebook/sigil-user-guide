@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Find &amp; Replace</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="find_and_replace">Find &amp; Replace</h2>
+
+  <p class="h2subheading">— Searching in Code View —</p>
+
+  <p>Finding text and updating it is one of the most common tasks in Sigil – to look for words, to remove or replace unwanted text, or to change the formatting. In fact, if you ever need to make lots of changes to your text, you will almost certainly want to use Find &amp; Replace (and its related <a href="saved_searches.xhtml">Saved Searches</a> feature), since it allows you to quickly make a large number of edits across all your files.</p>
+
+  <div class="tip">
+    <p class="tiptext">See the <a href="tutorial_regex_reference.xhtml">Regex</a> tutorial for information about advanced searching.</p>
+  </div>
+
+  <p>To open the Find &amp; Replace dialog, select the menu item <span class="menuitem">Search=&gt;Find &amp; Replace</span>, its keyboard shortcut, or toolbar button <img alt="Find Replace icon." src="../Images/find-replace-button.png"/>.</p>
+
+  <div class="image">
+    <img alt="Find Replace Dialog window." src="../Images/find-replace-options.png"/>
+  </div>
+
+  <p>When open, the Find &amp; Replace dialog is always positioned at the bottom of the editing window for easy access. Click the chevron <img alt="Showing use of chevron in the Find and Replace dialog." src="../Images/chevron-up.png"/> in the lower left corner to show or hide Options.</p>
+  
+  <div class="tip">
+    <p class="tiptext">Keyboard shortcuts exist for all Find &amp; Replace operations, such as <span class="shortcut">Ctrl+F</span> to find and <span class="shortcut">Ctrl+G</span> to find again (on Mac use <span class="shortcut">Cmd</span> instead of <span class="shortcut">Ctrl</span>). See the <span class="menuitem">Search</span> menu for a list of shortcuts.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="find_actions">Action Buttons</h3>
+
+  <p>The buttons on the right are used to run your search commands: Find, Replace, Replace/Find, Replace All, and Count All.</p>
+
+  <h4 class="sigil_not_in_toc">Find</h4>
+
+  <p>Finds the next occurrence of your search term and highlights it in Code View.</p>
+  
+  <p>To find text:</p>
+
+  	<ul>
+		<li>Enter the text you wish to find in the Find box.</li>
+
+		<li>Click <span class="buttonbox">Find</span> to search for and highlight the next match in the Code View window.</li>
+	</ul>
+
+  <p>Any text in the Replace box is ignored if you are just doing a Find.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you select text in Code View, then use <span class="shortcut">Ctrl+F</span> (on Mac: <span class="shortcut">Cmd+F</span>) to open the Find &amp; Replace window, Sigil will automatically place your selected text in the Find box.</p>
+    
+    <p class="tiptext">After you run a search, the text you entered in either the Find or Replace box is automatically saved to a history list that is available for later use. Click the down-arrow to the right of the Find or Replace text box to see a dropdown menu of your search history list.</p>
+    
+    <p class="tiptext">Status messages appear in the lower right corner.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Replace</h4>
+
+  <p>Replaces one occurrence of the text matched by Find.</p>
+
+  <p>To replace text:</p>
+
+  <ul>
+    <li>Enter the text to find in the Find box.</li>
+
+    <li>Enter the text you want to replace it with in the Replace box.</li>
+
+    <li>Click <span class="buttonbox">Find</span> to search for and highlight the next match.</li>
+
+    <li>Click <span class="buttonbox">Replace</span> to do the replacement.</li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">To undo changes, use <span class="shortcut">Ctrl+Z</span> (on Mac: <span class="shortcut">Cmd+Z</span>) or the Undo button <img alt="Showing Undo icon." src="../Images/edit-undo.png"/>, or right-click in the Code View window and select <span class="menuitem">Undo</span> to change the text back. But if you are replacing across multiple files and your next match is in a different file, you need to switch back to the file containing the replaced text before selecting undo.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Replace/Find</h4>
+
+  <p>Replaces one occurence of the next match then automatically finds and highlights the subsequent match.</p>
+  
+  <p>The first time you do a Replace/Find the first match will be highlighted but not replaced. Subsequent use of Replace/Find will replace the highlighted matched text and then automatically find the next match.</p>
+
+   <p>To replace text then automatically find the next match:</p>
+
+	  <ul>
+		<li>Enter the text to find in the Find box.</li>
+
+		<li>Enter the text you want to replace it with in the Replace box.</li>
+	
+		<li>Click <span class="buttonbox">Replace/Find</span> to search for and highlight the first match.</li>
+
+		<li>Click <span class="buttonbox">Replace/Find</span> to replace the match, then automatically find and highlight the next match.</li>
+	  </ul>
+	  
+
+  <div class="tip">
+    <p class="tiptext">You can safely use Replace/Find instead of Find if no text is selected since it will act just like Find until a match is highlighted.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Replace All</h4>
+
+  <p>Replaces all text matching your search term with your replace term, according to your settings. This is done all at once automatically.</p>
+  
+    <div class="tip">
+    <p class="tiptext">You cannot undo a Replace All – save first!</p>
+  </div>
+
+	 <p>To replace all:</p>
+
+	  <ul>
+		<li>Enter the text to find in the Find box.</li>
+
+		<li>Enter the text you want to replace it with in the Replace box.</li>
+
+		<li>Click <span class="buttonbox">Replace All</span> to replace all matches in one go.</li>
+	  </ul>
+
+  <p>Replace All always replaces from the start of a file.</p>
+
+  <div class="tip">
+    <p class="tiptext">To avoid unpleasant surprises, test your find and replace string using Count All to see if the number of matches is in the expected range. You can also test with a simple Replace a few times before using Replace All.</p>
+
+    <p class="tiptext">Save your book before a Replace All and check it for issues afterward.</p>
+
+    <p class="tiptext">Before executing a Replace All, check if your mode is set for Current File or All HTML Files.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc" id="count_all">Count All</h4>
+  
+  <p>Counts the number of times the search term you entered in the Find text box occurs in the selected files, then displays the results in the lower right corner of the Find &amp; Replace window. Count All uses all Mode settings including Up/Down, plus the Wrap option.</p>
+
+  <p> If you don’t see the <span class="buttonbox">Count All</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
+
+	 <p>To count all matches in the selected files:</p>
+
+	  <ul>
+		<li>Enter the text to find in the Find box.</li>
+
+		<li>Click <span class="buttonbox">Count All</span>.</li>
+	  </ul>
+
+  <div class="tip">
+    <p class="tiptext">It’s a good idea to use Count All before doing a Replace All to confirm that the number of replacements will be what you expect. You should also run it after a Replace All in case the particular search and replace created new matches.</p>
+  </div>
+
+
+  <h3 class="sigil_not_in_toc" id="find_what">Search Modes</h3>
+  
+  <p>Sigil provides three dropdown menus containing different search modes to give you greater control over your search.</p>
+  
+  <h4>What to Search For</h4>
+  
+  		<ul>
+  			<li><p><span class="listheading">Normal</span>: Search for exactly what you type in the Find box except ignore case, e.g. “A” and “a” will be considered the same letter.</p></li>
+  			
+  	  		<li><p><span class="listheading">Case Sensitive</span>: Search for exactly what you type in the Find box, e.g. “A” and “a” will be considered different letters.</p></li>
+  	  		
+  			<li><p><span class="listheading">Regex</span>: Short for “Regular Expression”, Regex mode allows you to search for patterns instead of exact words or characters. Regex is very powerful and one of the main benefits of using Sigil to work with ebooks. For instance, you can search for “Page [0-9]+” which will find “Page ” followed by one or more numbers.</p>
+  			
+  			  <div class="tip">
+				<p class="tiptext">See the <a href="tutorial_regex_reference.xhtml">Regular Expressions</a> chapter for more details about using regex.</p>
+			  </div>
+			</li>
+  		</ul>
+
+  <h4 class="sigil_not_in_toc">Where to Search</h4>
+  
+  	<ul>
+  		<li><p><span class="listheading">Current File</span>: Search only in the file displayed in the Code View window. You can search all file types, including HTML, XHTML, CSS, OPF, NCX.</p>
+
+  			<p>If your search reaches the end of the file and Wrap is turned on, it will automatically wrap around and search from the other end of the file. A small picture of an arrow will flash on the screen to indicate that the search wrapped around.</p>
+  			
+  			  <div class="tip">
+    			<p class="tiptext">To temporarily run the search on the Current File only, hold the <span class="shortcut">Ctrl</span> key down (on Mac: <span class="shortcut">Cmd</span> key) while clicking on an action button. This is useful if you want to search a stylesheet while the mode is set on All HTML Files.</p>
+  			</div>
+		</li>
+
+  		<li><p><span class="listheading">All HTML Files</span>: Search in every HTML/XHTML file – but do not search in other file types, such as CSS, OPF or NCX.</p>
+
+  			<p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous file (in the order listed in the Book Browser). If Wrap is turned on, it will loop around until all files have been searched.</p></li>
+
+  		<li><p><span class="listheading">Selected HTML Files</span>: Search only the HTML files selected in the Book Browser.</p>
+
+  			  <p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous selected file (in the order listed in the Book Browser). If Wrap is turned on, it will loop around until all selected files have been searched.</p></li>
+  			
+  		<li><p><span class="listheading">Marked Text</span>: This is a special option that is only shown when you mark text. To restrict your search to a portion of text, first select some text in Code View, then go to menu item <span class="menuitem">Search=&gt;Mark Selected Text</span> or use right-click context menu <span class="menuitem">Mark Selected Text</span>.</p>
+
+		  <p>Text can be unmarked by using the menu item again without a selection. Text will also be unmarked if you use Undo, type any text, or change tabs. If you just use Replace or Replace All, the marked text will remain marked, but it will be revised according to your replacement.</p></li>
+	</ul>
+ 
+  <h4 class="sigil_not_in_toc">Search Direction</h4>
+  
+  	<ul>
+  		<li><p><span class="listheading">Up</span>: Search from your position in the document upwards and find the previous occurrence of your search.</p></li>
+  		
+  		<li><p><span class="listheading">Down</span>: Search from your position in the document downwards and find the next occurrence of your search.</p></li>
+	</ul>
+ 
+ 
+  <h3 class="sigil_not_in_toc">Search Options</h3>
+
+  <p>The Options menu offers useful switches when using Regex mode, as well as a checkbox to control whether Wrap is turned on or off.</p>
+  
+  <p>If options are hidden, click the chevron <img alt="Chevron up icon." src="../Images/chevron-up.png"/> in the bottom left corner to show them.</p>
+  
+  <div class="image">
+    <img alt="Find and Replace Dialog showing options." src="../Images/find-replace-options.png"/>
+  </div>
+
+  <p>Click the chevron <img alt="Chevron down icon." src="../Images/chevron-down.png"/> to hide the options.</p>
+
+  <div class="image">
+    <img alt="Find and Replace with Search Options hidden." src="../Images/find-replace-basic.png"/>
+  </div>
+
+  <p>Search Options include:</p>
+  
+	<ul>
+		<li><p><span class="listheading">DotAll</span>: This regex option prepends (?s) to all regex searches and is used when you want .* to match any character, even across lines.</p></li>
+
+		<li><p><span class="listheading">Minimal Match</span>: This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</p></li>
+
+		<li><p><span class="listheading">Auto-Tokenise</span>: When using <span class="shortcut">Ctrl-F</span> (on Mac: <span class="shortcut">Cmd-F</span>) on selected text to copy it into the Find box, this will convert spaces to \s and escape certain characters so they are suitable for regex.</p></li>
+		
+		<li><p><span class="listheading">Wrap</span>: When enabled in Current File mode, if your search reaches the end of the file, it will automatically wrap around to the beginning of the file to continue the search (or the reverse if searching Up). When disabled, searches will stop at the end of the file (or the beginning if searching Up).</p>
+
+  			<p>When enabled in All HTML Files mode, if your search reaches the last HTML file (in the order listed in the Book Browser), it will automatically wrap around to the first HTML file to continue the search (or the reverse if searching Up). When disabled, searches will stop at the last file in the book (or the first if searching Up).</p></li>
+	</ul>
+
+
+  <h3 class="sigil_not_in_toc">Context Menu</h3>
+
+  <p>If you right-click on the Find or Replace box, it will bring up a context menu with the following options:</p>
+
+  <ul>
+    <li><p><span class="listheading"><i>Saved Searches</i>:</span> At the top of the context menu will be a list of your Saved Searches (see <a href="saved_searches.xhtml">Saved Searches</a> chapter for more information). Selecting one will load it into the Find &amp; Replace window.</p></li>
+
+    <li><p><span class="listheading">Save Search:</span> Save the current Find &amp; Replace search to Saved Searches.</p></li>
+
+    <li><p><span class="listheading">Tokenise Selection:</span> Convert spaces to \s and escape certain characters.</p></li>
+  </ul>
+</body>
+</html>

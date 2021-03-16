@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Add Cover</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="add-cover">Add Cover</h2>
+
+  <p class="h2subheading">— Pick a cover for your book —</p>
+
+  <p>The Add Cover feature allows you to pick an image for your cover and have Sigil automatically make the necessary updates to mark the image as your cover.</p>
+
+  <p>Add a cover by selecting the menu item <span class="menuitem">Search=&gt;Add Cover</span> or its keyboard shortcut:</p>
+
+  <div class="image">
+    <img alt="Image fo Add Cover dialog." src="../Images/add-cover.png"/>
+  </div>
+
+  <p>You can pick an image in your EPUB, or use <span class="buttonbox">Other Files</span> to pick one from your computer.</p>
+
+  <h3 class="sigil_not_in_toc">Details</h3>
+
+  <p>Sigil makes the following changes when you add a cover:</p>
+
+  <ul>
+    <li>Creates a <span class="example">cover.xhtml</span> file if one does not exist. If it does exist, it will use the file. If another file with a semantic of Cover exists, it will use that file.</li>
+
+    <li>Inserts the necessary HTML code to display and resize your image into the HTML file.</li>
+
+    <li>Marks the HTML cover file with the semantic of Cover.</li>
+
+    <li>Marks the image file with the semantic of Cover.</li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc">Custom HTML Cover File</h3>
+
+  <p>Sigil inserts code in the HTML cover file that allows your cover to be re-sized and displayed on most e-readers, but you may want to use different code. You can edit the code after the file is created, or provide your own code for Sigil to use.</p>
+
+  <p>This is the HTML code Sigil inserts into the cover file by default:</p>
+
+  <pre class="example">&lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+  &lt;title&gt;Cover&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div style="text-align: center; padding: 0pt; margin: 0pt;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" height="100%"
+    preserveAspectRatio="xMidYMid meet" version="1.1" 
+    viewBox="0 0 SGC_IMAGE_WIDTH SGC_IMAGE_HEIGHT" width="100%" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+      &lt;image width="SGC_IMAGE_WIDTH" height="SGC_IMAGE_HEIGHT" 
+      xlink:href="SGC_IMAGE_FILENAME"/&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+  <p>To modify the template Sigil uses for the HTML cover file, create a file in your Preferences directory called <span class="example">cover.xhtml</span></p>
+
+  <p>You can use certain placeholders in your text and Sigil will replace them with the appropriate values:</p>
+
+  <ul>
+    <li><span class="listheading">SGC_IMAGE_FILENAME:</span> this will be replaced by the path to the image in your EPUB.</li>
+
+    <li><span class="listheading">SGC_IMAGE_WIDTH:</span> this will be replaced by the width in pixels of your image.</li>
+
+    <li><span class="listheading">SGC_IMAGE_HEIGHT:</span> this will be replaced by the height in pixels of your image.</li>
+  </ul>
+</body>
+</html>

@@ -1,77 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package version="2.0" unique-identifier="bookid" xmlns="http://www.idpf.org/2007/opf">
-  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-    <dc:title>Sigil User Guide</dc:title>
-    <dc:creator opf:file-as="Heiland, Dave" opf:role="aut">Dave Heiland</dc:creator>
+<package version="3.0" unique-identifier="bookid" prefix="rendition: http://www.idpf.org/vocab/rendition/#" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title id="title1">Sigil User Guide</dc:title>
+    <meta property="title-type" refines="#title1">main</meta>
+    <dc:creator id="create1">Dave Heiland</dc:creator>
+    <meta property="role" refines="#create1" scheme="marc:relators">aut</meta>
+    <meta property="file-as" refines="#create1">Heiland, Dave</meta>
     <dc:language>en</dc:language>
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
-    <dc:date opf:event="published">2013-04-14</dc:date>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <dc:date opf:event="modification">2021-03-11</dc:date>
     <meta content="1.5.0" name="Sigil version"/>
-    <dc:identifier id="bookid" opf:scheme="UUID">621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
+    <dc:identifier id="bookid">urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
     <meta name="cover" content="cover.png"/>
+    <meta property="dcterms:modified">2021-03-15T22:57:27Z</meta>
+    <meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 AA.</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
   </metadata>
   <manifest>
-    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
-    <item id="tutorial_regex_reference.html" href="Text/tutorial_regex_reference.html" media-type="application/xhtml+xml"/>
-    <item id="metadata.html" href="Text/metadata.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_advanced_find.html" href="Text/tutorial_advanced_find.html" media-type="application/xhtml+xml"/>
-    <item id="preview.html" href="Text/preview.html" media-type="application/xhtml+xml"/>
-    <item id="faq.html" href="Text/faq.html" media-type="application/xhtml+xml"/>
-    <item id="styles.css" href="Styles/styles.css" media-type="text/css"/>
-    <item id="validation.html" href="Text/validation.html" media-type="application/xhtml+xml"/>
-    <item id="features.html" href="Text/features.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_tips.html" href="Text/tutorial_tips.html" media-type="application/xhtml+xml"/>
-    <item id="table_of_contents.html" href="Text/table_of_contents.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_embed_fonts.html" href="Text/tutorial_embed_fonts.html" media-type="application/xhtml+xml"/>
-    <item id="rights.html" href="Text/rights.html" media-type="application/xhtml+xml"/>
-    <item id="titlepage.html" href="Text/titlepage.html" media-type="application/xhtml+xml"/>
     <item id="Fontin-SmallCaps.otf" href="Fonts/Fontin-SmallCaps.otf" media-type="application/vnd.ms-opentype"/>
-    <item id="introduction.html" href="Text/introduction.html" media-type="application/xhtml+xml"/>
-    <item id="about_sigil.html" href="Text/about_sigil.html" media-type="application/xhtml+xml"/>
-    <item id="about_epub.html" href="Text/about_epub.html" media-type="application/xhtml+xml"/>
-    <item id="installation.html" href="Text/installation.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_links.html" href="Text/tutorial_links.html" media-type="application/xhtml+xml"/>
-    <item id="contributing_to_sigil.html" href="Text/contributing_to_sigil.html" media-type="application/xhtml+xml"/>
-    <item id="tutorials.html" href="Text/tutorials.html" media-type="application/xhtml+xml"/>
-    <item id="code_view.html" href="Text/code_view.html" media-type="application/xhtml+xml"/>
-    <item id="indexes.html" href="Text/indexes.html" media-type="application/xhtml+xml"/>
-    <item id="reports.html" href="Text/reports.html" media-type="application/xhtml+xml"/>
-    <item id="special_characters.html" href="Text/special_characters.html" media-type="application/xhtml+xml"/>
-    <item id="whats_new.html" href="Text/whats_new.html" media-type="application/xhtml+xml"/>
-    <item id="splitting_and_merging.html" href="Text/splitting_and_merging.html" media-type="application/xhtml+xml"/>
-    <item id="cover.html" href="Text/cover.html" media-type="application/xhtml+xml"/>
-    <item id="opening_and_saving_files.html" href="Text/opening_and_saving_files.html" media-type="application/xhtml+xml"/>
-    <item id="clipboard_history.html" href="Text/clipboard_history.html" media-type="application/xhtml+xml"/>
-    <item id="links.html" href="Text/links.html" media-type="application/xhtml+xml"/>
-    <item id="media_files.html" href="Text/media_files.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_split.html" href="Text/tutorial_split.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_find_replace.html" href="Text/tutorial_find_replace.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_spelling.html" href="Text/tutorial_spelling.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_getting_started_with_epub.html" href="Text/tutorial_getting_started_with_epub.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_mark_chapters.html" href="Text/tutorial_mark_chapters.html" media-type="application/xhtml+xml"/>
-    <item id="sgc-toc.css" href="Styles/sgc-toc.css" media-type="text/css"/>
-    <item id="toc.html" href="Text/toc.html" media-type="application/xhtml+xml"/>
-    <item id="add_cover.html" href="Text/add_cover.html" media-type="application/xhtml+xml"/>
-    <item id="external_xhtml_editor.html" href="Text/external_xhtml_editor.html" media-type="application/xhtml+xml"/>
-    <item id="ui_customize.html" href="Text/ui_customize.html" media-type="application/xhtml+xml"/>
-    <item id="ui_customize_toolbar_submenu.png" href="Images/ui_customize_toolbar_submenu.png" media-type="image/png"/>
-    <item id="checkpoints.html" href="Text/checkpoints.html" media-type="application/xhtml+xml"/>
-    <item id="cp-log.png" href="Images/cp-log.png" media-type="image/png"/>
+    <item id="about_epub.xhtml" href="Text/about_epub.xhtml" media-type="application/xhtml+xml"/>
+    <item id="about_sigil.xhtml" href="Text/about_sigil.xhtml" media-type="application/xhtml+xml"/>
     <item id="add-cover.png" href="Images/add-cover.png" media-type="image/png"/>
+    <item id="add_cover.xhtml" href="Text/add_cover.xhtml" media-type="application/xhtml+xml"/>
     <item id="back-to-link-style.png" href="Images/back-to-link-style.png" media-type="image/png"/>
     <item id="book-browser-context-menu.png" href="Images/book-browser-context-menu.png" media-type="image/png"/>
     <item id="book-browser-delete-files.png" href="Images/book-browser-delete-files.png" media-type="image/png"/>
+    <item id="book-browser-file-tooltip.png" href="Images/book-browser-file-tooltip.png" media-type="image/png"/>
+    <item id="book-browser-folder-tooltip.png" href="Images/book-browser-folder-tooltip.png" media-type="image/png"/>
+    <item id="book-browser-full-filepaths.png" href="Images/book-browser-full-filepaths.png" media-type="image/png"/>
+    <item id="book-browser-link-stylesheets.png" href="Images/book-browser-link-stylesheets.png" media-type="image/png"/>
     <item id="book-browser-main.png" href="Images/book-browser-main.png" media-type="image/png"/>
+    <item id="book-browser-move.png" href="Images/book-browser-move.png" media-type="image/png"/>
+    <item id="book-browser-new-folder.png" href="Images/book-browser-new-folder.png" media-type="image/png"/>
+    <item id="book-browser-regex-renamer-results.png" href="Images/book-browser-regex-renamer-results.png" media-type="image/png"/>
+    <item id="book-browser-regex-renamer.png" href="Images/book-browser-regex-renamer.png" media-type="image/png"/>
     <item id="book-browser-rename-files.png" href="Images/book-browser-rename-files.png" media-type="image/png"/>
+    <item id="book-browser-semantics.png" href="Images/book-browser-semantics.png" media-type="image/png"/>
+    <item id="book_browser.xhtml" href="Text/book_browser.xhtml" media-type="application/xhtml+xml"/>
     <item id="button-save.png" href="Images/button-save.png" media-type="image/png"/>
+    <item id="case-ins-sort.png" href="Images/case-ins-sort.png" media-type="image/png"/>
+    <item id="checkpoints.xhtml" href="Text/checkpoints.xhtml" media-type="application/xhtml+xml"/>
     <item id="chevron-down.png" href="Images/chevron-down.png" media-type="image/png"/>
     <item id="chevron-up.png" href="Images/chevron-up.png" media-type="image/png"/>
+    <item id="clip-editor-context-menu.png" href="Images/clip-editor-context-menu.png" media-type="image/png"/>
+    <item id="clip-editor-main.png" href="Images/clip-editor-main.png" media-type="image/png"/>
     <item id="clipboard-history.png" href="Images/clipboard-history.png" media-type="image/png"/>
+    <item id="clipboard_history.xhtml" href="Text/clipboard_history.xhtml" media-type="application/xhtml+xml"/>
+    <item id="clips-clips-bar.png" href="Images/clips-clips-bar.png" media-type="image/png"/>
+    <item id="clips-clips-window.png" href="Images/clips-clips-window.png" media-type="image/png"/>
+    <item id="clips-context-menu.png" href="Images/clips-context-menu.png" media-type="image/png"/>
+    <item id="clips.xhtml" href="Text/clips.xhtml" media-type="application/xhtml+xml"/>
     <item id="code-view.png" href="Images/code-view.png" media-type="image/png"/>
+    <item id="code_view.xhtml" href="Text/code_view.xhtml" media-type="application/xhtml+xml"/>
+    <item id="context-menu-add-stylesheet.png" href="Images/context-menu-add-stylesheet.png" media-type="image/png"/>
+    <item id="contributing_to_sigil.xhtml" href="Text/contributing_to_sigil.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover.png" href="Images/cover.png" media-type="image/png" properties="cover-image"/>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" properties="svg"/>
     <item id="cp-compare2.png" href="Images/cp-compare2.png" media-type="image/png"/>
     <item id="cp-differences.png" href="Images/cp-differences.png" media-type="image/png"/>
+    <item id="cp-log.png" href="Images/cp-log.png" media-type="image/png"/>
     <item id="cp-manage.png" href="Images/cp-manage.png" media-type="image/png"/>
     <item id="cp-menu.png" href="Images/cp-menu.png" media-type="image/png"/>
     <item id="cp-select.png" href="Images/cp-select.png" media-type="image/png"/>
@@ -79,11 +69,30 @@
     <item id="document-add.png" href="Images/document-add.png" media-type="image/png"/>
     <item id="document-open.png" href="Images/document-open.png" media-type="image/png"/>
     <item id="document-save.png" href="Images/document-save.png" media-type="image/png"/>
+    <item id="document-spellcheck.png" href="Images/document-spellcheck.png" media-type="image/png"/>
+    <item id="docx-import-plugin1.png" href="Images/docx-import-plugin1.png" media-type="image/png"/>
+    <item id="docx-import-plugin2.png" href="Images/docx-import-plugin2.png" media-type="image/png"/>
+    <item id="docx-import-plugin3.png" href="Images/docx-import-plugin3.png" media-type="image/png"/>
+    <item id="docx-import-plugin4.png" href="Images/docx-import-plugin4.png" media-type="image/png"/>
+    <item id="docx-import-plugin5.png" href="Images/docx-import-plugin5.png" media-type="image/png"/>
     <item id="edit-toc.png" href="Images/edit-toc.png" media-type="image/png"/>
     <item id="edit-undo.png" href="Images/edit-undo.png" media-type="image/png"/>
+    <item id="external-editor-icon.png" href="Images/external-editor-icon.png" media-type="image/png"/>
+    <item id="external-open-name.png" href="Images/external-open-name.png" media-type="image/png"/>
+    <item id="external-open-with-name.png" href="Images/external-open-with-name.png" media-type="image/png"/>
+    <item id="external-open-with.png" href="Images/external-open-with.png" media-type="image/png"/>
+    <item id="external_editors.xhtml" href="Text/external_editors.xhtml" media-type="application/xhtml+xml"/>
+    <item id="external_xhtml_editor.xhtml" href="Text/external_xhtml_editor.xhtml" media-type="application/xhtml+xml"/>
+    <item id="external_xhtml_editor_setting.png" href="Images/external_xhtml_editor_setting.png" media-type="image/png"/>
+    <item id="faq-windows-properties-altgr.png" href="Images/faq-windows-properties-altgr.png" media-type="image/png"/>
+    <item id="faq.xhtml" href="Text/faq.xhtml" media-type="application/xhtml+xml"/>
+    <item id="features.xhtml" href="Text/features.xhtml" media-type="application/xhtml+xml"/>
     <item id="find-replace-basic.png" href="Images/find-replace-basic.png" media-type="image/png"/>
+    <item id="find-replace-button.png" href="Images/find-replace-button.png" media-type="image/png"/>
     <item id="find-replace-options.png" href="Images/find-replace-options.png" media-type="image/png"/>
+    <item id="find_replace.xhtml" href="Text/find_replace.xhtml" media-type="application/xhtml+xml"/>
     <item id="generate-toc.png" href="Images/generate-toc.png" media-type="image/png"/>
+    <item id="heading-1.png" href="Images/heading-1.png" media-type="image/png"/>
     <item id="heading-normal.png" href="Images/heading-normal.png" media-type="image/png"/>
     <item id="headings.png" href="Images/headings.png" media-type="image/png"/>
     <item id="image-delete-unused.png" href="Images/image-delete-unused.png" media-type="image/png"/>
@@ -91,51 +100,110 @@
     <item id="index-editor.png" href="Images/index-editor.png" media-type="image/png"/>
     <item id="index-html.png" href="Images/index-html.png" media-type="image/png"/>
     <item id="index-mark.png" href="Images/index-mark.png" media-type="image/png"/>
+    <item id="index_toolbar.png" href="Images/index_toolbar.png" media-type="image/png"/>
+    <item id="indexes.xhtml" href="Text/indexes.xhtml" media-type="application/xhtml+xml"/>
     <item id="insert-file-main.png" href="Images/insert-file-main.png" media-type="image/png"/>
     <item id="insert-file-thumbnails.png" href="Images/insert-file-thumbnails.png" media-type="image/png"/>
     <item id="insert-hyperlink.png" href="Images/insert-hyperlink.png" media-type="image/png"/>
     <item id="insert-id.png" href="Images/insert-id.png" media-type="image/png"/>
+    <item id="insert-image.png" href="Images/insert-image.png" media-type="image/png"/>
     <item id="insert-special-character-icon.png" href="Images/insert-special-character-icon.png" media-type="image/png"/>
     <item id="insert-special-character.png" href="Images/insert-special-character.png" media-type="image/png"/>
+    <item id="inspector.xhtml" href="Text/inspector.xhtml" media-type="application/xhtml+xml"/>
+    <item id="installation.xhtml" href="Text/installation.xhtml" media-type="application/xhtml+xml"/>
+    <item id="introduction.xhtml" href="Text/introduction.xhtml" media-type="application/xhtml+xml"/>
     <item id="links-insert-hyperlink.png" href="Images/links-insert-hyperlink.png" media-type="image/png"/>
     <item id="links-insert-id.png" href="Images/links-insert-id.png" media-type="image/png"/>
+    <item id="links.xhtml" href="Text/links.xhtml" media-type="application/xhtml+xml"/>
+    <item id="manage-plugins-epubcheck.png" href="Images/manage-plugins-epubcheck.png" media-type="image/png"/>
+    <item id="manage-plugins-preferences-shortcuts.png" href="Images/manage-plugins-preferences-shortcuts.png" media-type="image/png"/>
+    <item id="manage-plugins-toolbar-buttons.png" href="Images/manage-plugins-toolbar-buttons.png" media-type="image/png"/>
     <item id="manage-plugins.png" href="Images/manage-plugins.png" media-type="image/png"/>
+    <item id="manage_plugins.xhtml" href="Text/manage_plugins.xhtml" media-type="application/xhtml+xml"/>
+    <item id="media_files.xhtml" href="Text/media_files.xhtml" media-type="application/xhtml+xml"/>
     <item id="metadata-add-basic.png" href="Images/metadata-add-basic.png" media-type="image/png"/>
     <item id="metadata-add-role.png" href="Images/metadata-add-role.png" media-type="image/png"/>
     <item id="metadata-editor-new.png" href="Images/metadata-editor-new.png" media-type="image/png"/>
     <item id="metadata-editor.png" href="Images/metadata-editor.png" media-type="image/png"/>
+    <item id="metadata.xhtml" href="Text/metadata.xhtml" media-type="application/xhtml+xml"/>
+    <item id="navid" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
     <item id="note.png" href="Images/note.png" media-type="image/png"/>
+    <item id="opening_and_saving_files.xhtml" href="Text/opening_and_saving_files.xhtml" media-type="application/xhtml+xml"/>
     <item id="pageedit.png" href="Images/pageedit.png" media-type="image/png"/>
+    <item id="preferences-appearance-icons.png" href="Images/preferences-appearance-icons.png" media-type="image/png"/>
+    <item id="preferences-appearance-mainUI.png" href="Images/preferences-appearance-mainUI.png" media-type="image/png"/>
+    <item id="preferences-appearance-preview.png" href="Images/preferences-appearance-preview.png" media-type="image/png"/>
+    <item id="preferences-appearance.png" href="Images/preferences-appearance.png" media-type="image/png"/>
+    <item id="preferences-general-advanced.png" href="Images/preferences-general-advanced.png" media-type="image/png"/>
+    <item id="preferences-general-security.png" href="Images/preferences-general-security.png" media-type="image/png"/>
+    <item id="preferences-general-settings.png" href="Images/preferences-general-settings.png" media-type="image/png"/>
+    <item id="preferences-general-validation.png" href="Images/preferences-general-validation.png" media-type="image/png"/>
+    <item id="preferences-language-dropdown.png" href="Images/preferences-language-dropdown.png" media-type="image/png"/>
+    <item id="preferences-language.png" href="Images/preferences-language.png" media-type="image/png"/>
+    <item id="preferences-menu.png" href="Images/preferences-menu.png" media-type="image/png"/>
+    <item id="preferences-plugins-shortcuts.png" href="Images/preferences-plugins-shortcuts.png" media-type="image/png"/>
+    <item id="preferences-plugins.png" href="Images/preferences-plugins.png" media-type="image/png"/>
+    <item id="preferences-preserve-entities.png" href="Images/preferences-preserve-entities.png" media-type="image/png"/>
+    <item id="preferences-shortcuts.png" href="Images/preferences-shortcuts.png" media-type="image/png"/>
+    <item id="preferences-spellcheck-add-dictionary.png" href="Images/preferences-spellcheck-add-dictionary.png" media-type="image/png"/>
+    <item id="preferences-spellcheck-add-words.png" href="Images/preferences-spellcheck-add-words.png" media-type="image/png"/>
+    <item id="preferences-spellcheck-standard-dictionary.png" href="Images/preferences-spellcheck-standard-dictionary.png" media-type="image/png"/>
+    <item id="preferences-spellcheck.png" href="Images/preferences-spellcheck.png" media-type="image/png"/>
+    <item id="preferences.xhtml" href="Text/preferences.xhtml" media-type="application/xhtml+xml"/>
     <item id="preview-window-inspector.png" href="Images/preview-window-inspector.png" media-type="image/png"/>
     <item id="preview-window-toolbar.png" href="Images/preview-window-toolbar.png" media-type="image/png"/>
-    <item id="reports-all-files.png" href="Images/reports-all-files.png" media-type="image/png"/>
-    <item id="reports-characters.png" href="Images/reports-characters.png" media-type="image/png"/>
-    <item id="reports-css-classes-used.png" href="Images/reports-css-classes-used.png" media-type="image/png"/>
-    <item id="reports-css-classes.png" href="Images/reports-css-classes.png" media-type="image/png"/>
-    <item id="reports-css-files.png" href="Images/reports-css-files.png" media-type="image/png"/>
-    <item id="reports-html-files.png" href="Images/reports-html-files.png" media-type="image/png"/>
-    <item id="reports-image-files.png" href="Images/reports-image-files.png" media-type="image/png"/>
-    <item id="reports-links.png" href="Images/reports-links.png" media-type="image/png"/>
+    <item id="preview-window.png" href="Images/preview-window.png" media-type="image/png"/>
+    <item id="preview.xhtml" href="Text/preview.xhtml" media-type="application/xhtml+xml"/>
+    <item id="remove-tag-pair-button.png" href="Images/remove-tag-pair-button.png" media-type="image/png"/>
+    <item id="reports.xhtml" href="Text/reports.xhtml" media-type="application/xhtml+xml"/>
+    <item id="rights.xhtml" href="Text/rights.xhtml" media-type="application/xhtml+xml"/>
+    <item id="saved-searches-button.png" href="Images/saved-searches-button.png" media-type="image/png"/>
     <item id="saved-searches-context-menu.png" href="Images/saved-searches-context-menu.png" media-type="image/png"/>
+    <item id="saved-searches-find-replace-context-menu.png" href="Images/saved-searches-find-replace-context-menu.png" media-type="image/png"/>
     <item id="saved-searches-main.png" href="Images/saved-searches-main.png" media-type="image/png"/>
+    <item id="saved_searches.xhtml" href="Text/saved_searches.xhtml" media-type="application/xhtml+xml"/>
     <item id="select-target.png" href="Images/select-target.png" media-type="image/png"/>
+    <item id="sgc-toc.css" href="Styles/sgc-toc.css" media-type="text/css"/>
+    <item id="show-all-words.png" href="Images/show-all-words.png" media-type="image/png"/>
+    <item id="sigil_dark.png" href="Images/sigil_dark.png" media-type="image/png"/>
+    <item id="sigil_light.png" href="Images/sigil_light.png" media-type="image/png"/>
     <item id="special-character-tooltip.png" href="Images/special-character-tooltip.png" media-type="image/png"/>
+    <item id="special_characters.xhtml" href="Text/special_characters.xhtml" media-type="application/xhtml+xml"/>
+    <item id="spellcheck-context-suggestion.png" href="Images/spellcheck-context-suggestion.png" media-type="image/png"/>
+    <item id="spellcheck-editor-dictionaries.png" href="Images/spellcheck-editor-dictionaries.png" media-type="image/png"/>
+    <item id="spellcheck-editor-tooltip.png" href="Images/spellcheck-editor-tooltip.png" media-type="image/png"/>
+    <item id="spellcheck-main.png" href="Images/spellcheck-main.png" media-type="image/png"/>
+    <item id="spellcheck-suggested-words.png" href="Images/spellcheck-suggested-words.png" media-type="image/png"/>
+    <item id="spellcheck.xhtml" href="Text/spellcheck.xhtml" media-type="application/xhtml+xml"/>
+    <item id="spellcheck_misspelled.png" href="Images/spellcheck_misspelled.png" media-type="image/png"/>
     <item id="split-after1.png" href="Images/split-after1.png" media-type="image/png"/>
     <item id="split-after2.png" href="Images/split-after2.png" media-type="image/png"/>
     <item id="split-marker.png" href="Images/split-marker.png" media-type="image/png"/>
     <item id="split-merge-warning.png" href="Images/split-merge-warning.png" media-type="image/png"/>
     <item id="split-section.png" href="Images/split-section.png" media-type="image/png"/>
     <item id="split-start.png" href="Images/split-start.png" media-type="image/png"/>
+    <item id="splitting_and_merging.xhtml" href="Text/splitting_and_merging.xhtml" media-type="application/xhtml+xml"/>
+    <item id="styles-delete-styles.png" href="Images/styles-delete-styles.png" media-type="image/png"/>
+    <item id="styles-multiple-line.png" href="Images/styles-multiple-line.png" media-type="image/png"/>
+    <item id="styles-single-line.png" href="Images/styles-single-line.png" media-type="image/png"/>
+    <item id="styles.css" href="Styles/styles.css" media-type="text/css"/>
+    <item id="styles.xhtml" href="Text/styles.xhtml" media-type="application/xhtml+xml"/>
+    <item id="stylesheet-check.png" href="Images/stylesheet-check.png" media-type="image/png"/>
+    <item id="table_of_contents.xhtml" href="Text/table_of_contents.xhtml" media-type="application/xhtml+xml"/>
     <item id="thumbnailplusminus.png" href="Images/thumbnailplusminus.png" media-type="image/png"/>
+    <item id="titlepage.xhtml" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
     <item id="toc-generate-toc.png" href="Images/toc-generate-toc.png" media-type="image/png"/>
     <item id="toc-html.png" href="Images/toc-html.png" media-type="image/png"/>
     <item id="toc-main.png" href="Images/toc-main.png" media-type="image/png"/>
     <item id="toc-tooltip.png" href="Images/toc-tooltip.png" media-type="image/png"/>
+    <item id="toc.xhtml" href="Text/toc.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial-add-cover-browser.png" href="Images/tutorial-add-cover-browser.png" media-type="image/png"/>
     <item id="tutorial-add-cover.png" href="Images/tutorial-add-cover.png" media-type="image/png"/>
     <item id="tutorial-chapter-h1-applied.png" href="Images/tutorial-chapter-h1-applied.png" media-type="image/png"/>
     <item id="tutorial-chapter-selected.png" href="Images/tutorial-chapter-selected.png" media-type="image/png"/>
     <item id="tutorial-chapters.png" href="Images/tutorial-chapters.png" media-type="image/png"/>
+    <item id="tutorial-cv.png" href="Images/tutorial-cv.png" media-type="image/png"/>
     <item id="tutorial-default-sigil.png" href="Images/tutorial-default-sigil.png" media-type="image/png"/>
     <item id="tutorial-file-open.png" href="Images/tutorial-file-open.png" media-type="image/png"/>
     <item id="tutorial-file-save.png" href="Images/tutorial-file-save.png" media-type="image/png"/>
@@ -145,75 +213,13 @@
     <item id="tutorial-find-adv-replace.png" href="Images/tutorial-find-adv-replace.png" media-type="image/png"/>
     <item id="tutorial-find-all.png" href="Images/tutorial-find-all.png" media-type="image/png"/>
     <item id="tutorial-find-count.png" href="Images/tutorial-find-count.png" media-type="image/png"/>
+    <item id="tutorial-find-regex-chapter.png" href="Images/tutorial-find-regex-chapter.png" media-type="image/png"/>
     <item id="tutorial-find-start.png" href="Images/tutorial-find-start.png" media-type="image/png"/>
     <item id="tutorial-find-test.png" href="Images/tutorial-find-test.png" media-type="image/png"/>
     <item id="tutorial-find-the.png" href="Images/tutorial-find-the.png" media-type="image/png"/>
     <item id="tutorial-font-obfuscate.png" href="Images/tutorial-font-obfuscate.png" media-type="image/png"/>
     <item id="tutorial-generate-chapter.png" href="Images/tutorial-generate-chapter.png" media-type="image/png"/>
     <item id="tutorial-generated-toc.png" href="Images/tutorial-generated-toc.png" media-type="image/png"/>
-    <item id="tutorial-load-html.png" href="Images/tutorial-load-html.png" media-type="image/png"/>
-    <item id="tutorial-main-window.png" href="Images/tutorial-main-window.png" media-type="image/png"/>
-    <item id="tutorial-saved-epub.png" href="Images/tutorial-saved-epub.png" media-type="image/png"/>
-    <item id="tutorial-split-1.png" href="Images/tutorial-split-1.png" media-type="image/png"/>
-    <item id="tutorial-split-2.png" href="Images/tutorial-split-2.png" media-type="image/png"/>
-    <item id="tutorial-split-select.png" href="Images/tutorial-split-select.png" media-type="image/png"/>
-    <item id="tutorial-style-blank.png" href="Images/tutorial-style-blank.png" media-type="image/png"/>
-    <item id="tutorial-styles-link.png" href="Images/tutorial-styles-link.png" media-type="image/png"/>
-    <item id="tutorial-stylesheets-file.png" href="Images/tutorial-stylesheets-file.png" media-type="image/png"/>
-    <item id="tutorial-toc-empty.png" href="Images/tutorial-toc-empty.png" media-type="image/png"/>
-    <item id="tutorial-tools-metadata.png" href="Images/tutorial-tools-metadata.png" media-type="image/png"/>
-    <item id="ui_customize_icon_size.png" href="Images/ui_customize_icon_size.png" media-type="image/png"/>
-    <item id="ui_customize_icon_themes.png" href="Images/ui_customize_icon_themes.png" media-type="image/png"/>
-    <item id="ui_customize_toolbar_droplocation.png" href="Images/ui_customize_toolbar_droplocation.png" media-type="image/png"/>
-    <item id="ui_customize_toolbar_move.png" href="Images/ui_customize_toolbar_move.png" media-type="image/png"/>
-    <item id="ui_customize_toolbar_resize.png" href="Images/ui_customize_toolbar_resize.png" media-type="image/png"/>
-    <item id="ui_customize_view_menu_toolbars.png" href="Images/ui_customize_view_menu_toolbars.png" media-type="image/png"/>
-    <item id="ui_customize_view_menu_windows.png" href="Images/ui_customize_view_menu_windows.png" media-type="image/png"/>
-    <item id="ui_customize_view_menu.png" href="Images/ui_customize_view_menu.png" media-type="image/png"/>
-    <item id="ui_customize_window_floating.png" href="Images/ui_customize_window_floating.png" media-type="image/png"/>
-    <item id="ui_customize_window_redock_as_panel.png" href="Images/ui_customize_window_redock_as_panel.png" media-type="image/png"/>
-    <item id="ui_customize_window_redock_as_tab.png" href="Images/ui_customize_window_redock_as_tab.png" media-type="image/png"/>
-    <item id="ui_customize_window_redocked_as_panel.png" href="Images/ui_customize_window_redocked_as_panel.png" media-type="image/png"/>
-    <item id="ui_customize_window_redocked_as_tab.png" href="Images/ui_customize_window_redocked_as_tab.png" media-type="image/png"/>
-    <item id="ui_customize_window_redocking.png" href="Images/ui_customize_window_redocking.png" media-type="image/png"/>
-    <item id="ui_customize_window_resize.png" href="Images/ui_customize_window_resize.png" media-type="image/png"/>
-    <item id="validation-flightcrew.png" href="Images/validation-flightcrew.png" media-type="image/png"/>
-    <item id="inspector.html" href="Text/inspector.html" media-type="application/xhtml+xml"/>
-    <item id="user_interface.html" href="Text/user_interface.html" media-type="application/xhtml+xml"/>
-    <item id="ui_user-interface-default.png" href="Images/ui_user-interface-default.png" media-type="image/png"/>
-    <item id="ui_View.png" href="Images/ui_View.png" media-type="image/png"/>
-    <item id="ui_toc-stacked.png" href="Images/ui_toc-stacked.png" media-type="image/png"/>
-    <item id="ui_toc-tabbed.png" href="Images/ui_toc-tabbed.png" media-type="image/png"/>
-    <item id="ui_rearranged-and-undocked.png" href="Images/ui_rearranged-and-undocked.png" media-type="image/png"/>
-    <item id="ui_main-menu.png" href="Images/ui_main-menu.png" media-type="image/png"/>
-    <item id="ui_buttons-moved.png" href="Images/ui_buttons-moved.png" media-type="image/png"/>
-    <item id="ui_main-toolbar.png" href="Images/ui_main-toolbar.png" media-type="image/png"/>
-    <item id="ui_toolbar-file.png" href="Images/ui_toolbar-file.png" media-type="image/png"/>
-    <item id="ui_toolbar-checkpoints.png" href="Images/ui_toolbar-checkpoints.png" media-type="image/png"/>
-    <item id="ui_toolbar-index.png" href="Images/ui_toolbar-index.png" media-type="image/png"/>
-    <item id="ui_toolbar-edit.png" href="Images/ui_toolbar-edit.png" media-type="image/png"/>
-    <item id="ui_toolbar-external-editor.png" href="Images/ui_toolbar-external-editor.png" media-type="image/png"/>
-    <item id="ui_toolbar-find.png" href="Images/ui_toolbar-find.png" media-type="image/png"/>
-    <item id="ui_toolbar-insert.png" href="Images/ui_toolbar-insert.png" media-type="image/png"/>
-    <item id="ui_toolbar-back.png" href="Images/ui_toolbar-back.png" media-type="image/png"/>
-    <item id="ui_toolbar-donate.png" href="Images/ui_toolbar-donate.png" media-type="image/png"/>
-    <item id="ui_toolbar-tools.png" href="Images/ui_toolbar-tools.png" media-type="image/png"/>
-    <item id="ui_toolbar-format.png" href="Images/ui_toolbar-format.png" media-type="image/png"/>
-    <item id="ui_toolbar-headings.png" href="Images/ui_toolbar-headings.png" media-type="image/png"/>
-    <item id="ui_toolbar-bold.png" href="Images/ui_toolbar-bold.png" media-type="image/png"/>
-    <item id="ui_toolbar-align.png" href="Images/ui_toolbar-align.png" media-type="image/png"/>
-    <item id="ui_toolbar-list.png" href="Images/ui_toolbar-list.png" media-type="image/png"/>
-    <item id="ui_toolbar-indent.png" href="Images/ui_toolbar-indent.png" media-type="image/png"/>
-    <item id="ui_toolbar-case.png" href="Images/ui_toolbar-case.png" media-type="image/png"/>
-    <item id="ui_toolbar-direction.png" href="Images/ui_toolbar-direction.png" media-type="image/png"/>
-    <item id="ui_toolbar-clips.png" href="Images/ui_toolbar-clips.png" media-type="image/png"/>
-    <item id="ui_book-browser-context-menu.png" href="Images/ui_book-browser-context-menu.png" media-type="image/png"/>
-    <item id="ui_zoom.png" href="Images/ui_zoom.png" media-type="image/png"/>
-    <item id="ui_status-bar.png" href="Images/ui_status-bar.png" media-type="image/png"/>
-    <item id="ui_tooltip.png" href="Images/ui_tooltip.png" media-type="image/png"/>
-    <item id="ui_tooltip2.png" href="Images/ui_tooltip2.png" media-type="image/png"/>
-    <item id="external_xhtml_editor_setting.png" href="Images/external_xhtml_editor_setting.png" media-type="image/png"/>
-    <item id="preview-window.png" href="Images/preview-window.png" media-type="image/png"/>
     <item id="tutorial-inspector-console-autocomplete.png" href="Images/tutorial-inspector-console-autocomplete.png" media-type="image/png"/>
     <item id="tutorial-inspector-console-node-history.png" href="Images/tutorial-inspector-console-node-history.png" media-type="image/png"/>
     <item id="tutorial-inspector-console-parent-expanded.png" href="Images/tutorial-inspector-console-parent-expanded.png" media-type="image/png"/>
@@ -236,43 +242,13 @@
     <item id="tutorial-inspector-window-styles.png" href="Images/tutorial-inspector-window-styles.png" media-type="image/png"/>
     <item id="tutorial-inspector-window.png" href="Images/tutorial-inspector-window.png" media-type="image/png"/>
     <item id="tutorial-inspector.png" href="Images/tutorial-inspector.png" media-type="image/png"/>
-    <item id="index_toolbar.png" href="Images/index_toolbar.png" media-type="image/png"/>
-    <item id="preferences.html" href="Text/preferences.html" media-type="application/xhtml+xml"/>
-    <item id="spellcheck.html" href="Text/spellcheck.html" media-type="application/xhtml+xml"/>
-    <item id="case-ins-sort.png" href="Images/case-ins-sort.png" media-type="image/png"/>
-    <item id="document-spellcheck.png" href="Images/document-spellcheck.png" media-type="image/png"/>
-    <item id="show-all-words.png" href="Images/show-all-words.png" media-type="image/png"/>
-    <item id="spellcheck_misspelled.png" href="Images/spellcheck_misspelled.png" media-type="image/png"/>
-    <item id="spellcheck-editor-dictionaries.png" href="Images/spellcheck-editor-dictionaries.png" media-type="image/png"/>
-    <item id="spellcheck-editor-tooltip.png" href="Images/spellcheck-editor-tooltip.png" media-type="image/png"/>
-    <item id="spellcheck-main.png" href="Images/spellcheck-main.png" media-type="image/png"/>
-    <item id="spellcheck-suggested-words.png" href="Images/spellcheck-suggested-words.png" media-type="image/png"/>
-    <item id="external-editor-icon.png" href="Images/external-editor-icon.png" media-type="image/png"/>
-    <item id="preferences-appearance-icons.png" href="Images/preferences-appearance-icons.png" media-type="image/png"/>
-    <item id="preferences-appearance-mainUI.png" href="Images/preferences-appearance-mainUI.png" media-type="image/png"/>
-    <item id="preferences-appearance-preview.png" href="Images/preferences-appearance-preview.png" media-type="image/png"/>
-    <item id="preferences-appearance.png" href="Images/preferences-appearance.png" media-type="image/png"/>
-    <item id="preferences-general-advanced.png" href="Images/preferences-general-advanced.png" media-type="image/png"/>
-    <item id="preferences-general-security.png" href="Images/preferences-general-security.png" media-type="image/png"/>
-    <item id="preferences-general-settings.png" href="Images/preferences-general-settings.png" media-type="image/png"/>
-    <item id="preferences-general-validation.png" href="Images/preferences-general-validation.png" media-type="image/png"/>
-    <item id="preferences-language-dropdown.png" href="Images/preferences-language-dropdown.png" media-type="image/png"/>
-    <item id="preferences-language.png" href="Images/preferences-language.png" media-type="image/png"/>
-    <item id="preferences-menu.png" href="Images/preferences-menu.png" media-type="image/png"/>
-    <item id="preferences-plugins-shortcuts.png" href="Images/preferences-plugins-shortcuts.png" media-type="image/png"/>
-    <item id="preferences-plugins.png" href="Images/preferences-plugins.png" media-type="image/png"/>
-    <item id="preferences-preserve-entities.png" href="Images/preferences-preserve-entities.png" media-type="image/png"/>
-    <item id="preferences-shortcuts.png" href="Images/preferences-shortcuts.png" media-type="image/png"/>
-    <item id="preferences-spellcheck-add-dictionary.png" href="Images/preferences-spellcheck-add-dictionary.png" media-type="image/png"/>
-    <item id="preferences-spellcheck-add-words.png" href="Images/preferences-spellcheck-add-words.png" media-type="image/png"/>
-    <item id="preferences-spellcheck-standard-dictionary.png" href="Images/preferences-spellcheck-standard-dictionary.png" media-type="image/png"/>
-    <item id="preferences-spellcheck.png" href="Images/preferences-spellcheck.png" media-type="image/png"/>
-    <item id="ui_toolbar-plugins.png" href="Images/ui_toolbar-plugins.png" media-type="image/png"/>
-    <item id="external_editors.html" href="Text/external_editors.html" media-type="application/xhtml+xml"/>
-    <item id="external-open-name.png" href="Images/external-open-name.png" media-type="image/png"/>
-    <item id="external-open-with-name.png" href="Images/external-open-with-name.png" media-type="image/png"/>
-    <item id="external-open-with.png" href="Images/external-open-with.png" media-type="image/png"/>
-    <item id="tutorial_metadata.html" href="Text/tutorial_metadata.html" media-type="application/xhtml+xml"/>
+    <item id="tutorial-link-insert-id-dialog.png" href="Images/tutorial-link-insert-id-dialog.png" media-type="image/png"/>
+    <item id="tutorial-link-insert-id.png" href="Images/tutorial-link-insert-id.png" media-type="image/png"/>
+    <item id="tutorial-links-after-link-inserted.png" href="Images/tutorial-links-after-link-inserted.png" media-type="image/png"/>
+    <item id="tutorial-links-insert-link-dialog.png" href="Images/tutorial-links-insert-link-dialog.png" media-type="image/png"/>
+    <item id="tutorial-links-insert-link.png" href="Images/tutorial-links-insert-link.png" media-type="image/png"/>
+    <item id="tutorial-load-html.png" href="Images/tutorial-load-html.png" media-type="image/png"/>
+    <item id="tutorial-main-window.png" href="Images/tutorial-main-window.png" media-type="image/png"/>
     <item id="tutorial-metadata-add-dialog.png" href="Images/tutorial-metadata-add-dialog.png" media-type="image/png"/>
     <item id="tutorial-metadata-author.png" href="Images/tutorial-metadata-author.png" media-type="image/png"/>
     <item id="tutorial-metadata-fileas-entry.png" href="Images/tutorial-metadata-fileas-entry.png" media-type="image/png"/>
@@ -282,131 +258,164 @@
     <item id="tutorial-metadata-required-new.png" href="Images/tutorial-metadata-required-new.png" media-type="image/png"/>
     <item id="tutorial-metadata-role.png" href="Images/tutorial-metadata-role.png" media-type="image/png"/>
     <item id="tutorial-metadata-title.png" href="Images/tutorial-metadata-title.png" media-type="image/png"/>
-    <item id="tutorial_code_view.html" href="Text/tutorial_code_view.html" media-type="application/xhtml+xml"/>
-    <item id="cover.png" href="Images/cover.png" media-type="image/png"/>
-    <item id="heading-1.png" href="Images/heading-1.png" media-type="image/png"/>
-    <item id="tutorial-cv.png" href="Images/tutorial-cv.png" media-type="image/png"/>
     <item id="tutorial-preview.png" href="Images/tutorial-preview.png" media-type="image/png"/>
-    <item id="faq-windows-properties-altgr.png" href="Images/faq-windows-properties-altgr.png" media-type="image/png"/>
-    <item id="tutorial_add_cover.html" href="Text/tutorial_add_cover.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_load_file.html" href="Text/tutorial_load_file.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_save.html" href="Text/tutorial_save.html" media-type="application/xhtml+xml"/>
-    <item id="clips.html" href="Text/clips.html" media-type="application/xhtml+xml"/>
-    <item id="clip-editor-context-menu.png" href="Images/clip-editor-context-menu.png" media-type="image/png"/>
-    <item id="clip-editor-main.png" href="Images/clip-editor-main.png" media-type="image/png"/>
-    <item id="clips-clips-bar.png" href="Images/clips-clips-bar.png" media-type="image/png"/>
-    <item id="clips-clips-window.png" href="Images/clips-clips-window.png" media-type="image/png"/>
-    <item id="clips-context-menu.png" href="Images/clips-context-menu.png" media-type="image/png"/>
-    <item id="remove-tag-pair-button.png" href="Images/remove-tag-pair-button.png" media-type="image/png"/>
-    <item id="styles.html" href="Text/styles.html" media-type="application/xhtml+xml"/>
-    <item id="book-browser-link-stylesheets.png" href="Images/book-browser-link-stylesheets.png" media-type="image/png"/>
-    <item id="context-menu-add-stylesheet.png" href="Images/context-menu-add-stylesheet.png" media-type="image/png"/>
-    <item id="styles-delete-styles.png" href="Images/styles-delete-styles.png" media-type="image/png"/>
-    <item id="styles-multiple-line.png" href="Images/styles-multiple-line.png" media-type="image/png"/>
-    <item id="styles-single-line.png" href="Images/styles-single-line.png" media-type="image/png"/>
-    <item id="tutorial-link-insert-id-dialog.png" href="Images/tutorial-link-insert-id-dialog.png" media-type="image/png"/>
-    <item id="tutorial-link-insert-id.png" href="Images/tutorial-link-insert-id.png" media-type="image/png"/>
-    <item id="tutorial-links-after-link-inserted.png" href="Images/tutorial-links-after-link-inserted.png" media-type="image/png"/>
-    <item id="tutorial-links-insert-link-dialog.png" href="Images/tutorial-links-insert-link-dialog.png" media-type="image/png"/>
-    <item id="tutorial-links-insert-link.png" href="Images/tutorial-links-insert-link.png" media-type="image/png"/>
-    <item id="tutorial_generate_toc.html" href="Text/tutorial_generate_toc.html" media-type="application/xhtml+xml"/>
-    <item id="tutorial_stylesheets.html" href="Text/tutorial_stylesheets.html" media-type="application/xhtml+xml"/>
-    <item id="stylesheet-check.png" href="Images/stylesheet-check.png" media-type="image/png"/>
+    <item id="tutorial-saved-epub.png" href="Images/tutorial-saved-epub.png" media-type="image/png"/>
+    <item id="tutorial-split-1.png" href="Images/tutorial-split-1.png" media-type="image/png"/>
+    <item id="tutorial-split-2.png" href="Images/tutorial-split-2.png" media-type="image/png"/>
+    <item id="tutorial-split-select.png" href="Images/tutorial-split-select.png" media-type="image/png"/>
+    <item id="tutorial-style-blank.png" href="Images/tutorial-style-blank.png" media-type="image/png"/>
     <item id="tutorial-styles-example.png" href="Images/tutorial-styles-example.png" media-type="image/png"/>
-    <item id="docx-import-plugin1.png" href="Images/docx-import-plugin1.png" media-type="image/png"/>
-    <item id="docx-import-plugin2.png" href="Images/docx-import-plugin2.png" media-type="image/png"/>
-    <item id="docx-import-plugin3.png" href="Images/docx-import-plugin3.png" media-type="image/png"/>
-    <item id="docx-import-plugin4.png" href="Images/docx-import-plugin4.png" media-type="image/png"/>
-    <item id="docx-import-plugin5.png" href="Images/docx-import-plugin5.png" media-type="image/png"/>
-    <item id="insert-image.png" href="Images/insert-image.png" media-type="image/png"/>
-    <item id="spellcheck-context-suggestion.png" href="Images/spellcheck-context-suggestion.png" media-type="image/png"/>
-    <item id="tutorial-find-regex-chapter.png" href="Images/tutorial-find-regex-chapter.png" media-type="image/png"/>
-    <item id="tutorial_convert_to_html.html" href="Text/tutorial_convert_to_html.html" media-type="application/xhtml+xml"/>
-    <item id="book_browser.html" href="Text/book_browser.html" media-type="application/xhtml+xml"/>
-    <item id="book-browser-file-tooltip.png" href="Images/book-browser-file-tooltip.png" media-type="image/png"/>
-    <item id="book-browser-folder-tooltip.png" href="Images/book-browser-folder-tooltip.png" media-type="image/png"/>
-    <item id="book-browser-full-filepaths.png" href="Images/book-browser-full-filepaths.png" media-type="image/png"/>
-    <item id="book-browser-regex-renamer.png" href="Images/book-browser-regex-renamer.png" media-type="image/png"/>
-    <item id="book-browser-regex-renamer-results.png" href="Images/book-browser-regex-renamer-results.png" media-type="image/png"/>
-    <item id="book-browser-move.png" href="Images/book-browser-move.png" media-type="image/png"/>
-    <item id="book-browser-new-folder.png" href="Images/book-browser-new-folder.png" media-type="image/png"/>
-    <item id="book-browser-semantics.png" href="Images/book-browser-semantics.png" media-type="image/png"/>
-    <item id="manage_plugins.html" href="Text/manage_plugins.html" media-type="application/xhtml+xml"/>
-    <item id="manage-plugins-toolbar-buttons.png" href="Images/manage-plugins-toolbar-buttons.png" media-type="image/png"/>
-    <item id="manage-plugins-preferences-shortcuts.png" href="Images/manage-plugins-preferences-shortcuts.png" media-type="image/png"/>
-    <item id="manage-plugins-epubcheck.png" href="Images/manage-plugins-epubcheck.png" media-type="image/png"/>
-    <item id="find_replace.html" href="Text/find_replace.html" media-type="application/xhtml+xml"/>
-    <item id="find-replace-button.png" href="Images/find-replace-button.png" media-type="image/png"/>
-    <item id="saved_searches.html" href="Text/saved_searches.html" media-type="application/xhtml+xml"/>
-    <item id="saved-searches-button.png" href="Images/saved-searches-button.png" media-type="image/png"/>
-    <item id="saved-searches-find-replace-context-menu.png" href="Images/saved-searches-find-replace-context-menu.png" media-type="image/png"/>
-    <item id="sigil_dark.png" href="Images/sigil_dark.png" media-type="image/png"/>
-    <item id="sigil_light.png" href="Images/sigil_light.png" media-type="image/png"/>
+    <item id="tutorial-styles-link.png" href="Images/tutorial-styles-link.png" media-type="image/png"/>
+    <item id="tutorial-stylesheets-file.png" href="Images/tutorial-stylesheets-file.png" media-type="image/png"/>
+    <item id="tutorial-toc-empty.png" href="Images/tutorial-toc-empty.png" media-type="image/png"/>
+    <item id="tutorial-tools-metadata.png" href="Images/tutorial-tools-metadata.png" media-type="image/png"/>
+    <item id="tutorial_add_cover.xhtml" href="Text/tutorial_add_cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_advanced_find.xhtml" href="Text/tutorial_advanced_find.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_code_view.xhtml" href="Text/tutorial_code_view.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_convert_to_html.xhtml" href="Text/tutorial_convert_to_html.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_embed_fonts.xhtml" href="Text/tutorial_embed_fonts.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_find_replace.xhtml" href="Text/tutorial_find_replace.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_generate_toc.xhtml" href="Text/tutorial_generate_toc.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_getting_started_with_epub.xhtml" href="Text/tutorial_getting_started_with_epub.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_links.xhtml" href="Text/tutorial_links.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_load_file.xhtml" href="Text/tutorial_load_file.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_mark_chapters.xhtml" href="Text/tutorial_mark_chapters.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_metadata.xhtml" href="Text/tutorial_metadata.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_regex_reference.xhtml" href="Text/tutorial_regex_reference.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_save.xhtml" href="Text/tutorial_save.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_spelling.xhtml" href="Text/tutorial_spelling.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_split.xhtml" href="Text/tutorial_split.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_stylesheets.xhtml" href="Text/tutorial_stylesheets.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_tips.xhtml" href="Text/tutorial_tips.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorials.xhtml" href="Text/tutorials.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ui_View.png" href="Images/ui_View.png" media-type="image/png"/>
+    <item id="ui_book-browser-context-menu.png" href="Images/ui_book-browser-context-menu.png" media-type="image/png"/>
+    <item id="ui_buttons-moved.png" href="Images/ui_buttons-moved.png" media-type="image/png"/>
+    <item id="ui_customize.xhtml" href="Text/ui_customize.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ui_customize_icon_size.png" href="Images/ui_customize_icon_size.png" media-type="image/png"/>
+    <item id="ui_customize_icon_themes.png" href="Images/ui_customize_icon_themes.png" media-type="image/png"/>
+    <item id="ui_customize_toolbar_droplocation.png" href="Images/ui_customize_toolbar_droplocation.png" media-type="image/png"/>
+    <item id="ui_customize_toolbar_move.png" href="Images/ui_customize_toolbar_move.png" media-type="image/png"/>
+    <item id="ui_customize_toolbar_resize.png" href="Images/ui_customize_toolbar_resize.png" media-type="image/png"/>
+    <item id="ui_customize_toolbar_submenu.png" href="Images/ui_customize_toolbar_submenu.png" media-type="image/png"/>
+    <item id="ui_customize_view_menu.png" href="Images/ui_customize_view_menu.png" media-type="image/png"/>
+    <item id="ui_customize_view_menu_toolbars.png" href="Images/ui_customize_view_menu_toolbars.png" media-type="image/png"/>
+    <item id="ui_customize_view_menu_windows.png" href="Images/ui_customize_view_menu_windows.png" media-type="image/png"/>
+    <item id="ui_customize_window_floating.png" href="Images/ui_customize_window_floating.png" media-type="image/png"/>
+    <item id="ui_customize_window_redock_as_panel.png" href="Images/ui_customize_window_redock_as_panel.png" media-type="image/png"/>
+    <item id="ui_customize_window_redock_as_tab.png" href="Images/ui_customize_window_redock_as_tab.png" media-type="image/png"/>
+    <item id="ui_customize_window_redocked_as_panel.png" href="Images/ui_customize_window_redocked_as_panel.png" media-type="image/png"/>
+    <item id="ui_customize_window_redocked_as_tab.png" href="Images/ui_customize_window_redocked_as_tab.png" media-type="image/png"/>
+    <item id="ui_customize_window_redocking.png" href="Images/ui_customize_window_redocking.png" media-type="image/png"/>
+    <item id="ui_customize_window_resize.png" href="Images/ui_customize_window_resize.png" media-type="image/png"/>
+    <item id="ui_main-menu.png" href="Images/ui_main-menu.png" media-type="image/png"/>
+    <item id="ui_main-toolbar.png" href="Images/ui_main-toolbar.png" media-type="image/png"/>
+    <item id="ui_rearranged-and-undocked.png" href="Images/ui_rearranged-and-undocked.png" media-type="image/png"/>
+    <item id="ui_status-bar.png" href="Images/ui_status-bar.png" media-type="image/png"/>
+    <item id="ui_toc-stacked.png" href="Images/ui_toc-stacked.png" media-type="image/png"/>
+    <item id="ui_toc-tabbed.png" href="Images/ui_toc-tabbed.png" media-type="image/png"/>
+    <item id="ui_toolbar-align.png" href="Images/ui_toolbar-align.png" media-type="image/png"/>
+    <item id="ui_toolbar-back.png" href="Images/ui_toolbar-back.png" media-type="image/png"/>
+    <item id="ui_toolbar-bold.png" href="Images/ui_toolbar-bold.png" media-type="image/png"/>
+    <item id="ui_toolbar-case.png" href="Images/ui_toolbar-case.png" media-type="image/png"/>
+    <item id="ui_toolbar-checkpoints.png" href="Images/ui_toolbar-checkpoints.png" media-type="image/png"/>
+    <item id="ui_toolbar-clips.png" href="Images/ui_toolbar-clips.png" media-type="image/png"/>
+    <item id="ui_toolbar-direction.png" href="Images/ui_toolbar-direction.png" media-type="image/png"/>
+    <item id="ui_toolbar-donate.png" href="Images/ui_toolbar-donate.png" media-type="image/png"/>
+    <item id="ui_toolbar-edit.png" href="Images/ui_toolbar-edit.png" media-type="image/png"/>
+    <item id="ui_toolbar-external-editor.png" href="Images/ui_toolbar-external-editor.png" media-type="image/png"/>
+    <item id="ui_toolbar-file.png" href="Images/ui_toolbar-file.png" media-type="image/png"/>
+    <item id="ui_toolbar-find.png" href="Images/ui_toolbar-find.png" media-type="image/png"/>
+    <item id="ui_toolbar-format.png" href="Images/ui_toolbar-format.png" media-type="image/png"/>
+    <item id="ui_toolbar-headings.png" href="Images/ui_toolbar-headings.png" media-type="image/png"/>
+    <item id="ui_toolbar-indent.png" href="Images/ui_toolbar-indent.png" media-type="image/png"/>
+    <item id="ui_toolbar-index.png" href="Images/ui_toolbar-index.png" media-type="image/png"/>
+    <item id="ui_toolbar-insert.png" href="Images/ui_toolbar-insert.png" media-type="image/png"/>
+    <item id="ui_toolbar-list.png" href="Images/ui_toolbar-list.png" media-type="image/png"/>
+    <item id="ui_toolbar-plugins.png" href="Images/ui_toolbar-plugins.png" media-type="image/png"/>
+    <item id="ui_toolbar-tools.png" href="Images/ui_toolbar-tools.png" media-type="image/png"/>
+    <item id="ui_tooltip.png" href="Images/ui_tooltip.png" media-type="image/png"/>
+    <item id="ui_tooltip2.png" href="Images/ui_tooltip2.png" media-type="image/png"/>
+    <item id="ui_user-interface-default.png" href="Images/ui_user-interface-default.png" media-type="image/png"/>
+    <item id="ui_zoom.png" href="Images/ui_zoom.png" media-type="image/png"/>
+    <item id="user_interface.xhtml" href="Text/user_interface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="validation-flightcrew.png" href="Images/validation-flightcrew.png" media-type="image/png"/>
+    <item id="validation.xhtml" href="Text/validation.xhtml" media-type="application/xhtml+xml"/>
+    <item id="whats_new.xhtml" href="Text/whats_new.xhtml" media-type="application/xhtml+xml"/>
+    <item id="reports-all-files.png" href="Images/reports-all-files.png" media-type="image/png"/>
+    <item id="reports-characters.png" href="Images/reports-characters.png" media-type="image/png"/>
+    <item id="reports-classes-used.png" href="Images/reports-classes-used.png" media-type="image/png"/>
+    <item id="reports-css-files.png" href="Images/reports-css-files.png" media-type="image/png"/>
+    <item id="reports-css-selectors.png" href="Images/reports-css-selectors.png" media-type="image/png"/>
+    <item id="reports-html-files.png" href="Images/reports-html-files.png" media-type="image/png"/>
+    <item id="reports-image-files.png" href="Images/reports-image-files.png" media-type="image/png"/>
+    <item id="reports-links.png" href="Images/reports-links.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
-    <itemref idref="cover.html"/>
-    <itemref idref="titlepage.html"/>
-    <itemref idref="rights.html"/>
-    <itemref idref="toc.html"/>
-    <itemref idref="introduction.html"/>
-    <itemref idref="whats_new.html"/>
-    <itemref idref="about_sigil.html"/>
-    <itemref idref="about_epub.html"/>
-    <itemref idref="installation.html"/>
-    <itemref idref="features.html"/>
-    <itemref idref="user_interface.html"/>
-    <itemref idref="preferences.html"/>
-    <itemref idref="opening_and_saving_files.html"/>
-    <itemref idref="code_view.html"/>
-    <itemref idref="preview.html"/>
-    <itemref idref="book_browser.html"/>
-    <itemref idref="metadata.html"/>
-    <itemref idref="add_cover.html"/>
-    <itemref idref="table_of_contents.html"/>
-    <itemref idref="validation.html"/>
-    <itemref idref="spellcheck.html"/>
-    <itemref idref="media_files.html"/>
-    <itemref idref="special_characters.html"/>
-    <itemref idref="checkpoints.html"/>
-    <itemref idref="splitting_and_merging.html"/>
-    <itemref idref="find_replace.html"/>
-    <itemref idref="saved_searches.html"/>
-    <itemref idref="clips.html"/>
-    <itemref idref="clipboard_history.html"/>
-    <itemref idref="links.html"/>
-    <itemref idref="styles.html"/>
-    <itemref idref="indexes.html"/>
-    <itemref idref="reports.html"/>
-    <itemref idref="external_editors.html"/>
-    <itemref idref="external_xhtml_editor.html"/>
-    <itemref idref="inspector.html"/>
-    <itemref idref="manage_plugins.html"/>
-    <itemref idref="ui_customize.html"/>
-    <itemref idref="tutorials.html"/>
-    <itemref idref="tutorial_getting_started_with_epub.html"/>
-    <itemref idref="tutorial_convert_to_html.html"/>
-    <itemref idref="tutorial_load_file.html"/>
-    <itemref idref="tutorial_save.html"/>
-    <itemref idref="tutorial_metadata.html"/>
-    <itemref idref="tutorial_add_cover.html"/>
-    <itemref idref="tutorial_split.html"/>
-    <itemref idref="tutorial_mark_chapters.html"/>
-    <itemref idref="tutorial_generate_toc.html"/>
-    <itemref idref="tutorial_links.html"/>
-    <itemref idref="tutorial_code_view.html"/>
-    <itemref idref="tutorial_spelling.html"/>
-    <itemref idref="tutorial_find_replace.html"/>
-    <itemref idref="tutorial_stylesheets.html"/>
-    <itemref idref="tutorial_embed_fonts.html"/>
-    <itemref idref="tutorial_advanced_find.html"/>
-    <itemref idref="tutorial_regex_reference.html"/>
-    <itemref idref="tutorial_tips.html"/>
-    <itemref idref="faq.html"/>
-    <itemref idref="contributing_to_sigil.html"/>
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="titlepage.xhtml"/>
+    <itemref idref="rights.xhtml"/>
+    <itemref idref="toc.xhtml"/>
+    <itemref idref="introduction.xhtml"/>
+    <itemref idref="whats_new.xhtml"/>
+    <itemref idref="about_sigil.xhtml"/>
+    <itemref idref="about_epub.xhtml"/>
+    <itemref idref="installation.xhtml"/>
+    <itemref idref="features.xhtml"/>
+    <itemref idref="user_interface.xhtml"/>
+    <itemref idref="preferences.xhtml"/>
+    <itemref idref="opening_and_saving_files.xhtml"/>
+    <itemref idref="code_view.xhtml"/>
+    <itemref idref="preview.xhtml"/>
+    <itemref idref="book_browser.xhtml"/>
+    <itemref idref="metadata.xhtml"/>
+    <itemref idref="add_cover.xhtml"/>
+    <itemref idref="table_of_contents.xhtml"/>
+    <itemref idref="validation.xhtml"/>
+    <itemref idref="spellcheck.xhtml"/>
+    <itemref idref="media_files.xhtml"/>
+    <itemref idref="special_characters.xhtml"/>
+    <itemref idref="checkpoints.xhtml"/>
+    <itemref idref="splitting_and_merging.xhtml"/>
+    <itemref idref="find_replace.xhtml"/>
+    <itemref idref="saved_searches.xhtml"/>
+    <itemref idref="clips.xhtml"/>
+    <itemref idref="clipboard_history.xhtml"/>
+    <itemref idref="links.xhtml"/>
+    <itemref idref="styles.xhtml"/>
+    <itemref idref="indexes.xhtml"/>
+    <itemref idref="reports.xhtml"/>
+    <itemref idref="external_editors.xhtml"/>
+    <itemref idref="external_xhtml_editor.xhtml"/>
+    <itemref idref="inspector.xhtml"/>
+    <itemref idref="manage_plugins.xhtml"/>
+    <itemref idref="ui_customize.xhtml"/>
+    <itemref idref="tutorials.xhtml"/>
+    <itemref idref="tutorial_getting_started_with_epub.xhtml"/>
+    <itemref idref="tutorial_convert_to_html.xhtml"/>
+    <itemref idref="tutorial_load_file.xhtml"/>
+    <itemref idref="tutorial_save.xhtml"/>
+    <itemref idref="tutorial_metadata.xhtml"/>
+    <itemref idref="tutorial_add_cover.xhtml"/>
+    <itemref idref="tutorial_split.xhtml"/>
+    <itemref idref="tutorial_mark_chapters.xhtml"/>
+    <itemref idref="tutorial_generate_toc.xhtml"/>
+    <itemref idref="tutorial_links.xhtml"/>
+    <itemref idref="tutorial_code_view.xhtml"/>
+    <itemref idref="tutorial_spelling.xhtml"/>
+    <itemref idref="tutorial_find_replace.xhtml"/>
+    <itemref idref="tutorial_stylesheets.xhtml"/>
+    <itemref idref="tutorial_embed_fonts.xhtml"/>
+    <itemref idref="tutorial_advanced_find.xhtml"/>
+    <itemref idref="tutorial_regex_reference.xhtml"/>
+    <itemref idref="tutorial_tips.xhtml"/>
+    <itemref idref="faq.xhtml"/>
+    <itemref idref="contributing_to_sigil.xhtml"/>
+    <itemref idref="navid" linear="no"/>
   </spine>
   <guide>
-    <reference type="cover" title="Cover" href="Text/cover.html"/>
-    <reference type="text" title="Text" href="Text/introduction.html"/>
-    <reference type="toc" title="Table of Contents" href="Text/toc.html"/>
+    <reference type="cover" title="Cover" href="Text/cover.xhtml"/>
+    <reference type="toc" title="Table of Contents" href="Text/toc.xhtml"/>
+    <reference type="text" title="Text" href="Text/introduction.xhtml"/>
   </guide>
 </package>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Manage Plugins</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="opening_files_externally">Manage Plugins</h2>
+
+  <p class="h2subheading">— Extend the Functionality of Sigil —</p>
+
+  <p>Python 3 plugins provide a powerful way to extend the functionality of Sigil. On Windows and macOS, Sigil already comes with an embedded Python 3 interpreter and several Python libraries optimized for Sigil, so you won’t have to install Python 3 on your system. Just download the plugins, add them to Sigil, and you’re ready to go.</p>
+
+<div class="tip">
+<p class="tip">On Linux, users should install the relevant python 3 packages required to use plugins on Sigil. Typically these are the suggested (not required) packages for Sigil in your distribution’s repository. Check with your distribution’s Sigil maintainer for details.</p>
+</div>
+
+  <p>A complete list of supported plugins can be found in the <a href="https://www.mobileread.com/forums/showthread.php?t=247431">Index of Sigil Plugins</a> on MobileRead. Highlights include:</p>
+  
+	<ul>
+		<li><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=294900">Access-Aide</a></span>: Improves the accessibility of EPUBs to help meet ACE (Accessibility Checker for EPUB) requirements.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=294678">ACE</a></span>: A simple DAISY ACE (Accessibility Checker for EPUB) wrapper.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=274926">cssRemoveUnusedSelectors</a></span>:  A powerful tool for removing unused CSS selectors.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=332317">cssUndefinedClasses</a></span>: Removes all classes and ids not referenced in stylesheets or elsewhere.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=273966">DOCXImport</a></span>: Imports DOCX documents into Sigil as EPUB.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?p=2973066">ePub3-itizer</a></span>: Converts a valid EPUB2 into an EPUB3.</li>
+
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?p=2950625#post2950625">EpubCheck</a></span>: A simple EPUBCheck wrapper to validate EPUB2 and EPUB3.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://github.com/Sigil-Ebook/flightcrew/releases/latest">FlightCrew</a></span>: A validator for EPUB2.</li>
+
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?p=2957196#post2957196">KindleGen</a></span>: A simple kindlegen wrapper to generate master mobi, azw3, mobi7, or KFX from EPUB.</li>
+			
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=247087">KindleImport</a></span>: Imports Kindle KF8/azw3 and older-style mobi-only files into Sigil as EPUB.</li>
+
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=276005">LanguageTool</a></span>: A simple LanguageTool wrapper to check grammar.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=324606">MarkdownImport</a></span>: Imports Markdown files and plain text files without markup into Sigil as EPUB.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=274536">ODTImport</a></span>: Imports OpenOffice ODT files into Sigil as EPUB.</li>
+		
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=247088">PunctuationSmarten</a></span>: Converts quotes, apostrophes, dashes, and ellipses to their typographic equivalents.</li>
+	
+		<li class="first"><span class="listheading"><a href="https://www.mobileread.com/forums/showthread.php?t=270639">TagMechanic</a></span>: Removes spans, divs, and a few other tags; changes their attributes; and/or converts them to different html elements.</li>
+	</ul>
+	
+	<p>… and many more!</p>
+
+  <h3 class="sigil_not_in_toc">Install Plugins</h3>
+
+  <div class="image">
+    <img alt="Manage Plugins dialog." src="../Images/manage-plugins.png"/>
+  </div>
+	
+  <p>To install a plugin:</p>
+
+  <ol>
+    <li>Download the desired plugin .zip file.</li>
+
+    <li>Go to <span class="menuitem">Plugins=&gt;Manage Plugins=&gt;Add/Remove</span> then click the <span class="buttonbox">Add Plugin</span> button.</li>
+
+    <li>Select the plugin .zip file and click <span class="buttonbox">OK</span> (on Mac, click <span class="buttonbox">Open</span>).</li>
+
+    <li>Enable <b>Use Bundled Python</b>, if it isn’t already enabled.<br/> (If Use Bundled Python can’t be selected, click <span class="buttonbox">Auto</span> or <span class="buttonbox">Set</span> to select an external Python interpreter.)</li>
+  </ol>
+
+  <div class="tip">
+    <p class="tiptext">Don’t unpack or rename plugin .zip files!</p>
+  </div>
+  
+  <p>To remove a plugin:</p>
+  
+  <ol>
+  	<li>Go to <span class="menuitem">Plugins=&gt;Manage Plugins=&gt;Add/Remove</span>.</li>
+  	<li>Select the plugin you want to remove and click <span class="buttonbox">Remove Plugin</span>.<br/>
+  	You can also click <span class="buttonbox">Remove All</span> to remove all plugins in one go.</li>
+  </ol>
+  
+
+  <h3 class="sigil_not_in_toc">Assign Plugins to Toolbar Buttons</h3>
+
+  <p>For quick and easy access to your plugins, go to <span class="menuitem">Plugins=&gt;Manage Plugins=&gt;Shortcuts</span> and use the dropdown menus to assign up to ten of your most frequently used plugins to ten toolbar buttons, then click <span class="buttonbox">OK</span>. If a plugin has a custom icon, it will appear; otherwise a generic icon will be used.</p>
+ 
+	<p>Toolbar buttons: <img alt="Plugin Toolbar showing Plugin Icons" src="../Images/manage-plugins-toolbar-buttons.png"/></p>
+		
+	  <div class="image">
+		<img alt="image of a set of 10 pulldowns used to assign a current plugin to a toolbar icon" src="../Images/manage-plugins-preferences-shortcuts.png"/>
+	  </div>
+
+	<p>To show or hide plugin toolbars, go to menu item <span class="menuitem">View=&gt;Toolbars=&gt;Plugins Set 1</span> (for plugins 1-5) and <span class="menuitem">View=&gt;Toolbars=&gt;Plugins Set 2</span> (for plugins 6-10).</p>
+	
+    <div class="tip">
+  	<p class="tiptext">If a plugin doesn’t have a custom icon or you prefer a different icon, you can change it. First you’ll need to create a SVG icon or a 48x48 pixel PNG icon. Most importantly, the icon must be named "plugin.svg" or "plugin.png", with priority being given to the SVG version if both exist.</p>
+ <p class="tiptext">Then go to <span class="menuitem">Plugins=&gt;Manage Plugins</span> and click <span class="buttonbox">Open Preferences Location</span> in the lower left corner. Finally, open the “plugins_prefs” folder and drop your new icon into the folder for that plugin. If there is no preferences folder for the plugin, create one using the exact same name of the plugin in the “plugins” folder.</p>
+  </div>
+
+<h3>Running Plugins</h3>
+
+  <p>Once a plugin is installed, running it is as easy as selecting it from the <span class="menuitem">Plugins</span> menu or clicking its toolbar button.</p>
+  
+  <p>For example, to run the EpubCheck plugin, select <span class="menuitem">Plugins=&gt;Validation=&gt;EpubCheck</span> or click <img alt="Epubcheck plugin icon." src="../Images/manage-plugins-epubcheck.png"/>.</p>
+  
+  <div class="tip"> 
+  	<p class="tiptext">If you don’t recognize a toolbar button, hover over it to see the plugin’s name.</p>
+  </div>
+
+
+  <h3 class="sigil_not_in_toc">Troubleshooting</h3>
+
+  <pre class="example">Error: Interpreter python3.4 has no path set</pre>
+
+  <p>This error message is usually displayed if Use Bundled Python is disabled and the ≥Python 3.4 text box is empty or contains an invalid path. Click <span class="buttonbox">Auto</span> or <span class="buttonbox">Set</span> to select an external Python interpreter or enable Use Bundled Python.</p>
+
+  <pre class="example">Error: Plugin is not a valid Sigil plugin</pre>
+
+  <p>This error message is usually displayed if the plugin .zip file is invalid, was unzipped, or was renamed. If you renamed the plugin .zip file, re-download it and retry the installation.</p>
+
+  <p>If you’re still experiencing problems, install and run the <a href="https://github.com/Sigil-Ebook/Sigil/raw/master/docs/testplugin_v018.zip">Sigil test plugin</a> and post the results in the <a href="https://www.mobileread.com/forums/forumdisplay.php?s=d37af4fb86e26c9f1573854c37960a27&amp;f=268">MobileRead Sigil Plugins forum</a>.</p>
+
+  <h3 class="sigil_not_in_toc">Write Your Own Plugins</h3>
+
+  <p>Thanks to a comprehensive Python framework, it is relatively easy to write plugins for Sigil. If you’re interested in writing your own Python 3 Sigil plugins, have a look at the <a href="https://github.com/Sigil-Ebook/Sigil/raw/master/docs/Sigil_Plugin_Framework_rev12.epub">Sigil Plugin Framework</a> guide.</p>
+</body>
+</html>

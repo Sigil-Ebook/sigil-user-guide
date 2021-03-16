@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Indexes</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="indexes">Indexes</h2>
+
+  <p class="h2subheading">— Create an Index For Your Book —</p>
+
+  <p>If you want to create an Index for your book, you can use Sigil to identify what to index and then to automatically create a new HTML page containing the index.</p>
+
+  <p>You can mark individual words in your text for indexing, or use the Index Editor to make sure every occurrence of the word is indexed.</p>
+
+  <h3 class="sigil_not_in_toc">Mark Entries for Indexing</h3>
+
+  <p>The first way to identify entries to include in the index is to mark specific words or phrases in your text. Only the occurrence of the word or phrase you mark will be included in the Index – if you need all occurrences use the Index Editor.</p>
+
+  <p>Highlight a word or phrase in Code View and then select the menu item <span class="menuitem">Tools=&gt;Index=&gt;Mark For Index</span> or its keyboard shortcut (which you can change). This will then open a prompt for you to enter how you want these words to appear in the index:</p>
+
+  <div class="image">
+    <img alt="Mark for Index dialog." src="../Images/index-mark.png"/>
+  </div>
+
+  <p>The text you enter as the name to use in the Index will be show up in the Index as follows:</p>
+
+  <ul>
+    <li><span class="listheading">[blank]:</span> If you leave the name empty, then the exact words you highlighted will be used in the index.</li>
+
+    <li><span class="listheading">words:</span> If you enter a word or phrase, then that word or phrase will be used (e.g. Oak instead of oak).</li>
+
+    <li><span class="listheading">heading/words:</span> If you use a “/” in the name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
+
+    <li><span class="listheading">entrya;entryb:</span> If you use a “;” then multiple entries will be created for this word or phrase.</li>
+  </ul>
+
+  <p>When you mark text for indexing, it just adds add some Sigil-specific HTML code that tells Sigil to include these words when you create the index. In code view it might appear as follows:</p>
+
+  <pre class="example">&lt;a class="sigil_index_marker" title="Character/Alice"&gt;Alice&lt;/a&gt;
+</pre>
+
+  <p>If you no longer want a word or phrase to be indexed by Sigil, you will need to delete the special HTML tags around the word.</p>
+
+  <div class="tip">
+    <p class="tiptext">To find indexed words you can search in Code View. Or you can highlight them in Preview in color by adding the following CSS temporarily to your stylesheet:</p>
+
+    <pre>[class="sigil_index_marker"] { color:#335500; }</pre>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Add Entries to Index Editor</h3>
+
+  <p>The second way identify words to index is to add the words to a list. Then when you create the index every occurrence of that word will be included in the index automatically. You can use words marked for indexing and a list of words to index at the same time.</p>
+
+  <p>To add specific words to the index list, highlight the word or phrase, and then select the menu item <span class="menuitem">Tools=&gt;Index=&gt;Add To Index Editor</span>. If your selected text includes any HTML tags, you should remove them.</p>
+
+  <p>This will bring up the Index Editor with the word added to the list of entries to index. You can also enter words directly in the Index Editor as described below.</p>
+
+  <h3 class="sigil_not_in_toc">Create the Index</h3>
+
+  <p>To actually create your index once you have marked words and/or added them to the list just select the menu item <span class="menuitem">Tools=&gt;Index=&gt;Create Index</span>.</p>
+
+  <p>This will create or update an HTML page called i<span class="shortcut">ndex.xhtml</span>. It will be marked with the semantic type “index”. Entries are listed alphabetically, and, using the default styling, look like this:</p>
+
+  <div class="image">
+    <img alt="Showing a created Index in Preview." src="../Images/index-html.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">You can edit the index page as with any HTML page, but if you re-create the index your changes will be over-written.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Custom Index Stylesheet</h4>
+
+  <p>The index page uses a separate CSS file (<span class="example">sgc-index.css</span>) to format the index. If the file already exists in your book it will not be overwritten (so you can customise it without losing your changes). But if it does not exist, it will look for <span class="example">sgc-index.css</span> in your preferences directory and use that as the default file. If there is no file in your preferences directory, then Sigil will create a default stylesheet for the index.</p>
+
+  <h3 class="sigil_not_in_toc">Index Editor</h3>
+
+  <p>The Index Editor is used to manage the list of entries that will be included in the index. It does not include the words you marked for indexing – they are included automatically.</p>
+
+  <p>To open the Index Editor select the menu item <span class="menuitem">Tools=&gt;Index=&gt;Index Editor</span> or its keyboard shortcut:</p>
+
+  <div class="image">
+    <img alt="Image of Index Editor dialog." src="../Images/index-editor.png"/>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Text To Include</h4>
+
+  <p>The “Text To Include” column is a list of patterns you want Sigil to search for in your text and then to create an Index entry for using the format in the “Index Entries” column. Entries in the “Text To Include” column can use the following formats:</p>
+
+  <ul>
+    <li><span class="listheading">words:</span> The words in the book must exactly match the listed words (case-sensitive). Do not include any HTML tags, just the words as they appear in Preview.</li>
+
+    <li><span class="listheading">Regex:</span> You can enter most regex patterns – they will be match on a paragraph by paragraph basis. For example, to match words while ignoring case sensitivity you can use “<span class="example">[Gg]utenberg</span>” or “<span class="example">(?i)Gutenberg</span>”.</li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">You can paste text into the Text To Include field – e.g. from a file containing a list of words – and the text will be automatically split into separate entries for each line.</p>
+
+    <p class="tiptext">You can also use Open to open a text file of words (and entries separated by tabs).</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Index Entries</h4>
+
+  <p>The “Index Entries” column is what will actually appear in the Index for words matching the “Text To Include” column.</p>
+
+  <p>Entries in the “Index Entries” column can use the following formats:</p>
+
+  <ul>
+    <li><span class="listheading">blank:</span> If you leave the entry blank, then the words entered in the Text to Include column will be used for the entry’s name.</li>
+
+    <li><span class="listheading">words:</span> If you enter a word or phrase, then that word or phrase will be used (e.g. Oak instead of oak).</li>
+
+    <li><span class="listheading">heading/words:</span> If you use a “/” in your name then a hierarchical group will be created (e.g. Forest/Tree/Oak will create an entry Oak filed under Tree filed under Forest).</li>
+
+    <li><span class="listheading">heading/:</span> If you use a “/” at the end of the entry name, then a hierarchical group will be created and the words in the Text to Include column will be used as a sub-entry.</li>
+  </ul>
+
+  <h4 class="sigil_not_in_toc">Context Menu</h4>
+
+  <p>Most actions concerning editing clips can be done by using the context menu.</p>
+
+  <p>Select one or more entries then right-click on the selection for the following options:</p>
+
+  <ul>
+    <li><span class="listheading">Add Entry:</span> Add a blank search under the entry you clicked.</li>
+
+    <li class="first"><span class="listheading">Edit:</span> Edit the entry.</li>
+
+    <li class="first"><span class="listheading">Cut:</span> Delete one or more entries that can be pasted later.</li>
+
+    <li><span class="listheading">Copy:</span> Copy one or more entries that can be pasted later.</li>
+
+    <li><span class="listheading">Paste:</span> Paste any cut/copied entries.</li>
+
+    <li class="first"><span class="listheading">Delete:</span> Delete entries.</li>
+
+    <li class="first"><span class="listheading">Open:</span> Replace the current Index List with entries from a file (either an index file or a text file).</li>
+
+    <li><span class="listheading">Reload:</span> Restore the list from the last saved state.</li>
+
+    <li class="first"><span class="listheading">Save As:</span> Save all entries to a file for keeping a per-book list of index entries.</li>
+
+    <li class="first"><span class="listheading">Autofill:</span> Fill the list with every word in the book.</li>
+
+    <li class="first"><span class="listheading">Select All:</span> Select all entries (for easy deletion).</li>
+  </ul>
+
+  <h4 class="sigil_not_in_toc">Save</h4>
+
+  <p>To save your entries to disk, click <span class="buttonbox">Save</span>.</p>
+
+  <p>To exit without saving your entries you can just close the window (with the close button or the <span class="shortcut">Esc</span> key). You can also use the context menu <span class="menuitem">Reload</span> to reload your entries from disk – which will delete your current entries.</p>
+
+  <div class="tip">
+    <p class="tiptext">If you save and are running more than one copy of Sigil, then the other instances of Sigil will automatically reload the newly saved index entries to keep all copies in sync.</p>
+  </div>
+
+  <h4 class="sigil_not_in_toc">Filter</h4>
+
+  <p>You can use the filter text box to restrict the list of searches shown to make it easier to find a search.</p>
+
+  <h4 class="sigil_not_in_toc">Opening or Importing Text Files</h4>
+
+  <p>The <span class="menuitem">Open</span> context menu item can be used to open saved Index files, but it can also open text files.</p>
+
+  <p>You can list just the Text To Include words in the text file – one per line. Or you can include both the Text To Include and Index Entry values by separating them with a tab – one per line.</p>
+
+<h4 class="sigil_not_in_toc">The Index Toolbar</h4>
+<p>To make creation of an index a bit quicker, users can use the <span class="menuitem">View=&gt;Toolbars=&gt;Index</span> menu to show the Index Toolbar.</p>
+<div><img style="width:30%" alt="image of the index toolbar icons" src="../Images/index_toolbar.png"/></div>
+<ul>
+<li>Open the Index Editor</li>
+<li>Add word to Index Editor</li>
+<li>Mark Text for Inclusion in the Index</li>
+<li>Generate the Index HTML file.</li>
+</ul>
+</body>
+</html>

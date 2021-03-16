@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Preferences</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="preferences">Preferences</h2>
+
+		  <p class="h2subheading">— Customize Sigil —</p>
+
+		  <p>The Preferences dialog gives you control over many settings in Sigil and is divided into seven sections:</p>
+
+		  <ul>
+			<li>Appearance</li>
+			<li>General Settings</li>
+			<li>Keyboard Shortcuts</li>
+			<li>Language</li>
+			<li>Spellcheck Dictionaries</li>
+			<li>Preserve Entities</li>
+			<li>Plugins</li>
+		  </ul>
+
+		  <p>To open Preferences, go to the main menu bar at the top of the screen and select <span class="menuitem">Edit=&gt;Preferences</span> (on Mac: <span class="menuitem">Sigil=&gt;Preferences</span>):</p>
+
+		  <div class="image">
+			<img alt="Image of the Preferences menu." src="../Images/preferences-menu.png"/>
+		  </div>
+
+		  <p>Once the Preferences window is open, select the section you want from the list on the left. Some of the sections are further divided into tabs that run across the top. Once you are satisfied with your settings, click <span class="buttonbox">OK</span> or close the window to save the current settings.</p>
+
+		  <div class="tip">
+			<p class="tiptext">Hover your mouse over the various preference options to see if they reveal a helpful tooltip.</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc" id="preferences_appearance">Appearance</h3>
+
+  		<p>Sigil offers many options for how things appear on your screen. Appearance preferences are divided into four clickable tabs running across the top of the dialog window: Code View, Preview, Icon Themes, and Main UI.</p>
+
+  <h4 id="sigil_toc_id_4">Code View</h4>
+
+		  <div class="image">
+			<img alt="Image of Appearance Preferences." src="../Images/preferences-appearance.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">Monospaced Code Font</span>: Select the font size and font family used for text in the Code View window.
+				<ul><li>Sigil’s Code View uses monospaced system fonts installed on your computer. If there is a monospaced font you would like to use that is not offered in the dropdown window, make sure it is installed on your computer.</li>
+				</ul>
+			</li>
+
+			<li class="first"><span class="listheading">Insert Special Characters</span>: Select the font size and font family used in the Insert Special Characters window.</li>
+
+			<li class="first"><span class="listheading">Colors</span>: 
+
+			<ul>
+			  <li>Select the color of HTML and CSS items.</li>
+
+			  <li>Select the color for highlighting text, the underline for misspelled words, etc.</li>
+
+			  <li>Choose whether matching tags are highlighted when the cursor is inside a tag.</li>
+			</ul></li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_5">Preview</h4>
+
+		  <div class="image">
+			<img alt="Appearance Preferences, Preview tab." src="../Images/preferences-appearance-preview.png"/>
+		  </div>
+
+		  <ul>
+			<li><span class="listheading">Fonts</span>: Select the default font size and font family for text shown in the Preview window when none is specified in the CSS stylesheet. (“Standard” sets the overall default font.)</li>
+
+			<li class="first"><span class="listheading">Make Preview simulate a dark appearance in dark mode</span>: Choose whether the Preview window simulates a dark appearance when your computer is in dark mode.</li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_6">Icon Themes</h4>
+
+		  <div class="image">
+			<img alt="Image of how to select a different icon theme." src="../Images/preferences-appearance-icons.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">Select your icon theme</span>: Sigil offers three different icon themes: Default, Fluent, and Material. Hover your mouse over the theme name to see a sample.
+
+				<ul>
+					<li>Sigil also supports custom user-supplied icon themes via a custom .rcc file. Check out <a href="https://github.com/Sigil-Ebook/IconThemes">https://github.com/Sigil-Ebook/IconThemes</a> for more information.</li>
+
+					<li>Restart Sigil after changing your icon theme for them to take effect.</li>
+				</ul>
+			</li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_7">Main UI</h4>
+
+		  <div class="image">
+			<img alt="Appearances Preferences for the Main User Interface tab." src="../Images/preferences-appearance-mainUI.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">Main Menu Icon Size</span>: Adjust the size of the toolbar buttons using a slider.</li>
+
+			<li class="first"><span class="listheading">High DPI Setting</span> (Windows only): 
+
+			<ul>
+			  <li><span class="listheading">Detect</span>: Detect whether any high dpi scaling should take place. This setting defers to any Qt environment variables that are set to control high dpi behavior.</li>
+
+			  <li><span class="listheading">On</span>: Turn on high dpi scaling and ignore any Qt environment variables that are set controlling high dpi behavior.</li>
+
+			  <li><span class="listheading">Off</span>: Turn off high dpi scaling regardless of if any Qt environment variables controlling high dpi behavior are set.</li>
+			</ul></li>
+
+			<li class="first"><span class="listheading">Fonts</span>: Select the font family and font size used for Sigil’s menus, buttons, etc.</li>
+
+			<li class="first"><span class="listheading">Control Book Browser Appearance</span>: Choose whether the Book Browser shows full filepaths or abbreviated ones.</li>
+
+			<li class="first"><span class="listheading">Tweak Drag Distance</span> (Windows only): Adjust the distance (in pixels) necessary to drag an item before a move event is triggered. This is useful if you are accidentally moving tabs with a twitch of the mouse.</li>
+
+			<li class="first"><span class="listheading">Reset All</span>: Reset all Main UI Appearance preferences to default.</li>
+		  </ul>
+
+		  <div class="tip">
+			<p class="tiptext">Appearance settings affect how your book is displayed in Sigil. They do NOT affect how your book is displayed on e-readers!</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc">General Settings</h3>
+
+  		<p>General Settings are divided into four clickable tabs running across the top of the window: Basics, Security, Validation, and Advanced.</p>
+
+  <h4 id="sigil_toc_id_8">Basics</h4>
+
+		  <div class="image">
+			<img alt="Image of General Settings dialog." src="../Images/preferences-general-settings.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">Create New or Empty Epubs as</span>: Choose the version of EPUB (2 or 3) that will be used when new books are created in Sigil.</li>
+
+			<li class="first"><span class="listheading">Mend Not Well Formed HTML Source Code On</span>: When checked, Sigil will automatically mend HTML source code that is not well formed or are missing a DOCTYPE, html, head, or body element whenever you Open or Save a book. Mending is done using Google’s gumbo auto-repair parser. If ill-formed code is detected, a confirmation window will appear asking you to confirm whether you want to proceed with mending.</li>
+
+			<li class="first"><span class="listheading">Number of clipboard history items to save</span>: Specify the number of clipboard snippets that will be saved to a list for later recall; or specify 0 to disable clipboard history.</li>
+
+			<li class="first"><span class="listheading">Set your preferred external xhtml editor</span>: If you set a preferred external xhtml editor, it will launch whenever you click the Launch External Xhtml Editor toolbar button <img alt="Image of External Editor icon." src="../Images/external-editor-icon.png"/>. This allows you to quickly and easily open and edit selected html files using an external editor (such PageEdit, notepad++, or BBEdit) with the click of a button.</li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_9">Security</h4>
+
+		  <div class="image">
+			<img alt="General Settings Security Tab." src="../Images/preferences-general-security.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">Control Access by Epubs to non-multimedia remote resources</span>: Choose whether to allow EPUBs to access non-multimedia remote resources</li>
+
+			<li class="first"><span class="listheading">Control Use of Javascript by Epubs</span>: Choose whether to allow EPUBs to use javascript.</li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_10">Validation</h4>
+
+		  <div class="image">
+			<img alt="General Settings, Validation Tab" src="../Images/preferences-general-validation.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first"><span class="listheading">EPUB2 W3C Stylesheet Validation Level</span>: Choose the CSS level that the W3C stylesheet validation tool will use for EPUB2 books.</li>
+
+			<li class="first"><span class="listheading">EPUB3 W3C Stylesheet Validation Level</span>: Choose the CSS level that the W3C stylesheet validation tool will use for EPUB3 books.</li>
+		  </ul>
+
+  <h4 id="sigil_toc_id_11">Advanced</h4>
+
+		  <div class="image">
+			<img alt="General Settings Advanced Tab" src="../Images/preferences-general-advanced.png"/>
+		  </div>
+
+		  <ul>
+			<li class="first">Set the temp folder that Sigil will use for your temporary EPUB files.
+				<ul><li>If you’re using the macOS version of Sigil, you should select a folder other than <b>/temp</b> to avoid potential data loss issues that might occur in some macOS versions.</li>
+				</ul>
+			</li>
+		  </ul>
+
+  <h3 class="sigil_not_in_toc">Keyboard Shortcuts</h3>
+
+		  <p>Sigil offers a variety of keyboard shortcuts, which you can customize to your liking. For example, if you want <span class="shortcut">F12</span> to always open Find &amp; Replace, you can change it here.</p>
+
+		  <div class="tip">
+			<p class="tiptext">You can assign or re-assign a shortcut temporarily if you need a function to be easier to access for a short time.</p>
+		  </div>
+
+		  <div class="image">
+			<img alt="Keyboard Shortcuts Preferences" src="../Images/preferences-shortcuts.png"/>
+		  </div>
+
+		  <p>To assign or remove a shortcut:</p>
+
+		  <ul>
+			<li>Select an entry from the list of commands.</li>
+
+			<li>Click in the Shortcut text box.</li>
+
+			<li>Press the key combination you want to use – do not spell it out using letters, just press the key combination.</li>
+
+			<li>Click <span class="buttonbox">Assign</span> to set the shortcut. If the key combination is already being used for another command, an alert message showing the conflict will appear.</li>
+
+			<li>To remove a shortcut, select an entry and click <span class="buttonbox">Remove</span>.</li>
+
+			<li>Use <span class="buttonbox">Reset All</span> to change all shortcuts back to their defaults.</li>
+		  </ul>
+
+		  <div class="tip">
+			<p class="tiptext">Use the Filter text box to easily search for shortcuts.</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc" id="preferences_language">Language</h3>
+
+		  <p>Sigil has been translated into many languages.</p>
+
+		  <div class="image">
+			<img alt="Language Preferences Dialog" src="../Images/preferences-language.png"/>
+		  </div>
+
+		  <ul>
+			<li><span class="listheading">User Interface Language</span>: Choose your preferred language for Sigil’s user interface. If a translation is not available for specific words, they will be shown in English.<br/>
+			<img alt="Image of selecting a user interface language." src="../Images/preferences-language-dropdown.png"/></li>
+
+			<li class="first"><span class="listheading">Default Language For Metadata</span>: Set the default language that will be used by the Metadata Editor for new books or books that do not already have a language set.</li>
+		  </ul>
+
+		  <div class="tip">
+			<p class="tiptext">You must restart Sigil in order for a new user interface language to take effect.</p>
+
+			<p class="tiptext">Try setting the interface to another language and restarting Sigil to see the translations volunteers have created.</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc" id="preferences_spellcheck_dictionaries">Spellcheck Dictionaries</h3>
+
+		  <p>Sigil supports spellchecking and offers a variety of spellchecking options, including a choice of standard dictionaries and the use of personal user dictionaries.</p>
+
+		  <div class="image">
+			<img alt="Spellcheck Dictionaries Settings dialog." src="../Images/preferences-spellcheck.png"/>
+		  </div>
+
+		  <ul>
+			<li><span class="listheading">Primary Language Dictionary</span>: Choose your primary language dictionary from a dropdown menu.<br/><img alt="Spellcheck Preferences setting the Primary Language Dictionary." src="../Images/preferences-spellcheck-standard-dictionary.png"/> 
+
+			<ul>
+			  <li>To add new standard dictionaries (which must be in the hunspell format), click <span class="buttonbox">Open Preferences Location</span> and go into the “hunspell_dictionaries” directory. Put your new dictionary files into the “hunspell_dictionaries” directory then restart Sigil.</li>
+
+			  <li>One source for additional dictionaries is the <a href="https://wiki.openoffice.org/wiki/Dictionaries">OpenOffice Dictionaries</a> site. To add these dictionaries, download, extract, and copy the files (e.g. en_GB.aff, en_GB.dic, hyph_en_GB.dic) to the “hunspell_dictionaries” directory location and restart Sigil.</li>
+			</ul></li>
+
+			<li class="first"><span class="listheading">Secondary Language Dictionary</span>: Choose your secondary language dictionary.</li>
+
+			<li class="first"><span class="listheading">Highlight Misspelled Words</span>: Choose whether misspelled words are highlighted in Code View with a wavy red underline. You will then be able to right-click on the word to select a suggested correction or add it to a dictionary.</li>
+
+			<li class="first"><span class="listheading">Check Numbers</span>: Enabling this option will allow words that have numbers in them, such as 32nd or HTML5, to be checked for spelling.</li>
+
+			<li class="first"><span class="listheading">User Dictionaries</span>: 
+
+			<ul>
+			  <li>You can create your own personal user dictionaries, and even use different ones for different books and different types of words (e.g., places, names, etc.).</li>
+
+			  <li>If you have not created any user dictionaries, Sigil will create and enable a “default” user dictionary for you, which you can rename or delete.</li>
+
+			  <li>To create a new user dictionary, click on the User Dictionaries tab, click <span class="buttonbox">Add</span>, then enter a name for your new dictionary:<br/> <img alt="SpellCheck Preferences adding a dictionary." src="../Images/preferences-spellcheck-add-dictionary.png"/></li>
+
+			  <li>You can see the words in each User Dictionary by selecting the dictionary under the User Dictionaries tab, then clicking on the User Dictionary Word List tab. You will then see all the words in that dictionary, which you can add to, edit, or remove.</li>
+
+			  <li>To add words directly to a user dictionary, select the dictionary from the User Dictionaries tab, click on the User Dictionary Word List, then click <span class="buttonbox">Add</span>. Type in as many words as you want, or paste them in from a file. Words can be separated by commas, spaces, or listed one per line.<br/><img alt="Spellcheck Preferences adding words to a dictionary." src="../Images/preferences-spellcheck-add-words.png"/></li>
+
+			  <li>You can also add words to a dictionary using Spellcheck, or by right-clicking on misspelled words in Code View and selecting one of the <span class="menuitem">Add To Dictionary</span> options.</li>
+
+			  <li>You can copy a complete dictionary using <span class="buttonbox">Copy</span>, and then rename it as needed.</li>
+
+			  <li>You can select which user dictionaries are enabled by marking the checkbox next to the dictionary’s name. Multiple dictionaries can be enabled at the same time. All enabled dictionaries will be used when checking words to see if they are misspelled.</li>
+			</ul></li>
+		  </ul>
+
+		  <div class="tip">
+			<p class="tiptext">The <b>default dictionary</b> is the one that is selected and highlighted. It is also identified at the bottom left corner of User Dictionaries section of the Preferences window. The default dictionary is used when you add words using the Add Misspelled Word shortcut or the context menu item <span class="menuitem">Add To Default Dictionary</span>.</p>
+
+			<p class="tiptext">An <b>enabled dictionary</b> is marked with a checkmark to the left. While only one user dictionary can be selected and set as the <i>default</i> at any one time, mulitiple dictionaries can be <i>enabled</i>. All enabled dictionaries are used when spellchecking is run.</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc">Preserve Entities</h3>
+
+		  <p>When you run Mend (<span class="menuitem">Tools=&gt;Reformat HTML=&gt;Mend All HTML Files</span>), Sigil automatically converts all character entities to Unicode characters <i>unless</i> they are included in the Entities to Preserve list.</p>
+
+		  <div class="image">
+			<img alt="Preserve Entities Preferences dialog." src="../Images/preferences-preserve-entities.png"/>
+		  </div>
+
+		  <ul>
+			<li>To preserve specific entities and prevent Mend from converting them to Unicode characters, click <span class="buttonbox">Add</span>, and add them to the Entities to Preserve list. Multiple entities can be input at one time when separated by spaces, line breaks, or commas.</li>
+
+			<li class="first">Use <span class="buttonbox">Remove</span> or <span class="buttonbox">Remove All</span> to remove entities from the list. Entities not on the list will be converted to Unicode characters on Mend.</li>
+		  </ul>
+
+		  <div class="tip">
+			<p class="tiptext">Please note that you can’t use named entities (e.g. <span class="example">&amp;nsbp;</span>) in EPUB3 books; you must use numerical entities (e.g., <span class="example">&amp;#160;</span>) instead.</p>
+
+			<p class="tiptext">If you have Mend Not Well Formed HTML Source Code turned on for Open or Save, and the source code is well formed, entities will <b><i>not</i></b> be automatically converted (because entities are perfectly valid code). To convert entities in html files with well formed code, you must manually invoke <span class="menuitem">Tools=&gt;Reformat HTML=&gt;Mend All HTML Files</span>.</p>
+		  </div>
+
+  <h3 class="sigil_not_in_toc">Plugins</h3>
+
+		  <p>Sigil supports a wide variety of useful plugins that augment Sigil’s editing power.</p>
+
+		  <div class="image">
+			<img alt="Plugin Preferences and management dialog." src="../Images/preferences-plugins.png"/>
+		  </div>
+
+		  <ul>
+			<li><span class="listheading">Use Bundled Python:</span> Enable this option to select the Python interpreter bundled with Sigil (recommended). Please note that if you disable this option, you will need to select an external Python 3 interpreter.</li>
+
+			<li class="first"><span class="listheading">Path to Interpreter Executable:</span> This option is intended for plugin developers; you’ll also need to set it if Use Bundled Python is disabled (or can’t be selected). Click <span class="buttonbox">Auto</span> or <span class="buttonbox">Set</span> to choose an external Python 3 interpreter.</li>
+
+			<li class="first"><span class="listheading">Add/Remove</span> 
+
+			<ul>
+			  <li><span class="listheading">Add Plugin:</span> Click this button to install a plugin.</li>
+
+			  <li><span class="listheading">Remove Plugin:</span> Click this button to uninstall the currently selected plugin.</li>
+
+			  <li><span class="listheading">Remove All Plugins:</span> Click this button to uninstall all plugins.</li>
+			</ul></li>
+
+			<li class="first"><span class="listheading">Shortcuts</span> 
+
+			<ul>
+			  <li>Assign plugins to the 10 plugin buttons on the toolbar. When you click on a plugin button, the assigned plugin will launch automatically.</li>
+			</ul></li>
+		  </ul>
+
+		  <div>
+			<p>Toolbar buttons: <img alt="Assigning a plugin to an icon shortcut." src="../Images/ui_toolbar-plugins.png"/></p>
+		  </div>
+
+		  <div>
+			<img alt="Image of a set of 10 pulldowns used to assign a current plugin to a toolbar icon" src="../Images/preferences-plugins-shortcuts.png"/>
+		  </div>
+
+  <h3 class="sigil_not_in_toc">Open Preferences Location</h3>
+
+		  <p>The <span class="buttonbox">Open Preferences Location</span> button at the bottom left corner of all Preferences screens will open the directory containing all of your preferences files. You can copy the files for backup or for sharing with others.</p>
+
+		  <p>The preferences location will likely be in the following locations:</p>
+
+		  <p>Windows:</p>
+
+		  <pre class="example">…\Local Settings\Application Data\sigil-ebook\sigil</pre>
+
+		  <p>Mac:</p>
+
+		  <pre class="example">/Users/[Username]/Library/Application\ Support/sigil-ebook/sigil/</pre>
+
+		  <p>Linux:</p>
+
+		  <pre class="example">$HOME/.local/share/sigil-ebook/sigil</pre>
+
+		  <p>The files/folders you may see include:</p>
+
+		  <ul>
+			<li><span class="listheading">custom_preview_style.css</span>: Optional user CSS for Sigil’s Preview window.</li>
+
+			<li><span class="listheading">hunspell_dictionaries</span>: Where any standard dictionaries you add are stored.</li>
+
+			<li><span class="listheading">local-devtools</span>: Where data for Preview’s Inspector is stored.</li>
+
+			<li><span class="listheading">local-storage</span>: Where JavaScript local storage data is stored.</li>
+
+			<li><span class="listheading">plugins</span>: Where any plugins you install are stored.</li>
+
+			<li><span class="listheading">plugins_prefs</span>: Where plugin preferences files are stored.</li>
+
+			<li><span class="listheading">qt_styles.qss</span>: Optional custom Qt styles for Sigil GUI elements.</li>
+
+			<li><span class="listheading">QtWebEngine</span>: Where data for Preview is stored.</li>
+
+			<li><span class="listheading">repo</span>: Where checkpoint versions are stored.</li>
+
+			<li><span class="listheading">sgc-toc.css</span>: Optional custom TOC stylesheet for EPUB2 books.</li>
+
+			<li><span class="listheading">sgc-nav.css</span>: Optional custom TOC stylesheet for EPUB3 books.</li>
+
+			<li><span class="listheading">sigil_clips.ini</span>: Your saved Clips.</li>
+
+			<li><span class="listheading">sigil_index.ini</span>: Your Index entries.</li>
+
+			<li><span class="listheading">sigil_searches.ini</span>: Your Saved Searches.</li>
+
+			<li><span class="listheading">sigil.ini</span>: General configuration information for Sigil.</li>
+
+			<li><span class="listheading">user_dictionaries</span>: Where any personal user dictionaries are stored.</li>
+		  </ul>
+
+  <h3 class="sigil_not_in_toc">Change the Font Size of GUI Controls</h3>
+
+		  <p>Since Sigil is a Qt app, you can customize the font size of some GUI controls by creating a <b>qt_styles.qss</b> stylesheet file and placing it in the Sigil preferences folder. (<b>qt_styles.qss</b> needs to contain valid <a href="https://doc.qt.io/qt-5/stylesheet-syntax.html">Qt style sheet</a> declarations.)</p>
+
+		  <p>For example, the following styles will increase the font size of the fields in the Find &amp; Replace window:</p>
+
+  <pre class="example">QLabel { font-size: 16pt }
+QLineEdit { font-size: 16pt }
+QComboBox { font-size: 16pt }
+</pre>
+
+  <h3 class="sigil_not_in_toc">Customizing the Background of Preview</h3>
+
+		  <p>Since Preview is technically a browser showing rendered (x)html/CSS, the only way to alter font and/or background colors is by specifying that info via styles: either inline or via CSS from within the EPUB.</p>
+
+		  <p>The only exception to the above is that a custom user-specified CSS file will be applied to Preview (no matter what EPUB is open) if a file named <b>custom_preview_style.css</b> exists in the Sigil preferences folder and contains valid CSS.</p>
+
+		  <p>For example, the following styles will give Preview a light gray background with blue text:</p>
+
+  <pre class="example">body {
+  background-color: #D3D3D3;
+  color: blue;
+}
+</pre>
+
+		  <p>Note: Applying such CSS can possibly adversely affect the visibility of some styled elements within an EPUB, depending on what CSS has already been applied via the EPUB and how.</p>
+</body>
+</html>

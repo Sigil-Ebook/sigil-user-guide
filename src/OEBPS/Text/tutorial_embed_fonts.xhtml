@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Include Custom Fonts</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="fonts">Include Custom Fonts</h2>
+
+  <p class="h2subheading">— Embedding Fonts In Your Book —</p>
+
+  <p>This tutorial shows you how to use custom fonts in your EPUB.</p>
+
+  <div class="tip">
+    <p class="tiptext">One of the benefits of e-readers is that you can choose your own font, so it’s usually best to only use embedded fonts to highlight specific types of text – such as chapter headings, quotes, etc. – and not to change the font of the entire book.</p>
+  </div>
+
+  <p>To use a font in an EPUB you need to load the font into the EPUB, define a style for the font, and then apply the style to your text.</p>
+
+  <div class="tip">
+    <p class="tiptext">You will need to know about stylesheets to embed fonts so you should read through the <a href="tutorial_stylesheets.xhtml">Stylesheets</a> chapter first.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Adding Fonts to your EPUB</h3>
+
+  <p>To add fonts to your book, use the Add Existing Files button <img alt="Add Files icon." src="../Images/document-add.png"/>. This will display a dialog allowing you to select one or more files from your computer. Select as many font files as you want.</p>
+
+  <div class="tip">
+    <p class="tiptext">Many fonts are not free. Before you include fonts in your EPUB please make sure that you have a license or permission to use them. There are many free fonts available online if you search for them.</p>
+
+    <p class="tiptext">A number of different font types are supported by the EPUB specification including OpenType (<span class="example">.otf</span>), TrueType (<span class="example">.ttf</span>),and Web Open Font Format (<span class="example">.woff or .woff2</span>) formats. Almost all e-readers support at least TrueType and OpenType formats.</p>
+  </div>
+
+  <p>The fonts will be added to the Fonts folder in the Book Browser. However, they are not yet actually used anywhere in your book – they are just available to use.</p>
+
+  <h3 class="sigil_not_in_toc" id="inserting_images">Defining Styles for Your Font</h3>
+
+  <p>Once the fonts are in your EPUB, you must define a style that includes them.</p>
+
+  <p>Add or open a stylesheet that is linked to your HTML files (see the <a href="tutorial_stylesheets.xhtml">Stylesheets</a> chapter for more details).</p>
+
+  <p>Add a definition of the font, e.g.:</p>
+
+  <pre class="example">@font-face {
+    font-family: 'Garamond';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../Fonts/Garamond.ttf');
+}
+
+@font-face {
+    font-family: 'Garamond';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../Fonts/Garamond Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Garamond ;
+    font-weight: normal;
+    font-style: italic;
+    src: url('../Fonts/Garamond Italic.ttf');
+}</pre>
+
+  <div class="tip">
+    <p class="tiptext">Font names are case-sensitive!</p>
+
+    <p class="tiptext">You must define one @font-face rule for each style of font (normal, bold, italics, etc.).</p>
+
+    <p class="tiptext">When using the name of a font-family the font name must either be quoted or unquoted every time you use it – you cannot mix quoted and unquoted names. Always using quotes around the font name makes things more consistent and avoids having to check if a name is valid without quotes.</p>
+  </div>
+
+  <p>The font still isn’t actually being used in the book yet, that’s the next step.</p>
+
+  <h3 class="sigil_not_in_toc">Apply Your Font to Text</h3>
+
+  <p>To make use of the font you need to create another style that you will then assign to sections of your text.</p>
+
+  <p>So, for example, to use your new font for headings, define the style for the heading tag as follows:</p>
+
+  <pre class="example">h1 { 
+    font-family: 'Garamond', serif;
+}</pre>
+
+  <p>Or to certain paragraphs:</p>
+
+  <pre class="example">p.longhand { 
+    font-family: 'Garamond', serif;
+    font-style: italic;
+}</pre>
+
+  <p>Or if you want, although it’s not recommended, you can apply the font to all text in the book:</p>
+
+  <pre class="example">body { 
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+}</pre>
+
+  <div class="tip">
+    <p class="tiptext">The font-family rules above instruct the e-reader to use your font if possible for the text, but if it’s not possible use a generic serif font.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Font Obfuscation</h3>
+
+  <p>When you use a font in an EPUB, the font file could be extracted by someone and used somewhere else. If your fonts are licensed you may want to prevent this.</p>
+
+  <p>You can use Sigil’s font obfuscation menu to scramble the font file using one of two standard methods, Adobe or IDPF – which one is up to you, but you should test on your target e-reader to make sure the font is still readable. Obfuscation is not encryption – it just modifies the font file making it hard to use elsewhere while still being useable by readers to display fonts.</p>
+
+  <p>To use font obfuscation, right-click on your fonts in the Book Browser window, right-click and select Font Obfuscation from the menu and choose a method to use for obfuscation.</p>
+
+  <div class="image">
+    <img alt="Using menus to enable or disable font obfuscation." src="../Images/tutorial-font-obfuscate.png"/>
+  </div>
+
+ <h3 class="sigil_not_in_toc">Font Subsetting</h3>
+
+  <p>A better alternative to Font Obfuscation might be to use Font Subsetting tools to restrict the font descriptions to only the exact characters used in your text. The act of subsetting a font, renders the font file useless for any other more general use. There are <a href="https://www.mobileread.com/forums/showthread.php?t=247431">plugins available for Sigil</a> such as the <b>“ePUB Optimizer”</b> and <b>“Subset Fonts”</b> plugins that can subset a font. You can use the <a href="reports.xhtml">Characters Report</a> of Sigil to provide the list of characters actually used in your EPUB.</p>
+  
+  <h3 class="sigil_not_in_toc">Testing Your Font</h3>
+
+  <p>Not all devices will show embedded fonts. Even Sigil may not show all your embedded fonts. Its best to test on your target device to check if your fonts are displayed as you expect.</p>
+</body>
+</html>

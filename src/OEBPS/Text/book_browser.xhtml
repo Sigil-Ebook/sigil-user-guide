@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Book Browser</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="book_browser">Book Browser</h2>
+
+  <p class="h2subheading">— Managing Files in Your EPUB —</p>
+
+  <p>All of the files that make up your EPUB can be viewed and accessed using the Book Browser.</p>
+  
+  <p>You will find the Book Browser docked on the left side of the default user interface. You can control whether it is visible or hidden via menu item <span class="menuitem">View=&gt;Book Browser</span>. You can also drag it to a different location if you prefer.</p>
+
+  <div class="image">
+    <img alt="Book Browser window." src="../Images/book-browser-main.png"/>
+  </div>
+
+  <div class="tip">
+	<p class="tiptext">Click on the little arrow or plus sign to the left of the folder’s name, or double-click on the folder, to expand or collapse it.</p>
+     
+	<p class="tiptext">Double-click on a file to open it in a tab in the Code View window. If it was already open, the view will switch to the tab containing the file. The Book Browser will always highlight the active file/tab displayed in the Code View window.</p>
+
+	<p class="tiptext">Right-click on a filename or folder to display a context menu of options.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc" id="folders_and_files">Folders &amp; Files</h3>
+
+  <p>The Book Browser organizes your files into several virtual folders by file type (text, stylesheets, images, fonts, etc.). It is important to keep in mind that starting with Sigil 1.0, folders and their contents are displayed in this manner for ease of editing/multi-selection. <i>The Folder text/name does not reflect the actual folder name of the actual folders inside your EPUB.</i> For example, a nav.xhtml file will be displayed in the <i>virtual</i> Text folder with all the other XHTML files, even if it’s in a different <i>actual</i> folder inside the EPUB.</p>
+  
+ <p>To see the full filepath and actual folder names, hover your mouse over a file. If the file has a guide semantic type or manifest property, it will also be revealed.</p>
+    
+		<div class="image">
+			<img alt="Using tool tips in Book Browser to see File details." src="../Images/book-browser-file-tooltip.png"/>
+		</div>
+ 
+    <p>Hovering your mouse over a folder shows the actual folder name, full filepath, and number of files in the virtual folder.</p>
+    
+    	<div class="image">
+    		<img alt="Using tool tip over Book Browser Folder to see file type counts." src="../Images/book-browser-folder-tooltip.png"/>
+    	</div>
+    	
+	<p>To always show full filepaths in the Book Browser, go to <span class="menuitem">Edit=&gt;Preferences=&gt;Appearance=&gt;Main UI</span> and select “Book Browser should show full paths”.</p>
+		
+		<div class="image">
+    		<img alt="Book Browser set to shopw full book paths." src="../Images/book-browser-full-filepaths.png"/>
+    	</div>
+
+  <p>The virtual folders and the file types they contain are:</p>
+
+  <ul>
+    <li><p><span class="listheading">Text:</span> The XHTML, HTML, and, HTM files that make up the text of the book.</p></li>
+
+    <li><p><span class="listheading">Styles:</span> The CSS stylesheets that control the formatting of the book.</p></li>
+
+    <li><p><span class="listheading">Images:</span> The PNG, JPEG, GIF, SVG, and all image files in the book.</p></li>
+
+    <li><p><span class="listheading">Fonts:</span> The TTF, OTF and any other embedded fonts that might be in the book.</p></li>
+
+    <li><p><span class="listheading">Audio:</span> The MP3, AAC, MPG, MPEG, M4A and any other embedded audio files that might be in the book.</p></li>
+
+    <li><p><span class="listheading">Video:</span> The MP4, OGG, WEBM, M4V and any other embedded video files that might be in the book.</p></li>
+
+    <li><p><span class="listheading">Misc:</span> Other files that are not typically used by EPUB readers but can be stored with the book. This includes things like javascript (JS) files under EPUB3.</p></li>
+
+    <li><p><span class="listheading">No virtual folder:</span> The NCX (.ncx) and OPF (.opf) files are not placed in a virtual folder. The NCX contains a an EPUB2 readable table of contents of the book (required for EPUB2, optional for EPUB3). The OPF contains a list of files in the book (manifest). It also holds the book metadata, and determines chapter display order (spine), and some semantic data. The OPF is basically the controlling document for the EPUB.</p></li>
+  </ul>
+
+	<div class="tip">
+		<p class="tiptext">Prior to version 1.0, Sigil automatically restructured each EPUB into a standard Sigil form. As a result, the names of the folders in the Book Browser always matched the actual folders used. Sigil 1.0 no longer does this. Sigil 1.0 loads EPUBs as they are without moving files or renaming folders, and allows you to structure your EPUBs and name your folders as you please. However, if you prefer the old standard Sigil form, you can restructure your EPUB using menu item <span class="menuitem">Tools=&gt;Restructure Epub to Sigil Norm</span>.</p>
+	</div>
+	
+  <h3 class="sigil_not_in_toc" id="selecting_multiple_files">Selecting Multiple Files</h3>
+
+  <p>Select multiple consecutive files in a folder by clicking on the first file that you want, then hold down the <span class="shortcut">Shift</span> key while clicking on the last file. All files between and including the first and last clicked will be selected. To select (or add) non-consecutive files, hold down the <span class="shortcut">Ctrl</span> key (on Mac: <span class="shortcut">Cmd</span> key) while clicking individual files. You can also use right-click to call up the context menu and choose <span class="menuitem">Select All</span> to grab all of the files in a folder in one go. (Note: You can only select multiple items within the same folder (ie. of the same type).</p>
+  
+  <p>Once you have selected your files, you can use the right-click context menu to perform actions on the selected files.</p>
+
+
+  <h3 class="sigil_not_in_toc" id="re-ordering_files">Re-Ordering Files</h3>
+
+  <p>The order of the files in the Text folder is important since it is the order in which the files will be listed in the OPF (.opf), which is the order they will be displayed to readers.</p>
+
+  <p>Files in the Text folder can be dragged up or down, allowing you to re-order files quickly and easily. When you change the order of these files in the Book Browser, the OPF is automatically updated. However, the NCX and/or EPUB3 NAV (nav.xhtml) are <i>not</i> updated automatically. For more on updating the table of contents files, see the <a href="table_of_contents.xhtml">Table of Contents</a> chapter.</p>
+
+  <div class="tip">
+    <p class="tiptext">You can also use the context menu to rename the files.</p>
+  </div>
+
+  <p>Files in all other folders are automatically sorted alphabetically and cannot be rearranged. The order of their files does not affect how your book is displayed.</p>
+
+  <h3 class="sigil_not_in_toc" id="context_menu">Context Menus</h3>
+
+  <p>Right-clicking on one or more items in the Book Browser brings up a context menu with relevant actions. Different context menus will appear depending on whether you’re clicking on a text file, stylesheet, image, folder, etc.</p>
+
+  <div class="image">
+    <img alt="Book Browser Context menu." src="../Images/book-browser-context-menu.png"/>
+  </div>
+
+  <p>Available context menu commands include:</p>
+
+  <h4>Delete</h4>
+
+  <p>Delete the selected file(s). (You cannot delete the last remaining HTML file.)</p>
+
+  <p>You will be prompted to confirm that you want to delete the files since the action cannot be undone.</p>
+
+  <div class="image">
+    <img alt="Book Browser Delete Files dialog." src="../Images/book-browser-delete-files.png"/>
+  </div>
+
+  <p>Remember to update or regenerate the Table of Contents if your file was included in the TOC.</p>
+
+  <h4 id="book_browser_rename">Rename</h4>
+
+  <p>If you select a single file to rename, the name of the file will be highlighted so that you can type in a new name. By default the extension is not highlighted to make renaming easier, but you can also change the extension if necessary.</p>
+
+  <p>If you select multiple files, a dialog is displayed asking you how you want to rename the files:</p>
+
+  <div class="image">
+    <img alt="Renaming Files in Book Browser." src="../Images/book-browser-rename-files.png"/>
+  </div>
+
+  <p>Enter a new name for the first file, including a starting number at the end of the name. Sigil will rename each of your files sequentially using the name you provided and starting at the number you provided. A file will not be renamed if it would result in the book having duplicate file names. You can also rename the extension.</p>
+
+  <p>For example, if you start with the original names: <span class="example">Section0001.html, Section002.html, Section0003.html</span> … then:</p>
+
+  <div class="indent">
+    <dl>
+      <dt><span class="example">chapter_01</span></dt>
+
+      <dd>will rename the files to: <span class="example">chapter_01, chapter_02, chapter_03 …</span> and keep the .html file extension.</dd>
+
+      <dt><span class="example">Section_0099</span></dt>
+
+      <dd>will rename the files to: <span class="example">Section_0099, Section_0100, Section_0101 …</span> and keep the .html file extension.</dd>
+
+      <dt><span class="example">Part2-Chapter08</span></dt>
+
+      <dd>will rename the files to: <span class="example">Part2-Chapter08, Part2-Chapter09, Part2-Chapter10 …</span> and keep the .html file extension.</dd>
+
+      <dt><span class="example">.xhtml</span></dt>
+
+      <dd>will rename only the file extension of all files to <span class="example">.xhtml</span> without changing the base filename.</dd>
+
+      <dt><span class="example">chap01.xhtml</span></dt>
+
+      <dd>will rename the files to: <span class="example">chap01.xhtml, chap02.xhtml, chap03.xhtml …</span>.</dd>
+    </dl>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">When you rename a file, any links pointing to the file in your EPUB will be automatically updated.</p>
+  </div>
+
+  <h4>ReGex Rename</h4>
+  
+  	<p>A more powerful renaming tool, ReGex Rename allows you to use regular expressions to find and replace text in filenames.</p>
+  	
+  	<p>Select the files you want to rename, right-click to choose <span class="menuitem">ReGex Rename</span>, and the RE File Renamer dialog box will appear. Input the regular expression you are searching for and the text you want to replace it with, then click <span class="buttonbox">OK</span>.</p>
+  	  	
+	  <div class="image">
+		<img alt="Using Book Browsers Regular Expression Renamer." src="../Images/book-browser-regex-renamer.png"/>
+	  </div>
+
+	<p>The Rename Table will show you the old and new filenames. If the new names are acceptable, click <span class="buttonbox">OK</span> to rename your files.</p>
+
+	<div class="image">
+		 <img alt="Dialog showing results of Regular Expression Renamer." src="../Images/book-browser-regex-renamer-results.png"/>
+	  </div>
+
+  	
+  <h4>Move</h4>
+
+  	<p>Move the selected files to a different folder.</p>
+  	
+  	<p>When you invoke <span class="menuitem">Move</span>, a dialog box opens and offers a dropdown menu of existing folders to choose from.</p>
+  	
+  	<div class="image">
+		 <img alt="Book Browser Move destination folder dialog." src="../Images/book-browser-move.png"/>
+	  </div>
+  	
+  	<p>You can also type a new name directly in the text box to create a new folder to move your files into.</p>
+	
+	  	<div class="image">
+		 <img alt="Move Destination can also be manually entered." src="../Images/book-browser-new-folder.png"/>
+	  </div>
+
+<p>Press <span class="buttonbox">OK</span> to execute the move.</p>
+	
+  <h4>Merge</h4>
+
+  <p>If you select a single HTML file, then the file will be merged into the previous HTML file in the list.</p>
+
+  <p>If you select multiple HTML files, then all files will be merged into the first HTML file you selected.</p>
+
+  <p>You can also use the Merge keyboard shortcut. See the <a href="splitting_and_merging.xhtml">Splitting and Merging</a> chapter for more details.</p>
+
+  <h4>Sort</h4>
+
+  <p>Sort the selected HTML files alpha-numerically. This means filenames containing numbers will be sorted in their expected numerical order, e.g. “1, 3, 2, 10” will be resorted as “1, 2, 3, 10” rather than “1, 10, 2, 3”.</p>
+
+  <h4>Link Stylesheets</h4>
+
+  <p>Link stylesheets to the selected HTML files. Choose the stylesheets from the dialog window. Only stylesheets marked with a checkmark will be linked; unchecked stylesheets will be unlinked.</p>
+
+  <div class="image">
+    <img alt="Book Browser link stylesheets dialog." src="../Images/book-browser-link-stylesheets.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">When the dialog is first opened a checkmark is shown against stylesheets only if all selected files are linked to that stylesheet.</p>
+
+    <p class="tiptext">Stylesheets are applied in the order listed when the document is rendered.</p>
+  </div>
+
+  <h4 id="add-semantics">Add Semantics</h4>
+
+  <p>Add Semantics allows you to designate the semantic type for selected files from a scrolling list of choices. EPUB ereaders may use this information (stored in the .opf file in EPUB2 and .opf and nav files in EPUB3) to guide them in how to present these files to readers. Each file can have only one semantic type.</p>
+  
+    <div class="image">
+    <img alt="Book Browser Add Semantics dialog." src="../Images/book-browser-semantics.png"/>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext"><span class="menuitem">Text</span> (EPUB2) or <span class="menuitem">Body Matter</span> (EPUB3) should be used to indicate the page of the book that should be shown when the book is first opened, though not all ereaders follow this convention.</p>
+  </div>
+
+  <h4 id="context_open_with">Open With</h4>
+
+  <p>Open the file in an external application, such as a photo editing program or your favorite HTML editor. For more information, see the <a href="external_editors.xhtml">External Editors</a> chapter.</p>
+
+  <h4 id="context_save_as">Save As</h4>
+
+  <p>Save the selected files to your computer. This is useful if you need to access the files outside of the EPUB.</p>
+
+  <h4 id="context_add_blank">Add Blank HTML File/Stylesheet/SVG Image</h4>
+
+  <p>Add a blank HTML document, CSS stylesheet, or SVG image file to the appropriate folder. For HTML it will add the file just below the one you right-clicked on, or at the bottom of the folder if you right-clicked on the folder name. For other folders it will add the file in alphabetical order.</p>
+
+  <p>The new file will be numbered with the lowest available number starting from <span class="example">0001</span> (e.g. <span class="example">Section0001.html</span>). You can then rename it.</p>
+
+  <p>This context menu command is the same as the main menu item <span class="menuitem">File=&gt;Add</span>.</p>
+
+  <h4 id="context_add_copy">Add Copy</h4>
+
+  <p>Create a copy of the HTML or CSS file you clicked on and add it to the folder.</p>
+
+  <h4 id="context_add_existing_files">Add Existing Files</h4>
+
+  <p>Add a file that resides on your computer outside of the EPUB.</p>
+  
+  <p>A dialog window will open allowing you to choose one or more files from your computer to import into your EPUB. Files will be added to the appropriate virtual folder based on their file extension, regardless of what file or folder you right-clicked on.</p>
+
+  <p>This is the same as the main menu item <span class="menuitem">File=&gt;Add=&gt;Existing Files</span> and the <span class="buttonbox">Add Existing Files</span> toolbar button.</p>
+
+  <h4>Select All</h4>
+
+  <p>A quick way to select all of the files in the current folder so you can rename, link, etc. all of them at once.</p>
+  
+  <h4>Validate With W3C (CSS stylesheets only)</h4>
+  
+  <p>If you right-click on a CSS stylesheet and select <span class="menuitem">Validate With W3C</span>, Sigil will open a browser window and send your stylesheet data to the W3C Validation Service, which will then show validation results for the selected stylesheet. (If an HTML editor opens instead, open the resulting HTML file in a browser. This may happen if you’ve set HTML files to open in an editor instead of a browser.)</p>
+ 
+ 
+  <h4>Cover Image (image files only)</h4>
+  
+  <p>Add the “cover” semantic designation to the selected image.</p>
+
+
+  <h4 id="font_obfuscation">Font Obfuscation (font files only)</h4>
+
+  <p>If you are using custom fonts in your ebook, right-clicking on a font file will allow you to define how the embedded fonts are stored in the EPUB. Normally when fonts are added to an EPUB the fonts are stored in a readable form. In some cases you may not want to make the fonts available for readers to access directly. In these cases you can obfuscate or scramble the fonts in the ebook so that readers cannot access the fonts, but the fonts will still be useable by EPUB ereaders. The details of obfuscation and its implications are beyond the scope of this guide, but there are many references to it on the web.</p>
+
+  <p>The obfuscation options are:</p>
+
+  <ul>
+    <li>None</li>
+
+    <li>Use Adobe’s Method</li>
+
+    <li>Use IDPF’s Method</li>
+  </ul>
+
+  <div>
+    The method will have a checkmark next to it if all selected fonts use that method.
+  </div>
+
+  <h4>Renumber TOC Entries (.ncx files only)</h4>
+
+  <p>Renumber the playOrder and navPoint id numbers of the Table of Content entries in the <span class="example">.ncx</span> file sequentially, starting from 1. This feature is intended to clean up the TOC numbering if you have to manually add or delete an entry in the TOC.</p>
+
+  <p>You can also use the menu item <span class="menuitem">Tools=&gt;Table of Contents=&gt;Edit Table of Contents</span> or <span class="buttonbox">Edit Table of Contents</span> button. Simply saving the TOC will automatically renumber the ids.</p>
+
+  <p>Any navList or pageList items in the file are not saved – only the Table of Contents entries are saved after renumbering.</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Create an EPUB</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="tutorial_check_spelling">Check For Spelling Mistakes</h2>
+
+  <p>Sigil can check the spelling in your book using standard dictionaries, and dictionaries you create.</p>
+
+  <p>Before checking the spelling in your book, you should first configure a dictionary using <span class="menuitem"><a href="preferences.xhtml#preferences_spellcheck_dictionaries">Preferences=&gt;Spellcheck Dictionaries</a></span>. You will need to select a primary dictionary (English, French, etc.). You can just use the “default” personal user dictionary to store any words you want to remember, or create a new user dictionary for each book.</p>
+
+  <h3 class="sigil_not_in_toc">Spellcheck</h3>
+
+  <p>To check the spelling in your book click the Spellcheck button <img alt="Spellcheck dialog icon." src="../Images/document-spellcheck.png"/> or use the menu item <span class="menuitem">Tools=&gt;Spellcheck=&gt;Spellcheck:</span></p>
+
+  <div class="image">
+    <img alt="Main Spellcheck Dialog window." src="../Images/spellcheck-main.png"/>
+  </div>
+
+  <p>This will open a dialog that shows you every word Sigil has identified as misspelled.</p>
+
+  <p>If you select a word you will notice that Sigil will find the first occurrence of that word in your book – and display it in Code View. This is useful to see the word in context, but can be a little confusing if you are not used to Code View, but is necessary to ensure Sigil can find your misspelled word accurately.</p>
+
+  <p>Once you have selected a word, you have several choices:</p>
+
+  <ul>
+    <li>Use <span class="buttonbox">Ignore</span> to skip marking this word as misspelled until you switch to a new book or restart Sigil. Sigil will not remember to ignore this word if you restart.</li>
+
+    <li>Click on the button <span class="buttonbox">Add To Dictionary</span> to add the word to the dictionary you select from the list below the button. You will start with just a “default” dictionary in the list unless you created additional user dictionaries in Preferences.</li>
+
+    <li>Use <span class="buttonbox">Change Selected Word To</span> to change every occurrence of the selected word in your book to the word you enter below. The dropdown list contains a list of suggested alternatives, or you can type your own word.</li>
+  </ul>
+
+  <p>The other options available to you are:</p>
+
+  <ul>
+    <li><span class="buttonbox">Refresh</span> can be used if you edit your book while Spellcheck is open. You do not need to use it if you are just ignoring, adding, or changing a word.</li>
+
+    <li><span class="listheading">Show All Words:</span> Check this to show all unique words in the book and not just the misspelled words.</li>
+
+    <li><span class="listheading">Case-Insensitive Sort:</span> Enable this to sort words as AaBbCc instead of ABCabc.</li>
+  </ul>
+
+  <p>You may also notice that in Code View, misspelled words are optionally underlined. This is another way to check spelling with Sigil.</p>
+
+  <div class="tip">
+    <p class="tiptext">See the <a href="spellcheck.xhtml">Spellcheck</a> chapter for more details.</p>
+  </div>
+</body>
+</html>

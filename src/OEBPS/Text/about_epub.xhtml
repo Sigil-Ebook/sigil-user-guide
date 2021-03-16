@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>About EPUB</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="about_epub">About EPUB</h2>
+
+  <p>The EPUB (electronic publication) format is one of the most popular file formats for ebooks. It is an open and freely available standard that can be used by anyone.</p>
+
+  <p>An EPUB ebook is simply a collection of files each with different functionality stored together using the common zip format. These files include your words, images, Table of Contents, stylesheets, fonts and details about your book like author or title. EPUB’s standard format means your book can be read on many e-readers or converted easily to other e-readers not using EPUB.</p>
+
+  <p>Your EPUB stores your words and text in the book using the an XML form called XHTML of the HTML format (Hyper Text Markup Language) – the same code used by web pages to display text and images). This just means that the files contain your text along with markup codes and tags (like <span class="example">&lt;h1&gt;</span> or <span class="example">&lt;p&gt;</span>) which tell e-readers how to format and display the text – some words could be bold or italic, others could be a paragraph or a heading, etc.</p>
+
+  <p>In addition to XHTML tags to control or style the layout, EPUB books typically make use of stylesheets to help organise the use of styles used by the XHTML files. A stylesheet is another file in the EPUB that contains a list of XHTML tags, classes, and selectors along with instructions on how to display any text using that matches the tag, class or selector, e.g. <span class="example">&lt;h1&gt;</span> (heading level 1) should be larger and centered. This allows you to separate the content of your book from its layout and allows you to easily adjust the look of the EPUB.</p>
+
+  <p>Of course, when anyone actually reads an EPUB they don’t see all these XHTML files or stylesheets. The e-reader just displays the text and images like a normal book or web browser – as close as it can to the formatting you defined, even if there are thousands of pages or files.</p>
+
+  <p>You don’t have to understand all the details of the EPUB format or understand XHTML formatting codes to start using Sigil. However, if you spend any time with Sigil you will soon need to become familiar with these areas in order to get the most out of the advanced features of Sigil, and, ultimately, to achieve the design you want.</p>
+
+  <div class="tip">
+    <p class="tiptext">Text files are stored in XHTML format (an XML compliant version of HTML), but to make the guide easier to read we’ll use HTML or XHTML almosgt interchangeably.</p>
+  </div>
+
+  <p>Sigil is designed to fully work with both the older version 2 of the EPUB standard or the newer EPUB3 standard.</p>
+
+  <div class="tip">
+    <p class="tiptext">Even though Sigil is designed to work with EPUB files, the EPUB format can easily be converted to other ebook formats like MOBI.</p>
+  </div>
+
+  <p>To learn more about HTML you can read various online guides, including:</p>
+
+  <ul>
+    <li><a href="https://www.w3schools.com/html/">W3Schools HTML Guide</a></li>
+  </ul>
+
+  <p>Help with on the EPUB format is available from EPUB users at MobileRead:</p>
+
+  <ul>
+    <li><a href="https://www.mobileread.com/forums/forumdisplay.php?f=179">EPUB Forum @ MobileRead</a></li>
+  </ul>
+
+ <p>Help with using Sigil itself is available from users at MobileRead:</p>
+
+  <ul>
+    <li><a href="https://www.mobileread.com/forums/forumdisplay.php?f=203">Sigil Forum @ MobileRead</a></li>
+  </ul>
+  <p>If you really want to dig into the details of the official EPUB standard on which Sigil is built you can read the original technical specifications:</p>
+
+  <ul>
+    <li><a href="http://idpf.org/epub/201">Official EPUB 2.0.1 IDPF Standard</a> <br/> <a href="http://idpf.org/epub/30">Official EPUB 3.0 IDPF Standard</a> <br/> <a href="https://www.w3.org/publishing/epub32/epub-spec.html">Official EPUB 3.2 (Current Standard)</a>
+
+
+    <ul>
+      <li><span class="listheading">OPS (Open Publication Structure):</span> The key specification which describes everything in an EPUB file.</li>
+
+      <li><span class="listheading">OPF (Open Packaging Format):</span> How the EPUB files relate to each other, metadata details (<span class="example">content.opf</span>).</li>
+
+      <li><span class="listheading">OCF (OEBPS Container Format):</span> How files are packaged into a <span class="example">.epub</span> file.</li>
+    </ul></li>
+  </ul>
+
+  <div class="tip">
+    <p class="tiptext">You can <a href="https://github.com/Sigil-Ebook/sigil-user-guide/releases/latest">download the EPUB version of the Sigil User Guide</a>, which was created entirely in Sigil, and view it in Sigil to see an example of an EPUB ebook.</p>
+  </div>
+</body>
+</html>

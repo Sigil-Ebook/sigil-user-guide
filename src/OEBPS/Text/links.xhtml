@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Links and Styles</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="links">Links and IDs</h2>
+
+  <p class="h2subheading">— Links, Notes, and IDs —</p>
+
+  <p>Sigil provides some helpful tools for creating ids and links which can make creating footnotes, endnotes, and cross-references easier.</p>
+
+  <h3 class="sigil_not_in_toc">Insert IDs</h3>
+
+  <p>To mark text as a destination for a link you need to give it a name by inserting an anchor ID.</p>
+
+  <p>Select the text you want to mark with an ID and click the button <img alt="Insert ID icon." src="../Images/insert-id.png"/> or select the menu item <span class="menuitem">Insert=&gt;ID</span>:</p>
+
+  <div class="image">
+    <img alt="Links Insert ID dialog." src="../Images/links-insert-id.png"/>
+  </div>
+
+  <p>Type the name you want for this ID, e.g. footnote-1 (it must start with a letter).</p>
+
+  <p>To edit the ID, select the word or click somewhere in the word then click the <img alt="Insert ID icon" src="../Images/insert-id.png"/>button again.</p>
+
+  <p>The ID is actually inserted using HTML code like this:</p>
+
+  <pre class="example">&lt;a id="footnote-1"&gt;Footnote 1&lt;/a&gt;</pre>
+
+  <div class="tip">
+    <p class="tiptext">You cannot use identical IDs in the same file.</p>
+  </div>
+
+  <p>If you click on the drop-down arrow you will see a list of existing IDs for the file for reference.</p>
+
+  <p>To delete an ID you will need to edit the HTML code in Code View to remove the tags completely.</p>
+
+  <div class="tip">
+    <p class="tiptext">To identify IDs in your book you can search in Code View. Or you can highlight them in Preview in color by adding the following CSS temporarily to your stylesheet:</p>
+
+    <pre>[id class!=sigil_index_marker] { color:#00ff00; }</pre>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Insert Links</h3>
+
+  <p>To create a link to another part of the document select the text you want to link and then click the button <img alt="Insert hyperlink icon." src="../Images/insert-hyperlink.png"/> or select the menu item <span class="menuitem">Insert=&gt;Link</span>:</p>
+
+  <div class="image">
+    <img alt="Insert Hyperlink main dialog." src="../Images/links-insert-hyperlink.png"/>
+  </div>
+
+  <p>You will be given a list of valid targets in the EPUB that you can select (double-click one or select and click <span class="buttonbox">OK</span>). A valid target in the EPUB is any filename, any anchor IDs that have been created, or even any images. The list will be sorted so that targets in the current file are listed first, followed by all remaining files in book order.</p>
+
+  <p>To edit a link, select the text again or move your cursor in the text using the arrow keys (you can’t click in it or you will be taken to the link) and then click the button <img alt="Insert hyperlink icon." src="../Images/insert-hyperlink.png"/>. The link will be highlighted in the list if it is valid.</p>
+
+  <p>You can also enter any URL you want as a target for the link (e.g. to point to web sites) by typing the entry in the Target box.</p>
+
+  <h3 class="sigil_not_in_toc">Navigating Links</h3>
+
+  <p>To go to a link in Preview just click on it.</p>
+
+  <p>To go to a link in Code View, hold the <span class="shortcut">Ctrl</span> key down while clicking on the HTML opening tag.</p>
+
+  <div class="tip">
+    <p class="tiptext">Ctrl-clicking on text will take you to the link if the text is a link, or it will take you to the CSS style defined for the tag if the text is just a tag.</p>
+  </div>
+
+  <p>To go back to where you clicked the link, just click the Back button <img alt="back to link icon image" src="../Images/back-to-link-style.png"/> or select the menu item <span class="menuitem">Go Back to Link or Style</span>.</p>
+</body>
+</html>

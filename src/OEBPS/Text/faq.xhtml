@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>FAQ</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h1 id="faq">FAQ</h1>
+
+  <p class="h1subheading">— Frequently Asked Questions —</p>
+
+  <h2 id="faq_common_questions">Common Questions</h2>
+
+  <h3 class="sigil_not_in_toc">Does Sigil Support EPUB 3?</h3>
+
+  <p>Yes, Sigil fully supports reflowable EPUB2 and EPUB3 EPUBs. In fact, Sigil was designed to make it easy to create EPUB2-compatible EPUB3 ebooks. Simply select <span class="menuitem">Tools=&gt;Epub3 Tools=&gt;Generate NCX/Guide for epub2 e-readers</span> when you are finished editing your ebook.</p>
+
+  <h3 class="sigil_not_in_toc">Why does my book look okay in Sigil but not on my device?</h3>
+
+  <p>Every device or program that displays your book uses slightly different software. Despite EPUB being a standard, this means there may be differences in how your book appears on each device. In some cases, although it looks okay in Sigil, it may not look okay on a specific device. And in other cases, it might not look ok in Sigil but it might display fine on your e-reader. You must test your book on as many devices as you can.</p>
+
+  <h2 id="faq_questions">Where to Get Help</h2>
+
+  <h3 class="sigil_not_in_toc">Where can I get help with Sigil?</h3>
+
+  <p>If you have any questions about Sigil not covered in the Sigil User Guide, then visit the <a href="https://www.mobileread.com/forums/showthread.php?f=203">Sigil Forum at MobileRead</a> where the users and developers of Sigil will try to help.</p>
+
+  <h3 class="sigil_not_in_toc">Where can I ask questions about EPUB?</h3>
+
+  <p>You can post on the <a href="https://www.mobileread.com/forums/forumdisplay.php?f=179">EPUB Forum at MobileRead</a> if your questions are more about how to format and style something in an EPUB rather than how to do something in Sigil.</p>
+
+  <h3 class="sigil_not_in_toc">Where can I report bugs or request features?</h3>
+
+  <p>Actual bug reports should be submitted via our Github Repository at <a href="https://github.com/Sigil-Ebook/Sigil">https://github.com/Sigil-Ebook/Sigil</a>. If you so desire, bug reports can also be posted to <a href="https://www.mobileread.com/forums/showthread.php?f=203">the MobileRead Sigil forum</a>. Please include Sigil Version number, operating system (Windows 10, macOS, Linux Mint) and specific directions on how to recreate the bug or a sample EPUB that shows the bug.</p>
+
+  <h2 id="faq_using_sigil">Using Sigil</h2>
+
+  <h3 class="sigil_not_in_toc">Sigil does not start on MAC OS 10.11?</h3>
+
+  <p>Sigil on the MAC requires MAC OS 10.12 or later.</p>
+
+  <h3 class="sigil_not_in_toc">Is there a tutorial or manual for Sigil?</h3>
+
+  <p>Yes – in Sigil use <span class="menuitem">Help=&gt;User Guide</span> to see an HTML version of the Sigil User Guide which also includes tutorials. Or visit the <a href="https://sigil-ebook.com/">Sigil home page</a> for a link to the HTML and EPUB versions.</p>
+
+  <h3 class="sigil_not_in_toc">Can I write my book using Sigil?</h3>
+
+  <p>Yes, you can, but Sigil is primarily an editing program for books that have already been written in one of the many existing word processors. You may prefer to write using your favourite editor, export it to HTML, and then use Sigil to format it for EPUB. But if you really want to write and edit it in Sigil, then you certainly can – the Sigil User Guide was written completely using Sigil.</p>
+
+  <h3 class="sigil_not_in_toc">Are DOC, MOBI, KF8 formats supported?</h3>
+
+  <p>Sigil is an EPUB editor. It can open EPUB files and import HTML files, but all other formats must be converted to HTML first before importing.</p>
+
+  <p>There are a lot of formats out there, and converting from one format to another is not a trivial issue. Since there are already excellent tools for converting from one format to another, Sigil will remain focused on being the best EPUB editor available.</p>
+
+  <p>See the <a href="tutorial_convert_to_html.xhtml">Prepare Your File For Sigil</a> chapter for more information.</p>
+
+  <p>To convert EPUB to MOBI or KF8 you should use Kindle tools.</p>
+
+  <h3 class="sigil_not_in_toc">How do I use Regex?</h3>
+
+  <p>See the <a href="tutorial_regex_reference.xhtml">Regular Expressions</a> chapter in the User Guide for more details and tips on using Regex.</p>
+
+  <h3 class="sigil_not_in_toc">Sigil won’t import my file?</h3>
+
+  <p>Sigil can only import or open valid HTML and EPUB files. It will try to recover from some common problems in files, but if there is a significant issue (missing standard code or files) then it may be unable to open the file.</p>
+
+  <p>If your Preferences have Mend Code turned off, try setting it to Mend On Open, as it will correct certain errors. Sometimes Sigil will give you an error message that might identify the problem with the file. In this case you may be able to open your file with a Zip or archive program and edit the files to correct them. But often the cause of the problem is not clear.</p>
+
+  <p>If you want to report a problem with a file that cannot load and crashes Sigil, then you should attach the EPUB file to your bug report. But in most cases you will need to correct the file.</p>
+
+  <h3 class="sigil_not_in_toc">Spellcheck does not handle quotes or dashes correctly?</h3>
+
+  <p>If you install your own hunspell dictionary and it isn’t recognizing curly quotes, em-dashes, etc. then you may need additional hyphenation dictionary files. See <a href="preferences.xhtml#preferences_spellcheck_dictionaries">Spellcheck Dictionary preferences</a> in the User Guide for more details.</p>
+
+  <h3 class="sigil_not_in_toc">Text pasted into Sigil does not look right?</h3>
+
+  <p>Pasting rich text into Sigil may not work very well. You can try to export (or convert) your text to HTML and then import the new file directly. This may preserve the formatting.</p>
+
+  <p>If you want to paste something as plain text, you may need to paste it into Code View to avoid preserving formatting tags.</p>
+
+  <h2 id="faq_formatting">Formatting and Styles</h2>
+
+  <h3 class="sigil_not_in_toc">Why does my book display random question marks?</h3>
+
+  <p>This may be because your original file has <a href="https://en.wikipedia.org/wiki/Soft_hyphen#Hyphens_in_computing">soft hyphens</a>. ADE (the Adobe software that is used to display EPUB files on many systems) does not handle soft hyphens. So just remove the soft hyphens from your file and the question marks will go away. Look for something like <span class="example">&amp;shy;</span> or <span class="example">&amp;#8209;</span>. Basically anything “strange” that exists between those two characters. You have to look in Code View to see the raw HTML, but you can use the Reports feature to show what characters are used in the document.</p>
+
+  <p>It may also be because ADE cannot perform font substitution.</p>
+
+  <p>In Sigil, if the font you are using does not have the required <a href="https://en.wikipedia.org/wiki/Glyph">glyphs</a> to render a character present in the text, glyphs from a different font that <em>can</em> render it are used. This is called font substitution. So as long as <em>some</em> fonts on your computer can display these characters, so can Sigil.</p>
+
+  <p>ADE on the other hand only displays a small subset of Unicode characters by default. The supported characters are listed in the <a href="https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf">Adobe PDF Reference v1.7</a>, Appendix D, tables D.1 and D.3.</p>
+
+  <p>If you want other characters than these to display in ADE, you will have to embed the required fonts.</p>
+
+  <h3 class="sigil_not_in_toc">How do I change the style of my text?</h3>
+
+  <p>Read the <a href="tutorial_stylesheets.xhtml">Stylesheet</a> tutorial in the User Guide – you’ll need it to make use of many of the answers in this section.</p>
+
+  <p>Note that e-readers may support displaying formats or styles differently and how text is display in one reader, or in Sigil, may be slightly different to how it’s displayed in another e-reader.</p>
+
+  <h3 class="sigil_not_in_toc">What are stylesheets and CSS?</h3>
+
+  <p>CSS stands for Cascading Stylesheets. See the <a href="tutorial_stylesheets.xhtml">Stylesheet</a> tutorial in the User Guide for more details on CSS and why you should use stylesheets to format your text.</p>
+
+  <h3 class="sigil_not_in_toc">Can I embed my own fonts using Sigil?</h3>
+
+  <p>Yes – see the <a href="tutorial_embed_fonts.xhtml">Fonts</a> tutorial in the User Guide.</p>
+
+  <h3 class="sigil_not_in_toc">What does <span class="example">sgc-1</span> mean in my document?</h3>
+
+  <p><span class="example">sgc</span> indicates a Sigil class that is used to set the formatting style for certain parts of your text. <span class="example">sgc</span> classes are automatically created for certain span tags and “style=” attributes.</p>
+
+  <h3 class="sigil_not_in_toc">How do I add blank lines?</h3>
+
+  <p>Don’t. It’s much better to use stylesheets to define the amount of space above or below your special sections using a style definition. For instance to leave 1.5 lines of space above a paragraph you can use this style class:</p>
+
+  <pre class="example">p.blankabove { margin-top: 1.5em; }</pre>
+
+  <p>and in your text use the class with your paragraph:</p>
+
+  <pre class="example">&lt;p class="blankabove"&gt;My paragraph&lt;/p&gt;</pre>
+
+  <p>If you really want to, you can insert a break:</p>
+
+  <pre class="example">&lt;br /&gt;</pre>
+
+  <p>or an empty paragraph:</p>
+
+  <pre class="example">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</pre>
+
+  <p>For multiple blank lines, it’s best to use a style to define the amount of space you want to leave.</p>
+
+  <h3 class="sigil_not_in_toc">How do I start a new page?</h3>
+
+  <p>If you use a separate file for your page, then almost all e-readers will start a new page for your text.</p>
+
+  <h3 class="sigil_not_in_toc">How can I use an image for a Chapter heading in the TOC?</h3>
+
+  <p>Insert your image where you want it – it will look something like this in Code View:</p>
+
+  <pre class="example">&lt;img src="../Images/myimage.png" /&gt;</pre>
+
+  <p>Add the heading tag you want to use for the image and give it a title to display in the TOC, e.g.</p>
+
+  <pre class="example">&lt;h1 title="CHAPTER 1"&gt;&lt;img src="../Images/myimage.png" /&gt;&lt;/h1&gt;</pre>
+
+  <p>The TOC will now have an entry called “CHAPTER 1” which links to your image.</p>
+
+  <p>You can even use heading tags with no text in your document if you just want a Chapter entry:</p>
+
+  <pre class="example">&lt;h2 title="Chapter Subsection"&gt;&lt;/h2&gt;</pre>
+
+  <p>But it’s probably easier just to link the TOC to the file if the image is at the top.</p>
+
+  <h3 class="sigil_not_in_toc">How do I add margins to my text?</h3>
+
+  <p>Add this text with your preferred left and right margins to your CSS definitions:</p>
+
+  <pre class="example">@page {
+   margin-left: 5px;
+   margin-right: 5px;
+}</pre>
+
+  <h3 class="sigil_not_in_toc">How do I remove the white space between paragraphs?</h3>
+
+  <p>To remove the white space between all paragraphs, add this to CSS definitions:</p>
+
+  <pre class="example">p {
+    margin: 0; 
+    padding: 0;
+}</pre>
+
+  <p>This will affect <em>only</em> the paragraph spacing (the <em>p</em> means paragraph). To remove <em>all</em> the whitespace between the various elements and make the document look more “book like”, use this code:</p>
+
+  <pre class="example">body, div, p, h1, h2, h3, h4 { margin: 0; padding: 0; }</pre>
+
+  <h3 class="sigil_not_in_toc">How do I add a “drop cap”?</h3>
+
+  <p>Drop caps are not supported in all readers, but there are several ways to do a drop cap. If your book is formatted just right, it can be done just with CSS.</p>
+
+  <p>Add this code to your CSS definitions, which will set the text using the <span class="example">dropcap</span> class in a span tag to use certain values:</p>
+
+  <pre class="example">span.dropcap {
+    float: left;
+    font-size: 4.7em;
+    line-height: 0.8em;
+    margin-right: 3pt;
+    margin-bottom: -0.1em;
+}</pre>
+
+  <p>In Sigil, find the paragraph you want to start with a drop cap, and switch to Code View. Change the text from something like this:</p>
+
+  <pre class="example">&lt;p&gt;Hello&lt;/p&gt;</pre>
+
+  <p>to:</p>
+
+  <pre class="example">&lt;p&gt;&lt;span class="dropcap"&gt;H&lt;/span&gt;ello&lt;/p&gt;</pre>
+
+  <p>Look at Preview and you should see the drop-cap.</p>
+
+  <p>Add <span class="example">&lt;span class="dropcap"&gt;&lt;/span&gt;</span> around all the letters at the start of paragraphs where you want a drop cap.</p>
+
+  <p>You might need to adjust the values for font-size, line-height and margin-bottom to get the effect you want. Sigil’s Preview may not show exactly how it’ll appear on all e-readers, but it’s pretty close.</p>
+
+  <h3 class="sigil_not_in_toc">Why doesn’t my font show up in iBooks?</h3>
+
+  <p>If you embed a font in your EPUB, iBooks requires a non-standard file in the EPUB to tell it to use your font. This cannot be done in Sigil.</p>
+
+  <p>Create a file called <span class="example">com.apple.ibooks.display-options.xml</span> with a text editor and put these lines into it:</p>
+
+  <pre class="example">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;display_options&gt;
+&lt;platform name="*"&gt;
+&lt;option name="specified-fonts"&gt;true&lt;/option&gt;
+&lt;/platform&gt;
+&lt;/display_options&gt;</pre>
+
+  <p>Then use an archive manager to unzip or access the EPUB file. Add the <span class="example">xml</span> file you created to your EPUB in the <span class="example">META-INF</span> directory, then re-zip your EPUB.</p>
+
+  <h3 class="sigil_not_in_toc">Why doesn’t my file pass EPUBCHECK due to plist?</h3>
+ 
+  <p>If you open your EPUB in iTunes it will automatically add an extra .plist file to the top of the EPUB. This will cause it to fail EPUBCHECK. Do not open your EPUB in iTunes if you intend to use it elsewhere. You can unzip the EPUB and remove the file, then re-zip the file.</p>
+
+ <h3 class="sigil_not_in_toc">Why doesn’t my international keyboard AltGr key work the way I expect?</h3>
+
+  <p>If you use an international keyboard with the AltGr In order to enable keyboard shortcuts when entering national characters or other symbols, it may help to launch Sigil with an additional parameter:</p>
+
+<p><code>"C:\Program Files\Sigil\Sigil.exe" -platform windows:altgr</code></p>
+
+<p>To make this change persistent, you can add it to the Windows properties window in the shortcut that starts the Sigil application.</p>
+<div><img alt="A Windows 10 Properties Window" src="../Images/faq-windows-properties-altgr.png"/></div>
+
+<p> If you want the AltGr key to work also when opening an EPUB file directly, you will have to add the additional parameter to your Windows System Registry in a manner similar to the following:</p>
+<p><code>"C:\Program Files\Sigil\Sigil.exe" -platform windows:altgr "%1"</code></p>
+</body>
+</html>
