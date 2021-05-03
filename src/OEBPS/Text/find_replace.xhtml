@@ -104,7 +104,7 @@
   <p>Replaces all text matching your search term with your replace term, according to your settings. This is done all at once automatically.</p>
   
     <div class="tip">
-    <p class="tiptext">You cannot undo a Replace All – save first!</p>
+    <p class="tiptext">You cannot undo a Replace All – save first! Or create a <a href="checkpoints.xhtml">Checkpoint</a></p>
   </div>
 
 	 <p>To replace all:</p>
@@ -122,7 +122,7 @@
   <div class="tip">
     <p class="tiptext">To avoid unpleasant surprises, test your find and replace string using Count All to see if the number of matches is in the expected range. You can also test with a simple Replace a few times before using Replace All.</p>
 
-    <p class="tiptext">Save your book before a Replace All and check it for issues afterward.</p>
+    <p class="tiptext">Save your book or create a Checkpoint before a Replace All and check it for issues afterward.  </p>
 
     <p class="tiptext">Before executing a Replace All, check if your mode is set for Current File or All HTML Files.</p>
   </div>
@@ -184,7 +184,28 @@
   		<li><p><span class="listheading">Selected HTML Files</span>: Search only the HTML files selected in the Book Browser.</p>
 
   			  <p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous selected file (in the order listed in the Book Browser). If Wrap is turned on, it will loop around until all selected files have been searched.</p></li>
-  			
+  		
+        <li><p><span class="listheading">Tabbed HTML Files</span>: Search only the HTML files that are open as Tabs in the Tab Manager.</p>
+
+  			  <p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous selected file (in the order opened in the Tab Manager). If Wrap is turned on, it will loop around until all selected files have been searched.</p></li>
+
+   		<li><p><span class="listheading">All CSS Files</span>: Search in every CSS file – but do not search in other file types, such as HTML, OPF or NCX.</p>
+
+  			<p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous file (in the order listed in the Book Browser). If Wrap is turned on, it will loop around until all files have been searched.</p></li>
+
+  		<li><p><span class="listheading">Selected CSS Files</span>: Search only the CSS files selected in the Book Browser.</p>
+
+  			  <p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous selected file (in the order listed in the Book Browser). If Wrap is turned on, it will loop around until all selected files have been searched.</p></li>
+  		
+        <li><p><span class="listheading">Tabbed CSS Files</span>: Search only the CSS files that are open as Tabs in the Tab Manager.</p>
+
+  			  <p>When a search reaches the end or beginning of a file, it will automatically move to the next or previous selected file (in the order opened in the Tab Manager). If Wrap is turned on, it will loop around until all selected files have been searched.</p></li>
+ 			
+  		<li><p><span class="listheading">OPF File</span>: Search only the OPF file.</p>
+  			  <p>Special care must be used when using Replace in the OPF file as it is effectively the heart of the epub and controls pretty much everything. The importance of Checkpoints or saving the file first can not be overstated.</p></li>
+
+  		<li><p><span class="listheading">NCX File</span>: Search only the NCX file in EPUB2 and EPUB3 if one exists </p></li>
+
   		<li><p><span class="listheading">Marked Text</span>: This is a special option that is only shown when you mark text. To restrict your search to a portion of text, first select some text in Code View, then go to menu item <span class="menuitem">Search=&gt;Mark Selected Text</span> or use right-click context menu <span class="menuitem">Mark Selected Text</span>.</p>
 
 		  <p>Text can be unmarked by using the menu item again without a selection. Text will also be unmarked if you use Undo, type any text, or change tabs. If you just use Replace or Replace All, the marked text will remain marked, but it will be revised according to your replacement.</p></li>

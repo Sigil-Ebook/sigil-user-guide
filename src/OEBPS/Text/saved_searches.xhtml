@@ -73,13 +73,28 @@
   <h3 class="sigil_not_in_toc">Running Searches</h3>
 
   <p>The Saved Searches dialog can be used to run searches as well as manage them. All of the Find &amp; Replace action buttons are available in the Saved Searches dialog, so you do not need to open the Find &amp; Replace window to run a saved search.</p>
-  
-  <p>However, modes and options are only available in the Find &amp; Replace window. If in doubt, open the Find &amp; Replace window to check what modes and options you last set, as that is what will be used when you run any saved search.</p>
+
+  <h4 class="sigil_not_in_toc"> Using Controls - Newly Added in Sigil 1.6.0</h4>
+
+  <p>The "Controls" column allows you to set search mode, search direction, any search options and the search targets (the files to search).</p>
+
+  <div class="image">
+    <img alt="Saved Searches Controls Codes." src="../Images/saved-searches-control-codes.png"/>
+  </div>
+
+  <p>To edit the Controls, double-click in the Controls column of your search to see a familiar Find &amp; Replace-like interface for setting the Mode, Options, Direction, and Targets.  Tooltips are provided to make quick overview of existing Controls settings simpler.</p>
+
+  <div class="image">
+    <img alt="Saved Searches Editing Controls." src="../Images/saved-searches-editing-controls.png"/>
+  </div>
+
+
+  <p>If the Controls field is left blank, then the search setting in the current Find &amp; Replace window will be used. If in doubt, open the Find &amp; Replace window to check what modes and options you last set, as that is what will be used when you run any saved search.</p>
 
   <p>To run a search, select an entry and click one of the action buttons: Find, Replace, Replace/Find, Replace All, Count All. Status messages will appear in the lower left corner of the Saved Searches dialog; they will also appear in the lower right corner of the Find &amp; Replace window if you have it open.</p>
   
     <div class="tip">
-    <p class="tiptext">All Saved Searches are run using the options and modes set in the Find &amp; Replace window.</p>
+    <p class="tiptext">All Saved Searches are run using the mode, options, direction and targets set in the Controls column.</p>
 
     <p class="tiptext">To run a search only on the Current File, regardless of the mode setting, hold the <span class="shortcut">Ctrl</span> key down (on Mac: <span class="shortcut">Cmd</span> key) while clicking on an action button.</p>
   </div>
@@ -94,7 +109,7 @@
   		<li>Select multiple non-group entries by holding down the <span class="shortcut">Ctrl</span> key (on Mac: <span class="shortcut">Cmd</span> key) while clicking on multiple individual entries.</li>
   	</ol>
   	
-  	<p>Once selected, click <span class="buttonbox">Replace All</span>, and each search in the group or selection will run sequentially, one after another.</p>
+  	<p>Once selected, click <span class="buttonbox">Replace All</span>, and each search in the group or selection will run sequentially, one after another.  When running multiple searches in a group, the Controls value if blank will inherit the values of the previous search in the search grouping.   Setting the Controls for the first search of any search grouping will suffice.</p>
   
 
   <h3 class="sigil_not_in_toc">Save</h3>
