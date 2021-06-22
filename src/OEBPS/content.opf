@@ -158,7 +158,6 @@
     <item id="reports.xhtml" href="Text/reports.xhtml" media-type="application/xhtml+xml"/>
     <item id="rights.xhtml" href="Text/rights.xhtml" media-type="application/xhtml+xml"/>
     <item id="saved-searches-button.png" href="Images/saved-searches-button.png" media-type="image/png"/>
-    <item id="saved-searches-context-menu.png" href="Images/saved-searches-context-menu.png" media-type="image/png"/>
     <item id="saved-searches-find-replace-context-menu.png" href="Images/saved-searches-find-replace-context-menu.png" media-type="image/png"/>
     <item id="saved_searches.xhtml" href="Text/saved_searches.xhtml" media-type="application/xhtml+xml"/>
     <item id="select-target.png" href="Images/select-target.png" media-type="image/png"/>
@@ -349,9 +348,9 @@
     <item id="reports-image-files.png" href="Images/reports-image-files.png" media-type="image/png"/>
     <item id="reports-links.png" href="Images/reports-links.png" media-type="image/png"/>
     <item id="preview-window.png" href="Images/preview-window.png" media-type="image/png"/>
-    <item id="saved-searches-control-codes.png" href="Images/saved-searches-control-codes.png" media-type="image/png"/>
     <item id="saved-searches-editing-controls.png" href="Images/saved-searches-editing-controls.png" media-type="image/png"/>
     <item id="saved-searches-main.png" href="Images/saved-searches-main.png" media-type="image/png"/>
+    <item id="saved-searches-context-menu.png" href="Images/saved-searches-context-menu.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>
