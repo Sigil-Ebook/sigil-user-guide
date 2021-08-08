@@ -78,14 +78,14 @@ def build_epub_from_folder_contents(foldpath, epub_filepath):
 
 def main(argv=sys.argv):
     tagname = datetime.datetime.now().strftime('%Y.%m.%d')
-    if os.getenv('APPVEYOR_REPO_TAG') not in (None, ''):
-        print('Tag build: {}'.format(os.getenv('APPVEYOR_REPO_TAG')))
-        if os.getenv('APPVEYOR_REPO_TAG') == 'true':
-            if os.getenv('APPVEYOR_REPO_TAG_NAME') not in (None, ''):
-                tagname = os.getenv('APPVEYOR_REPO_TAG_NAME')
+    if os.getenv('GITHUB_TAGNAME') not in (None, ''):
+        print('Tag build: {}'.format(os.getenv('GITHUB_TAGNAME')))
+        if os.getenv('GITHUB_TAGNAME') == 'true':
+            if os.getenv('GITHUB_TAGNAME') not in (None, ''):
+                tagname = os.getenv('GITHUB_TAGNAME')
                 print('Tag: {}'.format(tagname))
 
-    foldpath = os.path.join(os.path.dirname(__file__), "..", "src")
+    foldpath = os.path.join(os.path.dirname(__file__), "..", "..", "src")
     
     # use folder name as name for epub
     epubname = "Sigil_User_Guide_{}.epub".format(tagname)
@@ -93,7 +93,7 @@ def main(argv=sys.argv):
     rv = -1
     data = b''        
 
-    epubpath = os.path.join(os.path.dirname(__file__), "..", epubname)
+    epubpath = os.path.join(os.path.dirname(__file__), "..", "..", epubname)
     try:
         build_epub_from_folder_contents(foldpath, epubpath)
         with open(epubpath,'rb') as fp:

@@ -1,0 +1,68 @@
+
+name: Test and Build Sigil Guide
+
+on:
+  push:
+    tags:
+      - '**'
+    branches:
+      - master
+  pull_request:
+    branches:
+      -  master
+env:
+  VERSION: "4.2.6"
+  EPUBCHECK: "https://github.com/w3c/epubcheck/releases/download"
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get tag name
+      if: startswith( github.ref, 'refs/tags/')
+      id: get_tag_name
+      run: |
+        echo ::set-output name=TAGNAME::${GITHUB_REF/refs\/tags\//}
+        echo "GITHUB_TAGNAME=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Build Guide
+      run: python $GITHUB_WORKSPACE/.github/workflows/build_guide.py
+
+    - name: Install EPUBCheck
+      run: |
+        curl -L -o echeck.zip $EPUBCHECK/v$VERSION/epubcheck-$VERSION.zip
+        unzip echeck.zip
+
+    - name: Test Epub
+      run: java -jar $GITHUB_WORKSPACE/epubcheck-$VERSION/epubcheck.jar $GITHUB_WORKSPACE/src/ -mode exp --failonwarnings
+
+    - name: Create Epub Artifact
+      if: "contains(github.event.head_commit.message, '[deploy]')"
+      uses: actions/upload-artifact@v2
+      with:
+        name: sigil-guide
+        path: ./*.epub
+        retention-days: 3
+
+    - name: Create Release
+      if: startswith( github.ref, 'refs/tags/')
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        name: Sigil User Guide (${{ steps.get_tag_name.outputs.TAGNAME }})
+        body: |
+          Changes in this Release
+          - First Change
+          - Second Change
+        draft: true
+        prerelease: false
+        artifacts: './*.epub'
