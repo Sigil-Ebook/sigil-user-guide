@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Automate</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+  <h2 id="using_automate">Automate Lists</h2>
+
+  <p class="h2subheading">— Perform a List of Routine Tasks with a Single Click —</p>
+
+  <p>Many EPUB developers find themselves repeating the same set of tasks every time they start a new EPUB, or to clean up HTML imported from various sources, or in preparation for saving an EPUB to submit to a publisher. These tasks typically involve running some combination of internal Sigil commands/tools (e.g., Mend and Prettify HTML, Update Manifest Properties, etc.) and external plugins (e.g., EpubCheck, FolderIn, ePub3-itizer, Access-Aide, etc.). </p>
+  
+  <p>Starting with Sigil 1.8.0, a new feature called Automate Lists makes it possible to create a list of routine tasks, assign it to one of three <span class="buttonbox">Run Automate List</span> toolbar buttons, then run the entire list of tasks in sequence with a single click of the button.</p>
+
+	<div class="image"><img alt="Automate Toolbar showing Automate Icons" src="../Images/automate_toolbar.png"/></div>
+
+
+<h3 id="sigil_toc_id_31">Creating and Editing Automate Lists</h3>
+
+<p>To create and edit an Automate List, click and hold one of the three Automate List toolbar buttons and select Edit Automate List from the dropdown menu. This will bring up the Automate List Editor.</p>
+  
+	<div class="image"><img alt="Automate Toolbar showing Automate menu" src="../Images/automate_open_editor.png"/></div>
+
+	<div class="image"><img alt="Automate Editor main dialog" src="../Images/automate_list_editor.png"/></div>
+
+<p>To add a Sigil tool to your Automate List, click the <span class="buttonbox">Add Tool</span> button. This will bring up a menu of Sigil tools to choose from. Select a tool to see a description of what it does. Click <span class="buttonbox">Okay</span> to add it to your Automate List. (Since many Sigil tools require user interaction to be effective, not all Sigil tools are currently supported.)</p>
+
+  <div class="image"><img alt="Automate Editor Add Tool dialog" src="../Images/automate_add_tool.png"/></div>
+  
+<div class="tip">
+  	<p class="tiptext">To run a Saved Search with Replace All, you must input the name of the Saved Search in the Parameter column. You can also run a Saved Search Group, by inputting the name of the group followed by a “/”. For example, let’s say you have a search group called “Automate Test” with two searches in the group named test1 and test2. If you input “Automate Test/”, all searches in the group will run in sequence. If you input “Automate Test/test2”, only test2 will run.</p>
+</div>
+	
+<p>To add a plugin to your Automate List, click the <span class="buttonbox">Add Plugin</span> button. This will bring up a menu of all of the plugins you have installed. (For more information on installing plugins, see <a href="manage_plugins.xhtml">Manage Plugins</a>.) Select a plugin to see a description of what it does. Click <span class="buttonbox">Okay</span> to add it to your Automate List.</p>
+  
+  <div class="image"><img alt="Automate Editor Add Plugin dialog" src="../Images/automate_add_plugin.png"/></div>
+ 
+<p>Once you have created an Automate List, you can change the order of the tasks by selecting the command and clicking on the <span class="buttonbox">up</span> or <span class="buttonbox">down</span> buttons. To remove a command, select it and click <span class="buttonbox">Remove</span>.</p>
+
+<div class="tip">
+  	<p class="tiptext">Since unexpected errors can always occur, it is a good idea to start your Automate List with a RepoCommit command to create a full Checkpoint of your existing EPUB. That way, if an Automate List fails, you can easily recover your entire EPUB using Sigil’s Checkpoint Restore feature. (For more information on using checkpoints, see <a href="checkpoints.xhtml">Using Checkpoints to Quickly Save/Restore EPUB State</a>.</p>
+</div>
+
+<h4>Automate Lists Are Simple Text Files</h4>
+
+<p>Automate Lists are simple text files located in the root of your Sigil Preferences directory. They are named: automate01.txt, automate02.txt and automate03.txt. As such, you can edit them using any text editor if you like. To jump directly to your Sigil Preferences directory, go to <span class="menuitem">Edit=&gt;Preferences</span> (on Mac: <span class="menuitem">Sigil=&gt;Preferences</span>) and click the <span class="buttonbox">Open Preferences Location</span> button in the lower left corner.</p>
+
+<p>Here’s an example of an Automate List text file one might run as a final clean-up and validation check before publishing an EPUB:</p>
+
+<pre class="example"># start with Checkpoint save to prevent any data loss
+RepoCommit
+
+# run a basic well-formed test before running any advanced tools
+WellFormedCheckEpub
+
+# prettify any code and fix any remaining html errors
+MendPrettifyHTML
+
+# clean up
+DeleteUnusedMedia
+DeleteUnusedStyles
+
+# make sure styles are valid
+ValidateStylesheetsWithW3C
+
+# make an epub3 that works with epub2-only readers
+GenerateNCXGuideFromNav
+
+# update manifest properties
+UpdateManifestProperties
+
+# validate epub and save
+EpubCheck
+Save
+</pre>
+
+	<div class="tip">
+  		<p class="tiptext">While there are only three Automate List toolbar buttons, you can create any number of lists and store them in your Preferences folder. To run a list, you will need to assign it to one of the three toolbar buttons by renaming it automate01.txt, automate02.txt or automate03.txt.</p>
+	</div>
+
+<h3 id="sigil_toc_id_32">Running an Automate List</h3>
+
+<p>To run an Automate List, simply click on the appropriate <span class="buttonbox">Automate List</span> toolbar button.</p>
+
+	<div class="image"><img alt="Automate Toolbar showing Automate Icons" src="../Images/automate_toolbar.png"/></div>
+
+<p>If any command fails to process, the Automate List is immediately terminated. Watch Sigil’s status bar for messages as the list is executed. Once the list is completed, a dialog showing a complete log of your Automate List output is displayed so you can see what succeeded, what failed, and most importantly, why.</p>
+</body>
+</html>

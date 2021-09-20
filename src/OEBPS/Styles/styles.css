@@ -17,6 +17,9 @@
     display: none;
 }
 
+dt {
+    margin-top: 1em;
+}
 div.coverimage {
     text-align: center;
 }

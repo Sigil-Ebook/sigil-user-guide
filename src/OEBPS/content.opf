@@ -9,10 +9,10 @@
     <dc:language>en</dc:language>
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <meta content="1.6.0" name="Sigil version"/>
+    <meta content="1.7.0" name="Sigil version"/>
     <dc:identifier id="bookid">urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
     <meta name="cover" content="cover.png"/>
-    <meta property="dcterms:modified">2021-05-03T12:02:12Z</meta>
+    <meta property="dcterms:modified">2021-09-20T10:40:32Z</meta>
     <meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
@@ -351,6 +351,12 @@
     <item id="saved-searches-editing-controls.png" href="Images/saved-searches-editing-controls.png" media-type="image/png"/>
     <item id="saved-searches-main.png" href="Images/saved-searches-main.png" media-type="image/png"/>
     <item id="saved-searches-context-menu.png" href="Images/saved-searches-context-menu.png" media-type="image/png"/>
+    <item id="automate.xhtml" href="Text/automate.xhtml" media-type="application/xhtml+xml"/>
+    <item id="automate_add_plugin.png" href="Images/automate_add_plugin.png" media-type="image/png"/>
+    <item id="automate_add_tool.png" href="Images/automate_add_tool.png" media-type="image/png"/>
+    <item id="automate_list_editor.png" href="Images/automate_list_editor.png" media-type="image/png"/>
+    <item id="automate_open_editor.png" href="Images/automate_open_editor.png" media-type="image/png"/>
+    <item id="automate_toolbar.png" href="Images/automate_toolbar.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>
@@ -390,6 +396,7 @@
     <itemref idref="external_xhtml_editor.xhtml"/>
     <itemref idref="inspector.xhtml"/>
     <itemref idref="manage_plugins.xhtml"/>
+    <itemref idref="automate.xhtml"/>
     <itemref idref="ui_customize.xhtml"/>
     <itemref idref="tutorials.xhtml"/>
     <itemref idref="tutorial_getting_started_with_epub.xhtml"/>
