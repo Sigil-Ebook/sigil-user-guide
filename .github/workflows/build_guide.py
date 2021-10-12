@@ -80,10 +80,8 @@ def main(argv=sys.argv):
     tagname = datetime.datetime.now().strftime('%Y.%m.%d')
     if os.getenv('GITHUB_TAGNAME') not in (None, ''):
         print('Tag build: {}'.format(os.getenv('GITHUB_TAGNAME')))
-        if os.getenv('GITHUB_TAGNAME') == 'true':
-            if os.getenv('GITHUB_TAGNAME') not in (None, ''):
-                tagname = os.getenv('GITHUB_TAGNAME')
-                print('Tag: {}'.format(tagname))
+        tagname = os.getenv('GITHUB_TAGNAME')
+        print('Tag: {}'.format(tagname))
 
     foldpath = os.path.join(os.path.dirname(__file__), "..", "..", "src")
     
