@@ -56,6 +56,11 @@
     <p class="tiptext">Status messages appear in the lower right corner.</p>
   </div>
 
+  <h4 class="sigil_not_in_toc">Restart</h4>
+
+  <p>Restarts a multiple file Find and and Replace Search back at the top of the first file.  The next Find will begin from there.</p>
+  
+
   <h4 class="sigil_not_in_toc">Replace</h4>
 
   <p>Replaces one occurrence of the text matched by Find.</p>
@@ -94,6 +99,7 @@
 		<li>Click <span class="buttonbox">Replace/Find</span> to replace the match, then automatically find and highlight the next match.</li>
 	  </ul>
 	  
+     <p>If you don’t see the <span class="buttonbox">Replace/Find</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
 
   <div class="tip">
     <p class="tiptext">You can safely use Replace/Find instead of Find if no text is selected since it will act just like Find until a match is highlighted.</p>
@@ -131,7 +137,7 @@
   
   <p>Counts the number of times the search term you entered in the Find text box occurs in the selected files, then displays the results in the lower right corner of the Find &amp; Replace window. Count All uses all Mode settings including Up/Down, plus the Wrap option.</p>
 
-  <p> If you don’t see the <span class="buttonbox">Count All</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
+  <p>If you don’t see the <span class="buttonbox">Count All</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
 
 	 <p>To count all matches in the selected files:</p>
 
@@ -222,7 +228,7 @@
  
   <h3 class="sigil_not_in_toc">Search Options</h3>
 
-  <p>The Options menu offers useful switches when using Regex mode, as well as a checkbox to control whether Wrap is turned on or off.</p>
+  <p>The Options menu offers useful switches when using Regex mode, as well as a checkbox to control whether Wrap in the Current File is turned on or off.</p>
   
   <p>If options are hidden, click the chevron <img alt="Chevron up icon." src="../Images/chevron-up.png"/> in the bottom left corner to show them.</p>
   
@@ -247,7 +253,7 @@
 		
 		<li><p><span class="listheading">Wrap</span>: When enabled in Current File mode, if your search reaches the end of the file, it will automatically wrap around to the beginning of the file to continue the search (or the reverse if searching Up). When disabled, searches will stop at the end of the file (or the beginning if searching Up).</p>
 
-  			<p>When enabled in All HTML Files mode, if your search reaches the last HTML file (in the order listed in the Book Browser), it will automatically wrap around to the first HTML file to continue the search (or the reverse if searching Up). When disabled, searches will stop at the last file in the book (or the first if searching Up).</p></li>
+  			<p>When searching in a mode that uses multiple files, when your search reaches the last file (in the order listed in the Book Browser), you will need to use the <span class="buttonbox">Restart</span> button otherwise the search will stop. <b>Wrap</b> does not apply when searching multiple files.</p></li>
 	</ul>
 
 
