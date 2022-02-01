@@ -9,10 +9,10 @@
     <dc:language>en</dc:language>
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <meta content="1.7.0" name="Sigil version"/>
+    <meta content="1.8.0" name="Sigil version"/>
     <dc:identifier id="bookid">urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
     <meta name="cover" content="cover.png"/>
-    <meta property="dcterms:modified">2021-09-20T10:40:32Z</meta>
+    <meta property="dcterms:modified">2022-02-01T11:00:48Z</meta>
     <meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
@@ -41,7 +41,6 @@
     <item id="book-browser-semantics.png" href="Images/book-browser-semantics.png" media-type="image/png"/>
     <item id="book_browser.xhtml" href="Text/book_browser.xhtml" media-type="application/xhtml+xml"/>
     <item id="button-save.png" href="Images/button-save.png" media-type="image/png"/>
-    <item id="case-ins-sort.png" href="Images/case-ins-sort.png" media-type="image/png"/>
     <item id="checkpoints.xhtml" href="Text/checkpoints.xhtml" media-type="application/xhtml+xml"/>
     <item id="chevron-down.png" href="Images/chevron-down.png" media-type="image/png"/>
     <item id="chevron-up.png" href="Images/chevron-up.png" media-type="image/png"/>
@@ -87,9 +86,7 @@
     <item id="faq-windows-properties-altgr.png" href="Images/faq-windows-properties-altgr.png" media-type="image/png"/>
     <item id="faq.xhtml" href="Text/faq.xhtml" media-type="application/xhtml+xml"/>
     <item id="features.xhtml" href="Text/features.xhtml" media-type="application/xhtml+xml"/>
-    <item id="find-replace-basic.png" href="Images/find-replace-basic.png" media-type="image/png"/>
     <item id="find-replace-button.png" href="Images/find-replace-button.png" media-type="image/png"/>
-    <item id="find-replace-options.png" href="Images/find-replace-options.png" media-type="image/png"/>
     <item id="find_replace.xhtml" href="Text/find_replace.xhtml" media-type="application/xhtml+xml"/>
     <item id="generate-toc.png" href="Images/generate-toc.png" media-type="image/png"/>
     <item id="heading-1.png" href="Images/heading-1.png" media-type="image/png"/>
@@ -170,7 +167,6 @@
     <item id="spellcheck-context-suggestion.png" href="Images/spellcheck-context-suggestion.png" media-type="image/png"/>
     <item id="spellcheck-editor-dictionaries.png" href="Images/spellcheck-editor-dictionaries.png" media-type="image/png"/>
     <item id="spellcheck-editor-tooltip.png" href="Images/spellcheck-editor-tooltip.png" media-type="image/png"/>
-    <item id="spellcheck-main.png" href="Images/spellcheck-main.png" media-type="image/png"/>
     <item id="spellcheck-suggested-words.png" href="Images/spellcheck-suggested-words.png" media-type="image/png"/>
     <item id="spellcheck.xhtml" href="Text/spellcheck.xhtml" media-type="application/xhtml+xml"/>
     <item id="spellcheck_misspelled.png" href="Images/spellcheck_misspelled.png" media-type="image/png"/>
@@ -204,14 +200,7 @@
     <item id="tutorial-default-sigil.png" href="Images/tutorial-default-sigil.png" media-type="image/png"/>
     <item id="tutorial-file-open.png" href="Images/tutorial-file-open.png" media-type="image/png"/>
     <item id="tutorial-file-save.png" href="Images/tutorial-file-save.png" media-type="image/png"/>
-    <item id="tutorial-find-adv-options.png" href="Images/tutorial-find-adv-options.png" media-type="image/png"/>
-    <item id="tutorial-find-adv-page.png" href="Images/tutorial-find-adv-page.png" media-type="image/png"/>
-    <item id="tutorial-find-adv-regex.png" href="Images/tutorial-find-adv-regex.png" media-type="image/png"/>
-    <item id="tutorial-find-adv-replace.png" href="Images/tutorial-find-adv-replace.png" media-type="image/png"/>
-    <item id="tutorial-find-all.png" href="Images/tutorial-find-all.png" media-type="image/png"/>
-    <item id="tutorial-find-count.png" href="Images/tutorial-find-count.png" media-type="image/png"/>
     <item id="tutorial-find-regex-chapter.png" href="Images/tutorial-find-regex-chapter.png" media-type="image/png"/>
-    <item id="tutorial-find-start.png" href="Images/tutorial-find-start.png" media-type="image/png"/>
     <item id="tutorial-find-test.png" href="Images/tutorial-find-test.png" media-type="image/png"/>
     <item id="tutorial-find-the.png" href="Images/tutorial-find-the.png" media-type="image/png"/>
     <item id="tutorial-font-obfuscate.png" href="Images/tutorial-font-obfuscate.png" media-type="image/png"/>
@@ -353,10 +342,22 @@
     <item id="saved-searches-context-menu.png" href="Images/saved-searches-context-menu.png" media-type="image/png"/>
     <item id="automate.xhtml" href="Text/automate.xhtml" media-type="application/xhtml+xml"/>
     <item id="automate_add_plugin.png" href="Images/automate_add_plugin.png" media-type="image/png"/>
-    <item id="automate_add_tool.png" href="Images/automate_add_tool.png" media-type="image/png"/>
     <item id="automate_list_editor.png" href="Images/automate_list_editor.png" media-type="image/png"/>
-    <item id="automate_open_editor.png" href="Images/automate_open_editor.png" media-type="image/png"/>
+    <item id="locale-aware-sort.png" href="Images/locale-aware-sort.png" media-type="image/png"/>
+    <item id="spellcheck-main.png" href="Images/spellcheck-main.png" media-type="image/png"/>
+    <item id="find-replace-options.png" href="Images/find-replace-options.png" media-type="image/png"/>
+    <item id="find-replace-basic.png" href="Images/find-replace-basic.png" media-type="image/png"/>
+    <item id="tutorial-find-count.png" href="Images/tutorial-find-count.png" media-type="image/png"/>
+    <item id="tutorial-find-start.png" href="Images/tutorial-find-start.png" media-type="image/png"/>
+    <item id="tutorial-find-all.png" href="Images/tutorial-find-all.png" media-type="image/png"/>
+    <item id="tutorial-find-adv-options.png" href="Images/tutorial-find-adv-options.png" media-type="image/png"/>
+    <item id="tutorial-find-adv-page.png" href="Images/tutorial-find-adv-page.png" media-type="image/png"/>
+    <item id="tutorial-find-adv-regex-chapter.png" href="Images/tutorial-find-adv-regex-chapter.png" media-type="image/png"/>
+    <item id="tutorial-find-adv-regex.png" href="Images/tutorial-find-adv-regex.png" media-type="image/png"/>
+    <item id="tutorial-find-adv-replace.png" href="Images/tutorial-find-adv-replace.png" media-type="image/png"/>
+    <item id="automate_add_tool.png" href="Images/automate_add_tool.png" media-type="image/png"/>
     <item id="automate_toolbar.png" href="Images/automate_toolbar.png" media-type="image/png"/>
+    <item id="automate_open_editor.png" href="Images/automate_open_editor.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>
