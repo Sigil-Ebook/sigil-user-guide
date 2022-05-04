@@ -101,13 +101,14 @@
    <li><span class="listheading">OP</span> - Target: OPF File</li>
    <li><span class="listheading">NX</span> - Target: NCX File</li>
 
-   <li class="first"><span class="listheading">DA</span> - Option: DotAll</li>
-   <li><span class="listheading">MM</span> - Option: Minimal Match</li>
-   <li><span class="listheading">AT</span> - Option: Auto Tokenise</li>
+   <li class="first"><span class="listheading">DA</span> - Regex Option: DotAll</li>
+   <li><span class="listheading">MM</span> - Regex Option: Minimal Match</li>
+   <li><span class="listheading">AT</span> - Regex Option: Auto Tokenise</li>
    <li><span class="listheading">WR</span> - Option: Wrap</li>
+   <li><span class="listheading">TO</span> - Option: Text</li>
    </ul>
 
-  <p>To edit the Controls, double-click in the Controls column of your search to see a familiar Find &amp; Replace-like interface for setting the Mode, Options, Direction, and Targets.  Tooltips are provided to make quick overview of existing Controls settings simpler.</p>
+  <p>To edit the Controls, double-click in the Controls column of your search to see a Find &amp; Replace-like interface for setting the Mode, Options, Direction, and Targets.  Tooltips are provided to make quick overview of existing Controls settings simpler.</p>
 
   <div class="image">
     <img alt="Saved Searches Editing Controls." src="../Images/saved-searches-editing-controls.png"/>
@@ -148,6 +149,16 @@
 		  <div class="tip">
 			<p class="tiptext">If you save and are running more than one copy of Sigil, then the other instances of Sigil will automatically reload the newly saved searches to keep all copies in sync.</p>
 		  </div>
+
+  <h3 class="sigil_not_in_toc">Counts Report (New in Sigil 1.9.10)</h3>
+
+  <p>This feature was introduced to take any user selected Saved Search Group and generate a report of the counts of all matches for each specific saved search in the group. This allows users to create custom report tables on the number of uses for any feature or tag (ie. lists, tables, images) that can be defined by a regular expression search.</p>
+
+   <div class="image">
+    <img alt="report of the number of matches by saved search in a saved search group" src="../Images/saved-search-counts-report.png"/>
+   </div>
+
+  <p>A pop-up context menu allows the user to export the Counts Report to a CSV file for subsequent processing in a spreadsheet.</p>
 
   <h3 class="sigil_not_in_toc">Filter</h3>
 

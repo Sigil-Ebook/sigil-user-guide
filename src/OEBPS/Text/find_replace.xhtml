@@ -24,7 +24,7 @@
     <img alt="Find Replace Dialog window." src="../Images/find-replace-options.png"/>
   </div>
 
-  <p>When open, the Find &amp; Replace dialog is always positioned at the bottom of the editing window for easy access. Click the chevron <img alt="Showing use of chevron in the Find and Replace dialog." src="../Images/chevron-up.png"/> in the lower left corner to show or hide Options.</p>
+  <p>When open, the Find &amp; Replace dialog is always positioned at the bottom of the editing window for easy access. Advanced regular expression options have their own menu.</p>
   
   <div class="tip">
     <p class="tiptext">Keyboard shortcuts exist for all Find &amp; Replace operations, such as <span class="shortcut">Ctrl+F</span> to find and <span class="shortcut">Ctrl+G</span> to find again (on Mac use <span class="shortcut">Cmd</span> instead of <span class="shortcut">Ctrl</span>). See the <span class="menuitem">Search</span> menu for a list of shortcuts.</p>
@@ -32,9 +32,9 @@
 
   <h3 class="sigil_not_in_toc" id="find_actions">Action Buttons</h3>
 
-  <p>The buttons on the right are used to run your search commands: Find, Replace, Replace/Find, Replace All, and Count All.</p>
+  <p>The buttons on the right are used to run your search commands: Find , Restart, Replace, Replace/Find, Replace All, and Count All.</p>
 
-  <h4 class="sigil_not_in_toc">Find</h4>
+  <h4 class="sigil_not_in_toc">Find ( <img width="24" alt="find button" src="../Images/find.svg"/> )</h4>
 
   <p>Finds the next occurrence of your search term and highlights it in Code View.</p>
   
@@ -43,7 +43,7 @@
   	<ul>
 		<li>Enter the text you wish to find in the Find box.</li>
 
-		<li>Click <span class="buttonbox">Find</span> to search for and highlight the next match in the Code View window.</li>
+		<li>Click <span class="buttonbox"><img width="14" alt="find button" src="../Images/find.svg"/></span> to search for and highlight the next match in the Code View window.</li>
 	</ul>
 
   <p>Any text in the Replace box is ignored if you are just doing a Find.</p>
@@ -56,12 +56,12 @@
     <p class="tiptext">Status messages appear in the lower right corner.</p>
   </div>
 
-  <h4 class="sigil_not_in_toc">Restart</h4>
+  <h4 class="sigil_not_in_toc">Restart ( <img width="24" alt="restart button" src="../Images/restart.svg"/> )</h4>
 
   <p>Restarts a multiple file Find and and Replace Search back at the top of the first file.  The next Find will begin from there.</p>
   
 
-  <h4 class="sigil_not_in_toc">Replace</h4>
+  <h4 class="sigil_not_in_toc">Replace ( <img width="24" alt="replace button" src="../Images/replace.svg"/> )</h4>
 
   <p>Replaces one occurrence of the text matched by Find.</p>
 
@@ -72,18 +72,18 @@
 
     <li>Enter the text you want to replace it with in the Replace box.</li>
 
-    <li>Click <span class="buttonbox">Find</span> to search for and highlight the next match.</li>
+    <li>Click <span class="buttonbox"><img width="14" alt="find button" src="../Images/find.svg"/></span> to search for and highlight the next match.</li>
 
-    <li>Click <span class="buttonbox">Replace</span> to do the replacement.</li>
+    <li>Click <span class="buttonbox"><img width="14" alt="replace button" src="../Images/replace.svg"/></span> to do the replacement.</li>
   </ul>
 
   <div class="tip">
     <p class="tiptext">To undo changes, use <span class="shortcut">Ctrl+Z</span> (on Mac: <span class="shortcut">Cmd+Z</span>) or the Undo button <img alt="Showing Undo icon." src="../Images/edit-undo.png"/>, or right-click in the Code View window and select <span class="menuitem">Undo</span> to change the text back. But if you are replacing across multiple files and your next match is in a different file, you need to switch back to the file containing the replaced text before selecting undo.</p>
   </div>
 
-  <h4 class="sigil_not_in_toc">Replace/Find</h4>
+  <h4 class="sigil_not_in_toc">Replace/Find ( <img width="24" alt="replace-find button" src="../Images/replace-find.svg"/> )</h4>
 
-  <p>Replaces one occurence of the next match then automatically finds and highlights the subsequent match.</p>
+  <p>Replaces one occurrence of the next match then automatically finds and highlights the subsequent match.</p>
   
   <p>The first time you do a Replace/Find the first match will be highlighted but not replaced. Subsequent use of Replace/Find will replace the highlighted matched text and then automatically find the next match.</p>
 
@@ -94,18 +94,17 @@
 
 		<li>Enter the text you want to replace it with in the Replace box.</li>
 	
-		<li>Click <span class="buttonbox">Replace/Find</span> to search for and highlight the first match.</li>
+		<li>Click <span class="buttonbox"><img width="14" alt="replace-find button" src="../Images/replace-find.svg"/></span> to search for and highlight the first match.</li>
 
-		<li>Click <span class="buttonbox">Replace/Find</span> to replace the match, then automatically find and highlight the next match.</li>
+		<li>Click <span class="buttonbox"><img width="14" alt="replace-find button" src="../Images/replace-find.svg"/></span> to replace the match, then automatically find and highlight the next match.</li>
 	  </ul>
 	  
-     <p>If you don’t see the <span class="buttonbox">Replace/Find</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
 
   <div class="tip">
     <p class="tiptext">You can safely use Replace/Find instead of Find if no text is selected since it will act just like Find until a match is highlighted.</p>
   </div>
 
-  <h4 class="sigil_not_in_toc">Replace All</h4>
+  <h4 class="sigil_not_in_toc">Replace All ( <img width="24" alt="replace all button" src="../Images/replace-all.svg"/> )</h4>
 
   <p>Replaces all text matching your search term with your replace term, according to your settings. This is done all at once automatically.</p>
   
@@ -120,36 +119,75 @@
 
 		<li>Enter the text you want to replace it with in the Replace box.</li>
 
-		<li>Click <span class="buttonbox">Replace All</span> to replace all matches in one go.</li>
+		<li>Click <span class="buttonbox"><img width="14" alt="replace all button" src="../Images/replace-all.svg"/></span> to replace all matches in one go.</li>
 	  </ul>
 
   <p>Replace All always replaces from the start of a file.</p>
 
   <div class="tip">
-    <p class="tiptext">To avoid unpleasant surprises, test your find and replace string using Count All to see if the number of matches is in the expected range. You can also test with a simple Replace a few times before using Replace All.</p>
+    <p class="tiptext">To avoid unpleasant surprises, test your find and replace string using Count All to see if the number of matches is in the expected range. You can also tests with a simple Replace a few times.</p>
+
+<p> Starting with Sigil-1.9.10 you can use the Dry-Run Replace All tool to safely see all of the potential replacements in one table before actually performing any replacements.</p>
 
     <p class="tiptext">Save your book or create a Checkpoint before a Replace All and check it for issues afterward.  </p>
 
     <p class="tiptext">Before executing a Replace All, check if your mode is set for Current File or All HTML Files.</p>
   </div>
 
-  <h4 class="sigil_not_in_toc" id="count_all">Count All</h4>
+  <h4 class="sigil_not_in_toc" id="count_all">Count All ( <img width="24" alt="count-all button" src="../Images/count-all.svg"/> )</h4>
   
   <p>Counts the number of times the search term you entered in the Find text box occurs in the selected files, then displays the results in the lower right corner of the Find &amp; Replace window. Count All uses all Mode settings including Up/Down, plus the Wrap option.</p>
-
-  <p>If you don’t see the <span class="buttonbox">Count All</span> button, click the chevron <img alt="Showing Count All in Find and Replace." src="../Images/chevron-down.png"/> in the bottom left corner of the Find &amp; Replace window or use its keyboard shortcut.</p>
 
 	 <p>To count all matches in the selected files:</p>
 
 	  <ul>
 		<li>Enter the text to find in the Find box.</li>
 
-		<li>Click <span class="buttonbox">Count All</span>.</li>
+		<li>Click <span class="buttonbox"><img width="14" alt="count-all button" src="../Images/count-all.svg"/></span>.</li>
 	  </ul>
 
   <div class="tip">
-    <p class="tiptext">It’s a good idea to use Count All before doing a Replace All to confirm that the number of replacements will be what you expect. You should also run it after a Replace All in case the particular search and replace created new matches.</p>
+    <p class="tiptext">It’s a good idea to use Count All before doing a Replace All to confirm that the number of replacements will be what you expect. You should also run it after a Replace All in case the particular search and replace created new matches. Alternatively use the new Dry Run Replace All tool (see next).</p>
   </div>
+
+  <h4 class="sigil_not_in_toc">Dry Run Replace All ( SHIFT + <img width="24" alt="Shift + count-all button" src="../Images/count-all.svg"/> ) (New in Sigil 1.9.10)</h4>
+
+  <p>Often when crafting regular expression for Find and Replace, it is difficult to know if your find string will properly detect the cases you want while excluding the cases you do not want.  This table shows the results of a trial dry-run of your current find and replace terms in context. No actual replacements/changes are ever made. The amount of context both "before" and "after" a match (in characters) can be controlled by the user. This tool can by launched by Shift clicking on the Count-All button.</p>
+
+<div><img alt="Dry Run Replace All" src="../Images/dry-run-replace-dialog.png"/></div>
+
+<p>Dry Run Replace All allows the user to safely experiment with their search terms to see which if any would be most effective.  Any row in the table can be double-clicked and the exact context for that particular match will be brought up in CodeView for the user to examine in more detail or to edit.  This way a user can verify that a find replace all sequence will do exactly what they expect it to do. If the user makes changes to the underlying text that will impact the table, the user can click on the "Refresh" button at any time to force the table to be rebuilt.</p>
+  
+	 <p>To create a Dry Run Replace All Table:</p>
+
+	  <ul>
+		<li>Enter the text to find in the Find box.</li>
+
+		<li>Enter the text you want to replace it with in the Replace box.</li>
+
+		<li>Click <span class="buttonbox">SHIFT + <img width="14" alt="count-all" src="../Images/count-all.svg"/></span>.</li>
+	  </ul>
+
+
+  <h4 class="sigil_not_in_toc">Filter Replacements ( SHIFT + <img width="24" alt="replace-all button" src="../Images/replace-all.svg"/> ) (New in Sigil 1.9.10)</h4>
+
+  <p>This tool helps users use Find and Replace All more effectively. It lists all of the matches found in context and shows each replacement in that same context.  The amount of context both "before" and "after" a match (in characters) can be controlled by the user.</p>
+
+<div><img alt="Replace-Delete-Unwanted" src="../Images/replace-delete-unwanted.png"/></div>
+
+<p>If the user sees a match that is unwanted - i.e. they do not want that replacement to be made, they can select that match's row in the table and use the delete key or select delete on the pop-up menu to remove it.  When all unwanted matches have been found and deleted, the user can then use the "Apply Changes" button to have just the changes remaining in the table made.</p>
+
+<p>Filter Replacements allows the user to more safely use Replace All by lowering the risk or undesirable replacements.</p>
+  
+	 <p>To create a Filter Replacements Table:</p>
+
+	  <ul>
+		<li>Enter the text to find in the Find box.</li>
+
+		<li>Enter the text you want to replace it with in the Replace box.</li>
+
+		<li>Click <span class="buttonbox">SHIFT + <img width="14" alt="replace-all" src="../Images/replace-all.svg"/></span>.</li>
+	  </ul>
 
 
   <h3 class="sigil_not_in_toc" id="find_what">Search Modes</h3>
@@ -230,19 +268,12 @@
 
   <p>The Options menu offers useful switches when using Regex mode, as well as a checkbox to control whether Wrap in the Current File is turned on or off.</p>
   
-  <p>If options are hidden, click the chevron <img alt="Chevron up icon." src="../Images/chevron-up.png"/> in the bottom left corner to show them.</p>
-  
   <div class="image">
     <img alt="Find and Replace Dialog showing options." src="../Images/find-replace-options.png"/>
   </div>
 
-  <p>Click the chevron <img alt="Chevron down icon." src="../Images/chevron-down.png"/> to hide the options.</p>
 
-  <div class="image">
-    <img alt="Find and Replace with Search Options hidden." src="../Images/find-replace-basic.png"/>
-  </div>
-
-  <p>Search Options include:</p>
+  <p>Regular Expression Search Options include:</p>
   
 	<ul>
 		<li><p><span class="listheading">DotAll</span>: This regex option prepends (?s) to all regex searches and is used when you want .* to match any character, even across lines.</p></li>
@@ -250,10 +281,21 @@
 		<li><p><span class="listheading">Minimal Match</span>: This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</p></li>
 
 		<li><p><span class="listheading">Auto-Tokenise</span>: When using <span class="shortcut">Ctrl-F</span> (on Mac: <span class="shortcut">Cmd-F</span>) on selected text to copy it into the Find box, this will convert spaces to \s and escape certain characters so they are suitable for regex.</p></li>
-		
+
+   </ul>
+
+  <p>Other General Search Options</p>
+
+   <ul>		
 		<li><p><span class="listheading">Wrap</span>: When enabled in Current File mode, if your search reaches the end of the file, it will automatically wrap around to the beginning of the file to continue the search (or the reverse if searching Up). When disabled, searches will stop at the end of the file (or the beginning if searching Up).</p>
 
   			<p>When searching in a mode that uses multiple files, when your search reaches the last file (in the order listed in the Book Browser), you will need to use the <span class="buttonbox">Restart</span> button otherwise the search will stop. <b>Wrap</b> does not apply when searching multiple files.</p></li>
+
+		<li><p><span class="listheading">Text</span>: When enabled in any mode, if searching XHTML files, it will match only text outside of &lt; XHTML tags &gt;. This option has no effect when not searching in XHTML files.</p>
+
+           <p>This is can be useful when doing find and replace on words that can incidentally be valid XHTML attributes, attribute values, or tag names that you no want to replace.</p>
+       </li>
+
 	</ul>
 
 
@@ -267,6 +309,8 @@
     <li><p><span class="listheading">Save Search:</span> Save the current Find &amp; Replace search to Saved Searches.</p></li>
 
     <li><p><span class="listheading">Tokenise Selection:</span> Convert spaces to \s and escape certain characters.</p></li>
+
+    <li><p><span class="listheading">Clear Find Replace History:</span> Clears out the all recent historyor previous Find and Replace values.</p></li>
   </ul>
 </body>
 </html>
