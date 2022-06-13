@@ -5,31 +5,32 @@
 
 <br/>
 
-<b>가장 중요한 원칙</b> 
+__가장 중요한 원칙__ 한국어 번역 이외의 모든 지침은 Sigil User Guide의 기본 원칙(https://github.com/Sigil-Ebook/sigil-user-guide)을 따라야 합니다. Sigil User Guide의 기본 지침은 다음과 같습니다.
 
+1. 예술적/미학적 변화를 주지 마십시오! 우리는 콘텐츠 업데이트 및 수정, 또는 새로운 메뉴나 새로운 기능을 보여주는 업데이트된 스크린샷에만 관심이 있습니다. 개인 스타일이나 서식 기본 설정을 반영하기 위해 epub 스타일을 수정할 수 없습니다. 스타일 변경이나 "업그레이드"가 포함된 풀 리퀘스트는 거절될 것입니다(물론 그러한 작업이 사전 승인되지 않은 경우).
 
-1. __NO ARTISTIC/AESTHETIC CHANGES PLEASE!__ We're only interested in content updates and corrections, or updated screenshots that show new menus or new features. If you're hoping to "jazz things up" or redo the the style of the epub to reflect your personal style or formatting preferences, you're probably going to be disappointed. Pull Requests that include stylistic changes or "upgrades" will be declined (unless such work has been pre-approved of course).
 
 2. __Less is best__. Several smaller, tightly focused Pull Requests are always going to be preferred over ones that represent grand, sweeping changes to large swathes of the manual. We don't want to have to read the entire manual each and every time we're evaluating a new Pull Request. Neither would you.  Be considerate if you want to see your efforts incorporated.
+__적은 것이 가장 좋습니다.__ 큰 범위의 전면적인 변경 보다는 국소적이지만 디테일 한 번경이 우선적으로 반영됩니다. 변경 사항을 반영할 때 가이드 전체를 다시 검토하는 것은 시간이 많이 걸리고 어렵습니다. 기본 틀은 그대로 두고 새로운 변경사항이나 부분적인 오류를 중심으로 수정해 주십시요.(이 부분은 영문 내용을 의역하였습니다)
 
-3. __Don't Break anything__. Changes that break the resulting epub or cause validation issues will be rejected. It's your responsibility to make sure the epub structure remains intact and spec compliant.
-
-<br/>
-<br/>
-
-## <center>Preferred Workflow</center>
+3. __아무것도 부수지 마십시오.__ epub을 손상시키거나 유효성 검사 문제를 일으키는 변경 사항은 거부됩니다. 내용을 수정할 때 epub 구조가 손상되지 않고 사양을 준수하는지 확인을 한 후 반영을 요청하십시요.
 
 <br/>
+<br/>
 
-- Fork this repository to your own Github account and clone a local copy of it to your computer.
+## <center>선호하는 워크플로</center>
 
-- Use the [FolderIn Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649) to load the contents of the "src" directory of your local, cloned repository into Sigil.
+<br/>
 
-- Do your editing (saving changes to a local temporary epub somewhere if you must). Remember to use "Mend and Prettify" after you're done, and always make sure the epub validates with no errors. Then when ready, save the contents back to the "src" directory of your local, cloned repository using the [FolderOut Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649).
+- 이 리포지토리를 자신의 Github 계정에 포크하고 로컬 복사본을 컴퓨터에 복제합니다.
 
-- Use the normal git tools to check your differences and then when satisfied, commit and push your changes to your Github fork.
+- [FolderIn Sigil 플러그인](https://www.mobileread.com/forums/showthread.php?t=293649)을 사용하여 복제된 로컬 저장소의 "src" 디렉토리 내용을 Sigil로 로드합니다.
 
-- Create a new Pull Request from your Github account so that we can review and hopefully pull your changes into the project.
+- 편집을 수행합니다(필요한 경우 로컬 임시 epub에 변경 사항 저장). 완료한 후 "Mend and Prettify"를 사용하고 항상 epub이 오류 없이 유효성을 검사하는지 확인하십시오. 그런 다음 준비가 되면 [FolderOut Sigil 플러그인](https://www.mobileread.com/forums/showthread.php?t=293649)을 사용하여 복제된 로컬 저장소의 "src" 디렉토리에 내용을 다시 저장합니다.
+
+- 일반 git 도구를 사용하여 차이점을 확인한 다음 만족하면 변경 사항을 커밋하고 Github 포크에 푸시합니다.
+
+- 변경 사항을 검토하고 프로젝트에 가져올 수 있도록 Github 계정에서 새 Pull Request를 만드세요.
 
 <br/>
 
@@ -37,4 +38,4 @@
 
 <br/>
 
-If you run into trouble, feel free to ask for help at the [Sigil Support forums on Mobileread](https://www.mobileread.com/forums/forumdisplay.php?f=203).
+문제가 발생하면 [Mobileread의 Sigil 지원 포럼](https://www.mobileread.com/forums/forumdisplay.php?f=203)에서 언제든지 도움을 요청하십시오.
