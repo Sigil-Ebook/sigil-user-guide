@@ -1,10 +1,13 @@
-# <center>This is the repository for the Sigil User Guide</center>
+# <center>This is the repository for localization of the Sigil User Guide to Korean</center>
+# <center>Sigil 사용자 가이드를 한국어로 번역하기 위한 저장소입니다.</center>
+<br/>
+
+## <center>번역을 위한 지침</center>
 
 <br/>
 
-## <center>Guidelines for contributing</center>
+<b>가장 중요한 원칙</b> 
 
-<br/>
 
 1. __NO ARTISTIC/AESTHETIC CHANGES PLEASE!__ We're only interested in content updates and corrections, or updated screenshots that show new menus or new features. If you're hoping to "jazz things up" or redo the the style of the epub to reflect your personal style or formatting preferences, you're probably going to be disappointed. Pull Requests that include stylistic changes or "upgrades" will be declined (unless such work has been pre-approved of course).
 
