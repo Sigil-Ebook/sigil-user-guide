@@ -1,4 +1,3 @@
-# <center>This is the repository for localization of the Sigil User Guide to Korean</center>
 # <center>Sigil 사용자 가이드를 한국어로 번역하기 위한 저장소입니다.</center>
 <br/>
 
