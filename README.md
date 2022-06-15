@@ -10,8 +10,7 @@ __가장 중요한 원칙__ 한국어 번역 이외의 모든 지침은 Sigil Us
 1. 예술적/미학적 변화를 주지 마십시오! 우리는 콘텐츠 업데이트 및 수정, 또는 새로운 메뉴나 새로운 기능을 보여주는 업데이트된 스크린샷에만 관심이 있습니다. 개인 스타일이나 서식 기본 설정을 반영하기 위해 epub 스타일을 수정할 수 없습니다. 스타일 변경이나 "업그레이드"가 포함된 풀 리퀘스트는 거절될 것입니다(물론 그러한 작업이 사전 승인되지 않은 경우).
 
 
-2. __Less is best__. Several smaller, tightly focused Pull Requests are always going to be preferred over ones that represent grand, sweeping changes to large swathes of the manual. We don't want to have to read the entire manual each and every time we're evaluating a new Pull Request. Neither would you.  Be considerate if you want to see your efforts incorporated.
-__적은 것이 가장 좋습니다.__ 큰 범위의 전면적인 변경 보다는 국소적이지만 디테일 한 번경이 우선적으로 반영됩니다. 변경 사항을 반영할 때 가이드 전체를 다시 검토하는 것은 시간이 많이 걸리고 어렵습니다. 기본 틀은 그대로 두고 새로운 변경사항이나 부분적인 오류를 중심으로 수정해 주십시요.(이 부분은 영문 내용을 의역하였습니다)
+2. __적은 것이 가장 좋습니다.__ 큰 범위의 전면적인 변경 보다는 국소적이지만 디테일 한 번경이 우선적으로 반영됩니다. 변경 사항을 반영할 때 가이드 전체를 다시 검토하는 것은 시간이 많이 걸리고 어렵습니다. 기본 틀은 그대로 두고 새로운 변경사항이나 부분적인 오류를 중심으로 수정해 주십시요.(이 부분은 영문 내용을 의역하였습니다)
 
 3. __아무것도 부수지 마십시오.__ epub을 손상시키거나 유효성 검사 문제를 일으키는 변경 사항은 거부됩니다. 내용을 수정할 때 epub 구조가 손상되지 않고 사양을 준수하는지 확인을 한 후 반영을 요청하십시요.
 
