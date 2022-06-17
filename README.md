@@ -24,13 +24,13 @@ __가장 중요한 원칙__ 한국어 번역 이외의 모든 지침은 Sigil Us
 1. __원문은 그대로 두세요__ 내용의 검수를 위해 원문 밑에 한국어 번역문을 추가합니다.
 
 __예시__
-  <p>The EPUB (electronic publication) format is one of the most popular file formats for ebooks. It is an open and freely available standard that can be used by anyone.</p>
+  &lt;p&gt;The EPUB (electronic publication) format is one of the most popular file formats for ebooks. It is an open and freely available standard that can be used by anyone.&lt;/p&gt;
 
   <p>EPUB(전자 출판) 형식은 가장 널리 사용되는 전자책 파일 형식 중 하나입니다. 누구나 사용할 수 있는 개방적이고 자유롭게 사용할 수 있는 표준입니다.</p>
 
 2. __의역을 해도 됩니다__ 내용을 더 쉽게 설명할 수 있다면 의역을 해도 됩니다. 
 
-3. __Github 사용법을 모르면 HTML로 다운 받아 번역을 하세요__ Github 사용법을 모르면 텍스트만 복사해 PC에서 작업을 하세요. 번역 한 파일을 
+3. __Github 사용법을 모르면 HTML로 다운 받아 번역을 하세요__ Github 사용법을 모르면 텍스트만 복사해 PC에서 작업을 하세요. 번역 한 파일을 Issue 게시판에 올리면 확인 후 반영하겠습니다.
 <br/>
 <br/>
 
