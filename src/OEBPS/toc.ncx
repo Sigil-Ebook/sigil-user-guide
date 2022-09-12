@@ -1,638 +1,638 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
-    <meta name="dtb:uid" content="urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8" />
-    <meta name="dtb:depth" content="4" />
-    <meta name="dtb:totalPageCount" content="0" />
-    <meta name="dtb:maxPageNumber" content="0" />
+    <meta content="urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8" name="dtb:uid"/>
+    <meta content="4" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
   </head>
-<docTitle>
-  <text>Sigil User Guide</text>
-</docTitle>
-<navMap>
-  <navPoint id="navPoint1">
-    <navLabel>
-      <text>Title Page</text>
-    </navLabel>
-    <content src="Text/titlepage.xhtml" />
-  </navPoint>
-  <navPoint id="navPoint2">
-    <navLabel>
-      <text>Copyright</text>
-    </navLabel>
-    <content src="Text/rights.xhtml" />
-  </navPoint>
-  <navPoint id="navPoint3">
-    <navLabel>
-      <text>Introduction</text>
-    </navLabel>
-    <content src="Text/introduction.xhtml" />
-    <navPoint id="navPoint4">
+  <docTitle>
+    <text>Sigil User Guide</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
       <navLabel>
-        <text>What’s New</text>
+        <text>Title Page</text>
       </navLabel>
-      <content src="Text/whats_new.xhtml" />
+      <content src="Text/titlepage.xhtml"/>
     </navPoint>
-    <navPoint id="navPoint5">
+    <navPoint id="navPoint2">
       <navLabel>
-        <text>About Sigil</text>
+        <text>Copyright</text>
       </navLabel>
-      <content src="Text/about_sigil.xhtml" />
+      <content src="Text/rights.xhtml"/>
     </navPoint>
-    <navPoint id="navPoint6">
+    <navPoint id="navPoint3">
       <navLabel>
-        <text>About EPUB</text>
+        <text>Introduction</text>
       </navLabel>
-      <content src="Text/about_epub.xhtml" />
+      <content src="Text/introduction.xhtml"/>
+      <navPoint id="navPoint4">
+        <navLabel>
+          <text>What’s New</text>
+        </navLabel>
+        <content src="Text/whats_new.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint5">
+        <navLabel>
+          <text>About Sigil</text>
+        </navLabel>
+        <content src="Text/about_sigil.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint6">
+        <navLabel>
+          <text>About EPUB</text>
+        </navLabel>
+        <content src="Text/about_epub.xhtml"/>
+      </navPoint>
     </navPoint>
-  </navPoint>
-  <navPoint id="navPoint7">
-    <navLabel>
-      <text>Installation</text>
-    </navLabel>
-    <content src="Text/installation.xhtml" />
-  </navPoint>
-  <navPoint id="navPoint8">
-    <navLabel>
-      <text>Features</text>
-    </navLabel>
-    <content src="Text/features.xhtml" />
-    <navPoint id="navPoint9">
+    <navPoint id="navPoint7">
       <navLabel>
-        <text>User Interface</text>
+        <text>Installation</text>
       </navLabel>
-      <content src="Text/user_interface.xhtml" />
+      <content src="Text/installation.xhtml"/>
     </navPoint>
-    <navPoint id="navPoint10">
+    <navPoint id="navPoint8">
       <navLabel>
-        <text>Preferences</text>
+        <text>Features</text>
       </navLabel>
-      <content src="Text/preferences.xhtml" />
-      <navPoint id="navPoint11">
+      <content src="Text/features.xhtml"/>
+      <navPoint id="navPoint9">
+        <navLabel>
+          <text>User Interface</text>
+        </navLabel>
+        <content src="Text/user_interface.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint10">
+        <navLabel>
+          <text>Preferences</text>
+        </navLabel>
+        <content src="Text/preferences.xhtml"/>
+        <navPoint id="navPoint11">
+          <navLabel>
+            <text>Code View</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_4"/>
+        </navPoint>
+        <navPoint id="navPoint12">
+          <navLabel>
+            <text>Preview</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_5"/>
+        </navPoint>
+        <navPoint id="navPoint13">
+          <navLabel>
+            <text>Icon Themes</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_6"/>
+        </navPoint>
+        <navPoint id="navPoint14">
+          <navLabel>
+            <text>Main UI</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_7"/>
+        </navPoint>
+        <navPoint id="navPoint15">
+          <navLabel>
+            <text>Basics</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_8"/>
+        </navPoint>
+        <navPoint id="navPoint16">
+          <navLabel>
+            <text>Security</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_9"/>
+        </navPoint>
+        <navPoint id="navPoint17">
+          <navLabel>
+            <text>Validation</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_10"/>
+        </navPoint>
+        <navPoint id="navPoint18">
+          <navLabel>
+            <text>Advanced</text>
+          </navLabel>
+          <content src="Text/preferences.xhtml#sigil_toc_id_11"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint19">
+        <navLabel>
+          <text>Opening and Saving Files</text>
+        </navLabel>
+        <content src="Text/opening_and_saving_files.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint20">
         <navLabel>
           <text>Code View</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_4" />
+        <content src="Text/code_view.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint12">
+      <navPoint id="navPoint21">
         <navLabel>
           <text>Preview</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_5" />
+        <content src="Text/preview.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint13">
+      <navPoint id="navPoint22">
         <navLabel>
-          <text>Icon Themes</text>
+          <text>Book Browser</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_6" />
+        <content src="Text/book_browser.xhtml"/>
+        <navPoint id="navPoint23">
+          <navLabel>
+            <text>Delete</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_19"/>
+        </navPoint>
+        <navPoint id="navPoint24">
+          <navLabel>
+            <text>Rename</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#book_browser_rename"/>
+        </navPoint>
+        <navPoint id="navPoint25">
+          <navLabel>
+            <text>ReGex Rename</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_20"/>
+        </navPoint>
+        <navPoint id="navPoint26">
+          <navLabel>
+            <text>Move</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_21"/>
+        </navPoint>
+        <navPoint id="navPoint27">
+          <navLabel>
+            <text>Merge</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_22"/>
+        </navPoint>
+        <navPoint id="navPoint28">
+          <navLabel>
+            <text>Sort</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_23"/>
+        </navPoint>
+        <navPoint id="navPoint29">
+          <navLabel>
+            <text>Link Stylesheets</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_24"/>
+        </navPoint>
+        <navPoint id="navPoint30">
+          <navLabel>
+            <text>Link Javascripts</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_33"/>
+        </navPoint>
+        <navPoint id="navPoint31">
+          <navLabel>
+            <text>Add Semantics</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#add-semantics"/>
+        </navPoint>
+        <navPoint id="navPoint32">
+          <navLabel>
+            <text>Open With</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#context_open_with"/>
+        </navPoint>
+        <navPoint id="navPoint33">
+          <navLabel>
+            <text>Save As</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#context_save_as"/>
+        </navPoint>
+        <navPoint id="navPoint34">
+          <navLabel>
+            <text>Add Blank HTML File/Stylesheet/SVG Image</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#context_add_blank"/>
+        </navPoint>
+        <navPoint id="navPoint35">
+          <navLabel>
+            <text>Add Copy</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#context_add_copy"/>
+        </navPoint>
+        <navPoint id="navPoint36">
+          <navLabel>
+            <text>Add Existing Files</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#context_add_existing_files"/>
+        </navPoint>
+        <navPoint id="navPoint37">
+          <navLabel>
+            <text>Select All</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_25"/>
+        </navPoint>
+        <navPoint id="navPoint38">
+          <navLabel>
+            <text>Validate With W3C (CSS stylesheets only)</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_26"/>
+        </navPoint>
+        <navPoint id="navPoint39">
+          <navLabel>
+            <text>Cover Image (image files only)</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_27"/>
+        </navPoint>
+        <navPoint id="navPoint40">
+          <navLabel>
+            <text>Font Obfuscation (font files only)</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#font_obfuscation"/>
+        </navPoint>
+        <navPoint id="navPoint41">
+          <navLabel>
+            <text>Renumber TOC Entries (.ncx files only)</text>
+          </navLabel>
+          <content src="Text/book_browser.xhtml#sigil_toc_id_28"/>
+        </navPoint>
       </navPoint>
-      <navPoint id="navPoint14">
+      <navPoint id="navPoint42">
         <navLabel>
-          <text>Main UI</text>
+          <text>Metadata</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_7" />
+        <content src="Text/metadata.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint15">
+      <navPoint id="navPoint43">
         <navLabel>
-          <text>Basics</text>
+          <text>Add Cover</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_8" />
+        <content src="Text/add_cover.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint16">
+      <navPoint id="navPoint44">
         <navLabel>
-          <text>Security</text>
+          <text>Table of Contents</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_9" />
+        <content src="Text/table_of_contents.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint17">
+      <navPoint id="navPoint45">
         <navLabel>
           <text>Validation</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_10" />
+        <content src="Text/validation.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint18">
+      <navPoint id="navPoint46">
         <navLabel>
-          <text>Advanced</text>
+          <text>Spellcheck</text>
         </navLabel>
-        <content src="Text/preferences.xhtml#sigil_toc_id_11" />
+        <content src="Text/spellcheck.xhtml"/>
       </navPoint>
-    </navPoint>
-    <navPoint id="navPoint19">
-      <navLabel>
-        <text>Opening and Saving Files</text>
-      </navLabel>
-      <content src="Text/opening_and_saving_files.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint20">
-      <navLabel>
-        <text>Code View</text>
-      </navLabel>
-      <content src="Text/code_view.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint21">
-      <navLabel>
-        <text>Preview</text>
-      </navLabel>
-      <content src="Text/preview.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint22">
-      <navLabel>
-        <text>Book Browser</text>
-      </navLabel>
-      <content src="Text/book_browser.xhtml" />
-      <navPoint id="navPoint23">
+      <navPoint id="navPoint47">
         <navLabel>
-          <text>Delete</text>
+          <text>Images, Video, Audio</text>
         </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_19" />
+        <content src="Text/media_files.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint24">
+      <navPoint id="navPoint48">
         <navLabel>
-          <text>Rename</text>
+          <text>Special Characters</text>
         </navLabel>
-        <content src="Text/book_browser.xhtml#book_browser_rename" />
+        <content src="Text/special_characters.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint25">
+      <navPoint id="navPoint49">
         <navLabel>
-          <text>ReGex Rename</text>
+          <text>Using Checkpoints to Quickly Save/Restore Epub State</text>
         </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_20" />
+        <content src="Text/checkpoints.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint26">
+      <navPoint id="navPoint50">
         <navLabel>
-          <text>Move</text>
+          <text>Splitting and Merging</text>
         </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_21" />
+        <content src="Text/splitting_and_merging.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint27">
+      <navPoint id="navPoint51">
         <navLabel>
-          <text>Merge</text>
+          <text>Find &amp; Replace</text>
         </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_22" />
-      </navPoint>
-      <navPoint id="navPoint28">
-        <navLabel>
-          <text>Sort</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_23" />
-      </navPoint>
-      <navPoint id="navPoint29">
-        <navLabel>
-          <text>Link Stylesheets</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_24" />
-      </navPoint>
-      <navPoint id="navPoint30">
-        <navLabel>
-          <text>Link Javascripts</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_33" />
-      </navPoint>
-      <navPoint id="navPoint31">
-        <navLabel>
-          <text>Add Semantics</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#add-semantics" />
-      </navPoint>
-      <navPoint id="navPoint32">
-        <navLabel>
-          <text>Open With</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#context_open_with" />
-      </navPoint>
-      <navPoint id="navPoint33">
-        <navLabel>
-          <text>Save As</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#context_save_as" />
-      </navPoint>
-      <navPoint id="navPoint34">
-        <navLabel>
-          <text>Add Blank HTML File/Stylesheet/SVG Image</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#context_add_blank" />
-      </navPoint>
-      <navPoint id="navPoint35">
-        <navLabel>
-          <text>Add Copy</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#context_add_copy" />
-      </navPoint>
-      <navPoint id="navPoint36">
-        <navLabel>
-          <text>Add Existing Files</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#context_add_existing_files" />
-      </navPoint>
-      <navPoint id="navPoint37">
-        <navLabel>
-          <text>Select All</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_25" />
-      </navPoint>
-      <navPoint id="navPoint38">
-        <navLabel>
-          <text>Validate With W3C (CSS stylesheets only)</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_26" />
-      </navPoint>
-      <navPoint id="navPoint39">
-        <navLabel>
-          <text>Cover Image (image files only)</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_27" />
-      </navPoint>
-      <navPoint id="navPoint40">
-        <navLabel>
-          <text>Font Obfuscation (font files only)</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#font_obfuscation" />
-      </navPoint>
-      <navPoint id="navPoint41">
-        <navLabel>
-          <text>Renumber TOC Entries (.ncx files only)</text>
-        </navLabel>
-        <content src="Text/book_browser.xhtml#sigil_toc_id_28" />
-      </navPoint>
-    </navPoint>
-    <navPoint id="navPoint42">
-      <navLabel>
-        <text>Metadata</text>
-      </navLabel>
-      <content src="Text/metadata.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint43">
-      <navLabel>
-        <text>Add Cover</text>
-      </navLabel>
-      <content src="Text/add_cover.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint44">
-      <navLabel>
-        <text>Table of Contents</text>
-      </navLabel>
-      <content src="Text/table_of_contents.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint45">
-      <navLabel>
-        <text>Validation</text>
-      </navLabel>
-      <content src="Text/validation.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint46">
-      <navLabel>
-        <text>Spellcheck</text>
-      </navLabel>
-      <content src="Text/spellcheck.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint47">
-      <navLabel>
-        <text>Images, Video, Audio</text>
-      </navLabel>
-      <content src="Text/media_files.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint48">
-      <navLabel>
-        <text>Special Characters</text>
-      </navLabel>
-      <content src="Text/special_characters.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint49">
-      <navLabel>
-        <text>Using Checkpoints to Quickly Save/Restore Epub State</text>
-      </navLabel>
-      <content src="Text/checkpoints.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint50">
-      <navLabel>
-        <text>Splitting and Merging</text>
-      </navLabel>
-      <content src="Text/splitting_and_merging.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint51">
-      <navLabel>
-        <text>Find &amp; Replace</text>
-      </navLabel>
-      <content src="Text/find_replace.xhtml" />
-      <navPoint id="navPoint52">
-        <navLabel>
-          <text>What to Search For</text>
-        </navLabel>
-        <content src="Text/find_replace.xhtml#sigil_toc_id_29" />
-      </navPoint>
-    </navPoint>
-    <navPoint id="navPoint53">
-      <navLabel>
-        <text>Saved Searches</text>
-      </navLabel>
-      <content src="Text/saved_searches.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint54">
-      <navLabel>
-        <text>Clips</text>
-      </navLabel>
-      <content src="Text/clips.xhtml" />
-      <navPoint id="navPoint55">
-        <navLabel>
-          <text>Context Menu</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_12" />
-      </navPoint>
-      <navPoint id="navPoint56">
-        <navLabel>
-          <text>Clip Editor</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_13" />
-      </navPoint>
-      <navPoint id="navPoint57">
-        <navLabel>
-          <text>Clip Bar</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_14" />
-      </navPoint>
-      <navPoint id="navPoint58">
-        <navLabel>
-          <text>Clips Window</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_15" />
-      </navPoint>
-      <navPoint id="navPoint59">
-        <navLabel>
-          <text>Context Menu</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_16" />
-      </navPoint>
-      <navPoint id="navPoint60">
-        <navLabel>
-          <text>Keyboard Shortcuts</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_17" />
-      </navPoint>
-      <navPoint id="navPoint61">
-        <navLabel>
-          <text>Main Menu</text>
-        </navLabel>
-        <content src="Text/clips.xhtml#sigil_toc_id_18" />
-      </navPoint>
-    </navPoint>
-    <navPoint id="navPoint62">
-      <navLabel>
-        <text>Clipboard History</text>
-      </navLabel>
-      <content src="Text/clipboard_history.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint63">
-      <navLabel>
-        <text>Links and IDs</text>
-      </navLabel>
-      <content src="Text/links.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint64">
-      <navLabel>
-        <text>Styles</text>
-      </navLabel>
-      <content src="Text/styles.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint65">
-      <navLabel>
-        <text>Indexes</text>
-      </navLabel>
-      <content src="Text/indexes.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint66">
-      <navLabel>
-        <text>Reports</text>
-      </navLabel>
-      <content src="Text/reports.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint67">
-      <navLabel>
-        <text>External Editors</text>
-      </navLabel>
-      <content src="Text/external_editors.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint68">
-      <navLabel>
-        <text>Preferred External Xhtml Editor</text>
-      </navLabel>
-      <content src="Text/external_xhtml_editor.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint69">
-      <navLabel>
-        <text>Using the Page Inspector</text>
-      </navLabel>
-      <content src="Text/inspector.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint70">
-      <navLabel>
-        <text>Manage Plugins</text>
-      </navLabel>
-      <content src="Text/manage_plugins.xhtml" />
-      <navPoint id="navPoint71">
-        <navLabel>
-          <text>Running Plugins</text>
-        </navLabel>
-        <content src="Text/manage_plugins.xhtml#sigil_toc_id_30" />
-      </navPoint>
-    </navPoint>
-    <navPoint id="navPoint72">
-      <navLabel>
-        <text>Automate Lists</text>
-      </navLabel>
-      <content src="Text/automate.xhtml" />
-      <navPoint id="navPoint73">
-        <navLabel>
-          <text>Creating and Editing Automate Lists</text>
-        </navLabel>
-        <content src="Text/automate.xhtml#sigil_toc_id_31" />
-        <navPoint id="navPoint74">
+        <content src="Text/find_replace.xhtml"/>
+        <navPoint id="navPoint52">
           <navLabel>
-            <text>Automate Lists Are Simple Text Files</text>
+            <text>What to Search For</text>
           </navLabel>
-          <content src="Text/automate.xhtml#sigil_toc_id_34" />
+          <content src="Text/find_replace.xhtml#sigil_toc_id_29"/>
         </navPoint>
       </navPoint>
-      <navPoint id="navPoint75">
+      <navPoint id="navPoint53">
         <navLabel>
-          <text>Running an Automate List</text>
+          <text>Saved Searches</text>
         </navLabel>
-        <content src="Text/automate.xhtml#sigil_toc_id_32" />
+        <content src="Text/saved_searches.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint54">
+        <navLabel>
+          <text>Clips</text>
+        </navLabel>
+        <content src="Text/clips.xhtml"/>
+        <navPoint id="navPoint55">
+          <navLabel>
+            <text>Context Menu</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_12"/>
+        </navPoint>
+        <navPoint id="navPoint56">
+          <navLabel>
+            <text>Clip Editor</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_13"/>
+        </navPoint>
+        <navPoint id="navPoint57">
+          <navLabel>
+            <text>Clip Bar</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_14"/>
+        </navPoint>
+        <navPoint id="navPoint58">
+          <navLabel>
+            <text>Clips Window</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_15"/>
+        </navPoint>
+        <navPoint id="navPoint59">
+          <navLabel>
+            <text>Context Menu</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_16"/>
+        </navPoint>
+        <navPoint id="navPoint60">
+          <navLabel>
+            <text>Keyboard Shortcuts</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_17"/>
+        </navPoint>
+        <navPoint id="navPoint61">
+          <navLabel>
+            <text>Main Menu</text>
+          </navLabel>
+          <content src="Text/clips.xhtml#sigil_toc_id_18"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint62">
+        <navLabel>
+          <text>Clipboard History</text>
+        </navLabel>
+        <content src="Text/clipboard_history.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint63">
+        <navLabel>
+          <text>Links and IDs</text>
+        </navLabel>
+        <content src="Text/links.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint64">
+        <navLabel>
+          <text>Styles</text>
+        </navLabel>
+        <content src="Text/styles.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint65">
+        <navLabel>
+          <text>Indexes</text>
+        </navLabel>
+        <content src="Text/indexes.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint66">
+        <navLabel>
+          <text>Reports</text>
+        </navLabel>
+        <content src="Text/reports.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint67">
+        <navLabel>
+          <text>External Editors</text>
+        </navLabel>
+        <content src="Text/external_editors.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint68">
+        <navLabel>
+          <text>Preferred External Xhtml Editor</text>
+        </navLabel>
+        <content src="Text/external_xhtml_editor.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint69">
+        <navLabel>
+          <text>Using the Page Inspector</text>
+        </navLabel>
+        <content src="Text/inspector.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint70">
+        <navLabel>
+          <text>Manage Plugins</text>
+        </navLabel>
+        <content src="Text/manage_plugins.xhtml"/>
+        <navPoint id="navPoint71">
+          <navLabel>
+            <text>Running Plugins</text>
+          </navLabel>
+          <content src="Text/manage_plugins.xhtml#sigil_toc_id_30"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint72">
+        <navLabel>
+          <text>Automate Lists</text>
+        </navLabel>
+        <content src="Text/automate.xhtml"/>
+        <navPoint id="navPoint73">
+          <navLabel>
+            <text>Creating and Editing Automate Lists</text>
+          </navLabel>
+          <content src="Text/automate.xhtml#sigil_toc_id_31"/>
+          <navPoint id="navPoint74">
+            <navLabel>
+              <text>Automate Lists Are Simple Text Files</text>
+            </navLabel>
+            <content src="Text/automate.xhtml#sigil_toc_id_34"/>
+          </navPoint>
+        </navPoint>
+        <navPoint id="navPoint75">
+          <navLabel>
+            <text>Running an Automate List</text>
+          </navLabel>
+          <content src="Text/automate.xhtml#sigil_toc_id_32"/>
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint76">
+        <navLabel>
+          <text>Customize the User Interface</text>
+        </navLabel>
+        <content src="Text/ui_customize.xhtml"/>
+        <navPoint id="navPoint77">
+          <navLabel>
+            <text>Customizing the Toolbars</text>
+          </navLabel>
+          <content src="Text/ui_customize.xhtml#sigil_toc_id_1"/>
+        </navPoint>
+        <navPoint id="navPoint78">
+          <navLabel>
+            <text>Customizing the Panels</text>
+          </navLabel>
+          <content src="Text/ui_customize.xhtml#sigil_toc_id_2"/>
+        </navPoint>
+        <navPoint id="navPoint79">
+          <navLabel>
+            <text>Customizing the Icons</text>
+          </navLabel>
+          <content src="Text/ui_customize.xhtml#sigil_toc_id_3"/>
+        </navPoint>
       </navPoint>
     </navPoint>
-    <navPoint id="navPoint76">
+    <navPoint id="navPoint80">
       <navLabel>
-        <text>Customize the User Interface</text>
+        <text>Tutorials</text>
       </navLabel>
-      <content src="Text/ui_customize.xhtml" />
-      <navPoint id="navPoint77">
+      <content src="Text/tutorials.xhtml"/>
+      <navPoint id="navPoint81">
         <navLabel>
-          <text>Customizing the Toolbars</text>
+          <text>Getting Started With EPUB</text>
         </navLabel>
-        <content src="Text/ui_customize.xhtml#sigil_toc_id_1" />
+        <content src="Text/tutorial_getting_started_with_epub.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint78">
+      <navPoint id="navPoint82">
         <navLabel>
-          <text>Customizing the Panels</text>
+          <text>Prepare Your File For Sigil</text>
         </navLabel>
-        <content src="Text/ui_customize.xhtml#sigil_toc_id_2" />
+        <content src="Text/tutorial_convert_to_html.xhtml"/>
       </navPoint>
-      <navPoint id="navPoint79">
+      <navPoint id="navPoint83">
         <navLabel>
-          <text>Customizing the Icons</text>
+          <text>Open Your File With Sigil</text>
         </navLabel>
-        <content src="Text/ui_customize.xhtml#sigil_toc_id_3" />
+        <content src="Text/tutorial_load_file.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint84">
+        <navLabel>
+          <text>Save Your EPUB File</text>
+        </navLabel>
+        <content src="Text/tutorial_save.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint85">
+        <navLabel>
+          <text>Add the Author and Title</text>
+        </navLabel>
+        <content src="Text/tutorial_metadata.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint86">
+        <navLabel>
+          <text>Add a Cover Image</text>
+        </navLabel>
+        <content src="Text/tutorial_add_cover.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint87">
+        <navLabel>
+          <text>Create Files For Each Chapter</text>
+        </navLabel>
+        <content src="Text/tutorial_split.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint88">
+        <navLabel>
+          <text>Identify Your Chapters</text>
+        </navLabel>
+        <content src="Text/tutorial_mark_chapters.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint89">
+        <navLabel>
+          <text>Generate A Table of Contents</text>
+        </navLabel>
+        <content src="Text/tutorial_generate_toc.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint90">
+        <navLabel>
+          <text>Create Links and Notes</text>
+        </navLabel>
+        <content src="Text/tutorial_links.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint91">
+        <navLabel>
+          <text>A Quick Introduction To Code View</text>
+        </navLabel>
+        <content src="Text/tutorial_code_view.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint92">
+        <navLabel>
+          <text>Check For Spelling Mistakes</text>
+        </navLabel>
+        <content src="Text/tutorial_spelling.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint93">
+        <navLabel>
+          <text>Edit With Find &amp; Replace</text>
+        </navLabel>
+        <content src="Text/tutorial_find_replace.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint94">
+        <navLabel>
+          <text>Use Stylesheets</text>
+        </navLabel>
+        <content src="Text/tutorial_stylesheets.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint95">
+        <navLabel>
+          <text>Include Custom Fonts</text>
+        </navLabel>
+        <content src="Text/tutorial_embed_fonts.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint96">
+        <navLabel>
+          <text>Advanced Find &amp; Replace – Regex</text>
+        </navLabel>
+        <content src="Text/tutorial_advanced_find.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint97">
+        <navLabel>
+          <text>Regular Expression Reference</text>
+        </navLabel>
+        <content src="Text/tutorial_regex_reference.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint98">
+        <navLabel>
+          <text>Tips</text>
+        </navLabel>
+        <content src="Text/tutorial_tips.xhtml"/>
       </navPoint>
     </navPoint>
-  </navPoint>
-  <navPoint id="navPoint80">
-    <navLabel>
-      <text>Tutorials</text>
-    </navLabel>
-    <content src="Text/tutorials.xhtml" />
-    <navPoint id="navPoint81">
+    <navPoint id="navPoint99">
       <navLabel>
-        <text>Getting Started With EPUB</text>
+        <text>FAQ</text>
       </navLabel>
-      <content src="Text/tutorial_getting_started_with_epub.xhtml" />
+      <content src="Text/faq.xhtml"/>
+      <navPoint id="navPoint100">
+        <navLabel>
+          <text>Common Questions</text>
+        </navLabel>
+        <content src="Text/faq.xhtml#faq_common_questions"/>
+      </navPoint>
+      <navPoint id="navPoint101">
+        <navLabel>
+          <text>Where to Get Help</text>
+        </navLabel>
+        <content src="Text/faq.xhtml#faq_questions"/>
+      </navPoint>
+      <navPoint id="navPoint102">
+        <navLabel>
+          <text>Using Sigil</text>
+        </navLabel>
+        <content src="Text/faq.xhtml#faq_using_sigil"/>
+      </navPoint>
+      <navPoint id="navPoint103">
+        <navLabel>
+          <text>Formatting and Styles</text>
+        </navLabel>
+        <content src="Text/faq.xhtml#faq_formatting"/>
+      </navPoint>
     </navPoint>
-    <navPoint id="navPoint82">
+    <navPoint id="navPoint104">
       <navLabel>
-        <text>Prepare Your File For Sigil</text>
+        <text>Contributing to Sigil</text>
       </navLabel>
-      <content src="Text/tutorial_convert_to_html.xhtml" />
+      <content src="Text/contributing_to_sigil.xhtml"/>
     </navPoint>
-    <navPoint id="navPoint83">
-      <navLabel>
-        <text>Open Your File With Sigil</text>
-      </navLabel>
-      <content src="Text/tutorial_load_file.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint84">
-      <navLabel>
-        <text>Save Your EPUB File</text>
-      </navLabel>
-      <content src="Text/tutorial_save.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint85">
-      <navLabel>
-        <text>Add the Author and Title</text>
-      </navLabel>
-      <content src="Text/tutorial_metadata.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint86">
-      <navLabel>
-        <text>Add a Cover Image</text>
-      </navLabel>
-      <content src="Text/tutorial_add_cover.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint87">
-      <navLabel>
-        <text>Create Files For Each Chapter</text>
-      </navLabel>
-      <content src="Text/tutorial_split.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint88">
-      <navLabel>
-        <text>Identify Your Chapters</text>
-      </navLabel>
-      <content src="Text/tutorial_mark_chapters.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint89">
-      <navLabel>
-        <text>Generate A Table of Contents</text>
-      </navLabel>
-      <content src="Text/tutorial_generate_toc.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint90">
-      <navLabel>
-        <text>Create Links and Notes</text>
-      </navLabel>
-      <content src="Text/tutorial_links.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint91">
-      <navLabel>
-        <text>A Quick Introduction To Code View</text>
-      </navLabel>
-      <content src="Text/tutorial_code_view.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint92">
-      <navLabel>
-        <text>Check For Spelling Mistakes</text>
-      </navLabel>
-      <content src="Text/tutorial_spelling.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint93">
-      <navLabel>
-        <text>Edit With Find &amp; Replace</text>
-      </navLabel>
-      <content src="Text/tutorial_find_replace.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint94">
-      <navLabel>
-        <text>Use Stylesheets</text>
-      </navLabel>
-      <content src="Text/tutorial_stylesheets.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint95">
-      <navLabel>
-        <text>Include Custom Fonts</text>
-      </navLabel>
-      <content src="Text/tutorial_embed_fonts.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint96">
-      <navLabel>
-        <text>Advanced Find &amp; Replace – Regex</text>
-      </navLabel>
-      <content src="Text/tutorial_advanced_find.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint97">
-      <navLabel>
-        <text>Regular Expression Reference</text>
-      </navLabel>
-      <content src="Text/tutorial_regex_reference.xhtml" />
-    </navPoint>
-    <navPoint id="navPoint98">
-      <navLabel>
-        <text>Tips</text>
-      </navLabel>
-      <content src="Text/tutorial_tips.xhtml" />
-    </navPoint>
-  </navPoint>
-  <navPoint id="navPoint99">
-    <navLabel>
-      <text>FAQ</text>
-    </navLabel>
-    <content src="Text/faq.xhtml" />
-    <navPoint id="navPoint100">
-      <navLabel>
-        <text>Common Questions</text>
-      </navLabel>
-      <content src="Text/faq.xhtml#faq_common_questions" />
-    </navPoint>
-    <navPoint id="navPoint101">
-      <navLabel>
-        <text>Where to Get Help</text>
-      </navLabel>
-      <content src="Text/faq.xhtml#faq_questions" />
-    </navPoint>
-    <navPoint id="navPoint102">
-      <navLabel>
-        <text>Using Sigil</text>
-      </navLabel>
-      <content src="Text/faq.xhtml#faq_using_sigil" />
-    </navPoint>
-    <navPoint id="navPoint103">
-      <navLabel>
-        <text>Formatting and Styles</text>
-      </navLabel>
-      <content src="Text/faq.xhtml#faq_formatting" />
-    </navPoint>
-  </navPoint>
-  <navPoint id="navPoint104">
-    <navLabel>
-      <text>Contributing to Sigil</text>
-    </navLabel>
-    <content src="Text/contributing_to_sigil.xhtml" />
-  </navPoint>
-</navMap>
+  </navMap>
 </ncx>

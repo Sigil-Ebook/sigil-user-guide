@@ -32,10 +32,9 @@
     <p class="tiptext">If you click in Preview the Code View tab will sync to the same location.</p>
   </div>
 
-
   <h3 class="sigil_not_in_toc">Inspector</h3>
 
-  <p>The Inspector Widget is opened/closed by clicking the “&lt;/&gt;” button on the toolbar <img src="../Images/preview-window-toolbar.png" alt="Preview Window toolbar." style="width:20%"/> at the bottom of Preview. You can resize and reposition it how you like, and Sigil will remember your settings</p>
+  <p>The Inspector Widget is opened/closed by clicking the “&lt;/&gt;” button on the toolbar <img src="../Images/preview-window-toolbar.png" alt="Preview Window toolbar." style="width:25%"/> at the bottom of Preview. You can resize and reposition it how you like, and Sigil will remember your settings</p>
 
   <p><img src="../Images/preview-window-inspector.png" alt="Preview Window Inspector"/></p>
 
@@ -46,5 +45,200 @@
   </div>
 
   <p>For more information about using the Inspector built into Preview and specifically how to use it to determine the exact CSS being used for any particular tag, <a href="inspector.xhtml">see this tutorial</a>.</p>
+
+  <h3 class="sigil_not_in_toc">Cycle Custom CSS</h3>
+
+  <p>The Cycle Custom CSS Widget allows the user to change the css stylesheet that controls the appearence of the Preview Panel. The changes are made by clicking the <span class="inlineButton"><img class="inline" alt="preview-window-toolbar-cycle-icon" src="../Images/preview-window-toolbar-cycle-icon.png"/></span> button on the toolbar <span class="inlineButton"><img class="inline" src="../Images/preview-window-toolbar.png" alt="Preview Window toolbar." style="width:25%"/></span> at the bottom of Preview.</p>
+
+  <p>The widget will be disabled if none of the following css stylesheets are present in the <a href="preferences.xhtml#Prefer_Location">Preferent Location</a> folder:</p>
+
+  <div>
+    <ol>
+      <li>custom_preview_style.css</li>
+
+      <li>custom_preview_style_alt.css</li>
+    </ol>
+  </div>
+
+  <p>If that were the case, then the Cycle Custom CSS button will be gray-out (or disabled) on the Preview toolbar:</p>
+
+  <div class="coverimage">
+    <img src="../Images/preview-window-toolbar-cycle-grayed.png" alt="preview-window-toolbar-cycle-grayed."/>
+  </div>
+
+  <p>Is perfectly posible to create a <span class="shortcut">custom_preview_style.css</span> or <span class="shortcut">custom_preview_style_alt.css</span> file after Sigil is open, but in that case, the user will have to open a new MainWindow in order to activate the new css file(s) in Preview.</p>
+
+  <p>This feature is specially usefull when Sigil is in dark mode and the user has selected the option <a href="preferences.xhtml#previewDarkMode">Make Preview simulate a dark appearance in dark mode</a>. In those cases, black borders, table layouts, dark colors and similars, can't be properly watched in Preview. But with the appropiatte custom preview stylesheets this difficulty can be overcome.</p>
+
+  <p>An example will make things clearer. Suppose we have the following XHTML code:</p>
+
+  <pre class="example">&lt;body&gt;
+  &lt;p&gt;&lt;span class="drop"&gt;L&lt;/span&gt;orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac tellus nunc. Phasellus imperdiet leo metus, et gravida lacus. Donec metus ligula, elementum at pellentesque pellentesque, suscipit ac nunc. Etiam lobortis, massa ac aliquam auctor, augue nisl sagittis urna, at dapibus tellus erat ullamcorper ligula. Praesent orci dui, pulvinar id convallis a, faucibus non mauris. Donec tellus augue, tempus sed facilisis sed, fringilla quis leo. Mauris vulputate, leo ac facilisis vulputate, enim orci interdum augue, in blandit quam turpis quis dui. Morbi dictum luctus velit nec faucibus.&lt;/p&gt;
+
+  &lt;p class="centerb"&gt;Test 2&lt;/p&gt;
+
+  &lt;table class="custom"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th&gt;
+          Firstname
+        &lt;/th&gt;
+
+        &lt;th&gt;
+          Lastname
+        &lt;/th&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+        &lt;td&gt;
+          Peter
+        &lt;/td&gt;
+
+        &lt;td&gt;
+          Griffin
+        &lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+        &lt;td&gt;
+          Lois
+        &lt;/td&gt;
+
+        &lt;td&gt;
+          Griffin
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+</pre>
+
+  and that the respective .css stylesheet that styles the above code is: 
+
+  <pre class="example">p {
+     line-height: 1.2em;
+     text-align: justify;
+}
+
+.drop {
+     float: left;
+     font-size: 3em;
+     width: 1em;
+     text-align: center;
+     font-weight: bold;
+     color: white;
+     background: black;
+     margin: -0em 5px -0.3em 0;
+     line-height: 1.2em
+}
+
+.centerb {
+     border: 2px solid black;
+     padding: 0.25em;
+     text-align: center;
+     font-weight: bold;
+}
+
+.custom {
+     width: 100%;
+     border-collapse: collapse;
+     border: 1px solid black;
+}
+
+.custom td {
+     border: 1px solid black;
+}</pre>
+
+  <p>Let's save what we have wrote as “Dark mode case.epub”. If none custom css stylesheets are present, then the user who works in dark mode will see the Preview Panel with its default style and the above code will look as follows.</p>
+
+  <p><img alt="default_preview_dark_style" src="../Images/default_preview_dark_style.png"/></p>
+
+  <p>As can be seen, the contrast is poor and the colors and the design of the sheet are not well appreciated.</p>
+
+  <p>Now, if in the <a href="preferences.xhtml#Prefer_Location">Preferent Location</a> folder we add a file named <span class="shortcut">custom_preview_style.css</span> with the following selectors and properties:</p>
+
+  <pre class="example">body {
+    background: initial !important;
+    color: initial !important;
+    filter: invert(1);
+}
+
+svg, img {
+    filter: invert(1);
+}</pre>
+
+  <p>after closing and opening Sigil, we will see that the <span class="inlineButton"><img class="inline" alt="preview-window-toolbar-cycle-icon" src="../Images/preview-window-toolbar-cycle-icon.png"/></span> button is enabled. If now the “Dark mode case.epub” is open and the <span class="inlineButton"><img class="inline" alt="preview-window-toolbar-cycle-icon" src="../Images/preview-window-toolbar-cycle-icon.png"/></span> button is pressed, the Preview Panel will look this time as follows:</p>
+
+  <p><img alt="custom_preview_dark_style" src="../Images/custom_preview_dark_style.png"/></p>
+
+  <p>All colors are inverted, the contrast is greatly improved, and text, borders and table layout it can be properly watched.</p>
+
+  <p>If again, we close Sigil and add in the <a href="preferences.xhtml#Prefer_Location">Preferent Location</a> folder a new file named <span class="shortcut">custom_preview_style_alt.css</span> with the following code:</p>
+
+  <pre class="example">html {
+    background: white !important;
+    color: black !important;
+}</pre>
+
+  <p>and after that, we open “Dark mode case.epub” and press the <span class="inlineButton"><img class="inline" alt="preview-window-toolbar-cycle-icon" src="../Images/preview-window-toolbar-cycle-icon.png"/></span> button twice, the Preview Panel will look now:</p>
+
+  <p><img alt="custom_preview_alt_style" src="../Images/custom_preview_alt_style.png"/></p>
+
+  <p>So, if both, <span class="shortcut">custom_preview_style.css</span> and <span class="shortcut">custom_preview_style_alt.css</span> are present in the <a href="preferences.xhtml#Prefer_Location">Preferent Location</a> folder, the we will have a three-stage toggler that works cyclically of the following way:</p>
+
+  <div>
+    <ol>
+      <li>custom_preview_style.css</li>
+
+      <li>custom_preview_style_alt.css</li>
+
+      <li>default preview style</li>
+    </ol>
+  </div>
+
+  <p>This is how it works in practice:</p>
+
+  <p><img alt="three-stage-toggler" src="../Images/three-stage-toggler.gif"/></p>
+
+  <h4>Mimicking e-ink screens</h4>
+
+  <p>The Cycle Custom CSS widget is not only for working with Sigil in dark mode; it can be used advantageously in light mode too.</p>
+
+  <p>It is very common that an epub is composed with many images in color. And is also common, that some titles and text in an epub are written in color. But, how those images and text will look in an e-ink screen? Will they be quite legible in a screen with only 16 shades of gray?</p>
+
+  <p>If we have a page like the following:</p>
+
+  <p><img alt="full-colorized-image" src="../Images/full-colorized-image.png"/></p>
+
+  <p>how will it look in an e-ink device?</p>
+
+  <p>The above question can be easily answered by employing a <span class="shortcut">custom_preview_style.css</span> (or <span class="shortcut">custom_preview_style_alt.css</span>) with the following code:</p>
+
+  <pre class="example">body {
+    background: initial !important;
+    color: initial !important;
+    filter: url('data:image/svg+xml,\
+    &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;\
+      &lt;filter id="posterize"&gt;\
+        &lt;feComponentTransfer&gt;\
+    	   &lt;feFuncR type="discrete" tableValues="0 .0625 .125 .1875 .25 .3125 .375 .4375 .5 .5625 .625 .6875 .75 .8125 .875 .9375 1"/&gt;\
+		   &lt;feFuncG type="discrete" tableValues="0 .0625 .125 .1875 .25 .3125 .375 .4375 .5 .5625 .625 .6875 .75 .8125 .875 .9375 1"/&gt;\
+		   &lt;feFuncB type="discrete" tableValues="0 .0625 .125 .1875 .25 .3125 .375 .4375 .5 .5625 .625 .6875 .75 .8125 .875 .9375 1"/&gt;\
+		   &lt;feFuncA type="discrete" tableValues="0 .0625 .125 .1875 .25 .3125 .375 .4375 .5 .5625 .625 .6875 .75 .8125 .875 .9375 1"/&gt;\
+  	    &lt;/feComponentTransfer&gt;\
+      &lt;/filter&gt;\
+    &lt;/svg&gt;#posterize') grayscale(1);
+}
+</pre>
+
+  <p>(<span class="h4">Note:</span> The explanation of the above code is out of the scope of the present guide. That code is a mix of the employment of a svg filter and a css one and shows one of the most powerful features of epub3 and css3.)</p>
+
+  <p>Now, by pressing the Cycle Custom CSS button once, the precedent page will look as:</p>
+
+  <p><img alt="16-shades-of-gray-image" src="../Images/16-shades-of-gray-image.png"/></p>
+
+  <p>Thereby, by using the widget, it is possible to know how the epub will be displayed in an e-ink reader and if it is necessary to make any modifications so that the ebook is displayed in the best possible way on such devices.</p>
+
+  <p><span class="h4">Final words:</span><span class="nb"></span> the above code for <span class="shortcut">custom_preview_style.css</span> and <span class="shortcut">custom_preview_style_alt.css</span> are merely illustrative, the user has the greatest freedom to use the styles that he deems convenient to display the Preview Panel.</p>
 </body>
 </html>
