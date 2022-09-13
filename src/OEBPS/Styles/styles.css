@@ -83,7 +83,7 @@ h3 {
     margin-bottom: 0.5em;
 }
 
-h4 {
+h4, span.h4 {
     font-family: 'SmallCaps', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
@@ -212,3 +212,14 @@ span.shortcut {
     font-family: monotype, courier, sans-serif;
     font-size: .9em;
 }
+
+span.inlineButton {
+    display: inline;
+    line-height: 0;
+    vertical-align: -0.15em;
+}
+
+img.inline {
+    height: 1.0em !important;
+}
+
