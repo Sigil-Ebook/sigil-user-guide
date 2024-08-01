@@ -1,7 +1,8 @@
 # <center>This is the repository for the Sigil User Guide</center>
 
 <br/>
-[View this user guide online.](https://sigil-ebook.com/sigil-user-guide)
+
+[View this user guide online](https://sigil-ebook.com/sigil-user-guide)
 
 ## <center>Guidelines for contributing</center>
 
