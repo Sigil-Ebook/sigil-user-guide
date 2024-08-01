@@ -22,6 +22,7 @@ concurrency:
 
 env:
   READIUMURL: https://github.com/readium/readium-js-viewer/releases/download/v0.32.0/Readium_cloud-reader-lite.zip
+  PAGESURL: https://sigil-ebook.com/sigil-user-guide/index2.html?epub=epub_content/guide
 
 jobs:
   # Single deploy job since we're just deploying
@@ -38,6 +39,20 @@ jobs:
         run: |
           mkdir view2
           curl -L -o viewer.zip $READIUMURL && unzip -o -d ./view2 viewer.zip
+          mv ./view2/index.html ./view2/index2.html
+          cat > ./view2/index.html <<EOF
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Redirecting...</title>
+              <meta charset="utf-8">   
+              <meta http-equiv="refresh" content="0;URL='$PAGESURL'" />
+            </head>
+            <body>
+              <p>Redirecting...</p>
+            </body>
+          </html>
+          EOF
           mkdir -p ./view2/epub_content/guide
           cd ./view2/epub_content/guide/
           cp -R $GITHUB_WORKSPACE/src/* .
@@ -46,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload created static site folder
           path: 'view2/'
       - name: Deploy to GitHub Pages
         id: deployment
