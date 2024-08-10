@@ -12,13 +12,15 @@
 
   <p>Sigil has many powerful tools to automate repairing, splitting, merging, renaming, and moving xhtml, images, stylesheets, and other resources. These tools can make numerous changes that a simple Undo/Redo can not handle. To help prevent inadvertent data loss and to provide a way to “undo” even larger scale changes, we have added a Checkpoint capability to Sigil.</p>
 
-  <div class="image"><img alt="Image of the Checkpoints menu." src="../Images/cp-menu.png"/></div>
+  <div class="image"><img alt="Image of the Checkpoints menu." style="width:45%" src="../Images/cp-menu.png"/></div>
 
-  <p>A checkpoint is a quick snapshot of the entire state of the EPUB that is stored in its own git style repository that is kept inside your Sigil Preferences folder. Creating a checkpoint can be as simple as one click on the Checkpoint icon or by using the Checkpoint Menus. Each Checkpoint made of an EPUB is named/numbered sequentially.</p>
+  <p>A checkpoint is a quick snapshot of the entire state of the EPUB that is stored in its own git repository that is kept inside your Sigil Preferences folder inside the "repo" folder. Creating a checkpoint can be as simple as one click on the Checkpoint icon or by using the Checkpoint Menus. Each Checkpoint made of an EPUB is named/numbered sequentially.</p>
 
   <div class="image"><img alt="Checkpoint dialog to select a previous checkpoint." style="width:30%" src="../Images/cp-select.png"/></div>
 
  <p>Once a Checkpoint is made, users can feel safe to make larger changes to their copy knowing that they can easily restore to their last checkpoint.</p>
+
+<p>Users can also edit and attach their own short description of each Checkpoint: <span class="menuitem">Checkpoints=&gt;Edit Checkpoint Descriptions</span> to help keep track of at what point in the editing process this checkpoint was made.</p>
 
   <p>An added advantage of using checkpoints is that a user can always compare the current state of their EPUB against any of their earlier checkpoints to see exactly what was changed and how. Here is image showing the output of a comparison done against an earlier checkpoint during an editing session. After selecting the checkpoint to compare against the following dialog is shown showing which files have changed:</p>
 
@@ -36,7 +38,7 @@
 
   <div class="image"><img alt="Checkpoint Manage Repos dialog." src="../Images/cp-manage.png"/></div>
 
-  <p>Or they can generate a summary of the changes made in each checkpoint to help them select earlier versions to restore from if needed.</p>
+  <p>Or they can generate a summary of the changes made in each checkpoint:  <span class="menuitem">Checkpoints=&gt;Show Log of Checkpoints</span> to help them select earlier versions to restore from if needed.</p>
 
   <div class="image"><img alt="CheckPoint Repo Log viewer." src="../Images/cp-log.png"/></div>
 

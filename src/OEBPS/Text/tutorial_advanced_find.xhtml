@@ -127,7 +127,7 @@
 
   <h3 class="sigil_not_in_toc">Helpful Options</h3>
 
-  <p>You may have noticed the extra Options in Find &amp; Replace: DotAll, Minimal Match, and Auto-Tokenise. All of these options are useful when using Regex. If you are starting out using regex, then the recommendation is to check each of the boxes:</p>
+  <p>You may have noticed the extra Options in Find &amp; Replace: DotAll, Minimal Match, Auto-Tokenise, and Unicode Property. All of these options are useful when using Regex. If you are starting out using regex, then the recommendation is to check each of the boxes except for the Unicode Property box.</p>
 
   <div class="image">
     <img alt="Showing Regex Search Options" src="../Images/tutorial-find-adv-options.png"/>
@@ -138,11 +138,13 @@
   <p class="sigil_not_in_toc"></p>
 
   <ul>
-    <li><span class="listheading">DotAll:</span> This regex option prepends (?s) to all regex searches and is used when you want the “.*” pattern to match across separate lines.</li>
+    <li><p><span class="listheading">DotAll:</span> This regex option prepends (?s) to all regex searches and is used when you want the “.*” pattern to match across separate lines.</p></li>
 
-    <li><span class="listheading">Minimal Match:</span> This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</li>
+    <li><p><span class="listheading">Minimal Match:</span> This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</p></li>
 
-    <li><span class="listheading">Auto-Tokenise:</span> When using Ctrl-F on selected text to add text to Find &amp; Replace, this will convert spaces to \s and escape certain characters so they are suitable for regex.</li>
+    <li><p><span class="listheading">Auto-Tokenise:</span> When using Ctrl-F on selected text to add text to Find &amp; Replace, this will convert spaces to \s and escape certain characters so they are suitable for regex.</p></li>
+
+    <li><p><span class="listheading">Unicode Property:</span> This option tells Search to replace search character classes such a \w to be based on Unicode Properties of each character.  The use of this option can greatly slow down Find and Replace but may be quite useful when searching using regex character placeholders in many languages.</p></li>
   </ul>
 
   <p>See the <a href="tutorial_regex_reference.xhtml">Regular Expression Reference</a> chapter for more details.</p>

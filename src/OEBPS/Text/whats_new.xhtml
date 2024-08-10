@@ -31,13 +31,16 @@
   <ul>
     <li><p><span class="listheading">Switch from QtWebKit to QtWebEngine</span> QtWebEngine reduces memory growth and plugs many major memory leaks and has ongoing security and support patches from Qt/Google/Chromium</p></li>
 
+    <li><p><span class="listheading">Update to Qt6.7.X from Qt 5.15.X</span></p></li>
+
+
     <li><p><span class="listheading">Removal of Book View</span> because it allowed users to mistakenly create very broken xhtml that was not acceptable in an EPUB. To replace part of its functionality, we created a new external program called <a href="https://github.com/Sigil-Ebook/PageEdit/releases">PageEdit</a> that is better suited for basic WYSIWYG proofing and simple Edits. Users who know no xhtml or css will probably want to stay with Sigil 0.9.14 as it was the last version to support BookView. More on PageEdit and integrating it into Sigil <a href="external_xhtml_editor.xhtml">can be found in this chapter</a>.</p></li>
 
     <li><p><span class="listheading">Support for Python Plugins</span> to allow users to customize and integrate how they use Sigil into their own workflow and to add the tools they need or want independently from Sigil. These plugins can be downloaded and installed to add extended support to Sigil. These plugins include epubcheck, Access-Aide, KindleImport, Kindlegen, FlightCrew, ePub3-itizer, DOCX Import plugins, and etc. More about plugins, and where to download and how to install them will be described in a later chapter.</p></li>
 
     <li><p><span class="listheading">Support for Preserving User Specified entities</span></p></li>
 
-    <li><p><span class="listheading">Sigil embeds its own Python interpreter</span> (v3.8.3 at the time of this writing to support Python 3 based plugins.</p></li>
+    <li><p><span class="listheading">Sigil embeds its own Python interpreter</span> (v3.11.9 at the time of this writing to support Python 3 based plugins.</p></li>
 
     <li><p><span class="listheading">Sigil uses a specially modified version of Google’s Gumbo Parser</span> to auto correct xhtml parsing errors according to the html5 and xhtml specs.</p></li>
 

@@ -253,6 +253,27 @@
   		<li><p><span class="listheading">Marked Text:</span> This is a special option that is only shown when you mark text. To restrict your search to a portion of text, first select some text in Code View, then go to menu item <span class="menuitem">Search=&gt;Mark Selected Text</span> or use right-click context menu <span class="menuitem">Mark Selected Text</span>.</p>
 
 		  <p>Text can be unmarked by using the menu item again without a selection. Text will also be unmarked if you use Undo, type any text, or change tabs. If you just use Replace or Replace All, the marked text will remain marked, but it will be revised according to your replacement.</p></li>
+
+
+      <li><p><span class="listheading">Selected SVG files</span>: Search only in the set of SVG image files currently selected in the Book Browser.</p></li>
+
+      <li><p><span class="listheading">Selected Javascript files</span>: Search only in the set of javascript files currently selected in the Book Browser.</p></li>
+
+      <li><span class="listheading">Selected Misc XML files</span>: Search only in the set of XML files currently selected inside the Misc folder in the Book Browser. Currently this includes pure XML files with any of the following media types:
+      <ul>
+        <li>application/ttml+xml</li>
+        <li>application/smil+xml</li>
+        <li>application/smil</li>
+        <li>application/pls+xml</li>
+        <li>application/oebps-page-map+xml</li>
+        <li>application/vnd.adobe-page-map+xml</li>
+        <li>application/adobe-page-template+xml</li>
+        <li>application/vnd.adobe-page-template+xml</li>
+        <li>application/xml</li>
+        <li>text/xml</li>
+      </ul>
+      </li>
+
 	</ul>
  
   <h4 class="sigil_not_in_toc">Search Direction</h4>
@@ -281,6 +302,8 @@
 		<li><p><span class="listheading">Minimal Match:</span> This regex option prepends (?U) to all regex searches and is used when you want a pattern to match the shortest occurrence instead of the longest match.</p></li>
 
 		<li><p><span class="listheading">Auto-Tokenise:</span> When using <span class="shortcut">Ctrl-F</span> (on Mac: <span class="shortcut">Cmd-F</span>) on selected text to copy it into the Find box, this will convert spaces to \s and escape certain characters so they are suitable for regex.</p></li>
+
+       <li><p><span class="listheading">Unicode Property</span>: Tells search that you want to treat all regex character placeholders with their unicode property equivalents. See Regex documentation for the flag: (*UCP)</p></li>
 
    </ul>
 
@@ -312,5 +335,15 @@
 
     <li><p><span class="listheading">Clear Find Replace History:</span> Clears out the all recent historyor previous Find and Replace values.</p></li>
   </ul>
+
+
+  <h3 class="sigil_not_in_toc">Handling Special Characters in Find and Replace</h3>
+
+  <p>As some characters are hard for many keyboards to produce easily, Find and Replace now supports using hex escape codes to allow the user to specificy a character by its 4 digit hexadecimal numeric code.</p>
+
+  <p>The format is \x{hhhh} where each "h" represents the a single hexidecimal value - 0 to 9 and A to F.</p>
+
+<p>For example: to replace all non-breaking space (nbsp) characters which has acharacter code 160 you could use: \x{00A0} to represent that character.</p>
+
 </body>
 </html>

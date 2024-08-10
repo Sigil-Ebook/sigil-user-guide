@@ -41,7 +41,7 @@
   <p>You can select which windows appear on your screen by using the <span class="menuitem">View</span> menu on the menubar:</p>
 
    <div class="image">
-    <img alt="Image of Sigil's View menu." src="../Images/ui_View.png"/>
+    <img alt="Image of Sigil's View menu." style="width:35%" src="../Images/ui_View.png"/>
   </div>
 
   <p>Certain windows can also be moved. To move a window, click on its header bar and drag it to its new location. For instance you can stack the windows. Here’s the Table of Contents placed below the Book Browser:</p>
@@ -87,6 +87,8 @@
       <li class="first"><span class="listheading">Blank HTML File:</span> Create a new HTML file in the book.</li>
 
       <li><span class="listheading">Blank Stylesheet:</span> Create a new CSS Stylesheet in the book.</li>
+
+      <li><span class="listheading">Blank Javascript:</span> Create a new empty javascript (js) file in the book.</li>
 
       <li><span class="listheading">Blank SVG Image File:</span> Create a new SVG image file in the book.</li>
     </ul></li>
@@ -157,7 +159,9 @@
 
     <li class="first"><span class="listheading">Closing Tag:</span> Insert a tag to close the last unclosed tag.</li>
 
-    <li class="first"><span class="listheading">Clip:</span> Select a clip to insert.</li>
+    <li class="first"><span class="listheading">Clip:</span> Select a clip to insert from the first Clips bar.</li>
+
+    <li class="first"><span class="listheading">Clip2:</span> Select a clip to insert from the second Clips bar.</li>
   </ul>
 
   <p class="heading">Format</p>
@@ -287,7 +291,9 @@
 		  <li><span class="listheading">Create HTML Table Of Contents:</span> Create an HTML file version of the TOC.</li>
 		</ul></li>
 
-	<li class="first"><span class="listheading">Restructure Epub to Sigil Norm:</span> Starting with Sigil 1.0.0, EPUBs loaded into Sigil are kept “as-is”; no files or folders are moved or renamed. This is a departure from Sigil 0.9.18 and earlier, which automatically restructured each EPUB into a standard Sigil form (one OEBPS folder, specific names for the OPF and NCX, only one folder for text, images, etc.). Users who prefer the standard Sigil form may use Restructure Epub to Sigil Norm to manually restructure their EPUB to the old Sigil standard.</li>
+	<li class="first"><p><span class="listheading">Restructure Epub to Sigil Norm:</span> Starting with Sigil 1.0.0, EPUBs loaded into Sigil are kept “as-is”; no files or folders are moved or renamed. This is a departure from Sigil 0.9.18 and earlier, which automatically restructured each EPUB into a standard Sigil form (one OEBPS folder, specific names for the OPF and NCX, only one folder for text, images, etc.). Users who prefer the standard Sigil form may use Restructure Epub to Sigil Norm to manually restructure their EPUB to the old Sigil standard.</p></li>
+
+    <li class="first"><p><span class="listheading">Rebase OPF Manifest IDs on Current Filenames:</span> Older versions of Sigil used to base OPF Manifest IDs on that file's name in order to help create uniqueness.  Unfortauntely when these files are later renamed, the Manifest ID ends up being based on its prior filename.  This can cause confusion when trying to hand edit the OPF. This tool will rebase the entire set of Manifest IDs on their current filenames while properly maintaing and updating any OPF refernces to those ids.  This includes properly updating the spine, cover metadata, smil metatdata, other metadata refines, media-overlays, fallback ids, and spine attributes.</p></li>
 	
 	 <li><span class="listheading">Create a Custom Empty Epub:</span> Design a custom EPUB layout to use when creating new EPUBs.</li>
 
@@ -422,6 +428,17 @@
     <li><span class="listheading">Table of Contents:</span> Show or hide a clickable TOC window.</li>
 
     <li><span class="listheading">Validation Results:</span> Show or hide the validation results window.</li>
+
+    <li><span class="listheading">Focus on BookBrowser:</span> move keyboard focus to the BookBrowser, unhiding it if needed.</li>
+
+    <li><span class="listheading">Focus on CodeView:</span> move keyboard focus to Code View.</li>
+
+    <li><span class="listheading">Focus on Preview:</span> Move keyboard focus to Preview, unhiding it if needed.</li>
+
+    <li><span class="listheading">Focus on Table of Contents:</span>  Move keyboard focus to the Table of Contents Window, unhiding it if needed.</li>
+
+    <li><span class="listheading">Focus on Clips Window:</span> Move keyboard focus to the Clips Window, unhiding it if needed.</li>
+
   </ul>
 
   <p class="heading">Window</p>
@@ -456,6 +473,11 @@
     <li><span class="listheading">Compare Epub against Checkpoint:</span> Compare the current version of the EPUB with an earlier checkpoint version.</li>
 
     <li><span class="listheading">Manage Checkpoint Repositories:</span> View a list of all checkpoints, view logs, and remove selected checkpoint repositories.</li>
+
+    <li><span class="listheading">Edit Checkpoint Descriptions:</span> Create and attach a short description for each Checkpoint made.</li>
+
+    <li><span class="listheading">Show Log of Checkpoints:</span> View a list of all checkpoints along with log descriptions.</li>
+
   </ul>
 
   <p class="heading">Help</p>
@@ -598,9 +620,10 @@
     </ul>
 
     <div class="toolbar">
-      <p><img alt="Image of return to previous arrow tool icon." src="../Images/ui_toolbar-back.png"/></p>
+      <p><img alt="Image of return to previous arrow tool icon." style="width:15%" src="../Images/ui_toolbar-back.png"/></p>
 
       <ul>
+        <li><span class="listheading">Bookmark Location</span> <span class="menuitem">Search=&gt;Bookmark Location</span></li>
         <li><span class="listheading">Back:</span> <span class="menuitem">Search=&gt;Back</span></li>
       </ul>
     </div>
@@ -765,7 +788,7 @@
   <div class="toolbar">
      <p><img alt="Image of default Clips toolbar." src="../Images/ui_toolbar-clips.png"/></p>
      
-   <p>There are two clip bars: <b>Clip Bar</b> and <b>Clip Bar2</b>. Buttons are created for the first 40 clips not in a group. The first clip bar will contain the first 20 clips, the second clip bar will contain the next 20 clips. To create, edit, and manage clips, go to: <span class="menuitem">Tools=&gt;Clip Editor</span></p>
+   <p>There are two clip bars: <b>Clip Bar</b> and <b>Clip Bar2</b>. Buttons are created for the first 60 clips not in a group. The first clip bar will contain the first 30 clips, the second clip bar will contain the next 30 clips. To create, edit, and manage clips, go to: <span class="menuitem">Tools=&gt;Clip Editor</span></p>
  </div>
 
   <div class="tip">
@@ -777,7 +800,7 @@
   <p>Context Menus are menus that appear when you <b>right-click</b> on text, a label, a window, a tab, a header, a text box, etc., giving you quick access to a variety of actions. Context menu items are discussed in related chapters.</p>
 
   <div class="image">
-    <img alt="Image of Book Browser Context menu." src="../Images/ui_book-browser-context-menu.png"/>
+    <img alt="Image of Book Browser Context menu." style="width:40%" src="../Images/ui_book-browser-context-menu.png"/>
   </div>
 
   <div class="tip">

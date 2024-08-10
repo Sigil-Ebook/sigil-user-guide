@@ -14,15 +14,25 @@
 
   <p>In order to be considered a valid EPUB, your ebook must meet the standards defined for EPUBs. This means it must include certain files and information and not contain any errors as defined by the EPUB specification. To help you check if your EPUB is valid you can use the following tools which are available for free as plugins for Sigil.</p>
 
-  <h3 class="sigil_not_in_toc">EPUB Validation With FlightCrew (EPUB2 only)</h3>
+  <h3 class="sigil_not_in_toc">EPUB Validation With EpubCheck (EPUB2 and EPUB3)</h3>
 
-  <p>Please note that FlightCrew is no longer included in Sigil and has been converted to an plugin. (If you press F7, Sigil will only run a very basic and limited well-formedness check.)</p>
+  <p>For validating all EPUB3’s should run your EPUB through the <a href="https://daisy.org/activities/projects/epubcheck">EpubCheck</a> program. You can use it online or download a local version of the program:</p>
+  <ul>
+    <li><a href="http://validator.idpf.org">IDPF EPUB Validator</a></li>
+  </ul>
 
-  <p>Before you can use FlightCrew, you’ll have to download the <a href="https://github.com/Sigil-Ebook/flightcrew/releases/latest"> FlightCrew plugin .zip file</a> for your OS and <a href="manage_plugins.xhtml">install it</a>.</p>
+  <p>But the best way to use EpubCheck with Sigil is to download the lastest version of the <a href="https://www.mobileread.com/forums/showpost.php?p=2950625">EpubCheck plugin</a> and <a href="manage_plugins.xhtml">install it</a>.</p>
 
-  <p>To run FlightCrew select Plugins &gt; Validation &gt; FlightCrew.</p>
+  <p>Development of Epubcheck is done at <a href="https://github.com/w3c/epubcheck">https://github.com/w3c/epubcheck</a>.
+  </p>
+ 
+  <p>EpubCheck uses java on your machine and the latest version of the epubcheck.jar to verify your EPUB meets the EPUB specification.</p>
 
-  <p>This will display a new window underneath your editing window listing any issues that it finds. Once you have run FlightCrew to produce a report, look at each of the issues listed and then edit your document to correct them.</p>
+  <p>When EpubCheck installed and used as a plugin, it will return errors and warnings in the Validation window making it easier for the user to navigate to and fix any errors.</p>
+
+  <p>To run epubcheck select Plugins &gt; Validation &gt; epubcheck.</p>
+
+  <p>Once you have run EpubCheck to produce a report, look at each of the issues listed and then edit your document to correct them.</p>
 
   <div class="image">
     <img alt="Image of the Validation window in action." src="../Images/validation-flightcrew.png"/>
@@ -99,26 +109,6 @@
   <h3 class="sigil_not_in_toc" id="tidyx">CSSValidator Plugin</h3>
 
   <p>There also exists a <a href="https://www.mobileread.com/forums/showthread.php?t=342116">CSS Validator plugin</a> you can use to validate all of your CSS Stylesheet files. Use <span class="menuitem">Plugins=&gt;Manage Plugins</span> to <a href="manage_plugins.xhtml">install it</a>.</p>
-
-
-  <h3 class="sigil_not_in_toc">EPUB Validation With EpubCheck (EPUB2 and EPUB3)</h3>
-
-  <p>FlightCrew identifies most issues with EPUBs, but it may not catch everything and can’t be used to validate EPUB3 books.</p>
-
-  <p>For validating all EPUB3’s and as an additional check for EPUB2s you should also run your EPUB through the <a href="https://daisy.org/activities/projects/epubcheck">EpubCheck</a> program. You can use it online or download a local version of the program:</p>
-
-  <ul>
-    <li><a href="http://www.w3.org/publishing/epubcheck">EpubCheck EPUB Validator</a></li>
-  </ul>
-
-  <p>But the best way to use EpubCheck with Sigil is to download the lastest version of the <a href="https://www.mobileread.com/forums/showpost.php?p=2950625">EpubCheck plugin</a> and <a href="manage_plugins.xhtml">install it</a> just like was done with FlightCrew earlier in this chapter.</p>
-
-  <p>Development of Epubcheck is done at <a href="https://github.com/w3c/epubcheck">https://github.com/w3c/epubcheck</a>.
-</p>
-
-  <p>EpubCheck uses java on your machine and the latest version of the epubcheck.jar to verify your EPUB meets the EPUB specification.</p>
-
-  <p>When EpubCheck installed and used as a plugin, it will return errors and warnings in the Validation window just was described above for FlightCrew making it easier for the user to navigate to and fix any errors.</p>
 
   <h3 class="sigil_not_in_toc">EPUB Validation With Devices</h3>
 

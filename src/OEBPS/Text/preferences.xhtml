@@ -103,17 +103,7 @@
 		  <ul>
 			<li class="first"><span class="listheading">Main Menu Icon Size:</span> Adjust the size of the toolbar buttons using a slider.</li>
 
-			<li class="first"><span class="listheading">High DPI Setting</span> (Windows only): 
-
-			<ul>
-			  <li><span class="listheading">Detect:</span> Detect whether any high dpi scaling should take place. This setting defers to any Qt environment variables that are set to control high dpi behavior.</li>
-
-			  <li><span class="listheading">On:</span> Turn on high dpi scaling and ignore any Qt environment variables that are set controlling high dpi behavior.</li>
-
-			  <li><span class="listheading">Off:</span> Turn off high dpi scaling regardless of if any Qt environment variables controlling high dpi behavior are set.</li>
-			</ul></li>
-
-			<li class="first"><span class="listheading">Fonts:</span> Select the font family and font size used for Sigil’s menus, buttons, etc.</li>
+          <li class="first"><span class="listheading">UI Font</span>: Select the font family and font size used for Sigil’s menus, buttons, etc.</li>
 
 			<li class="first"><span class="listheading">Control Book Browser Appearance:</span> Choose whether the Book Browser shows full filepaths or abbreviated ones.</li>
 
@@ -177,11 +167,12 @@
 		  </div>
 
 		  <ul>
-			<li class="first">Set the temp folder that Sigil will use for your temporary EPUB files.
-				<ul><li>If you’re using the macOS version of Sigil, you should select a folder other than <b>/temp</b> to avoid potential data loss issues that might occur in some macOS versions.</li>
-				</ul>
-			</li>
-		  </ul>
+            <li class="first"><span class="listheading">Alternative Temporary Folder</span> Set an alternative folder that Sigil will use for its temporary EPUB work files. If left as &lt;SIGIL_DEFAULT_TEMP_HOME&gt; this will default to the "workspace" folder inside your Sigil Preferences Location folder.</li>
+
+            <li class="first"><span class="listheading">Disable use of the GPU Acceleration in QtWebEngine/Preview</span> Check this if you are seeing artifacts or having issues with Preview properly displaying your epub especially useful if your graphics drivers are not up to date.</li>
+
+            <li class="first"><span class="listheading">Preview Print Settings</span> check the Skip Print Preview box to speed up printing of multiple items; Set a Print DPI when printing from Preview</li>
+        </ul>
 
   <h3 class="sigil_not_in_toc">Keyboard Shortcuts</h3>
 
@@ -374,7 +365,11 @@
 
 			<li><span class="listheading">automate01.txt, automate02.txt, automate03.txt:</span> Optional user automated task lists for use with the <span class="buttonbox">Run Automate List</span> toolbar buttons.</li>
 
-			<li><span class="listheading">custom_preview_style.css:</span> Optional user CSS for Sigil’s Preview window.</li>
+          <li><span class="listheading">cover-template2.xhtml, cover-template3.xhtml</span>: Optional cover xhtml templates for epub2 and epub3 respectively.</li>
+ 
+          <li><span class="listheading">custom_preview_style.css</span>: Optional user CSS for Sigil’s Preview window.</li>
+
+          <li><span class="listheading">custom_preview_style_alt.css</span>: Optional alternative CSS for Preview.</li>
 
 			<li><span class="listheading">hunspell_dictionaries:</span> Where any standard dictionaries you add are stored.</li>
 
@@ -390,27 +385,28 @@
 
 			<li><span class="listheading">QtWebEngine:</span> Where data for Preview is stored.</li>
 
-			<li><span class="listheading">repo:</span> Where checkpoint versions are stored.</li>
+			<li><span class="listheading">repo:</span> Where checkpoint git repositories stored.</li>
 
 			<li><span class="listheading">sgc-toc.css:</span> Optional custom TOC stylesheet for EPUB2 books.</li>
 
 			<li><span class="listheading">sgc-nav.css:</span> Optional custom TOC stylesheet for EPUB3 books.</li>
 
-			<li><span class="listheading">sigil_clips.ini:</span> Your saved Clips.</li>
+			<li><span class="listheading">sigil_clips_v6.ini:</span> Your saved Clips.</li>
 
-			<li><span class="listheading">sigil_index.ini:</span> Your Index entries.</li>
+			<li><span class="listheading">sigil_index_v6.ini:</span> Your Index entries.</li>
 
-			<li><span class="listheading">sigil_searches.ini:</span> Your Saved Searches (Sigil 1.5.0 and earlier).</li>
+			<li><span class="listheading">sigil_searches_v6.ini:</span> Your Saved Searches.</li>
 
-			<li><span class="listheading">sigil_searches_v2.ini:</span> Your Saved Searches (Sigil 1.6.0 and later).</li>
-
-			<li><span class="listheading">sigil.ini:</span> General configuration information for Sigil.</li>
+			<li><span class="listheading">sigil_v6.ini:</span> General configuration setting file information for Sigil.</li>
 
 			<li><span class="listheading">user_dictionaries:</span> Where any personal user dictionaries are stored.</li>
 
 			<li><span class="listheading">user-template2.css, user-template3.css</span>: Optional user CSS templates for use with the Add Blank Stylesheet command.</li>
 
 			<li><span class="listheading">user-template2.xhtml, user-template3.xhtml</span>: Optional user XHTML templates for use with the Add Blank HTML File command.</li>
+
+          <li><span class="listheading">workspace</span>: The default location where Sigil stores the epub files it is currently working in separate epub specific subfolders and any temporary files needed.</li>
+
 		  </ul>
 
   <h3 class="sigil_not_in_toc">Change the Font Size of GUI Controls</h3>
