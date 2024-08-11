@@ -76,19 +76,34 @@
 
   <p>Here is an example of a cover-template3.xhtml that uses SVG and makes use of these PLACEHOLDERS:</p>
 
-<pre><code>
+<div class="image"><img style="width:75%" src="../Images/cover-template-svg.png" alt="code showing use of svg to create a cover." /></div>
+
+<pre hidden="hidden" style="display:none; visibility: hidden"><code>
     &lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" 
+          xmlns:epub="http://www.idpf.org/2007/ops" 
+          lang="en" xml:lang="en"&gt;
+
     &lt;head&gt;
       &lt;title&gt;Cover&lt;/title&gt;
     &lt;/head&gt;
     
     &lt;body&gt;
-      &lt;div style="height: 100vh; text-align: center; padding: 0pt; margin: 0pt;"&gt;
-        &lt;svg xmlns="http://www.w3.org/2000/svg" height="100%" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="0 0 SGC_IMAGE_WIDTH SGC_IMAGE_HEIGHT" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
-          &lt;image width="SGC_IMAGE_WIDTH" height="SGC_IMAGE_HEIGHT" xlink:href="SGC_IMAGE_FILENAME\"/&gt;
+
+      &lt;div style="height: 100vh; text-align: center; 
+                  padding: 0pt; margin: 0pt;"&gt;
+
+        &lt;svg xmlns="http://www.w3.org/2000/svg" 
+             height="100%" preserveAspectRatio="xMidYMid meet" 
+             viewBox="0 0 SGC_IMAGE_WIDTH SGC_IMAGE_HEIGHT" 
+             width="100%" version="1.1" 
+             xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+
+             &lt;image width="SGC_IMAGE_WIDTH" 
+                    height="SGC_IMAGE_HEIGHT" 
+                    xlink:href="SGC_IMAGE_FILENAME\"/&gt;
         &lt;/svg&gt;
       &lt;/div&gt;
     &lt;/body&gt;
@@ -107,8 +122,9 @@
 
   <p>Here is an example of how to use the "object" tag in an xhtml file to display an embedded PDF or an xhtml-based alternative as a fallback that works on many older e-readers for that can not handle the PDF format.</p>
 
+<div class="image"><img src="../Images/pdf-object-tag-fallback.png" style="width:75%" alt="code showing use of the object tag" /></div>
 
-<pre><code>
+<pre hidden="hidden" style="display:none; visibility: hidden"><code>
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;!DOCTYPE html&gt;
  
@@ -120,10 +136,10 @@
 &lt;body&gt;
 
   &lt;object type="application/pdf" data="../Misc/demo.pdf" 
-              width="500" height="500"&gt;
+           width="500" height="500"&gt;
 
         &lt;!-- The child of the object tag holds the xhtml fallback --&gt;
-        &lt;h3 class="sigil_not_in_toc"&gt;PDF Fallback text&lt;/h3&gt;
+        &lt;h3&gt;PDF Fallback text&lt;/h3&gt;
 
         &lt;p&gt;This text is being displayed, if the reader or 
            reading device doesn't support embedded .pdf files.&lt;/p&gt;
@@ -133,6 +149,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
 
  <p>In addition direct links to the PDF are possible and loading the links into a iframe is alo possible but these approaches do not allow for fallbacks for older e-readers and should be avoided if at all possible.</p>
 </body>
