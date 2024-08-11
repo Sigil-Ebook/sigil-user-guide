@@ -207,7 +207,50 @@ QFrame QToolButton#count {
 }
 </code></pre>
 
-<p>This is just a smattering of the styling changes you can make with Sigil using Qt's QSS styles.  For further information see these website resources:</p>
+<p><b>Change the Sigil Version Number in the About Box to a Different Color</b></p>
+<pre><code>QLabel#lbVersionDisplay {
+    color: #FFA000;
+}
+</code></pre>
+
+<p><b>Put a Gray Background in the About Box on Authors tab</b></p>
+<pre><code>QTextEdit#creditsDisplay {
+    background-color: #323232;
+}
+</code></pre>
+
+<p><b>Put a Gray background on the BookBrowser Panel</b></p>
+<pre><code>#bookbrowser {
+    background-color: #323232;
+}
+</code></pre>
+
+<p><b>Make the BookBrowser Panel Borders Gray</b></p>
+<pre><code>#bookbrowser {
+    border: 1px solid #323232;
+}
+</code></pre>
+
+<p><b>Make the Find Replace Borders Gray</b></p>
+<pre><code>QFrame {
+    border: 1px solid #323232;
+}
+</code></pre>
+
+<p><b>Change the Default Selection Color</b></p>
+<pre><code>*,
+*::separator,
+*::handle,
+*::tab-bar,
+*::tab,
+*::section {
+    selection-background-color: #00404a;
+    selection-color: white;
+}
+</code></pre>
+
+
+<p>This is just a smattering of the styling changes you can make to Sigil using Qt's QSS styles.  For further information about QSS and Sigil visit our <a href="https://www.mobileread.com/forums/forumdisplay.php?f=203">Mobileread Sigil Users Forum</a> and check out these website resources about Qt styles:</p>
 <ul>
 <li><a href="https://doc.qt.io/qt-6/stylesheet-syntax.html">https://doc.qt.io/qt-6/stylesheet-syntax.html</a></li>
 <li><a href="https://doc.qt.io/qt-6/stylesheet-reference.html">https://doc.qt.io/qt-6/stylesheet-reference.html</a></li>
