@@ -152,5 +152,67 @@
 
 
  <p>In addition direct links to the PDF are possible and loading the links into a iframe is alo possible but these approaches do not allow for fallbacks for older e-readers and should be avoided if at all possible.</p>
+
+<hr class="narrow"/>
+
+  <h2 id="sigil_toc_id_35">Customizing Sigil with Qt QSS</h2>
+
+
+  <p>Qt, the Graphical User Interface (GUI) library used by Sigil supports its own user css-like styles called QSS that allow the user to modify many aspects of Sigil to their preference.  Sigil when first launched will automatically load any QSS styles it finds in the QSS stylesheet named <b>qt_styles.qss</b> found in your Sigil Preferences Location folder.</p>
+
+  <p>Here are some simple examples of how you can use Qt's QSS styles to customize Sigil.</p>
+
+<p>To try any of these, simply copy one of the following QSS code blocks and save it as a text file called "qt_styles.qss" inside your Sigil Preferences Location folder.</p>
+
+<p><b>Show Find Replace Buttons as Text Only</b></p>
+<pre><code>QFrame QToolButton#findNext, 
+QFrame QToolButton#replaceCurrent, 
+QFrame QToolButton#replaceFind, 
+QFrame QToolButton#restart, 
+QFrame QToolButton#replaceAll, 
+QFrame QToolButton#count {
+    qproperty-toolButtonStyle: ToolButtonTextOnly;
+}
+</code></pre>
+
+<p><b>Show Find Replace Buttons as icons and text</b></p>
+<pre><code>QFrame QToolButton#findNext, 
+QFrame QToolButton#replaceCurrent, 
+QFrame QToolButton#replaceFind, 
+QFrame QToolButton#restart, 
+QFrame QToolButton#replaceAll, 
+QFrame QToolButton#count {
+    qproperty-toolButtonStyle: ToolButtonTextBesideIcon;
+}
+</code></pre>
+
+<p><b>Use QSS to hide all tooltips.</b></p>
+<pre><code>QToolTip {
+    max-width:0; max-height:0; margin:0; padding:0;
+}
+</code></pre>
+
+<p><b>Hide Find Replace History</b></p>
+<pre><code>QFrame QComboBox QAbstractItemView::item {
+    max-height: 0;
+}
+#cbFind, #cbReplace {
+    qproperty-maxCount:0;
+}
+</code></pre>
+
+<p><b>Set the Font Family and Font size for the Find and Replace fields</b></p>
+<pre><code>#cbFind, #cbReplace {
+    font-family: "Georgia"; font-size: 16px;
+}
+</code></pre>
+
+<p>This is just a smattering of the styling changes you can make with Sigil using Qt's QSS styles.  For further information see these website resources:</p>
+<ul>
+<li><a href="https://doc.qt.io/qt-6/stylesheet-syntax.html">https://doc.qt.io/qt-6/stylesheet-syntax.html</a></li>
+<li><a href="https://doc.qt.io/qt-6/stylesheet-reference.html">https://doc.qt.io/qt-6/stylesheet-reference.html</a></li>
+</ul>
+
+
 </body>
 </html>
