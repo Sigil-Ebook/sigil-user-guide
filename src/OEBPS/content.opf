@@ -11,7 +11,7 @@
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
     <meta content="2.3.0" name="Sigil version"/>
     <dc:identifier id="bookid">urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
-    <meta property="dcterms:modified">2024-08-10T13:24:59Z</meta>
+    <meta property="dcterms:modified">2024-08-11T15:13:03Z</meta>
     <meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
@@ -190,7 +190,6 @@
     <item id="note.png" href="Images/note.png" media-type="image/png"/>
     <item id="pageedit.png" href="Images/pageedit.png" media-type="image/png"/>
     <item id="preferences-appearance-icons.png" href="Images/preferences-appearance-icons.png" media-type="image/png"/>
-    <item id="preferences-appearance-mainUI.png" href="Images/preferences-appearance-mainUI.png" media-type="image/png"/>
     <item id="preferences-appearance-preview.png" href="Images/preferences-appearance-preview.png" media-type="image/png"/>
     <item id="preferences-appearance.png" href="Images/preferences-appearance.png" media-type="image/png"/>
     <item id="preferences-general-advanced.png" href="Images/preferences-general-advanced.png" media-type="image/png"/>
@@ -375,10 +374,13 @@
     <item id="ui_toolbar-tools.png" href="Images/ui_toolbar-tools.png" media-type="image/png"/>
     <item id="ui_tooltip.png" href="Images/ui_tooltip.png" media-type="image/png"/>
     <item id="ui_tooltip2.png" href="Images/ui_tooltip2.png" media-type="image/png"/>
-    <item id="ui_user-interface-default.png" href="Images/ui_user-interface-default.png" media-type="image/png"/>
     <item id="ui_View.png" href="Images/ui_View.png" media-type="image/png"/>
     <item id="ui_zoom.png" href="Images/ui_zoom.png" media-type="image/png"/>
     <item id="validation-flightcrew.png" href="Images/validation-flightcrew.png" media-type="image/png"/>
+    <item id="ui_user-interface-default.png" href="Images/ui_user-interface-default.png" media-type="image/png"/>
+    <item id="cover-template-svg.png" href="Images/cover-template-svg.png" media-type="image/png"/>
+    <item id="pdf-object-tag-fallback.png" href="Images/pdf-object-tag-fallback.png" media-type="image/png"/>
+    <item id="preferences-appearance-mainUI.png" href="Images/preferences-appearance-mainUI.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>
