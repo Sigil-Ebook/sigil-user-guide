@@ -2,6 +2,10 @@
 
 <br/>
 
+[View this user guide online](https://sigil-ebook.com/sigil-user-guide)
+
+<br/>
+
 ## <center>Guidelines for contributing</center>
 
 <br/>
