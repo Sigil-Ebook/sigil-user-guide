@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
 <head>
   <title>Add Cover</title>
-  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>  
 </head>
 
 <body>
@@ -43,15 +43,14 @@
   <p>This is the HTML code Sigil inserts into the cover file by default:</p>
 
   <pre class="example">&lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"&gt;
 &lt;head&gt;
   &lt;title&gt;Cover&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
-  &lt;div style="text-align: center; padding: 0pt; margin: 0pt;"&gt;
+  &lt;div style="height: 100vh; text-align: center; padding: 0pt; margin: 0pt;"&gt;
     &lt;svg xmlns="http://www.w3.org/2000/svg" height="100%"
     preserveAspectRatio="xMidYMid meet" version="1.1" 
     viewBox="0 0 SGC_IMAGE_WIDTH SGC_IMAGE_HEIGHT" width="100%" 
@@ -62,9 +61,10 @@
   &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
+
 </pre>
 
-  <p>To modify the template Sigil uses for the HTML cover file, create a file in your Preferences directory called <span class="example">cover.xhtml</span></p>
+  <p>To modify the template Sigil uses for the HTML cover file, create a file in your Preferences directory called <span class="example">cover-template2.xhtml</span> (for Epub2) and <span class="example">cover-template3.xhtml</span> (for Epub3).</p>
 
   <p>You can use certain placeholders in your text and Sigil will replace them with the appropriate values:</p>
 
