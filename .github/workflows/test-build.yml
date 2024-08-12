@@ -10,6 +10,8 @@ on:
   pull_request:
     branches:
       -  master
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 env:
   VERSION: "4.2.6"
   EPUBCHECK: "https://github.com/w3c/epubcheck/releases/download"
