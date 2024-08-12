@@ -25,10 +25,10 @@ env:
   PAGESURL: https://sigil-ebook.com/sigil-user-guide/index2.html?epub=epub_content/guide
 
 jobs:
-# Only update pages website if test build action completess successfully
-if: ${{ github.event.workflow_run.conclusion == 'success' }}
   # Single deploy job since we're just deploying
   deploy:
+    # Only update pages website if test build action completess successfully
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
