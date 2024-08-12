@@ -3,12 +3,12 @@ name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+  #push:
+  workflow_run:
+    # Only run after test & build action completes
+    workflows: ["Test and Build Sigil Guide"]
+    types:
+      - completed
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -25,6 +25,8 @@ env:
   PAGESURL: https://sigil-ebook.com/sigil-user-guide/index2.html?epub=epub_content/guide
 
 jobs:
+# Only update pages website if test build action completess successfully
+if: ${{ github.event.workflow_run.conclusion == 'success' }}
   # Single deploy job since we're just deploying
   deploy:
     environment:
