@@ -27,8 +27,9 @@ env:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    # Only update pages website if test build action completess successfully
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # Only update pages website if test build action completess successfully.
+    # And we want to be able to test pull requests without publishing them.
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event_name != 'pull_request' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
