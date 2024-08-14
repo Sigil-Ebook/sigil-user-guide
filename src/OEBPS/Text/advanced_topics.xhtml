@@ -30,7 +30,7 @@
 
   <li><p><span class="listheading">SIGIL_USE_FREETYPE_FONTENGINE</span> This environment variable is <b>Windows Only</b>. Setting this will tell Sigil to use the FreeType Font Engine.  This is useful on Windows for users who make heavy use of // Woff/woff2 fonts in their epub.  Current Qt version of the Windows Font Engine does not support these font types.</p></li>
 
-    <li><p><span class="listheading">SIGIL_PREVIEW_TIMEOUT</span> Setting this to a number (of milliseconds) will determine the length of time after user input stops while editing in CodeView until Preview is updated.  The minimum delay is 1000 milliseconds and the maximum delay can be set up to 10000 milliseconds.  Therre is typically no reason to set this unless you are editing huge xhtml files that take too long for Preview to update.</p></li>
+    <li><p><span class="listheading">SIGIL_PREVIEW_TIMEOUT</span> Setting this to a number (of milliseconds) will determine the length of time after user input stops while editing in CodeView until Preview is updated.  The minimum delay is 1000 milliseconds and the maximum delay can be set up to 10000 milliseconds.  There is typically no reason to set this unless you are editing huge xhtml files that take too long for Preview to update.</p></li>
 
     <li><p><span class="listheading">SIGIL_DRAG_DISTANCE_TWEAK</span> This environment varaible is <b>Windows Only</b>. You can set this to change the distance in pixels needed to move something before drag and drop is detected by the system.  Its valid values range from -20 to 20 pixels.</p></li>
 
@@ -53,7 +53,7 @@
 
   <h2 id="attf">Using Sigil's Template Files</h2>
   
-  <p>Many users of Sigil develop their own versions of starting xhtml, and css files that they would much prefere using over what Sigil defaults to.  To address these concerns, Sigil has added the ability to load user defined starting xhtml, and css files.  To create these "templates" simply edit any blank xhtml or css page to your liking and then save it to your Sigil Preferences Location with one of these specific filenames.  When you are a Blank HTML or Blank CSS files using Sigil's BookBrowser, sigil will use your templates instead.  To prevent their use simply rename or delete them.</p>
+  <p>Many users of Sigil develop their own versions of starting xhtml, and css files that they would much prefer using over what Sigil defaults to.  To address these concerns, Sigil has added the ability to load user defined starting xhtml, and css files.  To create these "templates" simply edit any blank xhtml or css page to your liking and then save it to your Sigil Preferences Location with one of these specific filenames.  When you are creating a Blank HTML or Blank CSS files using Sigil's BookBrowser, sigil will use your templates instead.  To prevent their use simply rename or delete them.</p>
 
   <ul>
      <li><p><span class="listheading">user-template2.xhtml</span> Epub2 specific xhtml file.</p></li>
@@ -66,7 +66,7 @@
 
 </ul>
 
-  <p>In a similar manner, many people prefer specific layouts for their cover images xhtml pages. To facilitate thise Sigil allows the user to create a cover-template2.xhtml or cover-template3.xhtml file and store it in Sigil's Preferences Location.</p>
+  <p>In a similar manner, many people prefer specific layouts for their cover images xhtml pages. To facilitate this Sigil allows the user to create a cover-template2.xhtml or cover-template3.xhtml file and store it in Sigil's Preferences Location.</p>
   <p>Sigil allows these cover templates to use a set of PLACEHOLDERS that Sigil will automatically fill in values for when creating the cover: </p>
     <ul>
         <li>SGC_IMAGE_FILENAME - the relative path to the chosen image.</li>
@@ -120,7 +120,7 @@
 
   <p>More unfortunately, according to the developers of Epubcheck, few e-readers actually support the use of fallback resources or OPF bindings.  This leaves epub3 developers in a quandary.  Luckily the "object" tag can be used to create an xhtml/html based fallback allowing the spine to be comprised of purely xhtml files.</p>
 
-  <p>Here is an example of how to use the "object" tag in an xhtml file to display an embedded PDF or an xhtml-based alternative as a fallback that works on many older e-readers for that can not handle the PDF format.</p>
+  <p>Here is an example of how to use the "object" tag in an xhtml file to display an embedded PDF or an xhtml-based alternative as a fallback that works on many older e-readers that cannot handle the PDF format.</p>
 
 <div class="image"><img src="../Images/pdf-object-tag-fallback.png" style="width:75%" alt="code showing use of the object tag" /></div>
 
