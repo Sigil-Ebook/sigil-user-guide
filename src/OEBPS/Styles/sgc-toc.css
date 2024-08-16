@@ -1,6 +1,18 @@
-div.sgc-toc-title {
+@font-face {
+    font-family: 'SmallCaps';
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    src: url(../Fonts/Fontin-SmallCaps.otf);
+}
+
+h1.sgc-toc-title {
+    font-family: 'SmallCaps', sans-serif;
     font-size: 2em;
-    margin-bottom: 1em;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-top: 0.0em;
+    margin-bottom: 0.5em;
     text-align: center;
 }
 
