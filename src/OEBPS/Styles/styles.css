@@ -115,7 +115,8 @@ p {
 }
 
 p.author {
-    font-size: 1.5em;
+    font-family: 'SmallCaps', sans-serif;
+    font-size: 1.2em;
     font-weight: bold;
     text-align: center;
     margin-top: 4em;
