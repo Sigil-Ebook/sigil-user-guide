@@ -9,9 +9,9 @@
     <dc:language>en</dc:language>
     <dc:rights>Copyright © 2012, 2013 Dave Heiland</dc:rights>
     <dc:subject>Sigil, EPUB, ebook, editor</dc:subject>
-    <meta content="2.3.0" name="Sigil version"/>
+    <meta content="2.6.0" name="Sigil version"/>
     <dc:identifier id="bookid">urn:uuid:621cf516-7f59-4bfa-8bc5-a61601eef3c8</dc:identifier>
-    <meta property="dcterms:modified">2024-08-11T15:13:03Z</meta>
+    <meta property="dcterms:modified">2025-08-04T10:46:12Z</meta>
     <meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
@@ -82,7 +82,7 @@
     <item id="tutorial_tips.xhtml" href="Text/tutorial_tips.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorials.xhtml" href="Text/tutorials.xhtml" media-type="application/xhtml+xml"/>
     <item id="ui_customize.xhtml" href="Text/ui_customize.xhtml" media-type="application/xhtml+xml"/>
-    <item id="user_interface.xhtml" href="Text/user_interface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="x610943bf-5195-43c2-8949-f06bd76863b7" href="Text/user_interface.xhtml" media-type="application/xhtml+xml"/>
     <item id="validation.xhtml" href="Text/validation.xhtml" media-type="application/xhtml+xml"/>
     <item id="whats_new.xhtml" href="Text/whats_new.xhtml" media-type="application/xhtml+xml"/>
     <item id="automate.xhtml" href="Text/automate.xhtml" media-type="application/xhtml+xml"/>
@@ -381,6 +381,16 @@
     <item id="cover-template-svg.png" href="Images/cover-template-svg.png" media-type="image/png"/>
     <item id="pdf-object-tag-fallback.png" href="Images/pdf-object-tag-fallback.png" media-type="image/png"/>
     <item id="preferences-appearance-mainUI.png" href="Images/preferences-appearance-mainUI.png" media-type="image/png"/>
+    <item id="Section0001.xhtml" href="Text/advanced_topics_p2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="add_ids_to_first_h1.png" href="Images/add_ids_to_first_h1.png" media-type="image/png"/>
+    <item id="function.svg" href="Images/function.svg" media-type="image/svg+xml"/>
+    <item id="pf_find_and_replace.png" href="Images/pf_find_and_replace.png" media-type="image/png"/>
+    <item id="prebuilt_replace_functions.png" href="Images/prebuilt_replace_functions.png" media-type="image/png"/>
+    <item id="empty_find_replace.png" href="Images/empty_find_replace.png" media-type="image/png"/>
+    <item id="heading_1.png" href="Images/heading_1.png" media-type="image/png"/>
+    <item id="heading_2.png" href="Images/heading_2.png" media-type="image/png"/>
+    <item id="heading_14.png" href="Images/heading_14.png" media-type="image/png"/>
+    <item id="ui_toolbar-insert2.png" href="Images/ui_toolbar-insert2.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>
@@ -393,7 +403,7 @@
     <itemref idref="about_epub.xhtml"/>
     <itemref idref="installation.xhtml"/>
     <itemref idref="features.xhtml"/>
-    <itemref idref="user_interface.xhtml"/>
+    <itemref idref="x610943bf-5195-43c2-8949-f06bd76863b7"/>
     <itemref idref="preferences.xhtml"/>
     <itemref idref="opening_and_saving_files.xhtml"/>
     <itemref idref="code_view.xhtml"/>
@@ -423,6 +433,7 @@
     <itemref idref="automate.xhtml"/>
     <itemref idref="ui_customize.xhtml"/>
     <itemref idref="advanced_topics.xhtml"/>
+    <itemref idref="Section0001.xhtml"/>
     <itemref idref="tutorials.xhtml"/>
     <itemref idref="tutorial_getting_started_with_epub.xhtml"/>
     <itemref idref="tutorial_convert_to_html.xhtml"/>
@@ -448,7 +459,7 @@
   </spine>
   <guide>
     <reference type="cover" title="Cover" href="Text/cover.xhtml"/>
-    <reference type="toc" title="Table of Contents" href="Text/toc.xhtml"/>
     <reference type="text" title="Text" href="Text/introduction.xhtml"/>
+    <reference type="toc" title="Table of Contents" href="Text/toc.xhtml"/>
   </guide>
 </package>

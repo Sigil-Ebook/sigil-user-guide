@@ -28,6 +28,10 @@
 
     <li><p><span class="listheading">SIGIL_DEBUG_LOGFILE</span> Setting this to the full path (including file name and extension) to a user-writeable location will cause Sigil to output any additional debug information to that log file.  Unset this environment after debugging is important as this file will continue to build up output eventually filling up user disk space and slowing down Sigil.</p></li>
 
+<li><p><span class="listheading">SIGIL_FUNCTION_REPLACE_LOGFILE</span> Setting this to the full path (including file name and extension) to a user-writeable location will cause Sigil to output any Python Function Replace log messages to that log file.  Unset this environment after debugging is important as this file will continue to build up output eventually filling up user disk space and slowing down Sigil.</p></li>
+
+  <li><p><span class="listheading">SIGIL_USE_FREETYPE_FONTENGINE</span> This environment variable is <b>Windows Only</b>. Setting this will tell Sigil to use the FreeType Font Engine.  This is useful on Windows for users who make heavy use of // Woff/woff2 fonts in their epub.  Current Qt version of the Windows Font Engine does not support these font types.</p></li>
+
   <li><p><span class="listheading">SIGIL_USE_FREETYPE_FONTENGINE</span> This environment variable is <b>Windows Only</b>. Setting this will tell Sigil to use the FreeType Font Engine.  This is useful on Windows for users who make heavy use of // Woff/woff2 fonts in their epub.  Current Qt version of the Windows Font Engine does not support these font types.</p></li>
 
     <li><p><span class="listheading">SIGIL_PREVIEW_TIMEOUT</span> Setting this to a number (of milliseconds) will determine the length of time after user input stops while editing in CodeView until Preview is updated.  The minimum delay is 1000 milliseconds and the maximum delay can be set up to 10000 milliseconds.  There is typically no reason to set this unless you are editing huge xhtml files that take too long for Preview to update.</p></li>
@@ -76,7 +80,7 @@
 
   <p>Here is an example of a cover-template3.xhtml that uses SVG and makes use of these PLACEHOLDERS:</p>
 
-<div class="image"><img style="width:75%" src="../Images/cover-template-svg.png" alt="code showing use of svg to create a cover." /></div>
+<div class="image"><img style="width:75%" src="../Images/cover-template-svg.png" alt="code showing use of svg to create a cover."/></div>
 
 <pre hidden="hidden" style="display:none; visibility: hidden"><code>
     &lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;
@@ -122,7 +126,7 @@
 
   <p>Here is an example of how to use the "object" tag in an xhtml file to display an embedded PDF or an xhtml-based alternative as a fallback that works on many older e-readers that cannot handle the PDF format.</p>
 
-<div class="image"><img src="../Images/pdf-object-tag-fallback.png" style="width:75%" alt="code showing use of the object tag" /></div>
+<div class="image"><img src="../Images/pdf-object-tag-fallback.png" style="width:75%" alt="code showing use of the object tag"/></div>
 
 <pre hidden="hidden" style="display:none; visibility: hidden"><code>
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -266,7 +270,5 @@ QFrame QToolButton#count {
 <li><a href="https://doc.qt.io/qt-6/stylesheet-syntax.html">https://doc.qt.io/qt-6/stylesheet-syntax.html</a></li>
 <li><a href="https://doc.qt.io/qt-6/stylesheet-reference.html">https://doc.qt.io/qt-6/stylesheet-reference.html</a></li>
 </ul>
-
-
 </body>
 </html>

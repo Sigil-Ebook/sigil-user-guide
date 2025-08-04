@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Advanced Topics</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h1 id="user_interface">Advanced Topics: Python Function Replace</h1>
+
+  <h2 id="atenv">Using Regex Search with Python Function Replace</h2>
+
+  <p>Normal Regular Expressions search and replace is extremely powerful and handles most of what users will ever need.  That said, there are cases that can arise where something a bit more is needed.  Things like: </p>
+
+  <ol>
+    <li><p>counting matches and using that count as part of the replacement</p></li>
+
+    <li><p>determining replacements that need to vary depending on what was captured in the search regex</p></li>
+
+    <li><p>making a replacement be conditioned on earlier replacements in some way</p></li>
+
+    <li><p>making replacements that must be "processed" in some way depending captured context</p></li>
+
+    <li><p>etc. ...</p></li>
+  </ol>
+
+<p>For many of these cases, Sigil Python plugins exists to help but creating your own Sigil Python plugin requires some skill in Python and time to understand the the plugin API and produce and test your plugin.</p>
+
+<p>For the simpler cases, Regex search with Python Function Replace will prove useful and faster to develop and deploy.  And python replacement functions can be easily shared with others - even users who do not know how to program in python -  making them a useful tool for everyone.</p>
+
+<p>Creating your own Python Functions Replacement functions does require advanced regular expression (regex) search and replace knowledge as well as some ability to code in Python. </p>
+
+<p>The following python code block shows an empty Python Function Replace function that does nothing (ie. it returns the exact same thing as what was matched):</p>
+
+<pre><code>
+def replace (match, number, file_name, metadata, data) :
+    if match:
+        return match.group(0)
+</code>
+</pre>
+
+The parameters passed to the replace function are important to understand:
+
+<pre><code>
+match:       the current python match object
+
+number:      number starts at 1 and is incremented after each match
+             (only when using replace all)
+
+file_name:   the book path from the ebook's root to this file
+
+data:        a python dict object used to store any data across matches
+</code>
+</pre>
+
+<p>To more properly illustrate how these parameters can be used in your own Python Function Replace routine, what follows is a version of an increment ids python function that will only count and modify the very first h1 tag found in each file.</p>
+
+<p>The Find is: <code>&lt;h1[^&gt;]*&gt;</code>.</p>
+<p>The mode is: <code>Regex</code>.</p>
+<p>The Target is: <code>All HTML Files</code> or <code>Selected HTML Files</code> (depending on if you only want your function to work on actual chapters or all html files).</p>
+
+  <div class="image">
+    <img alt="Python Function Replace code editor showing the pthon code." src="../Images/add_ids_to_first_h1.png"/>
+  </div>
+
+
+<p>Here is a duplicate of that python code to use with copy and paste:</p>
+
+<pre><code>
+# add_ids_to_first_h1
+def replace(match, number, file_name, metadata, data):
+    # Find: &lt;h1[^&gt;]*&gt;
+    if number == 1:
+        data["old_file_name"] = ""
+        data["mycount"] = 1
+
+    old_file_name = data["old_file_name"]
+    mycnt = data["mycount"]
+    result = match.group(0)
+    replace_debug_log("filename: " + file_name + '\n')
+    replace_debug_log("old file name: " + old_file_name + '\n')
+    replace_debug_log("mycount: " + str(mycnt) +'\n')
+    if match:
+        if file_name != old_file_name:
+             result = match.group(0)[0:-1] + ' id="heading_' + str(mycnt) + '"&gt;'
+             data["old_file_name"] = file_name
+             mycnt = mycnt + 1
+             data["mycount"] = mycnt
+        return result
+</code></pre>
+
+<p>This "add_ids_to_first_h1" code illustrates how to use the <code>number</code> parameter to know when to initialize your own data variables. And shows how the <code>data</code> dictionary parameter passed in can be used to save and retrieve state information that lives on across invocations. It also illustrates how the <code>file_name</code> parameter can be used to detect when a new file has been entered.</p>
+
+<p>This python function also shows you how to generate debug output from your function by using the <code>replace_debug_log</code> function that will append utf-8 string output to the file pointed to by an environment variable you set and control named:  SIGIL_FUNCTION_REPLACE_LOG_FILE.</p>
+
+<p>This environment variable when set should be the full path to a text file (including file name) where debug output from your function will be appended.</p>
+
+<pre><code>
+def replace_debug_log(message):
+    logfile = os.environ.get('SIGIL_FUNCTION_REPLACE_LOG_FILE', None);
+    if logfile:
+        with open(logfile, "a", encoding="utf-8") as f:
+            f.write(message)
+</code>
+</pre>
+
+<p>There is a built in Python Function Replace editor (with syntax highlighting) that can be invoked easily from the Find and Replace window using the <img style="height: 1em;;" src="../Images/function.svg" alt="svg image of the a stylized 'F' icon that invokes the Python Funmction Replace code editor."/>
+icon on the left side of the Find and Replace window.</p>
+
+  <div class="image">
+    <img alt="Find and Replace set up to use Python Function Replace." src="../Images/pf_find_and_replace.png"/>
+  </div>
+
+ <p>As illustrated in the image above, when using Python Function Replace you use a Replace field that starts with the escape string \F&lt;&gt; with the exact, case-sensitive name of your chosen Python Function Replace routine put between the &lt; and &gt; characters.  It this case you end up with: <code>\F&lt;add_ids_to_first_h1&gt;</code>.</p>
+
+<p>From inside the Python Function Editor you can select the replacement routine you desire and then employ the <code>Use</code> button to auto fill in the Find and Replace window <code>Replace</code> field.</p>
+
+<p>This editor will load up the code for your specified Python Function Replace routine if it exists.  Or you can select from a number of built-in Python Function Replace routines using the pull down menu:</p>
+
+  <div class="image">
+    <img style="height: 150px;" alt="List of prebuilt Python Function Replace routines." src="../Images/prebuilt_replace_functions.png"/>
+  </div>
+
+ <p>or use the New button to create your own Python replacement function.  The Python Function editor autosaves.  When you are ready to use the function you created you can select the Use button to fill in the Replace field in the normal Find and Replace window.
+</p>
+
+<p>You invoke your search and replace function just like you do any other regular expression search and replace.  First specify the <code>Find</code> field, setting the <code>Replace</code> field to point to your Function Replacement routine, specify the search mode as <code>Regex</code>, selecting a target <code>All HTML Files</code> and opening the first file and place the cursor at the top then use the <code>Replace-All</code> button.  For this particular example ebook, it added a id with heading_1, heading_2, etc counting only the first h1 in every xhtml file.</p>
+
+  <div>
+    <img style="height: 150px;" alt="Image showing the new heading_1 id has been added." src="../Images/heading_1.png"/>
+  </div>
+
+  <div>
+    <img style="height: 150px;" alt="Image showing the new heading_2 id has been added." src="../Images/heading_2.png"/>
+  </div>
+
+<p>and so on for the first h1 tag in every file.</p>
+
+<p>For those users who understand Regular Expressions but not Python, these pre-built Python Function Replace routines you may be of interest. </p>
+
+<dl>
+<dt>replace_uppercase</dt>
+    <dd>
+    '''Make matched text upper case. If the regular expression contains groups, only the text in the groups will be changed, otherwise the entire text is changed.'''
+</dd>
+
+<dt>replace_lowercase</dt>
+    <dd>
+    '''Make matched text lower case. If the regular expression contains groups,
+    only the text in the groups will be changed, otherwise the entire text is
+    changed.'''
+    </dd>
+
+<dt>replace_capitalize</dt>
+    <dd>
+    '''Capitalize matched text. If the regular expression contains groups,
+    only the text in the groups will be changed, otherwise the entire text is
+    changed.'''
+    </dd>
+
+<dt>replace_titlecase</dt>
+    <dd>
+    '''Title-case matched text. If the regular expression contains groups,
+    only the text in the groups will be changed, otherwise the entire text is
+    changed.'''
+    </dd>
+
+<dt>replace_swapcase</dt>
+    <dd>
+    '''Swap the case of the matched text. If the regular expression contains groups,
+    only the text in the groups will be changed, otherwise the entire text is
+    changed.'''
+    </dd>
+
+<dt>replace_uppercase_ignore_tags</dt>
+    <dd>
+    '''Make matched text upper case, ignoring the text inside tag definitions.'''
+    </dd>
+
+<dt>replace_lowercase_ignore_tags</dt>
+    <dd>
+    '''Make matched text lower case, ignoring the text inside tag definitions.'''
+    </dd>
+
+<dt>replace_capitalize_ignore_tags</dt>
+    <dd>
+    '''Capitalize matched text, ignoring the text inside tag definitions.'''
+    </dd>
+
+<dt>replace_titlecase_ignore_tags</dt>
+    <dd>
+    '''Title-case matched text, ignoring the text inside tag definitions.'''
+    </dd>
+
+<dt>replace_swapcase_ignore_tags</dt>
+    <dd>
+    '''Swap the case of the matched text, ignoring the text inside tag definitions.'''
+    </dd>
+</dl>
+
+
+<p>See <a href="https://github.com/Sigil-Ebook/Sigil/src/Resource_files/python3lib/functionrep.py">Sigil/src/Resource_files/python3lib/functionrep.py</a> for the complete source code to these built-in functions.  All python replace functions plus any you add are stored in your Sigil Preferences folder in a file called: <code>replace_functions.json</code>.</p>
+
+  <div class="tip">
+    <p class="tiptext">Just like any other Sigil regular expression search and replace, regex searches with Python Function Replace can also be saved and used in <span class="menuitem">Saved Searches</span>.  Python Function Replace routines can also be used with <span class="menuitem">Dry Run Replace All</span> and <span class="menuitem">Filter Replacements</span> as well as in normal Replace All done on a multi-file target.</p>
+  </div>
+</body>
+</html>
