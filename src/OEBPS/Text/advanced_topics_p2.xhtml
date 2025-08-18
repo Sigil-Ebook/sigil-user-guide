@@ -93,13 +93,13 @@ def replace(match, number, file_name, metadata, data):
 
 <p>This "add_ids_to_first_h1" code illustrates how to use the <code>number</code> parameter to know when to initialize your own data variables. And shows how the <code>data</code> dictionary parameter passed in can be used to save and retrieve state information that lives on across invocations. It also illustrates how the <code>file_name</code> parameter can be used to detect when a new file has been entered.</p>
 
-<p>This python function also shows you how to generate debug output from your function by using the <code>replace_debug_log</code> function that will append utf-8 string output to the file pointed to by an environment variable you set and control named:  SIGIL_FUNCTION_REPLACE_LOG_FILE.</p>
+<p>This python function also shows you how to generate debug output from your function by using the <code>replace_debug_log</code> function that will append utf-8 string output to the file pointed to by an environment variable you set and control named:  SIGIL_FUNCTION_REPLACE_LOGFILE.</p>
 
 <p>This environment variable when set should be the full path to a text file (including file name) where debug output from your function will be appended.</p>
 
 <pre><code>
 def replace_debug_log(message):
-    logfile = os.environ.get('SIGIL_FUNCTION_REPLACE_LOG_FILE', None);
+    logfile = os.environ.get('SIGIL_FUNCTION_REPLACE_LOGFILE', None);
     if logfile:
         with open(logfile, "a", encoding="utf-8") as f:
             f.write(message)
