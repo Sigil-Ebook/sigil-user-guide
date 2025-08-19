@@ -13,7 +13,19 @@
   <h2 id="atenv">Using Sigil's Environment Variables</h2>
 
 
-  <p>Some rarely needed settings in Sigil are controlled by "Environment Variables". An environment variable is a user-definable value that can affect the way running processes will behave on a computer.  See <a href="https://en.wikipedia.org/wiki/Environment_variable">https://en.wikipedia.org/wiki/Environment_variable&gt;</a> for more information on setting and using environment variables on your computer.</p>
+  <p>Some rarely needed settings in Sigil are controlled by "Environment Variables". An environment variable is a user-definable value that can affect the way running processes will behave on a computer.  See <a href="https://en.wikipedia.org/wiki/Environment_variable">https://en.wikipedia.org/wiki/Environment_variable</a> for more information on setting and using environment variables on your computer. Starting with Sigil 2.6.2, we have tried to make the process of setting and changing Sigil's environment variables much easier. With that release or later you can now simply use any text editor you want (Notepad, BBedit, emacs, vi, kate, etc) and create a file called "env-vars.txt" inside your Sigil Preferences folder. Add each environment variable and its value, one per line, in the following format:</p>
+
+  <p>ENVIRONMENT_VARIABLE_NAME=VALUE</p>
+
+  <p> where you replace ENVIRONMENT_VARIABLE_NAME with one of the environment variable names listed below and replace the VALUE with the what you want to set whether it is numeric or string or the value 1 for true.  No quotes are used.  For example:</p>
+
+  <p>SIGIL_DISABLE_VERSION_META=1</p>
+
+  <div class="tip">
+    <p class="tiptext">Remember, if you open Sigil's Preferences via the menu you can use a button on the bottom left to have it show you where your Sigil Preferences folder is located.</p>
+  </div>
+
+  <p>Then save this file.  Please note Sigil will only read this file when it is first launched, so remember to close and exit out of Sigil before making any changes to your env-vars.txt file and restart Sigil after the change.</p>
 
   <p>Sigil Uses the following Environment Variables:</p>
 
