@@ -44,8 +44,6 @@
 
   <li><p><span class="listheading">SIGIL_USE_FREETYPE_FONTENGINE</span> This environment variable is <b>Windows Only</b>. Setting this will tell Sigil to use the FreeType Font Engine.  This is useful on Windows for users who make heavy use of // Woff/woff2 fonts in their epub.  Current Qt version of the Windows Font Engine does not support these font types.</p></li>
 
-  <li><p><span class="listheading">SIGIL_USE_FREETYPE_FONTENGINE</span> This environment variable is <b>Windows Only</b>. Setting this will tell Sigil to use the FreeType Font Engine.  This is useful on Windows for users who make heavy use of // Woff/woff2 fonts in their epub.  Current Qt version of the Windows Font Engine does not support these font types.</p></li>
-
     <li><p><span class="listheading">SIGIL_PREVIEW_TIMEOUT</span> Setting this to a number (of milliseconds) will determine the length of time after user input stops while editing in CodeView until Preview is updated.  The minimum delay is 1000 milliseconds and the maximum delay can be set up to 10000 milliseconds.  There is typically no reason to set this unless you are editing huge xhtml files that take too long for Preview to update.</p></li>
 
     <li><p><span class="listheading">SIGIL_DRAG_DISTANCE_TWEAK</span> This environment variable is <b>Windows Only</b>. You can set this to change the distance in pixels needed to move something before drag and drop is detected by the system.  Its valid values range from -20 to 20 pixels.</p></li>
@@ -61,6 +59,8 @@
     <li><p><span class="listheading">SIGIL_DICTIONARIES</span> This environment Variable is primarily <b>Linux Only</b>. Setting this tells Sigil where to locate the hunspell dictionaries installed on your system.</p></li>
 
     <li><p><span class="listheading">SIGIL_NO_CUSTOM_DIRECTORY_ICONS</span> This environment variable is is useful if you make heavy use of networked drives with lots and lots of files.  It prevents the constant search for system level custom file icons and so it can greatly speed up the performance of non-native file dialogs, like "Add Existing...".</p></li>
+
+ <li><p><span class="listheading">SIGIL_FORCE_NATIVE_FILE_DIALOG</span> This environment variable forces Sigil to use the operating system's native file dialog.  Unfortunately, using native file dialogs has resulted in a number of crashing issues in recent versions of Qt.  Use at your own risk.</p></li>
   </ul>
 
   <div class="tip">
