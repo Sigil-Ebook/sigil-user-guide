@@ -273,7 +273,6 @@
     <item id="tutorial-find-adv-replace.png" href="Images/tutorial-find-adv-replace.png" media-type="image/png"/>
     <item id="tutorial-find-all.png" href="Images/tutorial-find-all.png" media-type="image/png"/>
     <item id="tutorial-find-count.png" href="Images/tutorial-find-count.png" media-type="image/png"/>
-    <item id="tutorial-find-regex-chapter.png" href="Images/tutorial-find-regex-chapter.png" media-type="image/png"/>
     <item id="tutorial-find-start.png" href="Images/tutorial-find-start.png" media-type="image/png"/>
     <item id="tutorial-find-test.png" href="Images/tutorial-find-test.png" media-type="image/png"/>
     <item id="tutorial-find-the.png" href="Images/tutorial-find-the.png" media-type="image/png"/>
@@ -391,6 +390,7 @@
     <item id="heading_2.png" href="Images/heading_2.png" media-type="image/png"/>
     <item id="heading_14.png" href="Images/heading_14.png" media-type="image/png"/>
     <item id="ui_toolbar-insert2.png" href="Images/ui_toolbar-insert2.png" media-type="image/png"/>
+    <item id="tutorial-find-regex-chapter.png" href="Images/tutorial-find-regex-chapter.png" media-type="image/png"/>
   </manifest>
   <spine toc="ncx">
     <itemref idref="cover.xhtml"/>

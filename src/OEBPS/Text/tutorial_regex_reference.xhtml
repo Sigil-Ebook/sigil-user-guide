@@ -75,6 +75,8 @@
 
     <li><span class="example">\t</span> – match one tab</li>
 
+    <li><span class="example">\s</span> – matches one instance of whitespace, including space, tab, end of line carriage returns or newlines</li>
+
     <li><span class="example">[abc]</span> – any character that is a b or c</li>
 
     <li><span class="example">[^abc]</span> – any character that is NOT a b or c</li>
@@ -88,7 +90,7 @@
 
   <h3 class="sigil_not_in_toc">Multiple Characters:</h3>
 
-  <p>These regex quantifiers or codes allow you to represent multiple characters:</p>
+  <p><a id="quant"></a>These regex quantifiers or codes allow you to represent multiple characters:</p>
 
   <ul>
     <li><span class="example">*</span> – use after a character to mean 0 or more, e.g. <span class="example">.*</span> means 0 or more of any character</li>
@@ -97,7 +99,6 @@
 
     <li><span class="example">?</span> – use after a character to mean 0 or 1 instance, e.g. <span class="example">\d?</span> means none or 1 digit</li>
 
-    <li><span class="example">\s</span> – matches whitespace, including space, tab, end of line carriage returns or newlines</li>
   </ul>
 
   <p>And there is a special character that tells your search to stop at the first match it finds instead of the largest match which you can use instead of the general modifier <span class="example">(?U)</span>:</p>
