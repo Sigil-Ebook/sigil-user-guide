@@ -74,7 +74,7 @@
   <ul>
     <li><span class="listheading">Find:</span> 
 
-    <pre class="example">&lt;p&gt;\sCHAPTER\s(\d+)\s&lt;/p&gt;</pre></li>
+    <pre class="example">&lt;p&gt;\s*CHAPTER\s+(\d+)\s*&lt;/p&gt;</pre></li>
 
     <li><span class="listheading">Replace:</span> 
 
@@ -92,20 +92,22 @@
   <ul>
     <li><span class="example">&lt;p&gt;</span> – Look for a starting paragraph tag.</li>
 
-    <li><span class="example">\s</span> – Regex code to match any white space (blanks, tabs, etc.).</li>
+    <li><span class="example">\s*</span> – Regex code to match any white space (blanks, tabs, etc.) or none.</li>
 
     <li><span class="example">CHAPTER</span> – Match the word CHAPTER (Regex is case-sensitive by default).</li>
 
-    <li><span class="example">\s</span> – Regex code to match any white space.</li>
+    <li><span class="example">\s+</span> – Regex code to match one or more of any white space elements.</li>
 
     <li><span class="example">(\d+)</span> – Regex code to match any number of digits in a row and remember them.</li>
 
-    <li><span class="example">\s</span> – Regex code to match any white space.</li>
+    <li><span class="example">\s*</span> – Regex code to match any white space or none.</li>
 
     <li><span class="example">&lt;/p&gt;</span> – Look for an end paragraph tag.</li>
   </ul>
 
-  <p>You could just use a space instead of <span class="example">\s</span> but <span class="example">\s</span> is more flexible since it will match any number of blank spaces and tabs.</p>
+  <p>You could just use a space instead of <span class="example">\s</span> but <span class="example">\s*</span> is more flexible since it will match any number of blank spaces and tabs or none. <span class="example">\s+</span> will match one or more blank spaces or tabs.</p>
+
+  <p>See the next chapter (<a href="tutorial_regex_reference.xhtml#quant">Regular Expression Reference</a>) for more information on * and + and other regex quantifiers.</p>
 
   <p>So the results of that search could be:</p>
 
