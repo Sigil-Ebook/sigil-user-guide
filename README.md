@@ -27,11 +27,19 @@
 
 - Use the [FolderIn Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649) to load the contents of the "src" directory of your local, cloned repository into Sigil.
 
-- Do your editing (saving changes to a local temporary epub somewhere if you must). Remember to use "Mend and Prettify" after you're done, and always make sure the epub validates with no errors. Then when ready, save the contents back to the "src" directory of your local, cloned repository using the [FolderOut Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649).
+- Make sure you have the non-breaking space entity (&amp;#160;) in your Epub3 Preserve Entities preference list.
+
+- Make sure you are using the default prettyprint.xml file in your Sigil preference folder. If you have modified how Prettify works vis this file (in Sigil's prefs folder), backup your custom prettyprint.xml file up somewhere safe, delete the existing one in Sigil's preferences folder, and restart Sigil (it will create a new default prettyprint.xml). You can restore your custom one from your backup after done editing the guide.
+
+- Do your editing. Remember to use "Mend and Prettify" (on only the files you've modified!), and always make sure the epub validates with no errors. Then when ready, save the contents back to the "src" directory of your local, cloned repository using the [FolderOut Sigil plugin](https://www.mobileread.com/forums/showthread.php?t=293649).
 
 - Use the normal git tools to check your differences and then when satisfied, commit and push your changes to your Github fork.
 
 - Create a new Pull Request from your Github account so that we can review and hopefully pull your changes into the project.
+
+- NOTE: There is no need to save a copy of the edited epub unless you need to preserve your editing session and come back to it before writing it back to the repo using FolderOut.
+
+
 
 <br/>
 
