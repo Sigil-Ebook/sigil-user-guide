@@ -159,7 +159,7 @@
 
     <li class="first"><span class="listheading">Role:</span> Insert a semantic epub:type and corresponding Aria role to improve semantic meaning for Accessibility (EPUB3 Only).</li>
 
-    <li><span class="listheading">Link:</span> Insert a link to something in your document or anywhere else.</li>
+    <li class="first"><span class="listheading">Link:</span> Insert a link to something in your document or anywhere else.</li>
 
     <li class="first"><span class="listheading">Closing Tag:</span> Insert a tag to close the last unclosed tag.</li>
 
@@ -255,6 +255,8 @@
 
     <li class="first"><span class="listheading">Filter Replacements:</span> Create a table showing all matching text and potential replacements according to the Find &amp; Replace settings. The user can then delete any undesired replacements before applying any changes.</li>
 
+    <li class="first"><span class="listheading">Restart Current Search:</span> Make Search forget where it has been and .</li>
+
     <li class="first"><span class="listheading">Current File:</span> 
 
 		<ul>
@@ -297,7 +299,10 @@
 
 	<li class="first"><p><span class="listheading">Restructure Epub to Sigil Norm:</span> Starting with Sigil 1.0.0, EPUBs loaded into Sigil are kept “as-is”; no files or folders are moved or renamed. This is a departure from Sigil 0.9.18 and earlier, which automatically restructured each EPUB into a standard Sigil form (one OEBPS folder, specific names for the OPF and NCX, only one folder for text, images, etc.). Users who prefer the standard Sigil form may use Restructure Epub to Sigil Norm to manually restructure their EPUB to the old Sigil standard.</p></li>
 
-    <li class="first"><p><span class="listheading">Rebase OPF Manifest IDs on Current Filenames:</span> Older versions of Sigil used to base OPF Manifest IDs on that file's name in order to help create uniqueness. Unfortunately when these files are later renamed, the Manifest ID ends up being based on its prior filename.  This can cause confusion when trying to hand edit the OPF. This tool will rebase the entire set of Manifest IDs on their current filenames while properly maintaining and updating any OPF references to those IDs. This includes properly updating the spine, cover metadata, smil metatdata, other metadata refines, media-overlays, fallback ids, and spine attributes.</p></li>
+    <li class="first"><p><span class="listheading">Use Standard File Exensions:</span> Bulk rename files to use industry standard file extensions.</p></li>
+
+
+<li class="first"><p><span class="listheading">Rebase OPF Manifest IDs on Current Filenames:</span> Older versions of Sigil used to base OPF Manifest IDs on that file's name in order to help create uniqueness. Unfortunately when these files are later renamed, the Manifest ID ends up being based on its prior filename.  This can cause confusion when trying to hand edit the OPF. This tool will rebase the entire set of Manifest IDs on their current filenames while properly maintaining and updating any OPF references to those IDs. This includes properly updating the spine, cover metadata, smil metatdata, other metadata refines, media-overlays, fallback ids, and spine attributes.</p></li>
 	
 	 <li><span class="listheading">Create a Custom Empty Epub:</span> Design a custom EPUB layout to use when creating new EPUBs.</li>
 
@@ -342,9 +347,16 @@
 		<ul>
 		  <li><span class="listheading">Update Manifest Properties:</span> Add or update mandatory manifest properties.</li>
 
-		  <li><span class="listheading">Generate NCX/Guide for epub2 e-readers:</span> Populate the NCX file with TOC entries from the NAV file (in EPUB3s, the NCX isn’t updated automatically since the NCX isn’t required; use this tool to manually update the NCX). Also populate the Guide with Landmarks entries from the NAV file.</li>
+		  <li><span class="listheading">Generate NCX/Guide for epub2 e-readers:</span> Populate the NCX file with TOC entries from the NAV file (in EPUB3s, the NCX isn’t updated automatically since the NCX isn’t required; use this tool to manually update the NCX). Also populate the Guide with Landmarks entries from the NAV file and add EPUB2 cover metadata.</li>
 		  
-		  <li><span class="listheading">Remove the NCX and Guide:</span> Remove the NCX and Guide, both of which are not required in EPUB3, but are sometimes included for backward compatability with EPUB2 reading systems.</li>
+		  <li><span class="listheading">Remove the NCX and Guide:</span> Remove the NCX and Guide along with any EPUB2 cover metadata, none of which are required in EPUB3, but are sometimes included for backward compatability with EPUB2 reading systems.</li>
+
+          <li><span class="listheading">Remove the Nav from the Reading order:</span> Remove the EPUB3 Nav from the OPF Spine completely.</li>
+
+          <li><span class="listheading">Add the Nav to the Reading Order:</span> Add the EPUB3 Nav to the OPF spine so it is treated like any other xhtml file.</li>
+
+          <li><span class="listheading">Add Nav to the Reading Order with linear="no":</span>Add the EPUB3 Nav to OPF spine but with the linear attribute set to "no" to indicate it is content is supplementary rather then part of the sequential Reading Order.</li>
+
 		</ul></li>
 		
 	<li class="first"><span class="listheading">Well-Formed Check EPUB:</span> A simple validation tool to check if your EPUB is well-formed.</li>
@@ -415,6 +427,9 @@
 		<li><span class="listheading">Clip Bar2:</span> Show or hide a second clip bar. (To create and manage clips, go to <span class="menuitem">Tools=&gt;Clip Editor</span>.)</li>
 		
 		<li><span class="listheading">Index:</span> Show or hide the indexing buttons: Index Editor, Add the selected text to the Index Editor, Mark the selected text for inclusion in the Index, Generate a new Index HTML file.</li>
+
+        <li><span class="listheading">Automation Lists:</span> Show or hide the toolbar icons to edit and run your Automation Lists.</li>
+
 		</ul></li>
 
     <li class="first"><span class="listheading">Zoom In:</span> Increase the size of text and images in Code View or Preview (whichever window is selected).</li>
@@ -464,7 +479,7 @@
   <p class="heading">Plugins</p>
 
   <ul>
-    <li><span class="listheading">Manage Plugins:</span> Add or remove plugins, and select which plugins appear in the toolbar.</li>
+    <li><span class="listheading">Manage Plugins:</span> Add or remove plugins, and select which plugins appear in the toolbar. Also when installed allows users to use menus to run selected <b>Edit</b>, <b>Input</b>, <b>Output</b>, and <b>Validation</b> plugins you have installed.</li>
   </ul>
 
   <p class="heading">Checkpoints</p>
@@ -472,7 +487,7 @@
   <ul>
     <li><span class="listheading">Create Checkpoint for Epub:</span> Save the current version of the EPUB as a checkpoint (stored via a local git repository).</li>
     
-    <li><span class="listheading">Create Epub from previous Checkpoint:</span> Create a new EPUB from an earlier checkpoint version.</li>
+    <li><span class="listheading">Restore Epub from previous Checkpoint:</span> Create a new EPUB from an earlier checkpoint version.</li>
 
     <li><span class="listheading">Compare Epub against Checkpoint:</span> Compare the current version of the EPUB with an earlier checkpoint version.</li>
 
@@ -481,6 +496,15 @@
     <li><span class="listheading">Edit Checkpoint Descriptions:</span> Create and attach a short description for each Checkpoint made.</li>
 
     <li><span class="listheading">Show Log of Checkpoints:</span> View a list of all checkpoints along with log descriptions.</li>
+
+  </ul>
+
+<p class="heading">Automation</p>
+
+  <ul>
+    <li><span class="listheading">Manage Automation Lists:</span> Create and edit Automation Lists to help speed sequences of repetitive tasks.</li>
+    
+    <li><span class="listheading">Run:</span> Use this menu to select and run an automation list you have previously created.</li>
 
   </ul>
 
@@ -806,7 +830,11 @@
 
   <h3 class="sigil_not_in_toc" id="context_menus">Context Menus</h3>
 
-  <p>Context Menus are menus that appear when you <b>right-click</b> on text, a label, a window, a tab, a header, a text box, etc., giving you quick access to a variety of actions. Context menu items are discussed in related chapters.</p>
+  <p>Context Menus are menus that appear when you <b>right-click</b> on text, a label, a window, a tab, a header, a text box, etc., giving you quick access to a variety of actions. Context menu items are discussed in related chapters.</p> 
+
+  <div class="tip">
+    <p class="tiptext"><b>Note for Mac users</b> - Right Click Context Menus are heavily used throughout Sigil, if you are unfamiliar with how to generate Right mouse clicks see your Mac Settings for your Mouse or Trackpad.</p>
+  </div>
 
   <div class="image">
     <img alt="Image of Book Browser Context menu." style="width:40%" src="../Images/ui_book-browser-context-menu.png"/>
@@ -828,7 +856,7 @@
 
   <p>The bottom left corner of the main window will occasionally show status information when an action is completed, such as “EPUB saved” or “Table of Contents edited”.</p>
 
-  <p>Toward the right corner of the main window (before the zoom slider), you will find information about the currently opened file, such as the Line and Column in Code View.</p>
+  <p>Toward the right corner of the main window (before the zoom slider), you will find information about the currently opened file, such as the Line and Column in Code View as well as the description of the character under your cursor.  In addition the status bar holds the <b>Drop Zone</b>, here you can add files to your epub by simply dragging them and dropping them on the <b>Drop Zone</b>.</p>
 
   <div class="image">
     <img alt="Image of the Status bar when information is briefly displayed." src="../Images/ui_status-bar.png"/>
