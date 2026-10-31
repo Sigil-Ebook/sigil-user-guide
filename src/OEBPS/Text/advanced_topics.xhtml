@@ -63,6 +63,8 @@
     <li><p><span class="listheading">SIGIL_NO_CUSTOM_DIRECTORY_ICONS</span> This environment variable is is useful if you make heavy use of networked drives with lots and lots of files.  It prevents the constant search for system level custom file icons and so it can greatly speed up the performance of non-native file dialogs, like "Add Existing...".</p></li>
 
  <li><p><span class="listheading">SIGIL_FORCE_NATIVE_FILE_DIALOG</span> This environment variable forces Sigil to use the operating system's native file dialog.  Unfortunately, using native file dialogs has resulted in a number of crashing issues in recent versions of Qt.  Use at your own risk.</p></li>
+
+ <li><p><span class="listheading">SIGIL_ONLY_USE_LANGCODES</span> The actual number of international language codes is huge which can make simply selecting often used languages painful.  This is especially true because most Sigil users have only a small number of languages they can actually work in. This environment variable can be set to contain a comma separated list of the language codes you would like Sigil to restrict itself to when asked to make a language selection for speed and convenience.</p></li>
   </ul>
 
   <div class="tip">
@@ -123,7 +125,7 @@
 
              &lt;image width="SGC_IMAGE_WIDTH" 
                     height="SGC_IMAGE_HEIGHT" 
-                    xlink:href="SGC_IMAGE_FILENAME\"/&gt;
+                    xlink:href="SGC_IMAGE_FILENAME" href="SGC_IMAGE_FILENAME"/&gt;
         &lt;/svg&gt;
       &lt;/div&gt;
     &lt;/body&gt;

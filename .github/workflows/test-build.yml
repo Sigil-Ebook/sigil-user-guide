@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
 
     - name: Get tag name
       if: startswith( github.ref, 'refs/tags/')
@@ -30,11 +30,6 @@ jobs:
       run: |
         echo ::set-output name=TAGNAME::${GITHUB_REF/refs\/tags\//}
         echo "GITHUB_TAGNAME=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
-
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.8
 
     - name: Build Guide
       run: python $GITHUB_WORKSPACE/.github/workflows/build_guide.py
@@ -49,7 +44,7 @@ jobs:
 
     - name: Create Epub Artifact
       if: "contains(github.event.head_commit.message, '[deploy]')"
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: sigil-guide
         path: ./*.epub
