@@ -72,6 +72,7 @@
     <item id="tutorial_generate_toc.xhtml" href="Text/tutorial_generate_toc.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial_getting_started_with_epub.xhtml" href="Text/tutorial_getting_started_with_epub.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial_links.xhtml" href="Text/tutorial_links.xhtml" media-type="application/xhtml+xml"/>
+    <item id="tutorial_aria_clips.xhtml" href="Text/tutorial_aria_clips.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial_load_file.xhtml" href="Text/tutorial_load_file.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial_mark_chapters.xhtml" href="Text/tutorial_mark_chapters.xhtml" media-type="application/xhtml+xml"/>
     <item id="tutorial_metadata.xhtml" href="Text/tutorial_metadata.xhtml" media-type="application/xhtml+xml"/>
@@ -302,6 +303,7 @@
     <item id="tutorial-inspector-window-styles.png" href="Images/tutorial-inspector-window-styles.png" media-type="image/png"/>
     <item id="tutorial-inspector-window.png" href="Images/tutorial-inspector-window.png" media-type="image/png"/>
     <item id="tutorial-inspector.png" href="Images/tutorial-inspector.png" media-type="image/png"/>
+    <item id="tutorial-aria-clips-dialog.png" href="Images/tutorial-aria-clips-dialog.png" media-type="image/png"/>
     <item id="tutorial-link-insert-id-dialog.png" href="Images/tutorial-link-insert-id-dialog.png" media-type="image/png"/>
     <item id="tutorial-link-insert-id.png" href="Images/tutorial-link-insert-id.png" media-type="image/png"/>
     <item id="tutorial-links-after-link-inserted.png" href="Images/tutorial-links-after-link-inserted.png" media-type="image/png"/>
@@ -448,6 +450,7 @@
     <itemref idref="tutorial_mark_chapters.xhtml"/>
     <itemref idref="tutorial_generate_toc.xhtml"/>
     <itemref idref="tutorial_links.xhtml"/>
+    <itemref idref="tutorial_aria_clips.xhtml"/>
     <itemref idref="tutorial_code_view.xhtml"/>
     <itemref idref="tutorial_spelling.xhtml"/>
     <itemref idref="tutorial_find_replace.xhtml"/>
