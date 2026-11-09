@@ -597,6 +597,12 @@
       </navLabel>
       <content src="Text/tutorial_links.xhtml" />
     </navPoint>
+    <navPoint id="navPoint113">
+      <navLabel>
+        <text>Add Accessible Notes With Aria Clips</text>
+      </navLabel>
+      <content src="Text/tutorial_aria_clips.xhtml" />
+    </navPoint>
     <navPoint id="navPoint99">
       <navLabel>
         <text>A Quick Introduction To Code View</text>

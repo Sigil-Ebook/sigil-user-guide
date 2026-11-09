@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">
+<head>
+  <title>Add Accessible Notes With Aria Clips</title>
+  <link href="../Styles/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h2 id="ariaclips">Add Accessible Notes With Aria Clips</h2>
+
+  <p class="h2subheading">— Footnotes, Endnotes and Page Breaks —</p>
+
+  <p>Aria Clips are a ready-made set of <a href="clips.xhtml">Clips</a> for accessibility. They insert the markup that screen readers and reading systems expect for footnotes, endnotes, page breaks, sections and asides: the correct elements, <span class="example">epub:type</span> and <span class="example">role</span> attributes, IDs, links and labels.</p>
+
+  <p>Aria Clips work like ordinary Clips, with one extra feature: they can take a <b>note number</b> from the text you have selected and use it in every place where the markup needs it.</p>
+
+  <h3 class="sigil_not_in_toc">Where to Find Aria Clips</h3>
+
+  <ul>
+    <li><p>Use <span class="menuitem">Insert=&gt;Aria Clip...</span> or the Insert Aria Clip button on the Insert toolbar.</p></li>
+
+    <li><p>Aria Clips are only available in <b>Code View</b> and only for <b>EPUB3</b> books.</p></li>
+
+    <li><p>If you use them often, assign a keyboard shortcut to <span class="example">MainWindow.InsertClip</span> in <span class="menuitem">Preferences=&gt;Keyboard Shortcuts</span>.</p></li>
+  </ul>
+
+  <p>The Add Aria Clips dialog lists all clips by name, followed by a short code in brackets, for example <span class="example">Reference to Footnote (fn_ref)</span>. When you select a clip, the dialog shows the markup it will insert. Double-click a clip, or select it and click <span class="buttonbox">OK</span>, to insert it.</p>
+
+  <div class="image">
+    <img alt="The Add Aria Clips dialog with the list of clips and the markup of the selected clip." src="../Images/tutorial-aria-clips-dialog.png"/>
+  </div>
+
+  <h3 class="sigil_not_in_toc">How Your Selection Is Used</h3>
+
+  <p>Before you open the dialog, select some text in Code View. What happens to the selection depends on the clip:</p>
+
+  <ul>
+    <li><p><span class="listheading">Clips that wrap the selection</span> (for example Aside, Section, Footnote in aside): the selected text is placed inside the new markup.</p></li>
+
+    <li><p><span class="listheading">Clips that replace the selection</span> (Reference to Footnote, Reference to Endnote, Backlink from Footnote, Backlink from Endnote, PageBreak in span): the selected text is removed and only the clip is inserted. These clips are meant for selecting just the note marker or page number.</p></li>
+
+    <li><p><span class="listheading">Clips with no selection</span> (Section: Endnotes, PageBreak in hr): use these with nothing selected. If you select text first, it will be replaced by the clip.</p></li>
+  </ul>
+
+  <h4 class="sigil_not_in_toc">The Note Number</h4>
+
+  <p>The footnote, endnote and page break clips contain a number placeholder. Sigil looks for a number <b>at the very beginning</b> of your selection. The number may be in square brackets and may be followed by a full stop. Spaces before the number are ignored.</p>
+
+  <p>For example, all of these selections give the number <span class="example">3</span>:</p>
+
+  <pre class="example">3
+[3]
+3.
+[3] This is the text of the note.
+3. This is the text of the note.</pre>
+
+  <p>These selections do <b>not</b> give a number:</p>
+
+  <pre class="example">(3)
+¹  (a superscript character)
+*
+Note 3
+&lt;p&gt;3. This is the text of the note.&lt;/p&gt;  (the selection starts with a tag)</pre>
+
+  <p>If no number is found, the clip is still inserted, but the placeholder <span class="example">_N_</span> is left in the IDs, links and labels, for example <span class="example">id="fn_N_"</span>. You can then type the number yourself, or undo with <span class="shortcut">Ctrl+Z</span> and select the text again.</p>
+
+  <div class="tip">
+    <p class="tiptext">Only the number is used, so the selection <span class="example">12a</span> gives <span class="example">12</span>, and with a replacing clip the letter is lost. Check the result after inserting.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Example: Footnotes in a Chapter</h3>
+
+  <p>Suppose a chapter contains a note marker in the text and the note at the end of the chapter:</p>
+
+  <pre class="example">&lt;p&gt;The ship left the harbour at dawn[1] and sailed north.&lt;/p&gt;
+...
+&lt;p&gt;[1] In the summer, dawn there is before four o'clock.&lt;/p&gt;</pre>
+
+  <h4 class="sigil_not_in_toc">1. The Reference</h4>
+
+  <p>In Code View select <span class="example">[1]</span> in the text (only the marker, not the words around it) and insert <span class="example">Reference to Footnote</span>. The marker is replaced with:</p>
+
+  <pre class="example">&lt;a id="ref_fn1" href="#fn1" epub:type="noteref" role="doc-noteref" aria-label="To footnote 1"&gt;[1]&lt;/a&gt;</pre>
+
+  <p>Selecting only <span class="example">1</span> gives the same result. The link text is always the number in square brackets; you can change it afterwards, for example to a superscript number.</p>
+
+  <h4 class="sigil_not_in_toc">2. The Note</h4>
+
+  <p>Select the text of the note, <b>starting with its number</b>: <span class="example">[1] In the summer, dawn there is before four o'clock.</span> Do not include the <span class="example">&lt;p&gt;</span> tags, otherwise the number cannot be found. Then insert <span class="example">Footnote in aside</span>:</p>
+
+  <pre class="example">&lt;p&gt;&lt;aside id="fn1" epub:type="footnote" role="doc-footnote"&gt;
+  &lt;p&gt;[1] In the summer, dawn there is before four o'clock.
+    &lt;a href="#ref_fn1" epub:type="backlink" role="doc-backlink"&gt;Back to [1]&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/aside&gt;
+&lt;/p&gt;</pre>
+
+  <p>The clip replaces only what you selected, so the original <span class="example">&lt;p&gt;</span> and <span class="example">&lt;/p&gt;</span> are still around the new <span class="example">aside</span>. <b>Delete them</b>: an aside (or a paragraph) is not allowed inside a paragraph.</p>
+
+  <p>The number stays in the note text, and the backlink adds <span class="example">Back to [1]</span>. Edit the text as you like; the IDs and links are already correct.</p>
+
+  <h4 class="sigil_not_in_toc">3. Group the Notes (Optional)</h4>
+
+  <p>Select all the notes at the end of the chapter (this time including their tags) and insert <span class="example">Section: Footnotes</span>. It wraps them in:</p>
+
+  <pre class="example">&lt;section epub:type="footnotes" aria-label="Footnotes"&gt;
+  ...
+&lt;/section&gt;</pre>
+
+  <div class="tip">
+    <p class="tiptext">There are three footnote clips: <span class="example">Footnote in aside</span>, <span class="example">Footnote in div</span> and <span class="example">Footnote in p</span>. They differ only in the element used for the note. With <span class="example">Footnote in p</span> it is especially important to remove the old paragraph tags, otherwise you get a paragraph inside a paragraph.</p>
+  </div>
+
+  <p>Footnote IDs only need to be unique within one file, so footnotes numbered from 1 in every chapter are fine.</p>
+
+  <h3 class="sigil_not_in_toc">Example: Endnotes in a Separate File</h3>
+
+  <p>Endnotes are usually collected in one file, for example <span class="example">notes.xhtml</span>, and numbered through the whole book. The reference is in a chapter file and the note is in the notes file, so the links must include the file name. The endnote clips contain two placeholders for this:</p>
+
+  <ul>
+    <li><p><span class="listheading">HREF_TO_ENDNOTE</span> in the reference: the path from the chapter to the notes file, for example <span class="example">notes.xhtml</span> (or <span class="example">../Text/notes.xhtml</span> if the files are in different folders).</p></li>
+
+    <li><p><span class="listheading">HREF_RETURN_FROM_ENDNOTE</span> in the note: the path back to the chapter file that contains the reference, for example <span class="example">chapter03.xhtml</span>.</p></li>
+  </ul>
+
+  <p>Sigil cannot know these paths, so you must replace the placeholders yourself. If your Sigil interface is in another language, the placeholders are shown translated into that language.</p>
+
+  <h4 class="sigil_not_in_toc">1. The References</h4>
+
+  <p>In <span class="example">chapter03.xhtml</span> select the marker <span class="example">17</span> and insert <span class="example">Reference to Endnote</span>:</p>
+
+  <pre class="example">&lt;a id="ref_en17" href="HREF_TO_ENDNOTE#en17" epub:type="noteref" role="doc-noteref" aria-label="To endnote 17"&gt;[17]&lt;/a&gt;</pre>
+
+  <p>Replace <span class="example">HREF_TO_ENDNOTE</span> with <span class="example">notes.xhtml</span>. When all references are inserted, you can do this for the whole book at once with <a href="find_replace.xhtml">Find &amp; Replace</a>, searching All HTML Files.</p>
+
+  <h4 class="sigil_not_in_toc">2. The List of Notes</h4>
+
+  <p>In <span class="example">notes.xhtml</span>, with nothing selected, insert <span class="example">Section: Endnotes</span>. It creates an empty numbered list:</p>
+
+  <pre class="example">&lt;section epub:type="endnotes" role="doc-endnotes"&gt;
+  &lt;ol&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</pre>
+
+  <p>Move the text of each note into the list, one note per line, without <span class="example">&lt;p&gt;</span> tags.</p>
+
+  <h4 class="sigil_not_in_toc">3. Each Note</h4>
+
+  <p>Select one line, starting with its number, for example <span class="example">17. The letter was never sent.</span>, and insert <span class="example">Endnote in li</span>:</p>
+
+  <pre class="example">    &lt;li id="en17"&gt;
+      &lt;p&gt;17. The letter was never sent.
+        &lt;a href="HREF_RETURN_FROM_ENDNOTE#ref_en17" epub:type="backlink" role="doc-backlink"&gt;Back to [17]&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/li&gt;</pre>
+
+  <p>Replace <span class="example">HREF_RETURN_FROM_ENDNOTE</span> with the file that contains reference 17, here <span class="example">chapter03.xhtml</span>.</p>
+
+  <div class="tip">
+    <p class="tiptext">An <span class="example">ol</span> list numbers its items automatically, so a number kept in the note text is shown twice. Remove the number from the text, or hide the list numbers with CSS, for example <span class="example">ol { list-style-type: none; }</span>.</p>
+  </div>
+
+  <div class="tip">
+    <p class="tiptext">All endnotes in one file need different numbers, because the number becomes the ID of the note (<span class="example">en17</span>). If the endnotes of each chapter start again at 1, the IDs in the notes file will be repeated and the book will not validate. In that case renumber the notes through the whole book, or give the IDs a chapter prefix by hand (for example <span class="example">en3-1</span>) in both the reference and the note.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">Page Breaks</h3>
+
+  <ul>
+    <li><p><span class="listheading">PageBreak in span:</span> select a printed page number, for example <span class="example">23</span>, and insert the clip. The number is replaced by an invisible page marker: <span class="example">&lt;span id="page23" epub:type="pagebreak" role="doc-pagebreak" aria-label="Page 23" /&gt;</span></p></li>
+
+    <li><p><span class="listheading">PageBreak in hr:</span> inserts <span class="example">&lt;hr epub:type="pagebreak" role="doc-pagebreak" /&gt;</span> with no number. Use it with nothing selected.</p></li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc">Sections and Asides</h3>
+
+  <ul>
+    <li><p><span class="listheading">Section</span> and <span class="listheading">Aside:</span> wrap the selected text. A second dialog lets you choose a role (for example Chapter, Dedication, Epigraph), and Sigil adds the matching <span class="example">epub:type</span> and <span class="example">role</span>.</p></li>
+
+    <li><p><span class="listheading">Section: Chapter:</span> wraps the selection in a chapter section with its own heading, <span class="example">&lt;h1 id="heading1"&gt;CHAPTER_TITLE_HERE&lt;/h1&gt;</span>. Select the chapter content below the existing heading, then replace the placeholder with the title and delete the old heading. If you use this clip more than once in the same file, change the ID <span class="example">heading1</span> (in both the heading and <span class="example">aria-labelledby</span>) so that it is unique.</p></li>
+
+    <li><p><span class="listheading">Aside: Sidebar</span> and <span class="listheading">Aside: Tip:</span> wrap the selection in an aside labelled as a sidebar or a tip.</p></li>
+  </ul>
+
+  <h3 class="sigil_not_in_toc">Labels and Language</h3>
+
+  <p>Text that readers or screen readers will meet, such as <span class="example">To footnote</span>, <span class="example">Back to</span>, <span class="example">Footnotes</span> or <span class="example">Page</span>, is written in the <b>language of the book</b>, not the language of Sigil's interface. Sigil uses the language set on the <span class="example">html</span> element of the current file or, if there is none, the first <span class="example">dc:language</span> in the OPF, and takes the words from its own translation for that language. If Sigil has no translation for that language, the words are in the language of Sigil's interface.</p>
+
+  <p>Placeholders that you have to replace (<span class="example">HREF_TO_ENDNOTE</span>, <span class="example">HREF_RETURN_FROM_ENDNOTE</span>, <span class="example">CHAPTER_TITLE_HERE</span>) are shown in the language of Sigil's interface.</p>
+
+  <h3 class="sigil_not_in_toc">Check Your Work</h3>
+
+  <ul>
+    <li><p>Search the book for <span class="example">_N_</span> to find clips that were inserted without a number.</p></li>
+
+    <li><p>Search for <span class="example">HREF_</span> to find endnote links that still need a file name.</p></li>
+
+    <li><p>Click a few references and backlinks in Preview to test them, and run a validation (for example the EpubCheck plugin) to find broken links and repeated IDs.</p></li>
+  </ul>
+</body>
+</html>
